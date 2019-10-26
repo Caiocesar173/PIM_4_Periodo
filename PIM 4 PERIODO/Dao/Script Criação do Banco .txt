@@ -1,0 +1,232 @@
+﻿#############################################################################
+#                             Script de Criação                             #
+#                                Banco de Dados                             #
+#############################################################################
+            
+/* OBSERVAÇÕES:
+*	
+*	DATA date, -> DIA/MES/ANO; HORA,MINUTO,SEGUNDO; FUSOHORARIO
+*
+*/
+
+//--------------------------------X----------------------//
+//Usuarios:
+	CREATE TABLE USUARIO(
+		ID_USUARIO int not null auto_increment,
+		USERNAME varchar(40) not null,
+		SENHA varchar(40) not null,
+		DEPARTAMENTO int(10),
+		
+		NOME varchar(70) not null,
+		EMAIL varchar(60) not null, 
+		CPF varchar(11) not null,
+		TELEFONE int(11) not null,
+		CELULAR int(12) not null,
+		ENDERECO varchar(255) not null,
+		CNH int(11) not null,
+		VALIDADE_CNH date not null,
+		CATEGORIA_CNH varchar(4) not null,
+		DATA_ADIMISSAO date not null,
+
+		USERNAME key(CPF),
+		UNIQUE key(USERNAME),
+		primary key(ID_USUARIO)
+	);
+
+//--------------------------------X----------------------//
+//Notificações:
+	CREATE TABLE NOTIFICACAO(
+		ID_NOTIFICACAO int not null auto_increment,
+		ID_DEPARTAMENTO int not null,
+		TITULO varchar(40) not null,
+		IMAGEM varchar(255) not null,
+		DESCRICAO varchar(255) not null,
+		
+
+		primary key(ID_NOTIFICACAO)
+	);
+
+	ALTER TABLE NOTIFICACAO ADD CONSTRAINT FK_NOTIFICACAO_ID_DEPARTAMENTO FOREIGN KEY(ID_DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+//--------------------------------X----------------------//
+//Veiculos:
+	CREATE TABLE VEICULO(
+		ID_VELICULO int not null auto_increment,
+		PLACA varchar(7) not null, 
+		MODELO varchar(50) not null, 
+		TIPO varchar(50) not null, 
+		MARCA varchar(50) not null, 
+		ANO date not null, 
+		RENAVAM int(11) not null, 
+		CHSSI_NUM varchar(17) not null,
+		KM_POR_LITRO float(8,2) not null, 
+		KM_TROCA_OLEO float(8,2) not null,
+		KM_REVISAO float(8,2) not null, 
+		KM_PNEU float(8,2) not null, 
+		CAPACIDADE_TANQUE float(8,2) not null,
+		ID_COMBUSTIVEL int not null,
+
+
+		primary key(ID_VELICULO)
+	);
+
+	ALTER TABLE VEICULO ADD CONSTRAINT FK_VEICULO_ID_COMBUSTIVEL FOREIGN KEY(ID_COMBUSTIVEL) REFERENCES COMBUSTIVEL(ID_COMBUSTIVEL) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+//--------------------------------X----------------------//
+//Oleo:
+	CREATE TABLE OLEO(
+		ID_OLEO int not null auto_increment,
+		NOME varchar(70) not null,
+		MARCA varchar(50) not null, 
+		LITROS float not null,
+		
+
+		primary key(ID_OLEO)
+	);
+
+
+//--------------------------------X----------------------//
+//Abastecimento:
+	CREATE TABLE ABASTECIMENTO(
+		ID_ABASTECIMENTO int not null auto_increment,
+		KM_NO_ABASTECIMENTO float(8,2) not null, 
+		LITROS float not null,
+		VALOR float(20,2) not nullfloat not null, 
+		ID_POSTO int not null,
+		DATA date not null,
+
+
+		primary key(ID_ABASTECIMENTO)
+	);
+
+
+//--------------------------------X----------------------//
+//Combustivel:
+	CREATE TABLE COMBUSTIVEL(
+		ID_COMBUSTIVEL int not null auto_increment,
+		NOME varchar(70) not null, 
+		VALOR float(20,2) not null
+		DATA date not null,
+
+		primary key(ID_COMBUSTIVEL)
+	);
+	
+	
+//--------------------------------X----------------------//
+//Oficina:
+	CREATE TABLE OFICINA(
+		ID_OFICINA int not null auto_increment,
+		NOME varchar(70) not null,
+		CNPJ varchar(11) not null,
+		RAZAO_SOCIAL varchar(70) not null,
+		TELEFONE int(11) not null,
+		CELULAR int(12) not null,
+		SITE varchar(255),
+		ENDERECO varchar(255) not null,
+
+
+		primary key(ID_OFICINA)
+	);
+
+//--------------------------------X----------------------//
+//Posto:
+	CREATE TABLE POSTO(
+		ID_POSTO int not null auto_increment,
+		NOME varchar(70) not null,
+		CNPJ varchar(11) not null,
+		RAZAO_SOCIAL varchar(70) not null,
+		TELEFONE int(11) not null,
+		CELULAR int(12) not null,
+		SITE varchar(255),
+		ENDERECO varchar(255) not null,
+
+
+		primary key(ID_POSTO)
+	
+	);
+	
+//--------------------------------X----------------------//
+//Multa:
+	CREATE TABLE MULTA(
+		 ID_MULTA int not null auto_increment, 
+		 NUM_INFRACAO int not null, 
+		 TIPO_INFRACAO varchar(50) not null,
+		 ID_MOTORISTA int not null, 
+		 ID_VEICULO int not null,
+		 VALOR float(20,2) not nullfloat not null, 
+		 DATA date not null,
+		 ENDERECO varchar(255) not null, 
+		
+
+		primary key(ID_MULTA)
+	);
+
+	ALTER TABLE MULTA ADD CONSTRAINT FK_MULTA_ID_MOTORISTA FOREIGN KEY(ID_MOTORISTA) REFERENCES USUARIO(ID_USUARIO) ON DELETE RESTRICT ON UPDATE RESTRICT;
+	ALTER TABLE MULTA ADD CONSTRAINT FK_MULTA_ID_VEICULO FOREIGN KEY(ID_VEICULO) REFERENCES VEICULO(ID_VEICULO) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+//--------------------------------X----------------------//       
+//Departamento:
+	CREATE TABLE DEPARTAMENTO(
+		ID_DEPARTAMENTO int not null auto_increment,
+		NIVELACESSO int(20) not null,
+		NOME varchar(70) not null,
+
+
+		primary key(ID_DEPARTAMENTO)
+	);
+
+//--------------------------------X----------------------//
+//SALARIO:
+	CREATE TABLE SALARIO(
+		ID_SALARIO int not null auto_increment,
+		VALOR float(20,2) not nullfloat not null,
+	
+
+		primary key(ID_SALARIO)
+	);
+
+//--------------------------------X----------------------//
+//Manutenção:
+CREATE TABLE MANUTENCAO(
+		ID_MANUTENCAO int not null auto_increment,
+		NUM_OS int not null,
+		ID_OFICINA int not null,
+		DATA_ENTRADA date,
+		DATA_SAIDA date,
+		MOTIVO varchar(200) not null, 
+		VALOR float(20,2) not nullfloat not null,
+		ID_VEICULO int not null,
+	
+		primary key(ID_MANUTENCAO)
+	);
+
+	ALTER TABLE MANUTENCAO ADD CONSTRAINT FK_MANUTENCAO_ID_OFICINA FOREIGN KEY(ID_OFICINA) REFERENCES OFICINA(ID_OFICINA) ON DELETE RESTRICT ON UPDATE RESTRICT;	
+	ALTER TABLE MANUTENCAO ADD CONSTRAINT FK_MANUTENCAO_ID_VEICULO FOREIGN KEY(ID_VEICULO) REFERENCES VEICULO(ID_VEICULO) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+//--------------------------------X----------------------//
+//Atendimento:
+CREATE TABLE ATENDIMENTO(
+		ID_ATENDIMENTO int not null auto_increment, 
+		ID_VEICULO int not null, 
+		ID_MOTORISTA int not null,
+		ID_DESTINO int not null,  
+		   
+        primary key(ID_ATENDIMENTO)
+	);
+
+	ALTER TABLE ATENDIMENTO ADD CONSTRAINT FK_ATENDIMENTO_ID_DESTINO FOREIGN KEY(ID_DESTINO) REFERENCES DESTINO(ID_DESTINO) ON DELETE RESTRICT ON UPDATE RESTRICT;	
+	ALTER TABLE ATENDIMENTO ADD CONSTRAINT FK_ATENDIMENTO_ID_VEICULO FOREIGN KEY(ID_VEICULO) REFERENCES VEICULO(ID_VEICULO) ON DELETE RESTRICT ON UPDATE RESTRICT;	
+	ALTER TABLE ATENDIMENTO ADD CONSTRAINT FK_ATENDIMENTO_ID_MOTORISTA FOREIGN KEY(ID_MOTORISTA) REFERENCES MOTORISTA(ID_MOTORISTA) ON DELETE RESTRICT ON UPDATE RESTRICT;	
+
+//--------------------------------X----------------------//
+//Atendimento:
+CREATE TABLE DESTINO(
+		ID_DESTINO int not null auto_increment, 
+		ID_VEICULO int not null, 
+		ID_MOTORISTA int not null,
+		DATA_CHEGADA date,
+		DATA_SAIDA date,
+
+        primary key(ID_DESTINO)
+	);      
