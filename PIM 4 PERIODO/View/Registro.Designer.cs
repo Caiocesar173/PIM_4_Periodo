@@ -124,6 +124,7 @@
             // 
             this.txtConfirSen.Location = new System.Drawing.Point(98, 387);
             this.txtConfirSen.Name = "txtConfirSen";
+            this.txtConfirSen.PasswordChar = '*';
             this.txtConfirSen.Size = new System.Drawing.Size(176, 20);
             this.txtConfirSen.TabIndex = 8;
             // 
@@ -131,6 +132,7 @@
             // 
             this.txtSen.Location = new System.Drawing.Point(97, 351);
             this.txtSen.Name = "txtSen";
+            this.txtSen.PasswordChar = '*';
             this.txtSen.Size = new System.Drawing.Size(176, 20);
             this.txtSen.TabIndex = 9;
             // 

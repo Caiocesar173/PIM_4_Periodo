@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.BtnLogar = new System.Windows.Forms.Button();
-            this.BtnRegistrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtLogin = new System.Windows.Forms.TextBox();
@@ -38,23 +37,13 @@
             // 
             // BtnLogar
             // 
-            this.BtnLogar.Location = new System.Drawing.Point(39, 158);
+            this.BtnLogar.Location = new System.Drawing.Point(113, 151);
             this.BtnLogar.Name = "BtnLogar";
             this.BtnLogar.Size = new System.Drawing.Size(75, 23);
             this.BtnLogar.TabIndex = 0;
             this.BtnLogar.Text = "Logar";
             this.BtnLogar.UseVisualStyleBackColor = true;
             this.BtnLogar.Click += new System.EventHandler(this.BntLogar);
-            // 
-            // BtnRegistrar
-            // 
-            this.BtnRegistrar.Location = new System.Drawing.Point(159, 158);
-            this.BtnRegistrar.Name = "BtnRegistrar";
-            this.BtnRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.BtnRegistrar.TabIndex = 2;
-            this.BtnRegistrar.Text = "Registrar";
-            this.BtnRegistrar.UseVisualStyleBackColor = true;
-            this.BtnRegistrar.Click += new System.EventHandler(this.bntRegistrar);
             // 
             // label1
             // 
@@ -85,6 +74,7 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(76, 104);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(158, 20);
             this.txtSenha.TabIndex = 6;
             // 
@@ -97,7 +87,6 @@
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnRegistrar);
             this.Controls.Add(this.BtnLogar);
             this.Name = "Form1";
             this.Text = "Login";
@@ -109,7 +98,6 @@
         #endregion
 
         private System.Windows.Forms.Button BtnLogar;
-        private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtLogin;
