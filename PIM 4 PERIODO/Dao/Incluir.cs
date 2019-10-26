@@ -11,7 +11,7 @@ namespace PIM_4_PERIODO.Dao
 {
     class Incluir
     {
-        Conexao Conexão = new Conexao();
+        private Conexao Conexão = new Conexao();
 
 
         public void Abastecimento(Abastecimento Abastecimento)
@@ -67,12 +67,10 @@ namespace PIM_4_PERIODO.Dao
         {
         
         }
-
-        public void Destino()
+        public void Destino(Destino Destino)
         {
-
+            
         }
-
 
     }
 }
