@@ -16,5 +16,18 @@ namespace PIM_4_PERIODO
         {
             InitializeComponent();
         }
+
+        private void bntRegistrar(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BntLogar(object sender, EventArgs e)
+        {
+            //Aqui vamos pegar os dados do texto 
+            Model.Login person = new Model.Login();
+
+            
+        }
     }
 }
