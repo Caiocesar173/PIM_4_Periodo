@@ -15,6 +15,7 @@ namespace PIM_4_PERIODO.Model
         private string username;
         private string senha;
         private string departamento;
+        private string endereço;
         private string nome;
         private string email;
         private string cpf;
@@ -32,6 +33,7 @@ namespace PIM_4_PERIODO.Model
         public string CPF { get => cpf; set => cpf = value; }
         public string Categoria_CNH { get => categoria_cnh; set => categoria_cnh = value; }
         public string Departamento { get => departamento; set => departamento = value; }
+        public string Endereço { get => endereço; set => endereço = value; }
         public string Senha { get => senha; set => senha = value; }
         public string Username { get => username; set => username = value; }
         public int ID_Usuario { get => id_Usuario; set => id_Usuario = value; }
