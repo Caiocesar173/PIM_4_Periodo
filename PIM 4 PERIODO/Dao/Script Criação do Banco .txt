@@ -11,6 +11,7 @@
 
 //--------------------------------X----------------------//
 //Usuarios:
+//
 	CREATE TABLE USUARIO(
 		ID_USUARIO int not null auto_increment,
 		USERNAME varchar(40) not null,
@@ -88,6 +89,8 @@
 
 //--------------------------------X----------------------//
 //Abastecimento:
+//INSERT INTO ABASTECIMENTO(ID_ABASTECIMENTO, KM_NO_ABASTECIMENTO, LITROS, VALOR, ID_POSTO, DATA) VALUES ();
+
 	CREATE TABLE ABASTECIMENTO(
 		ID_ABASTECIMENTO int not null auto_increment,
 		KM_NO_ABASTECIMENTO float(8,2) not null, 
@@ -206,6 +209,8 @@ CREATE TABLE MANUTENCAO(
 
 //--------------------------------X----------------------//
 //Atendimento:
+//
+
 CREATE TABLE ATENDIMENTO(
 		ID_ATENDIMENTO int not null auto_increment, 
 		ID_VEICULO int not null, 
@@ -220,11 +225,14 @@ CREATE TABLE ATENDIMENTO(
 	ALTER TABLE ATENDIMENTO ADD CONSTRAINT FK_ATENDIMENTO_ID_MOTORISTA FOREIGN KEY(ID_MOTORISTA) REFERENCES MOTORISTA(ID_MOTORISTA) ON DELETE RESTRICT ON UPDATE RESTRICT;	
 
 //--------------------------------X----------------------//
-//Atendimento:
+//Destino:
+//INSERT INTO ATENDIMENTO(ID_VEICULO, ID_MOTORISTA, LOCAL_CHEGADA, LOCAL_SAIDA, DATA_CHEGADA, DATA_SAIDA) VALUES (@ID_VEICULO, @ID_MOTORISTA, @LOCAL_CHEGADA, @LOCAL_SAIDA, @DATA_CHEGADA, @DATA_SAIDA);
 CREATE TABLE DESTINO(
 		ID_DESTINO int not null auto_increment, 
 		ID_VEICULO int not null, 
 		ID_MOTORISTA int not null,
+		LOCAL_CHEGADA varchar(200) not null,,
+		LOCAL_SAIDA varchar(200) not null,,
 		DATA_CHEGADA date,
 		DATA_SAIDA date,
 
