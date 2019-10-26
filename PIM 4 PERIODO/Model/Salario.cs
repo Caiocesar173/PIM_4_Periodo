@@ -11,6 +11,7 @@ namespace PIM_4_PERIODO.Model
     class Salario
     {
         private float valor;
+        private float quantidade;
 
 
         public float Valor { get => valor; set => valor = value; }
