@@ -29,13 +29,15 @@ namespace PIM_4_PERIODO
 
         private void BntLogar(object sender, EventArgs e)
         {
-           
             //Aqui vamos pegar os dados do texto 
             Model.Login person = new Model.Login();
             person.Usuario = (txtLogin.Text);
             person.Senha = (txtSenha.Text);
             //Aqui vai aparecer a tela principal
             MessageBox.Show("Logado com sucesso");
+            View.Principal prin = new View.Principal();
+            this.Hide();
+            prin.Show();
         }
     }
 }
