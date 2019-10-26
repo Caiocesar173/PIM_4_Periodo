@@ -44,7 +44,7 @@
             this.BtnLogar.TabIndex = 0;
             this.BtnLogar.Text = "Logar";
             this.BtnLogar.UseVisualStyleBackColor = true;
-            this.BtnLogar.Click += new System.EventHandler(this.button1_Click);
+            this.BtnLogar.Click += new System.EventHandler(this.BntLogar);
             // 
             // BtnRegistrar
             // 
@@ -54,7 +54,7 @@
             this.BtnRegistrar.TabIndex = 2;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = true;
-            this.BtnRegistrar.Click += new System.EventHandler(this.button3_Click);
+            this.BtnRegistrar.Click += new System.EventHandler(this.bntRegistrar);
             // 
             // label1
             // 

@@ -12,7 +12,7 @@ namespace PIM_4_PERIODO.Model
     {
         private DateTime data_Adimissao;
         private DateTime validade_cnh;
-        private string usernome;
+        private string username;
         private string senha;
         private string departamento;
         private string nome;
@@ -31,10 +31,14 @@ namespace PIM_4_PERIODO.Model
         public string Email { get => email; set => email = value; }
         public string CPF { get => cpf; set => cpf = value; }
         public string Categoria_CNH { get => categoria_cnh; set => categoria_cnh = value; }
+        public string Departamento { get => departamento; set => departamento = value; }
+        public string Senha { get => senha; set => senha = value; }
+        public string Username { get => username; set => username = value; }
         public int ID_Usuario { get => id_Usuario; set => id_Usuario = value; }
         public int Telefone { get => telefone; set => telefone = value; }
         public int Celular { get => celular; set => celular = value; }
         public int CNH { get => cnh; set => cnh = value; }
+        
 
     }
 }
