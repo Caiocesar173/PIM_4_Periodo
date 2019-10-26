@@ -22,7 +22,6 @@ namespace PIM_4_PERIODO.Dao
                 conexao.Open();
             }
         }
-
         public void Desconectar()
         {
             if (conexao.State == System.Data.ConnectionState.Open)
@@ -30,7 +29,6 @@ namespace PIM_4_PERIODO.Dao
                 conexao.Close();
             }
         }
-
         public bool Checkconection()
         {
             if (conexao.State == ConnectionState.Open)
@@ -42,11 +40,10 @@ namespace PIM_4_PERIODO.Dao
                 return false;
             }
         }
-
-        // create a function to return the connection
         public MySqlConnection Pega_Conexão()
         {
             return conexao;
         }
+
     }
 }

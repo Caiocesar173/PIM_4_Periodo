@@ -62,6 +62,7 @@
     <Compile Include="Model\Atendimento.cs" />
     <Compile Include="Model\Combustivel.cs" />
     <Compile Include="Model\Departamento.cs" />
+    <Compile Include="Model\Destino.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Manutenção.cs" />
     <Compile Include="Model\Multa.cs" />
