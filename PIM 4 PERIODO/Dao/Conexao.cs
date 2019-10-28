@@ -12,33 +12,53 @@ namespace PIM_4_PERIODO.Dao
 {
     class Conexao
     {
-        private MySqlConnection conexao = new MySqlConnection("server =  127.0.0.1; port = 3306; User Id = root; database = pim_4_periodo; password = ");
+        private MySqlConnection conexao = new MySqlConnection("server = remotemysql.com; port = 3306; User Id = VJ81Ningl1; database = VJ81Ningl1; password = dRhi22fRBt");
 
 
         public void Conectar()
         {
-            if (conexao.State == System.Data.ConnectionState.Closed)
+            try
             {
-                conexao.Open();
+                if (conexao.State == System.Data.ConnectionState.Closed)
+                {
+                    conexao.Open();
+                }
+            }
+            catch (MySqlException Exception)
+            {
+
             }
         }
         public void Desconectar()
         {
-            if (conexao.State == System.Data.ConnectionState.Open)
+            try
             {
-                conexao.Close();
+                if (conexao.State == System.Data.ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+            catch (MySqlException Exception)
+            {
+
             }
         }
         public bool Checkconection()
         {
-            if (conexao.State == ConnectionState.Open)
+            bool retorno = false;
+            try
             {
-                return true;
+                if (conexao.State == ConnectionState.Open)
+                {
+                    retorno = true;
+                }
             }
-            else
+            catch (MySqlException Exception)
             {
-                return false;
+
             }
+
+            return retorno;
         }
         public MySqlConnection Pega_Conexão()
         {

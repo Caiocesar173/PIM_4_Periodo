@@ -14,6 +14,7 @@ namespace PIM_4_PERIODO.Model
         private DateTime data;
         private int id_Abastecimento;
         private int id_Posto;
+        private int id_Veiculo;
         private float Km_Abastecimento;
         private float valor;
         private float litros;
@@ -21,6 +22,7 @@ namespace PIM_4_PERIODO.Model
 
         public DateTime Data { get => data; set => data = value; }
         public int ID_Posto { get => id_Posto; set => id_Posto = value; }
+        public int ID_Veiculo { get => id_Veiculo; set => id_Veiculo = value; }
         public int ID_bastecimento { get => id_Abastecimento; set => id_Abastecimento = value; }
         public float Valor { get => valor; set => valor = value; }
         public float Litros { get => litros; set => litros = value; }
