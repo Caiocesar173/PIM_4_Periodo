@@ -125,11 +125,6 @@ namespace PIM_4_PERIODO.Dao
         }
         public DataTable Atendimento(Atendimento Atendimento)
         {
-            /*
-                 ID_VEICULO int not null, 
-		    ID_MOTORISTA int not null,
-		    ID_DESTINO int not null,  
-             */
             try
             {
                 if (!Conexão.Checkconection())
@@ -141,14 +136,11 @@ namespace PIM_4_PERIODO.Dao
                 {
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
-                    MySqlCommand command = new MySqlCommand("SELECT * FROM ABASTECIMENTO WHERE KM_NO_ABASTECIMENTO = @Km_Abastecimento AND LITROS = @Litros AND VALOR = @Valor AND ID_POSTO = @ID_Posto AND ID_VEICULO = @ID_Veiculo AND DATA = @Data;", Conexão.Pega_Conexão());
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM ATENDIMENTO WHERE ID_VEICULO = @ID_Veiculo AND ID_MOTORISTA = @ID_Motorista AND ID_DESTINO = @ID_Destino ;", Conexão.Pega_Conexão());
 
-                    command.Parameters.Add("@Km_Abastecimento", MySqlDbType.Float).Value = Abastecimento.Km_No_Abastecimento;
-                    command.Parameters.Add("@Litros", MySqlDbType.Float).Value = Abastecimento.Litros;
-                    command.Parameters.Add("@Valor", MySqlDbType.Float).Value = Abastecimento.Valor;
-                    command.Parameters.Add("@ID_Posto", MySqlDbType.Int32).Value = Abastecimento.ID_Posto;
-                    command.Parameters.Add("@ID_Veiculo", MySqlDbType.Int32).Value = Abastecimento.ID_Veiculo;
-                    command.Parameters.Add("@Data", MySqlDbType.Date).Value = Abastecimento.Data;
+                    command.Parameters.Add("@ID_Veiculo", MySqlDbType.Int32).Value = Atendimento.ID_Veiculo;
+                    command.Parameters.Add("@ID_Motorista", MySqlDbType.Int32).Value = Atendimento.ID_Motorista;
+                    command.Parameters.Add("@ID_Destino", MySqlDbType.Int32).Value = Atendimento.ID_Destino;
                     adapter.SelectCommand = command;
                     adapter.Fill(TableAbastecimento);
 
