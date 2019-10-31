@@ -5,14 +5,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
+using System.Windows.Forms;
 
 namespace PIM_4_PERIODO.Dao
 {
     class Conexao
     {
-        private MySqlConnection conexao = new MySqlConnection("server = remotemysql.com; port = 3306; User Id = VJ81Ningl1; database = VJ81Ningl1; password = dRhi22fRBt");
+        private MySqlConnection conexao = new MySqlConnection("server = remotemysql.com; port = 3306; User Id = wBe1hJH8iI; database = wBe1hJH8iI; password = se6xCssu22");
 
 
         public void Conectar()
@@ -26,7 +25,7 @@ namespace PIM_4_PERIODO.Dao
             }
             catch (MySqlException Exception)
             {
-
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
             }
         }
         public void Desconectar()
@@ -40,7 +39,7 @@ namespace PIM_4_PERIODO.Dao
             }
             catch (MySqlException Exception)
             {
-
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
             }
         }
         public bool Checkconection()
@@ -55,7 +54,7 @@ namespace PIM_4_PERIODO.Dao
             }
             catch (MySqlException Exception)
             {
-
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
             }
 
             return retorno;
