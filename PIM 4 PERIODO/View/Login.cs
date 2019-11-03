@@ -15,6 +15,9 @@ namespace PIM_4_PERIODO
 {
     public partial class Login : Form
     {
+        public object Usuario { get; internal set; }
+        public object Senha { get; internal set; }
+
         public Login()
         {
             InitializeComponent();
