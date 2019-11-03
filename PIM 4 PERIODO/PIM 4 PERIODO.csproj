@@ -52,6 +52,18 @@
     <Compile Include="Dao\Consultar.cs" />
     <Compile Include="Dao\Excluir.cs" />
     <Compile Include="Dao\Incluir.cs" />
+    <Compile Include="View\AlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AlterarSenha.Designer.cs">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConsultaQuantidadeVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConsultaQuantidadeVeiculo.Designer.cs">
+      <DependentUpon>ConsultaQuantidadeVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     <Compile Include="Model\Veiculo.cs" />
     <Compile Include="Principal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Mensagem_aviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Mensagem_aviso.Designer.cs">
+      <DependentUpon>Mensagem_aviso.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +105,36 @@
     <Compile Include="View\Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Senha.Designer.cs">
+      <DependentUpon>Senha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tela Motorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Motorista.Designer.cs">
+      <DependentUpon>Tela Motorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UsuarioChefe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UsuarioChefe.Designer.cs">
+      <DependentUpon>UsuarioChefe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UsuarioChefe_InserirManutenção.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UsuarioChefe_InserirManutenção.Designer.cs">
+      <DependentUpon>UsuarioChefe_InserirManutenção.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\AlterarSenha.resx">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConsultaQuantidadeVeiculo.resx">
+      <DependentUpon>ConsultaQuantidadeVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,11 +147,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Mensagem_aviso.resx">
+      <DependentUpon>Mensagem_aviso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Senha.resx">
+      <DependentUpon>Senha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela Motorista.resx">
+      <DependentUpon>Tela Motorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UsuarioChefe.resx">
+      <DependentUpon>UsuarioChefe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UsuarioChefe_InserirManutenção.resx">
+      <DependentUpon>UsuarioChefe_InserirManutenção.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
