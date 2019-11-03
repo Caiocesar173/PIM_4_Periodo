@@ -44,5 +44,29 @@ namespace PIM_4_PERIODO
                  prin.Show();
             }
         }
+
+        private void TxtLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuButton1_Click(object sender, EventArgs e)
+        {
+            //Aqui vamos pegar os dados do texto 
+            Model.Login person = new Model.Login();
+            person.Usuario = (txtLogin.Text);
+            person.Senha = (txtSenha.Text);
+            //Aqui vai aparecer a tela principal
+            if (txtLogin.Text == "" && txtSenha.Text == "")
+            {
+                MessageBox.Show("Por favor Digite seus dados");
+            }
+            else
+            {
+                View.Principal prin = new View.Principal();
+                this.Hide();
+                prin.Show();
+            }
+        }
     }
 }
