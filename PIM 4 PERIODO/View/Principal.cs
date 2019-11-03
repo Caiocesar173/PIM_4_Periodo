@@ -29,5 +29,22 @@ namespace PIM_4_PERIODO.View
             this.Hide();
             regis.Show();
         }
+
+        private void BunifuButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuButton4_Click(object sender, EventArgs e)
+        {
+            Registro regis = new Registro();
+            this.Hide();
+            regis.Show();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

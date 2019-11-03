@@ -13,9 +13,9 @@ using PIM_4_PERIODO.View;
 
 namespace PIM_4_PERIODO
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -31,10 +31,10 @@ namespace PIM_4_PERIODO
         {
             //Aqui vamos pegar os dados do texto 
             Model.Login person = new Model.Login();
-            person.Usuario = (txtLogin.Text);
+            person.Usuario = (TxtLogin.Text);
             person.Senha = (txtSenha.Text);
             //Aqui vai aparecer a tela principal
-            if (txtLogin.Text == "" && txtSenha.Text == "")
+            if (TxtLogin.Text == "" && txtSenha.Text == "")
             {
                 MessageBox.Show("Por favor Digite seus dados");
             }
@@ -54,10 +54,10 @@ namespace PIM_4_PERIODO
         {
             //Aqui vamos pegar os dados do texto 
             Model.Login person = new Model.Login();
-            person.Usuario = (txtLogin.Text);
+            person.Usuario = (TxtLogin.Text);
             person.Senha = (txtSenha.Text);
             //Aqui vai aparecer a tela principal
-            if (txtLogin.Text == "" && txtSenha.Text == "")
+            if (TxtLogin.Text == "" && txtSenha.Text == "")
             {
                 MessageBox.Show("Por favor Digite seus dados");
             }
@@ -67,6 +67,16 @@ namespace PIM_4_PERIODO
                 this.Hide();
                 prin.Show();
             }
+        }
+
+        private void TxtLogin_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
