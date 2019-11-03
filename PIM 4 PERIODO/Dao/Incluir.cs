@@ -33,11 +33,6 @@ namespace PIM_4_PERIODO.Dao
         private bool Destino_Incluido = false;
 
         
-
-
-
-
-
         public bool Abastecimento(Abastecimento Abastecimento)
         {
 
@@ -966,6 +961,5 @@ namespace PIM_4_PERIODO.Dao
 
             return Destino_Incluido;
         }
-
     }
 }
