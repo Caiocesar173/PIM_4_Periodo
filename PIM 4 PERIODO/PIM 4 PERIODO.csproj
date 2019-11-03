@@ -123,6 +123,12 @@
     <Compile Include="View\Tela Motorista.Designer.cs">
       <DependentUpon>Tela Motorista.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Tela_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela_Consulta.Designer.cs">
+      <DependentUpon>Tela_Consulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Tela_ConsultarManutencao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Motorista.resx">
       <DependentUpon>Tela Motorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela_Consulta.resx">
+      <DependentUpon>Tela_Consulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela_ConsultarManutencao.resx">
       <DependentUpon>Tela_ConsultarManutencao.cs</DependentUpon>
