@@ -33,40 +33,43 @@
             this.button3 = new System.Windows.Forms.Button();
             this.BtnCadastro = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button
             // 
-            this.button.Location = new System.Drawing.Point(12, 121);
+            this.button.Location = new System.Drawing.Point(12, 35);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(81, 35);
+            this.button.Size = new System.Drawing.Size(127, 70);
             this.button.TabIndex = 0;
             this.button.Text = "Home";
             this.button.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 177);
+            this.button2.Location = new System.Drawing.Point(12, 111);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 37);
+            this.button2.Size = new System.Drawing.Size(127, 80);
             this.button2.TabIndex = 1;
             this.button2.Text = "Solicitação";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 233);
+            this.button3.Location = new System.Drawing.Point(12, 197);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(81, 38);
+            this.button3.Size = new System.Drawing.Size(127, 73);
             this.button3.TabIndex = 2;
             this.button3.Text = "Atendimento";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // BtnCadastro
             // 
-            this.BtnCadastro.Location = new System.Drawing.Point(12, 291);
+            this.BtnCadastro.Location = new System.Drawing.Point(12, 276);
             this.BtnCadastro.Name = "BtnCadastro";
-            this.BtnCadastro.Size = new System.Drawing.Size(81, 35);
+            this.BtnCadastro.Size = new System.Drawing.Size(127, 69);
             this.BtnCadastro.TabIndex = 3;
             this.BtnCadastro.Text = "Cadastro";
             this.BtnCadastro.UseVisualStyleBackColor = true;
@@ -74,18 +77,29 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 342);
+            this.button1.Location = new System.Drawing.Point(12, 351);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 35);
+            this.button1.Size = new System.Drawing.Size(127, 68);
             this.button1.TabIndex = 4;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PIM_4_PERIODO.Properties.Resources.caminhoes_volks_2;
+            this.pictureBox1.Location = new System.Drawing.Point(145, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(602, 384);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnCadastro);
             this.Controls.Add(this.button3);
@@ -93,6 +107,7 @@
             this.Controls.Add(this.button);
             this.Name = "Principal";
             this.Text = "Fuzzi";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -104,5 +119,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button BtnCadastro;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

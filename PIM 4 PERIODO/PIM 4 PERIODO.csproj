@@ -129,6 +129,12 @@
     <Compile Include="View\UsuarioChefe_InserirManutenção.Designer.cs">
       <DependentUpon>UsuarioChefe_InserirManutenção.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Usuario_chefe_Alterar_veiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Usuario_chefe_Alterar_veiculo.Designer.cs">
+      <DependentUpon>Usuario_chefe_Alterar_veiculo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\AlterarSenha.resx">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +152,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\Mensagem_aviso.resx">
       <DependentUpon>Mensagem_aviso.cs</DependentUpon>
@@ -168,6 +175,9 @@
     <EmbeddedResource Include="View\UsuarioChefe_InserirManutenção.resx">
       <DependentUpon>UsuarioChefe_InserirManutenção.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Usuario_chefe_Alterar_veiculo.resx">
+      <DependentUpon>Usuario_chefe_Alterar_veiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,6 +194,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Dao\Script Criação do Banco .txt" />
+    <None Include="Resources\caminhoes-volks-2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

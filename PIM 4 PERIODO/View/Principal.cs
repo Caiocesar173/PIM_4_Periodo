@@ -29,5 +29,10 @@ namespace PIM_4_PERIODO.View
             this.Hide();
             regis.Show();
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
