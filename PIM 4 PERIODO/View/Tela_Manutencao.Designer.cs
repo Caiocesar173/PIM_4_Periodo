@@ -280,6 +280,7 @@
             this.Controls.Add(this.lblAlterar_Manutencao);
             this.Name = "Tela_Manutencao";
             this.Text = "Tela_Manutencao";
+            this.Load += new System.EventHandler(this.Tela_Manutencao_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
