@@ -70,6 +70,12 @@
     <Compile Include="View\Historico_manutencao.Designer.cs">
       <DependentUpon>Historico_manutencao.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Inserir_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Inserir_Usuario.Designer.cs">
+      <DependentUpon>Inserir_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Historico_manutencao.resx">
       <DependentUpon>Historico_manutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Inserir_Usuario.resx">
+      <DependentUpon>Inserir_Usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
