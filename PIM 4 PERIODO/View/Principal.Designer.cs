@@ -101,7 +101,7 @@
             this.BtnHome.IdleIconLeftImage = null;
             this.BtnHome.IdleIconRightImage = null;
             this.BtnHome.IndicateFocus = false;
-            this.BtnHome.Location = new System.Drawing.Point(7, 181);
+            this.BtnHome.Location = new System.Drawing.Point(7, 216);
             this.BtnHome.Name = "BtnHome";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -121,7 +121,7 @@
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.BtnHome.OnPressedState = stateProperties2;
-            this.BtnHome.Size = new System.Drawing.Size(210, 45);
+            this.BtnHome.Size = new System.Drawing.Size(210, 40);
             this.BtnHome.TabIndex = 5;
             this.BtnHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnHome.TextMarginLeft = 0;
@@ -165,7 +165,7 @@
             this.BtnSolicitacao.IdleIconLeftImage = null;
             this.BtnSolicitacao.IdleIconRightImage = null;
             this.BtnSolicitacao.IndicateFocus = false;
-            this.BtnSolicitacao.Location = new System.Drawing.Point(7, 233);
+            this.BtnSolicitacao.Location = new System.Drawing.Point(7, 268);
             this.BtnSolicitacao.Name = "BtnSolicitacao";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 3;
@@ -185,7 +185,7 @@
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
             this.BtnSolicitacao.OnPressedState = stateProperties4;
-            this.BtnSolicitacao.Size = new System.Drawing.Size(210, 45);
+            this.BtnSolicitacao.Size = new System.Drawing.Size(210, 40);
             this.BtnSolicitacao.TabIndex = 6;
             this.BtnSolicitacao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnSolicitacao.TextMarginLeft = 0;
@@ -228,7 +228,7 @@
             this.BtnAtendimento.IdleIconLeftImage = null;
             this.BtnAtendimento.IdleIconRightImage = null;
             this.BtnAtendimento.IndicateFocus = false;
-            this.BtnAtendimento.Location = new System.Drawing.Point(7, 285);
+            this.BtnAtendimento.Location = new System.Drawing.Point(7, 320);
             this.BtnAtendimento.Name = "BtnAtendimento";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties5.BorderRadius = 3;
@@ -248,7 +248,7 @@
             stateProperties6.IconLeftImage = null;
             stateProperties6.IconRightImage = null;
             this.BtnAtendimento.OnPressedState = stateProperties6;
-            this.BtnAtendimento.Size = new System.Drawing.Size(210, 45);
+            this.BtnAtendimento.Size = new System.Drawing.Size(210, 40);
             this.BtnAtendimento.TabIndex = 7;
             this.BtnAtendimento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnAtendimento.TextMarginLeft = 0;
@@ -291,7 +291,7 @@
             this.BtnCadastro.IdleIconLeftImage = null;
             this.BtnCadastro.IdleIconRightImage = null;
             this.BtnCadastro.IndicateFocus = false;
-            this.BtnCadastro.Location = new System.Drawing.Point(7, 337);
+            this.BtnCadastro.Location = new System.Drawing.Point(7, 372);
             this.BtnCadastro.Name = "BtnCadastro";
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties7.BorderRadius = 3;
@@ -311,7 +311,7 @@
             stateProperties8.IconLeftImage = null;
             stateProperties8.IconRightImage = null;
             this.BtnCadastro.OnPressedState = stateProperties8;
-            this.BtnCadastro.Size = new System.Drawing.Size(210, 45);
+            this.BtnCadastro.Size = new System.Drawing.Size(210, 40);
             this.BtnCadastro.TabIndex = 8;
             this.BtnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnCadastro.TextMarginLeft = 0;
@@ -383,7 +383,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(150, 515);
+            this.bunifuButton1.Location = new System.Drawing.Point(7, 521);
             this.bunifuButton1.Name = "bunifuButton1";
             stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties13.BorderRadius = 3;
@@ -447,7 +447,7 @@
             this.BtnRelatorios.IdleIconLeftImage = null;
             this.BtnRelatorios.IdleIconRightImage = null;
             this.BtnRelatorios.IndicateFocus = false;
-            this.BtnRelatorios.Location = new System.Drawing.Point(7, 388);
+            this.BtnRelatorios.Location = new System.Drawing.Point(7, 423);
             this.BtnRelatorios.Name = "BtnRelatorios";
             stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties11.BorderRadius = 3;
@@ -467,7 +467,7 @@
             stateProperties12.IconLeftImage = null;
             stateProperties12.IconRightImage = null;
             this.BtnRelatorios.OnPressedState = stateProperties12;
-            this.BtnRelatorios.Size = new System.Drawing.Size(210, 45);
+            this.BtnRelatorios.Size = new System.Drawing.Size(210, 40);
             this.BtnRelatorios.TabIndex = 10;
             this.BtnRelatorios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnRelatorios.TextMarginLeft = 0;
@@ -510,7 +510,7 @@
             this.BtnSAC.IdleIconLeftImage = null;
             this.BtnSAC.IdleIconRightImage = null;
             this.BtnSAC.IndicateFocus = false;
-            this.BtnSAC.Location = new System.Drawing.Point(7, 439);
+            this.BtnSAC.Location = new System.Drawing.Point(7, 474);
             this.BtnSAC.Name = "BtnSAC";
             stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties9.BorderRadius = 3;
@@ -530,7 +530,7 @@
             stateProperties10.IconLeftImage = null;
             stateProperties10.IconRightImage = null;
             this.BtnSAC.OnPressedState = stateProperties10;
-            this.BtnSAC.Size = new System.Drawing.Size(210, 45);
+            this.BtnSAC.Size = new System.Drawing.Size(210, 40);
             this.BtnSAC.TabIndex = 11;
             this.BtnSAC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnSAC.TextMarginLeft = 0;
