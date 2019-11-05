@@ -46,5 +46,10 @@ namespace PIM_4_PERIODO.View
         {
 
         }
+
+        private void BunifuButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
