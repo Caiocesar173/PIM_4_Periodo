@@ -130,6 +130,7 @@
             this.bntCadastre.TabIndex = 11;
             this.bntCadastre.Text = "Cadastre";
             this.bntCadastre.UseVisualStyleBackColor = true;
+            this.bntCadastre.Click += new System.EventHandler(this.bntCadastre_Click);
             // 
             // btnVoltar
             // 
