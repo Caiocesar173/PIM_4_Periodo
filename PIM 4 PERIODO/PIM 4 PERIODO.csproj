@@ -35,25 +35,28 @@
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
     <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -104,6 +107,18 @@
     <Compile Include="View\AlterarSenha.Designer.cs">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Cadastro\AdicionarUsuarioSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\AdicionarUsuarioSistema.Designer.cs">
+      <DependentUpon>AdicionarUsuarioSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\CadastroMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\CadastroMotorista.Designer.cs">
+      <DependentUpon>CadastroMotorista.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ConsultaQuantidadeVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,23 +148,23 @@
     <Compile Include="Model\Veiculo.cs" />
     <Compile Include="Principal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Manutenção\HistoricoManutenção.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Manutenção\HistoricoManutenção.Designer.cs">
+      <DependentUpon>HistoricoManutenção.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Mensagem_aviso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Mensagem_aviso.Designer.cs">
       <DependentUpon>Mensagem_aviso.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Principal.cs">
+    <Compile Include="View\Posto de Abastecimento\CadastrarPosto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Registro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Registro.Designer.cs">
-      <DependentUpon>Registro.cs</DependentUpon>
+    <Compile Include="View\Posto de Abastecimento\CadastrarPosto.Designer.cs">
+      <DependentUpon>CadastrarPosto.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Senha.cs">
       <SubType>Form</SubType>
@@ -168,6 +183,12 @@
     </Compile>
     <Compile Include="View\Tela Motorista.Designer.cs">
       <DependentUpon>Tela Motorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tela Oficina\CadastrarOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Oficina\CadastrarOficina.Designer.cs">
+      <DependentUpon>CadastrarOficina.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Tela Principal\Cadastro\Usuarios\Tela_Cadastro_Usuario.cs">
       <SubType>Form</SubType>
@@ -223,17 +244,17 @@
     <Compile Include="View\UsuarioChefe.Designer.cs">
       <DependentUpon>UsuarioChefe.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UsuarioChefe_InserirManutenção.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\UsuarioChefe_InserirManutenção.Designer.cs">
-      <DependentUpon>UsuarioChefe_InserirManutenção.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Model\Custom_Resize.resx">
       <DependentUpon>Custom_Resize.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\AlterarSenha.resx">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\AdicionarUsuarioSistema.resx">
+      <DependentUpon>AdicionarUsuarioSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\CadastroMotorista.resx">
+      <DependentUpon>CadastroMotorista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ConsultaQuantidadeVeiculo.resx">
       <DependentUpon>ConsultaQuantidadeVeiculo.cs</DependentUpon>
@@ -251,14 +272,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Manutenção\HistoricoManutenção.resx">
+      <DependentUpon>HistoricoManutenção.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Mensagem_aviso.resx">
       <DependentUpon>Mensagem_aviso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Registro.resx">
-      <DependentUpon>Registro.cs</DependentUpon>
+    <EmbeddedResource Include="View\Posto de Abastecimento\CadastrarPosto.resx">
+      <DependentUpon>CadastrarPosto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Senha.resx">
       <DependentUpon>Senha.cs</DependentUpon>
@@ -268,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Motorista.resx">
       <DependentUpon>Tela Motorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela Oficina\CadastrarOficina.resx">
+      <DependentUpon>CadastrarOficina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Principal\Cadastro\Usuarios\Tela_Cadastro_Usuario.resx">
       <DependentUpon>Tela_Cadastro_Usuario.cs</DependentUpon>
@@ -295,9 +319,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UsuarioChefe.resx">
       <DependentUpon>UsuarioChefe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\UsuarioChefe_InserirManutenção.resx">
-      <DependentUpon>UsuarioChefe_InserirManutenção.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -31,7 +31,6 @@
             Bunifu.Framework.UI.BunifuFlatButton btn_cadastrar;
             this.Label_Matricula = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txt_Nome = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            //this.customBackground1 = new PIM_4_PERIODO.Model.CustomBackground();
             this.comboBox_Departamento = new System.Windows.Forms.ComboBox();
             this.comboBox_CategoriaCnh = new System.Windows.Forms.ComboBox();
             this.Label_Username = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -44,8 +43,21 @@
             this.txt_Celular = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_TelefoneFixo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_Cpf = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bntCadastrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             btn_cadastrar = new Bunifu.Framework.UI.BunifuFlatButton();
-            //this.customBackground1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_cadastrar
@@ -121,33 +133,6 @@
             this.txt_Nome.TabIndex = 15;
             this.txt_Nome.Text = "Nome";
             this.txt_Nome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            /*
-            // 
-            // customBackground1
-            // 
-            this.customBackground1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            this.customBackground1.Controls.Add(this.comboBox_Departamento);
-            this.customBackground1.Controls.Add(this.comboBox_CategoriaCnh);
-            this.customBackground1.Controls.Add(this.Label_Username);
-            this.customBackground1.Controls.Add(this.Label_Senha);
-            this.customBackground1.Controls.Add(this.Label_GUID);
-            this.customBackground1.Controls.Add(this.txt_DatadeAdimissao);
-            this.customBackground1.Controls.Add(this.txt_Validade);
-            this.customBackground1.Controls.Add(this.txt_CNH);
-            this.customBackground1.Controls.Add(this.txt_Email);
-            this.customBackground1.Controls.Add(this.txt_Celular);
-            this.customBackground1.Controls.Add(this.txt_TelefoneFixo);
-            this.customBackground1.Controls.Add(this.txt_Cpf);
-            this.customBackground1.Controls.Add(this.Label_Matricula);
-            this.customBackground1.Controls.Add(btn_cadastrar);
-            this.customBackground1.Controls.Add(this.txt_Nome);
-            this.customBackground1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customBackground1.Location = new System.Drawing.Point(0, 0);
-            this.customBackground1.Margin = new System.Windows.Forms.Padding(10);
-            this.customBackground1.Name = "customBackground1";
-            this.customBackground1.Size = new System.Drawing.Size(548, 564);
-            this.customBackground1.TabIndex = 18;
-            */
             // 
             // comboBox_Departamento
             // 
@@ -373,18 +358,146 @@
             this.txt_Cpf.Text = "Cpf";
             this.txt_Cpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // bntCadastrar
+            // 
+            this.bntCadastrar.Location = new System.Drawing.Point(56, 442);
+            this.bntCadastrar.Name = "bntCadastrar";
+            this.bntCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.bntCadastrar.TabIndex = 0;
+            this.bntCadastrar.Text = "Cadastrar";
+            this.bntCadastrar.UseVisualStyleBackColor = true;
+            this.bntCadastrar.Click += new System.EventHandler(this.bntCadastrar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nome Completo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(53, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(53, 201);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(53, 263);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "label4";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(53, 307);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(53, 367);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(148, 37);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(208, 25);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Faça o seu cadastro";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(94, 146);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(202, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(94, 96);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(202, 20);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(94, 256);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(202, 20);
+            this.textBox3.TabIndex = 10;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(94, 307);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(202, 20);
+            this.textBox4.TabIndex = 11;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(94, 367);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(202, 20);
+            this.textBox5.TabIndex = 12;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(94, 201);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(202, 20);
+            this.textBox6.TabIndex = 13;
+            // 
             // Tela_Cadastro_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 564);
-           // this.Controls.Add(this.customBackground1);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bntCadastrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tela_Cadastro_Usuario";
             this.Text = "Tela_Cadatro_Usuario";
-           // this.customBackground1.ResumeLayout(false);
-          //  this.customBackground1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -405,5 +518,19 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Celular;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_TelefoneFixo;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Cpf;
+        private System.Windows.Forms.Button bntCadastrar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }

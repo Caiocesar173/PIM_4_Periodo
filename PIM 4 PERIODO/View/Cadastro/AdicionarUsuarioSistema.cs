@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View
+namespace PIM_4_PERIODO.View.Cadastro
 {
-    public partial class UsuarioChefe_InserirManutenção : Form
+    public partial class AdicionarUsuarioSistema : Form
     {
-        public UsuarioChefe_InserirManutenção()
+        public AdicionarUsuarioSistema()
         {
             InitializeComponent();
         }
