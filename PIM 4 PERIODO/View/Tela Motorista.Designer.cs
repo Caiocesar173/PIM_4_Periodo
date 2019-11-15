@@ -35,8 +35,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -95,38 +95,37 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(424, 444);
+            this.button7.Location = new System.Drawing.Point(424, 423);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(84, 27);
             this.button7.TabIndex = 6;
             this.button7.Text = "Novo";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(12, 221);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(489, 217);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(415, 172);
+            this.button8.Location = new System.Drawing.Point(424, 160);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 8;
             this.button8.Text = "Consultar";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 201);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(490, 204);
+            this.textBox1.TabIndex = 9;
+            // 
             // Tela_Motorista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 483);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -137,6 +136,7 @@
             this.Name = "Tela_Motorista";
             this.Text = "Tela_Motorista";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -149,7 +149,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

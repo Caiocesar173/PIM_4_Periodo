@@ -118,7 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="caminhoes-volks-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\caminhoes-volks-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="atendimento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\__Icones Menu__\atendimento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\__Icones Menu__\cadastro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caixa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Home\caixa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caminhão" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Home\caminhão.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faixa_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Login\faixa login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faixa_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Home\faixa menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\__Icones Menu__\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone_botão_entrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Login\icone botão entrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone_calendario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Home\icone calendario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone_mapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Home\icone mapa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_fuzzi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Home\logo fuzzi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_fuzzi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\Login\logo fuzzi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="relatorios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\__Icones Menu__\relatorios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\__Icones Menu__\sac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="solicitação" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\__Icones Menu__\solicitação.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
