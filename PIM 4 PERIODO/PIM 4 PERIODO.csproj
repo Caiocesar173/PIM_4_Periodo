@@ -107,6 +107,12 @@
     <Compile Include="View\AlterarSenha.Designer.cs">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\CadastroVeiculo\Cadastro_Veiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CadastroVeiculo\Cadastro_Veiculo.Designer.cs">
+      <DependentUpon>Cadastro_Veiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cadastro\AdicionarUsuarioSistema.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,12 @@
     </Compile>
     <Compile Include="View\Senha.Designer.cs">
       <DependentUpon>Senha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tela de Parceiro\telaParceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela de Parceiro\telaParceiro.Designer.cs">
+      <DependentUpon>telaParceiro.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Tela Login\Tela Login.cs">
       <SubType>Form</SubType>
@@ -238,6 +250,12 @@
     <Compile Include="View\Tela Principal\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Tela Rastreio\Tela_Rastreio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Rastreio\Tela_Rastreio.Designer.cs">
+      <DependentUpon>Tela_Rastreio.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UsuarioChefe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\AlterarSenha.resx">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CadastroVeiculo\Cadastro_Veiculo.resx">
+      <DependentUpon>Cadastro_Veiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cadastro\AdicionarUsuarioSistema.resx">
       <DependentUpon>AdicionarUsuarioSistema.cs</DependentUpon>
@@ -283,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Senha.resx">
       <DependentUpon>Senha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela de Parceiro\telaParceiro.resx">
+      <DependentUpon>telaParceiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Login\Tela Login.resx">
       <DependentUpon>Tela Login.cs</DependentUpon>

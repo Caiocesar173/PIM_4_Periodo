@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View
+namespace PIM_4_PERIODO.View.CadastroVeiculo
 {
-    public partial class Tela_Motorista : Form
+    public partial class Cadastro_Veiculo : Form
     {
-        public Tela_Motorista()
+        public Cadastro_Veiculo()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            
         }
     }
 }

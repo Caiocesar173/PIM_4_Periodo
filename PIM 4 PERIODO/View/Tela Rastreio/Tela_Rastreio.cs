@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View
+namespace PIM_4_PERIODO.View.Tela_Rastreio
 {
-    public partial class Tela_Motorista : Form
+    public partial class Tela_Rastreio : Form
     {
-        public Tela_Motorista()
+        public Tela_Rastreio()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            
         }
     }
 }
