@@ -160,6 +160,12 @@
     <Compile Include="View\Mensagem_aviso.Designer.cs">
       <DependentUpon>Mensagem_aviso.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Multas\Multas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Multas\Multas.Designer.cs">
+      <DependentUpon>Multas.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Posto de Abastecimento\CadastrarPosto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Mensagem_aviso.resx">
       <DependentUpon>Mensagem_aviso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Multas\Multas.resx">
+      <DependentUpon>Multas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Posto de Abastecimento\CadastrarPosto.resx">
       <DependentUpon>CadastrarPosto.cs</DependentUpon>
