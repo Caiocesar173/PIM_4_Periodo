@@ -19,7 +19,7 @@ namespace PIM_4_PERIODO.View.Cadastro
 
         private void bntCadastre_Click(object sender, EventArgs e)
         {
-            //
+
         }
     }
 }
