@@ -44,7 +44,7 @@ namespace PIM_4_PERIODO.Dao
                 {
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
-                    MySqlCommand command = new MySqlCommand("SELECT * FROM USUARIO WHERE USERNAME = @usuario AND SENHA = @senha", Conexão.Pega_Conexão());
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM USUARIO WHERE USERNAME = @usuario OR SENHA = @senha", Conexão.Pega_Conexão());
 
                     command.Parameters.Add("@usuario", MySqlDbType.VarChar).Value = Login.Usuario;
                     command.Parameters.Add("@senha", MySqlDbType.VarChar).Value = Login.Senha;
@@ -79,7 +79,7 @@ namespace PIM_4_PERIODO.Dao
                 if (Conexão.Checkconection())
                 {
 
-                    string ConsultaAbastecimento = "SELECT * FROM ABASTECIMENTO WHERE KM_NO_ABASTECIMENTO = @KM_NO_ABASTECIMENTO AND LITROS = @LITROS AND VALOR = @VALOR AND ID_POSTO = @ID_POSTO AND ID_VEICULO = @ID_VEICULO AND DATAS = @DATAS;";
+                    string ConsultaAbastecimento = "SELECT * FROM ABASTECIMENTO WHERE KM_NO_ABASTECIMENTO = @KM_NO_ABASTECIMENTO OR LITROS = @LITROS OR VALOR = @VALOR OR ID_POSTO = @ID_POSTO OR ID_VEICULO = @ID_VEICULO OR DATAS = @DATAS;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -118,7 +118,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaAtendimento = "SELECT * FROM ATENDIMENTO WHERE ID_VEICULO = @ID_VEICULO AND ID_MOTORISTA = @ID_MOTORISTA AND ID_DESTINO = @ID_DESTINO;";
+                    string ConsultaAtendimento = "SELECT * FROM ATENDIMENTO WHERE ID_VEICULO = @ID_VEICULO OR ID_MOTORISTA = @ID_MOTORISTA OR ID_DESTINO = @ID_DESTINO;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -152,7 +152,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaCombustivel = "SELECT * FROM COMBUSTIVEL WHERE NOME = @NOME AND VALOR = @VALOR  AND DATAS = @DATAS);";
+                    string ConsultaCombustivel = "SELECT * FROM COMBUSTIVEL WHERE NOME = @NOME OR VALOR = @VALOR  OR DATAS = @DATAS);";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -185,7 +185,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaDepartamento = "SELECT * FROM DEPARTAMENTO WHERE NIVELACESSO = @NIVELACESSO AND NOME = @NOME;";
+                    string ConsultaDepartamento = "SELECT * FROM DEPARTAMENTO WHERE NIVELACESSO = @NIVELACESSO OR NOME = @NOME;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -217,7 +217,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaDestino = "SELECT * FROM DESTINO WHERE ID_VEICULO = @ID_VEICULO AND ID_MOTORISTA = @ID_MOTORISTA AND LOCAL_CHEGADA = @LOCAL_CHEGADA AND LOCAL_SAIDA = @LOCAL_SAIDA AND DATAS_CHEGADA = @DATAS_CHEGADA AND DATAS_SAIDA = @DATAS_SAIDA;";
+                    string ConsultaDestino = "SELECT * FROM DESTINO WHERE ID_VEICULO = @ID_VEICULO OR ID_MOTORISTA = @ID_MOTORISTA OR LOCAL_CHEGADA = @LOCAL_CHEGADA OR LOCAL_SAIDA = @LOCAL_SAIDA OR DATAS_CHEGADA = @DATAS_CHEGADA OR DATAS_SAIDA = @DATAS_SAIDA;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -252,7 +252,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaManutenção = "SELECT * FROM MANUTENCAO WHERE NUM_OS = @NUM_OS AND ID_OFICINA = @ID_OFICINA AND DATAS_ENTRADA = @DATAS_ENTRADA AND DATAS_SAIDA = @DATAS_SAIDA AND MOTIVO = @MOTIVO AND VALOR = @VALOR AND ID_VEICULO = @ID_VEICULO;";
+                    string ConsultaManutenção = "SELECT * FROM MANUTENCAO WHERE NUM_OS = @NUM_OS OR ID_OFICINA = @ID_OFICINA OR DATAS_ENTRADA = @DATAS_ENTRADA OR DATAS_SAIDA = @DATAS_SAIDA OR MOTIVO = @MOTIVO OR VALOR = @VALOR OR ID_VEICULO = @ID_VEICULO;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -289,7 +289,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaMulta = "SELECT * FROM MULTA WHERE NUM_INFRACAO = @NUM_INFRACAO AND TIPO_INFRACAO = @TIPO_INFRACAO AND ID_MOTORISTA = @ID_MOTORISTA AND ID_VEICULO = @ID_VEICULO AND VALOR = @VALOR AND DATAS = @DATAS AND ENDERECO = @ENDERECO;";
+                    string ConsultaMulta = "SELECT * FROM MULTA WHERE NUM_INFRACAO = @NUM_INFRACAO OR TIPO_INFRACAO = @TIPO_INFRACAO OR ID_MOTORISTA = @ID_MOTORISTA OR ID_VEICULO = @ID_VEICULO OR VALOR = @VALOR OR DATAS = @DATAS OR ENDERECO = @ENDERECO;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -326,7 +326,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaNotificação = "SELECT * FROM NOTIFICACAO WHERE ID_DEPARTAMENTO = @ID_DEPARTAMENTO AND TITULO = @TITULO AND IMAGEM = @IMAGEM AND DESCRICAO = @DESCRICAO;";
+                    string ConsultaNotificação = "SELECT * FROM NOTIFICACAO WHERE ID_DEPARTAMENTO = @ID_DEPARTAMENTO OR TITULO = @TITULO OR IMAGEM = @IMAGEM OR DESCRICAO = @DESCRICAO;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -359,7 +359,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaOficina = "SELECT * FROM OFICINA WHERE NOME = @NOME AND CNPJ = @CNPJ AND RAZAO_SOCIAL = @RAZAO_SOCIAL AND TELEFONE = @TELEFONE AND CELULAR = @CELULAR AND SITE = @SITE AND ENDERECO = @ENDERECO;";
+                    string ConsultaOficina = "SELECT * FROM OFICINA WHERE NOME = @NOME OR CNPJ = @CNPJ OR RAZAO_SOCIAL = @RAZAO_SOCIAL OR TELEFONE = @TELEFONE OR CELULAR = @CELULAR OR SITE = @SITE OR ENDERECO = @ENDERECO;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -395,7 +395,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaOleo = "SELECT * FROM OLEO WHERE NOME = @NOME AND MARCA =  @MARCA AND LITROS = @LITROS;";
+                    string ConsultaOleo = "SELECT * FROM OLEO WHERE NOME = @NOME OR MARCA =  @MARCA OR LITROS = @LITROS;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -427,7 +427,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaPosto = "SELECT * FROM POSTO WHERE NOME = @NOME AND CNPJ = @CNPJ AND RAZAO_SOCIAL = @RAZAO_SOCIAL AND TELEFONE = @TELEFONE AND CELULAR = @CELULAR AND SITE = @SITE AND ENDERECO = @ENDERECO;";
+                    string ConsultaPosto = "SELECT * FROM POSTO WHERE NOME = @NOME OR CNPJ = @CNPJ OR RAZAO_SOCIAL = @RAZAO_SOCIAL OR TELEFONE = @TELEFONE OR CELULAR = @CELULAR OR SITE = @SITE OR ENDERECO = @ENDERECO;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -494,7 +494,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaUsuario = "SELECT * FROM USUARIO WHERE USERNAME = @USERNAME AND DEPARTAMENTO = @DEPARTAMENTO AND NOME =  @NOME, EMAIL = @EMAIL AND CPF = @CPF AND TELEFONE = @TELEFONE AND CELULAR = @CELULAR AND ENDERECO = @ENDERECO AND CNH = @CNH AND VALIDADE_CNH = @VALIDADE_CNH AND CATEGORIA_CNH = @CATEGORIA_CNH AND CATEGORIA_CNH = @CATEGORIA_CNH AND DATAS_ADIMISSAO = @DATAS_ADIMISSAO;";
+                    string ConsultaUsuario = "SELECT * FROM USUARIO WHERE USERNAME = @USERNAME OR DEPARTAMENTO = @DEPARTAMENTO OR NOME =  @NOME, EMAIL = @EMAIL OR CPF = @CPF OR TELEFONE = @TELEFONE OR CELULAR = @CELULAR OR ENDERECO = @ENDERECO OR CNH = @CNH OR VALIDADE_CNH = @VALIDADE_CNH OR CATEGORIA_CNH = @CATEGORIA_CNH OR CATEGORIA_CNH = @CATEGORIA_CNH OR DATAS_ADIMISSAO = @DATAS_ADIMISSAO;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
@@ -536,7 +536,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaVeiculo = "SELECT * FROM VEICULO WHERE PLACA = @PLACA AND MODELO = @MODELO AND TIPO = @TIPO AND MARCA = @MARCA AND ANO = @ANO AND RENAVAM = @RENAVAM AND CHSSI_NUM = @CHSSI_NUM AND KM_POR_LITRO = @KM_POR_LITRO AND KM_TROCA_OLEO = @KM_TROCA_OLEO AND KM_REVISAO = @KM_REVISAO AND KM_PNEU = @KM_PNEU AND CAPACIDADE_TANQUE = @CAPACIDADE_TANQUE AND ID_COMBUSTIVEL = @ID_COMBUSTIVEL;";
+                    string ConsultaVeiculo = "SELECT * FROM VEICULO WHERE PLACA = @PLACA OR MODELO = @MODELO OR TIPO = @TIPO OR MARCA = @MARCA OR ANO = @ANO OR RENAVAM = @RENAVAM OR CHSSI_NUM = @CHSSI_NUM OR KM_POR_LITRO = @KM_POR_LITRO OR KM_TROCA_OLEO = @KM_TROCA_OLEO OR KM_REVISAO = @KM_REVISAO OR KM_PNEU = @KM_PNEU OR CAPACIDADE_TANQUE = @CAPACIDADE_TANQUE OR ID_COMBUSTIVEL = @ID_COMBUSTIVEL;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();

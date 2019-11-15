@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIM_4_Periodo.View;
+
 
 namespace PIM_4_PERIODO
 {
@@ -16,7 +18,7 @@ namespace PIM_4_PERIODO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Tela_Login());
         }
     }
 }
