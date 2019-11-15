@@ -20,7 +20,7 @@ namespace PIM_4_PERIODO.View
         //public Image img = Properties.Resources.Background_Principal;
         Tela_Home Home = new Tela_Home();
         Tela_Solicitacao Solicitacao = new Tela_Solicitacao();
-        Tela_Cadastro_Usuario cadastro = new Tela_Cadastro_Usuario();
+        View.Cadastro.AdicionarUsuarioSistema cadastro = new Cadastro.AdicionarUsuarioSistema();
         public TelaPrincipal()
         {
             
@@ -100,7 +100,7 @@ namespace PIM_4_PERIODO.View
             }
             if (Cadastro_btn.Active)
             {
-                cadastro = new Tela_Cadastro_Usuario();
+                cadastro = new Cadastro.AdicionarUsuarioSistema();
                 cadastro.Show();
 
             }

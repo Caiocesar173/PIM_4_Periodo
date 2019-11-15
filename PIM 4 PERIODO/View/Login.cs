@@ -25,7 +25,7 @@ namespace PIM_4_PERIODO
 
         private void bntRegistrar(object sender, EventArgs e)
         {
-            Registro regis = new Registro();
+            View.Cadastro.AdicionarUsuarioSistema regis = new View.Cadastro.AdicionarUsuarioSistema();
             this.Hide();
             regis.Show();
         }
@@ -42,7 +42,7 @@ namespace PIM_4_PERIODO
                 MessageBox.Show("Por favor Digite seus dados");
             }
             else {
-                 View.Principal prin = new View.Principal();
+                 View.TelaPrincipal prin = new View.TelaPrincipal();
                  this.Hide();
                  prin.Show();
             }
@@ -66,7 +66,7 @@ namespace PIM_4_PERIODO
             }
             else
             {
-                View.Principal prin = new View.Principal();
+                View.TelaPrincipal prin = new View.TelaPrincipal();
                 this.Hide();
                 prin.Show();
             }

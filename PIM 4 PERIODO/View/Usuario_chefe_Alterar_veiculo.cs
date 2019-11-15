@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PIM_4_PERIODO.View
 {
-    public partial class UsuarioChefe_InserirManutenção : Form
+    public partial class Usuario_chefe_Alterar_veiculo : Form
     {
-        public UsuarioChefe_InserirManutenção()
+        public Usuario_chefe_Alterar_veiculo()
         {
             InitializeComponent();
         }
