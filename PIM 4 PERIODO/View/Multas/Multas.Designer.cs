@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtVeiculo = new System.Windows.Forms.TextBox();
             this.txtMotorista = new System.Windows.Forms.TextBox();
             this.txtLocal_Multa = new System.Windows.Forms.TextBox();
             this.txtMotivo = new System.Windows.Forms.TextBox();
-            this.txtPlaca = new System.Windows.Forms.TextBox();
+            this.txtPlaca_Veiculo = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
-            this.lblVeiculo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.l = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,7 +48,7 @@
             this.bntExcluir = new System.Windows.Forms.Button();
             this.bntLimpar = new System.Windows.Forms.Button();
             this.bntSalvar = new System.Windows.Forms.Button();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtID_Veiculo = new System.Windows.Forms.TextBox();
             this.txtData_Entrada = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -65,13 +63,6 @@
             this.label1.Size = new System.Drawing.Size(100, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Multas";
-            // 
-            // txtVeiculo
-            // 
-            this.txtVeiculo.Location = new System.Drawing.Point(62, 98);
-            this.txtVeiculo.Name = "txtVeiculo";
-            this.txtVeiculo.Size = new System.Drawing.Size(100, 20);
-            this.txtVeiculo.TabIndex = 1;
             // 
             // txtMotorista
             // 
@@ -95,12 +86,12 @@
             this.txtMotivo.Size = new System.Drawing.Size(197, 95);
             this.txtMotivo.TabIndex = 4;
             // 
-            // txtPlaca
+            // txtPlaca_Veiculo
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(211, 97);
-            this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(100, 20);
-            this.txtPlaca.TabIndex = 5;
+            this.txtPlaca_Veiculo.Location = new System.Drawing.Point(211, 97);
+            this.txtPlaca_Veiculo.Name = "txtPlaca_Veiculo";
+            this.txtPlaca_Veiculo.Size = new System.Drawing.Size(100, 20);
+            this.txtPlaca_Veiculo.TabIndex = 5;
             // 
             // txtBairro
             // 
@@ -108,15 +99,6 @@
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(100, 20);
             this.txtBairro.TabIndex = 6;
-            // 
-            // lblVeiculo
-            // 
-            this.lblVeiculo.AutoSize = true;
-            this.lblVeiculo.Location = new System.Drawing.Point(12, 100);
-            this.lblVeiculo.Name = "lblVeiculo";
-            this.lblVeiculo.Size = new System.Drawing.Size(45, 13);
-            this.lblVeiculo.TabIndex = 7;
-            this.lblVeiculo.Text = "Veiculo:";
             // 
             // label3
             // 
@@ -221,6 +203,7 @@
             this.bntExcluir.TabIndex = 19;
             this.bntExcluir.Text = "Excluir";
             this.bntExcluir.UseVisualStyleBackColor = true;
+            this.bntExcluir.Click += new System.EventHandler(this.bntExcluir_Click);
             // 
             // bntLimpar
             // 
@@ -241,13 +224,14 @@
             this.bntSalvar.TabIndex = 21;
             this.bntSalvar.Text = "Salvar";
             this.bntSalvar.UseVisualStyleBackColor = true;
+            this.bntSalvar.Click += new System.EventHandler(this.bntSalvar_Click);
             // 
-            // txtID
+            // txtID_Veiculo
             // 
-            this.txtID.Location = new System.Drawing.Point(495, 64);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(61, 20);
-            this.txtID.TabIndex = 22;
+            this.txtID_Veiculo.Location = new System.Drawing.Point(53, 97);
+            this.txtID_Veiculo.Name = "txtID_Veiculo";
+            this.txtID_Veiculo.Size = new System.Drawing.Size(90, 20);
+            this.txtID_Veiculo.TabIndex = 22;
             // 
             // txtData_Entrada
             // 
@@ -259,7 +243,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(468, 67);
+            this.label11.Location = new System.Drawing.Point(26, 100);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(21, 13);
             this.label11.TabIndex = 24;
@@ -282,7 +266,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtData_Entrada);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtID_Veiculo);
             this.Controls.Add(this.bntSalvar);
             this.Controls.Add(this.bntLimpar);
             this.Controls.Add(this.bntExcluir);
@@ -297,13 +281,11 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.l);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblVeiculo);
             this.Controls.Add(this.txtBairro);
-            this.Controls.Add(this.txtPlaca);
+            this.Controls.Add(this.txtPlaca_Veiculo);
             this.Controls.Add(this.txtMotivo);
             this.Controls.Add(this.txtLocal_Multa);
             this.Controls.Add(this.txtMotorista);
-            this.Controls.Add(this.txtVeiculo);
             this.Controls.Add(this.label1);
             this.Name = "Multas";
             this.Text = "Multas";
@@ -315,13 +297,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtVeiculo;
         private System.Windows.Forms.TextBox txtMotorista;
         private System.Windows.Forms.TextBox txtLocal_Multa;
         private System.Windows.Forms.TextBox txtMotivo;
-        private System.Windows.Forms.TextBox txtPlaca;
+        private System.Windows.Forms.TextBox txtPlaca_Veiculo;
         private System.Windows.Forms.TextBox txtBairro;
-        private System.Windows.Forms.Label lblVeiculo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label l;
         private System.Windows.Forms.Label label5;
@@ -336,7 +316,7 @@
         private System.Windows.Forms.Button bntExcluir;
         private System.Windows.Forms.Button bntLimpar;
         private System.Windows.Forms.Button bntSalvar;
-        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtID_Veiculo;
         private System.Windows.Forms.TextBox txtData_Entrada;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;

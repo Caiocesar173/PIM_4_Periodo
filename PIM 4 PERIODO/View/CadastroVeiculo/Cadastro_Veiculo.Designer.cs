@@ -33,33 +33,41 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtVeiculos = new System.Windows.Forms.TextBox();
+            this.txt_KmPneu = new System.Windows.Forms.TextBox();
             this.Ano = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAno = new System.Windows.Forms.TextBox();
             this.bntExcluir = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtCombustivel = new System.Windows.Forms.TextBox();
+            this.txtTanque = new System.Windows.Forms.TextBox();
+            this.txtLitro = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Combustível = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_Renavam = new System.Windows.Forms.TextBox();
+            this.Renavam = new System.Windows.Forms.Label();
+            this.txt_Chassi = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bntLCadastrar
             // 
-            this.bntLCadastrar.Location = new System.Drawing.Point(101, 351);
+            this.bntLCadastrar.Location = new System.Drawing.Point(86, 361);
             this.bntLCadastrar.Name = "bntLCadastrar";
             this.bntLCadastrar.Size = new System.Drawing.Size(75, 23);
             this.bntLCadastrar.TabIndex = 0;
             this.bntLCadastrar.Text = "Cadastrar";
             this.bntLCadastrar.UseVisualStyleBackColor = true;
+            this.bntLCadastrar.Click += new System.EventHandler(this.bntLCadastrar_Click);
             // 
             // bntCancelar
             // 
-            this.bntCancelar.Location = new System.Drawing.Point(337, 351);
+            this.bntCancelar.Location = new System.Drawing.Point(510, 361);
             this.bntCancelar.Name = "bntCancelar";
             this.bntCancelar.Size = new System.Drawing.Size(75, 23);
             this.bntCancelar.TabIndex = 1;
@@ -93,26 +101,26 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Km/Pneu";
             // 
-            // textBox1
+            // txtModelo
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtModelo.Location = new System.Drawing.Point(63, 151);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(132, 20);
+            this.txtModelo.TabIndex = 5;
             // 
-            // textBox2
+            // txtVeiculos
             // 
-            this.textBox2.Location = new System.Drawing.Point(63, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtVeiculos.Location = new System.Drawing.Point(63, 103);
+            this.txtVeiculos.Name = "txtVeiculos";
+            this.txtVeiculos.Size = new System.Drawing.Size(132, 20);
+            this.txtVeiculos.TabIndex = 6;
             // 
-            // textBox3
+            // txt_KmPneu
             // 
-            this.textBox3.Location = new System.Drawing.Point(276, 154);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(107, 20);
-            this.textBox3.TabIndex = 7;
+            this.txt_KmPneu.Location = new System.Drawing.Point(276, 154);
+            this.txt_KmPneu.Name = "txt_KmPneu";
+            this.txt_KmPneu.Size = new System.Drawing.Size(107, 20);
+            this.txt_KmPneu.TabIndex = 7;
             // 
             // Ano
             // 
@@ -123,16 +131,16 @@
             this.Ano.TabIndex = 8;
             this.Ano.Text = "Ano";
             // 
-            // textBox4
+            // txtAno
             // 
-            this.textBox4.Location = new System.Drawing.Point(501, 158);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtAno.Location = new System.Drawing.Point(501, 158);
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(121, 20);
+            this.txtAno.TabIndex = 9;
             // 
             // bntExcluir
             // 
-            this.bntExcluir.Location = new System.Drawing.Point(224, 351);
+            this.bntExcluir.Location = new System.Drawing.Point(293, 361);
             this.bntExcluir.Name = "bntExcluir";
             this.bntExcluir.Size = new System.Drawing.Size(75, 23);
             this.bntExcluir.TabIndex = 10;
@@ -148,19 +156,19 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Placa";
             // 
-            // textBox5
+            // txtPlaca
             // 
-            this.textBox5.Location = new System.Drawing.Point(276, 103);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(107, 20);
-            this.textBox5.TabIndex = 12;
+            this.txtPlaca.Location = new System.Drawing.Point(276, 103);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(107, 20);
+            this.txtPlaca.TabIndex = 12;
             // 
-            // textBox6
+            // txtMarca
             // 
-            this.textBox6.Location = new System.Drawing.Point(501, 104);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 20);
-            this.textBox6.TabIndex = 13;
+            this.txtMarca.Location = new System.Drawing.Point(501, 104);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(121, 20);
+            this.txtMarca.TabIndex = 13;
             // 
             // label6
             // 
@@ -171,45 +179,111 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Marca";
             // 
-            // textBox7
+            // txtCombustivel
             // 
-            this.textBox7.Location = new System.Drawing.Point(276, 215);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(107, 20);
-            this.textBox7.TabIndex = 15;
+            this.txtCombustivel.Location = new System.Drawing.Point(276, 219);
+            this.txtCombustivel.Name = "txtCombustivel";
+            this.txtCombustivel.Size = new System.Drawing.Size(107, 20);
+            this.txtCombustivel.TabIndex = 15;
             // 
-            // textBox8
+            // txtTanque
             // 
-            this.textBox8.Location = new System.Drawing.Point(501, 215);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(121, 20);
-            this.textBox8.TabIndex = 16;
+            this.txtTanque.Location = new System.Drawing.Point(501, 215);
+            this.txtTanque.Name = "txtTanque";
+            this.txtTanque.Size = new System.Drawing.Size(121, 20);
+            this.txtTanque.TabIndex = 16;
             // 
-            // textBox9
+            // txtLitro
             // 
-            this.textBox9.Location = new System.Drawing.Point(63, 215);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(132, 20);
-            this.textBox9.TabIndex = 17;
+            this.txtLitro.Location = new System.Drawing.Point(63, 215);
+            this.txtLitro.Name = "txtLitro";
+            this.txtLitro.Size = new System.Drawing.Size(132, 20);
+            this.txtLitro.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 222);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Km/Litro";
+            // 
+            // Combustível
+            // 
+            this.Combustível.AutoSize = true;
+            this.Combustível.Location = new System.Drawing.Point(209, 222);
+            this.Combustível.Name = "Combustível";
+            this.Combustível.Size = new System.Drawing.Size(66, 13);
+            this.Combustível.TabIndex = 19;
+            this.Combustível.Text = "Combustível";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(434, 219);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 13);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Cap/tanque";
+            // 
+            // txt_Renavam
+            // 
+            this.txt_Renavam.Location = new System.Drawing.Point(63, 275);
+            this.txt_Renavam.Name = "txt_Renavam";
+            this.txt_Renavam.Size = new System.Drawing.Size(132, 20);
+            this.txt_Renavam.TabIndex = 21;
+            // 
+            // Renavam
+            // 
+            this.Renavam.AutoSize = true;
+            this.Renavam.Location = new System.Drawing.Point(4, 278);
+            this.Renavam.Name = "Renavam";
+            this.Renavam.Size = new System.Drawing.Size(53, 13);
+            this.Renavam.TabIndex = 22;
+            this.Renavam.Text = "Renavam";
+            // 
+            // txt_Chassi
+            // 
+            this.txt_Chassi.Location = new System.Drawing.Point(276, 275);
+            this.txt_Chassi.Name = "txt_Chassi";
+            this.txt_Chassi.Size = new System.Drawing.Size(107, 20);
+            this.txt_Chassi.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(232, 278);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Chassi";
             // 
             // Cadastro_Veiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 450);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.ClientSize = new System.Drawing.Size(651, 396);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_Chassi);
+            this.Controls.Add(this.Renavam);
+            this.Controls.Add(this.txt_Renavam);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.Combustível);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtLitro);
+            this.Controls.Add(this.txtTanque);
+            this.Controls.Add(this.txtCombustivel);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtPlaca);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bntExcluir);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtAno);
             this.Controls.Add(this.Ano);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_KmPneu);
+            this.Controls.Add(this.txtVeiculos);
+            this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -229,18 +303,25 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtVeiculos;
+        private System.Windows.Forms.TextBox txt_KmPneu;
         private System.Windows.Forms.Label Ano;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAno;
         private System.Windows.Forms.Button bntExcluir;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPlaca;
+        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtCombustivel;
+        private System.Windows.Forms.TextBox txtTanque;
+        private System.Windows.Forms.TextBox txtLitro;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Combustível;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_Renavam;
+        private System.Windows.Forms.Label Renavam;
+        private System.Windows.Forms.TextBox txt_Chassi;
+        private System.Windows.Forms.Label label7;
     }
 }

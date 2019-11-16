@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIM_4_PERIODO.Model;
 
 namespace PIM_4_PERIODO.View.Posto_de_Abastecimento
 {
@@ -15,6 +16,23 @@ namespace PIM_4_PERIODO.View.Posto_de_Abastecimento
         public CadastrarPosto()
         {
             InitializeComponent();
+        }
+
+        private void bntInseriPosto_Click(object sender, EventArgs e)
+        {
+            Posto posto = new Posto();
+            posto.RazaoSocial = txtRposto.Text;
+            posto.Nome = txtNposto.Text;
+            posto.Telefone = Convert.ToInt32(txtTposto.Text);
+            posto.Celular =  Convert.ToInt32(txtCPposto.Text);
+                
+            
+            /*
+            Veiculo carro = new Veiculo();
+            carro.Marca = txtMarca.Text;
+            carro.Modelo = txtModelo.Text;
+            carro.Placa = txtMarca.Text;
+            */
         }
     }
 }
