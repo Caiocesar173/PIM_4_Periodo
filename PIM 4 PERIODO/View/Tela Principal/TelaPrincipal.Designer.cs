@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel Painel_Menu;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
+            this.btnAbastecimento = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Home_btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Relatorios_btn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -51,8 +53,6 @@
             this.Panel_Menus = new System.Windows.Forms.Panel();
             this.Drag_Tela_Principal = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Drag_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             Painel_Menu = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             Painel_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).BeginInit();
@@ -64,7 +64,7 @@
             Painel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Painel_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Painel_Menu.BorderColor = System.Drawing.Color.Transparent;
-            Painel_Menu.Controls.Add(this.button2);
+            Painel_Menu.Controls.Add(this.btnAbastecimento);
             Painel_Menu.Controls.Add(this.button1);
             Painel_Menu.Controls.Add(this.panel1);
             Painel_Menu.Controls.Add(this.Home_btn);
@@ -83,6 +83,25 @@
             Painel_Menu.ShadowTopLeftVisible = false;
             Painel_Menu.Size = new System.Drawing.Size(223, 657);
             Painel_Menu.TabIndex = 10;
+            // 
+            // btnAbastecimento
+            // 
+            this.btnAbastecimento.Location = new System.Drawing.Point(13, 559);
+            this.btnAbastecimento.Name = "btnAbastecimento";
+            this.btnAbastecimento.Size = new System.Drawing.Size(113, 29);
+            this.btnAbastecimento.TabIndex = 18;
+            this.btnAbastecimento.Text = "Abastecimento";
+            this.btnAbastecimento.UseVisualStyleBackColor = true;
+            this.btnAbastecimento.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(-15, -15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -433,24 +452,6 @@
             this.Drag_Logo.TargetControl = this.Picture_Logo;
             this.Drag_Logo.Vertical = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(-15, -15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(33, 586);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,7 +494,7 @@
         private System.Windows.Forms.Panel Panel_Menus;
         private Bunifu.Framework.UI.BunifuDragControl Drag_Logo;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAbastecimento;
         private System.Windows.Forms.Button button1;
     }
 }
