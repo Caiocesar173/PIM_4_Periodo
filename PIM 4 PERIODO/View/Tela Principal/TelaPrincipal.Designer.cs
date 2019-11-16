@@ -51,6 +51,8 @@
             this.Panel_Menus = new System.Windows.Forms.Panel();
             this.Drag_Tela_Principal = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Drag_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             Painel_Menu = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             Painel_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).BeginInit();
@@ -62,6 +64,8 @@
             Painel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Painel_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Painel_Menu.BorderColor = System.Drawing.Color.Transparent;
+            Painel_Menu.Controls.Add(this.button2);
+            Painel_Menu.Controls.Add(this.button1);
             Painel_Menu.Controls.Add(this.panel1);
             Painel_Menu.Controls.Add(this.Home_btn);
             Painel_Menu.Controls.Add(this.Relatorios_btn);
@@ -77,7 +81,7 @@
             Painel_Menu.PanelColor = System.Drawing.Color.Transparent;
             Painel_Menu.ShadowDept = 2;
             Painel_Menu.ShadowTopLeftVisible = false;
-            Painel_Menu.Size = new System.Drawing.Size(223, 564);
+            Painel_Menu.Size = new System.Drawing.Size(223, 657);
             Painel_Menu.TabIndex = 10;
             // 
             // panel1
@@ -410,7 +414,7 @@
             this.Panel_Menus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Menus.Location = new System.Drawing.Point(223, 0);
             this.Panel_Menus.Name = "Panel_Menus";
-            this.Panel_Menus.Size = new System.Drawing.Size(548, 564);
+            this.Panel_Menus.Size = new System.Drawing.Size(548, 657);
             this.Panel_Menus.TabIndex = 11;
             this.Panel_Menus.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Menus_Paint);
             this.Panel_Menus.DoubleClick += new System.EventHandler(this.Panel_Menus_DoubleClick);
@@ -429,12 +433,30 @@
             this.Drag_Logo.TargetControl = this.Picture_Logo;
             this.Drag_Logo.Vertical = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(-15, -15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(33, 586);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(196)))), ((int)(((byte)(210)))));
-            this.ClientSize = new System.Drawing.Size(771, 564);
+            this.ClientSize = new System.Drawing.Size(771, 657);
             this.Controls.Add(this.Exit_Button);
             this.Controls.Add(this.Panel_Menus);
             this.Controls.Add(Painel_Menu);
@@ -471,5 +493,7 @@
         private System.Windows.Forms.Panel Panel_Menus;
         private Bunifu.Framework.UI.BunifuDragControl Drag_Logo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
