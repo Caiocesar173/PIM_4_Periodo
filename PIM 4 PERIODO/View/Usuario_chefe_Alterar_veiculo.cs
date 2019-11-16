@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View.Cadastro
+namespace PIM_4_PERIODO.View
 {
-    public partial class AdicionarUsuarioSistema : Form
+    public partial class Usuario_chefe_Alterar_veiculo : Form
     {
-        public AdicionarUsuarioSistema()
+        public Usuario_chefe_Alterar_veiculo()
         {
             InitializeComponent();
-        }
-
-        private void bntCadastre_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

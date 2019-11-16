@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View.Cadastro
+namespace PIM_4_PERIODO.View
 {
-    public partial class AdicionarUsuarioSistema : Form
+    public partial class Tela_Consulta : Form
     {
-        public AdicionarUsuarioSistema()
+        public Tela_Consulta()
         {
             InitializeComponent();
         }
 
-        private void bntCadastre_Click(object sender, EventArgs e)
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }
