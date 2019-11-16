@@ -166,6 +166,12 @@
     <Compile Include="View\Multas\Multas.Designer.cs">
       <DependentUpon>Multas.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Posto de Abastecimento\Abastecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Posto de Abastecimento\Abastecimento.Designer.cs">
+      <DependentUpon>Abastecimento.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Posto de Abastecimento\CadastrarPosto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,12 +201,6 @@
     </Compile>
     <Compile Include="View\Tela Oficina\CadastrarOficina.Designer.cs">
       <DependentUpon>CadastrarOficina.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Tela Principal\Cadastro\Usuarios\Tela_Cadastro_Usuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Tela Principal\Cadastro\Usuarios\Tela_Cadastro_Usuario.Designer.cs">
-      <DependentUpon>Tela_Cadastro_Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Tela Principal\Chat\Tela_Chat.cs">
       <SubType>Form</SubType>
@@ -287,6 +287,9 @@
     <EmbeddedResource Include="View\Multas\Multas.resx">
       <DependentUpon>Multas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Posto de Abastecimento\Abastecimento.resx">
+      <DependentUpon>Abastecimento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Posto de Abastecimento\CadastrarPosto.resx">
       <DependentUpon>CadastrarPosto.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,9 +304,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Oficina\CadastrarOficina.resx">
       <DependentUpon>CadastrarOficina.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Tela Principal\Cadastro\Usuarios\Tela_Cadastro_Usuario.resx">
-      <DependentUpon>Tela_Cadastro_Usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Principal\Chat\Tela_Chat.resx">
       <DependentUpon>Tela_Chat.cs</DependentUpon>
