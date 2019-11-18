@@ -71,6 +71,21 @@ namespace PIM_4_Periodo.View
                 Label_Error.Visible = false;
             }
         }
+
+        private void Label_Usuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label_Error_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tela_Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -70,7 +70,7 @@
             Entrar_Btn.IconZoom = 40D;
             Entrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             Entrar_Btn.IsTab = false;
-            Entrar_Btn.Location = new System.Drawing.Point(102, 509);
+            Entrar_Btn.Location = new System.Drawing.Point(111, 491);
             Entrar_Btn.Margin = new System.Windows.Forms.Padding(5);
             Entrar_Btn.Name = "Entrar_Btn";
             Entrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -136,15 +136,15 @@
             this.txt_Usuario.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.txt_Usuario.HintText = "Username";
             this.txt_Usuario.isPassword = false;
-            this.txt_Usuario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.txt_Usuario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.txt_Usuario.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.txt_Usuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.txt_Usuario.LineThickness = 4;
-            this.txt_Usuario.Location = new System.Drawing.Point(11, 353);
+            this.txt_Usuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.txt_Usuario.LineThickness = 2;
+            this.txt_Usuario.Location = new System.Drawing.Point(13, 336);
             this.txt_Usuario.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Usuario.MaxLength = 32767;
             this.txt_Usuario.Name = "txt_Usuario";
-            this.txt_Usuario.Size = new System.Drawing.Size(316, 46);
+            this.txt_Usuario.Size = new System.Drawing.Size(319, 46);
             this.txt_Usuario.TabIndex = 1;
             this.txt_Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_Usuario.OnValueChanged += new System.EventHandler(this.Txt_Usuario_OnValueChanged);
@@ -162,11 +162,11 @@
             this.txt_Senha.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.txt_Senha.HintText = "Password";
             this.txt_Senha.isPassword = true;
-            this.txt_Senha.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.txt_Senha.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.txt_Senha.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.txt_Senha.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.txt_Senha.LineThickness = 5;
-            this.txt_Senha.Location = new System.Drawing.Point(13, 448);
+            this.txt_Senha.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.txt_Senha.LineThickness = 2;
+            this.txt_Senha.Location = new System.Drawing.Point(13, 404);
             this.txt_Senha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Senha.MaxLength = 32767;
             this.txt_Senha.Name = "txt_Senha";
@@ -180,18 +180,19 @@
             this.Label_Usuario.AutoSize = true;
             this.Label_Usuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Usuario.ForeColor = System.Drawing.Color.Silver;
-            this.Label_Usuario.Location = new System.Drawing.Point(9, 324);
+            this.Label_Usuario.Location = new System.Drawing.Point(9, 311);
             this.Label_Usuario.Name = "Label_Usuario";
             this.Label_Usuario.Size = new System.Drawing.Size(146, 21);
             this.Label_Usuario.TabIndex = 14;
-            this.Label_Usuario.Text = "Nome de Usuario:";
+            this.Label_Usuario.Text = "Nome de Usuário:";
+            this.Label_Usuario.Click += new System.EventHandler(this.Label_Usuario_Click);
             // 
             // Label_Senha
             // 
             this.Label_Senha.AutoSize = true;
             this.Label_Senha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Senha.ForeColor = System.Drawing.Color.Silver;
-            this.Label_Senha.Location = new System.Drawing.Point(9, 430);
+            this.Label_Senha.Location = new System.Drawing.Point(9, 386);
             this.Label_Senha.Name = "Label_Senha";
             this.Label_Senha.Size = new System.Drawing.Size(63, 21);
             this.Label_Senha.TabIndex = 15;
@@ -207,7 +208,7 @@
             // Picture_Logo
             // 
             this.Picture_Logo.Image = ((System.Drawing.Image)(resources.GetObject("Picture_Logo.Image")));
-            this.Picture_Logo.Location = new System.Drawing.Point(28, 31);
+            this.Picture_Logo.Location = new System.Drawing.Point(19, 31);
             this.Picture_Logo.Name = "Picture_Logo";
             this.Picture_Logo.Size = new System.Drawing.Size(299, 200);
             this.Picture_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -239,12 +240,13 @@
             this.Label_Error.BackColor = System.Drawing.Color.Transparent;
             this.Label_Error.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Error.ForeColor = System.Drawing.Color.Firebrick;
-            this.Label_Error.Location = new System.Drawing.Point(44, 295);
+            this.Label_Error.Location = new System.Drawing.Point(47, 460);
             this.Label_Error.Name = "Label_Error";
             this.Label_Error.Size = new System.Drawing.Size(244, 23);
             this.Label_Error.TabIndex = 17;
             this.Label_Error.Text = "Login ou Senha Incorretos";
             this.Label_Error.Visible = false;
+            this.Label_Error.Click += new System.EventHandler(this.Label_Error_Click);
             // 
             // Tela_Login
             // 
@@ -268,6 +270,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela_Login1";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Tela_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
