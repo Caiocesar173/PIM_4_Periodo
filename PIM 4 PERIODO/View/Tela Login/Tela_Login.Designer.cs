@@ -70,7 +70,7 @@
             Entrar_Btn.IconZoom = 40D;
             Entrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             Entrar_Btn.IsTab = false;
-            Entrar_Btn.Location = new System.Drawing.Point(102, 509);
+            Entrar_Btn.Location = new System.Drawing.Point(122, 509);
             Entrar_Btn.Margin = new System.Windows.Forms.Padding(5);
             Entrar_Btn.Name = "Entrar_Btn";
             Entrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -109,7 +109,7 @@
             this.Exit_Button.IconVisible = true;
             this.Exit_Button.IconZoom = 90D;
             this.Exit_Button.IsTab = false;
-            this.Exit_Button.Location = new System.Drawing.Point(297, 0);
+            this.Exit_Button.Location = new System.Drawing.Point(314, 0);
             this.Exit_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Exit_Button.Name = "Exit_Button";
             this.Exit_Button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -207,7 +207,7 @@
             // Picture_Logo
             // 
             this.Picture_Logo.Image = ((System.Drawing.Image)(resources.GetObject("Picture_Logo.Image")));
-            this.Picture_Logo.Location = new System.Drawing.Point(28, 31);
+            this.Picture_Logo.Location = new System.Drawing.Point(33, 31);
             this.Picture_Logo.Name = "Picture_Logo";
             this.Picture_Logo.Size = new System.Drawing.Size(299, 200);
             this.Picture_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -225,7 +225,7 @@
             this.Panel_LoginImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Panel_LoginImg.Location = new System.Drawing.Point(-1, 239);
             this.Panel_LoginImg.Name = "Panel_LoginImg";
-            this.Panel_LoginImg.Size = new System.Drawing.Size(345, 53);
+            this.Panel_LoginImg.Size = new System.Drawing.Size(362, 53);
             this.Panel_LoginImg.TabIndex = 16;
             // 
             // Elipse_Entrar_btn
@@ -239,7 +239,7 @@
             this.Label_Error.BackColor = System.Drawing.Color.Transparent;
             this.Label_Error.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Error.ForeColor = System.Drawing.Color.Firebrick;
-            this.Label_Error.Location = new System.Drawing.Point(44, 295);
+            this.Label_Error.Location = new System.Drawing.Point(55, 295);
             this.Label_Error.Name = "Label_Error";
             this.Label_Error.Size = new System.Drawing.Size(244, 23);
             this.Label_Error.TabIndex = 17;
@@ -251,7 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(345, 573);
+            this.ClientSize = new System.Drawing.Size(362, 573);
             this.Controls.Add(this.Label_Error);
             this.Controls.Add(this.Panel_LoginImg);
             this.Controls.Add(this.Exit_Button);
