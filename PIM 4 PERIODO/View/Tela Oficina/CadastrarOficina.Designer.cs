@@ -48,6 +48,7 @@
             this.Cidade = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txt_IdOficina = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bntIncluir
@@ -58,6 +59,7 @@
             this.bntIncluir.TabIndex = 0;
             this.bntIncluir.Text = "Incluir";
             this.bntIncluir.UseVisualStyleBackColor = true;
+            this.bntIncluir.Click += new System.EventHandler(this.bntIncluir_Click);
             // 
             // bntCancelar
             // 
@@ -208,7 +210,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(592, 35);
+            this.label7.Location = new System.Drawing.Point(489, 38);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 16);
             this.label7.TabIndex = 20;
@@ -224,11 +226,19 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Estado";
             // 
+            // txt_IdOficina
+            // 
+            this.txt_IdOficina.Location = new System.Drawing.Point(593, 38);
+            this.txt_IdOficina.Name = "txt_IdOficina";
+            this.txt_IdOficina.Size = new System.Drawing.Size(95, 20);
+            this.txt_IdOficina.TabIndex = 22;
+            // 
             // CadastrarOficina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 450);
+            this.Controls.Add(this.txt_IdOficina);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Cidade);
@@ -278,5 +288,6 @@
         private System.Windows.Forms.Label Cidade;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_IdOficina;
     }
 }

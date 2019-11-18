@@ -31,14 +31,6 @@
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel Painel_Menu;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Home_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Relatorios_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.SAC_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Cadastro_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Atendimento_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Picture_Logo = new System.Windows.Forms.PictureBox();
-            this.Solicitacao_btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Exit_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Elipse_TelaPrincipal = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse_Solicitacao = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -51,8 +43,17 @@
             this.Panel_Menus = new System.Windows.Forms.Panel();
             this.Drag_Tela_Principal = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Drag_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAbastecimento = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Home_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Relatorios_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.SAC_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Cadastro_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Atendimento_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Picture_Logo = new System.Windows.Forms.PictureBox();
+            this.Solicitacao_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             Painel_Menu = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             Painel_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).BeginInit();
@@ -64,8 +65,9 @@
             Painel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Painel_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Painel_Menu.BorderColor = System.Drawing.Color.Transparent;
-            Painel_Menu.Controls.Add(this.button2);
-            Painel_Menu.Controls.Add(this.button1);
+            Painel_Menu.Controls.Add(this.btnLogout);
+            Painel_Menu.Controls.Add(this.bunifuFlatButton1);
+            Painel_Menu.Controls.Add(this.btnAbastecimento);
             Painel_Menu.Controls.Add(this.panel1);
             Painel_Menu.Controls.Add(this.Home_btn);
             Painel_Menu.Controls.Add(this.Relatorios_btn);
@@ -83,248 +85,7 @@
             Painel_Menu.ShadowTopLeftVisible = false;
             Painel_Menu.Size = new System.Drawing.Size(223, 657);
             Painel_Menu.TabIndex = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(0, 186);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 44);
-            this.panel1.TabIndex = 16;
-            // 
-            // Home_btn
-            // 
-            this.Home_btn.Active = true;
-            this.Home_btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Home_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Home_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Home_btn.BorderRadius = 0;
-            this.Home_btn.ButtonText = "    Home";
-            this.Home_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Home_btn.DisabledColor = System.Drawing.Color.Transparent;
-            this.Home_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Home_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage")));
-            this.Home_btn.Iconimage_right = null;
-            this.Home_btn.Iconimage_right_Selected = null;
-            this.Home_btn.Iconimage_Selected = null;
-            this.Home_btn.IconMarginLeft = 0;
-            this.Home_btn.IconMarginRight = 0;
-            this.Home_btn.IconRightVisible = true;
-            this.Home_btn.IconRightZoom = 0D;
-            this.Home_btn.IconVisible = true;
-            this.Home_btn.IconZoom = 70D;
-            this.Home_btn.IsTab = true;
-            this.Home_btn.Location = new System.Drawing.Point(13, 261);
-            this.Home_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.Home_btn.Name = "Home_btn";
-            this.Home_btn.Normalcolor = System.Drawing.Color.Transparent;
-            this.Home_btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.Home_btn.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.Home_btn.selected = true;
-            this.Home_btn.Size = new System.Drawing.Size(184, 40);
-            this.Home_btn.TabIndex = 15;
-            this.Home_btn.Text = "    Home";
-            this.Home_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Home_btn.Textcolor = System.Drawing.Color.Gainsboro;
-            this.Home_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click);
-            // 
-            // Relatorios_btn
-            // 
-            this.Relatorios_btn.Active = false;
-            this.Relatorios_btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Relatorios_btn.BackColor = System.Drawing.Color.Transparent;
-            this.Relatorios_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Relatorios_btn.BorderRadius = 0;
-            this.Relatorios_btn.ButtonText = "    Relatórios";
-            this.Relatorios_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Relatorios_btn.DisabledColor = System.Drawing.Color.Transparent;
-            this.Relatorios_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Relatorios_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Relatorios_btn.Iconimage")));
-            this.Relatorios_btn.Iconimage_right = null;
-            this.Relatorios_btn.Iconimage_right_Selected = null;
-            this.Relatorios_btn.Iconimage_Selected = null;
-            this.Relatorios_btn.IconMarginLeft = 0;
-            this.Relatorios_btn.IconMarginRight = 0;
-            this.Relatorios_btn.IconRightVisible = true;
-            this.Relatorios_btn.IconRightZoom = 0D;
-            this.Relatorios_btn.IconVisible = true;
-            this.Relatorios_btn.IconZoom = 80D;
-            this.Relatorios_btn.IsTab = true;
-            this.Relatorios_btn.Location = new System.Drawing.Point(13, 453);
-            this.Relatorios_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.Relatorios_btn.Name = "Relatorios_btn";
-            this.Relatorios_btn.Normalcolor = System.Drawing.Color.Transparent;
-            this.Relatorios_btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.Relatorios_btn.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.Relatorios_btn.selected = false;
-            this.Relatorios_btn.Size = new System.Drawing.Size(184, 40);
-            this.Relatorios_btn.TabIndex = 12;
-            this.Relatorios_btn.Text = "    Relatórios";
-            this.Relatorios_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Relatorios_btn.Textcolor = System.Drawing.Color.Gainsboro;
-            this.Relatorios_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Relatorios_btn.Click += new System.EventHandler(this.Relatorios_btn_Click);
-            // 
-            // SAC_btn
-            // 
-            this.SAC_btn.Active = false;
-            this.SAC_btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.SAC_btn.BackColor = System.Drawing.Color.Transparent;
-            this.SAC_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SAC_btn.BorderRadius = 0;
-            this.SAC_btn.ButtonText = "    S.A.C";
-            this.SAC_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SAC_btn.DisabledColor = System.Drawing.Color.Transparent;
-            this.SAC_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.SAC_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("SAC_btn.Iconimage")));
-            this.SAC_btn.Iconimage_right = null;
-            this.SAC_btn.Iconimage_right_Selected = null;
-            this.SAC_btn.Iconimage_Selected = null;
-            this.SAC_btn.IconMarginLeft = 0;
-            this.SAC_btn.IconMarginRight = 0;
-            this.SAC_btn.IconRightVisible = true;
-            this.SAC_btn.IconRightZoom = 0D;
-            this.SAC_btn.IconVisible = true;
-            this.SAC_btn.IconZoom = 80D;
-            this.SAC_btn.IsTab = true;
-            this.SAC_btn.Location = new System.Drawing.Point(13, 501);
-            this.SAC_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.SAC_btn.Name = "SAC_btn";
-            this.SAC_btn.Normalcolor = System.Drawing.Color.Transparent;
-            this.SAC_btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.SAC_btn.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.SAC_btn.selected = false;
-            this.SAC_btn.Size = new System.Drawing.Size(184, 40);
-            this.SAC_btn.TabIndex = 11;
-            this.SAC_btn.Text = "    S.A.C";
-            this.SAC_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SAC_btn.Textcolor = System.Drawing.Color.Gainsboro;
-            this.SAC_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SAC_btn.Click += new System.EventHandler(this.SAC_btn_Click);
-            // 
-            // Cadastro_btn
-            // 
-            this.Cadastro_btn.Active = false;
-            this.Cadastro_btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Cadastro_btn.BackColor = System.Drawing.Color.Transparent;
-            this.Cadastro_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Cadastro_btn.BorderRadius = 0;
-            this.Cadastro_btn.ButtonText = "    Cadastro";
-            this.Cadastro_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Cadastro_btn.DisabledColor = System.Drawing.Color.Transparent;
-            this.Cadastro_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Cadastro_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Cadastro_btn.Iconimage")));
-            this.Cadastro_btn.Iconimage_right = null;
-            this.Cadastro_btn.Iconimage_right_Selected = null;
-            this.Cadastro_btn.Iconimage_Selected = null;
-            this.Cadastro_btn.IconMarginLeft = 0;
-            this.Cadastro_btn.IconMarginRight = 0;
-            this.Cadastro_btn.IconRightVisible = true;
-            this.Cadastro_btn.IconRightZoom = 0D;
-            this.Cadastro_btn.IconVisible = true;
-            this.Cadastro_btn.IconZoom = 70D;
-            this.Cadastro_btn.IsTab = true;
-            this.Cadastro_btn.Location = new System.Drawing.Point(13, 405);
-            this.Cadastro_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.Cadastro_btn.Name = "Cadastro_btn";
-            this.Cadastro_btn.Normalcolor = System.Drawing.Color.Transparent;
-            this.Cadastro_btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.Cadastro_btn.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.Cadastro_btn.selected = false;
-            this.Cadastro_btn.Size = new System.Drawing.Size(184, 40);
-            this.Cadastro_btn.TabIndex = 10;
-            this.Cadastro_btn.Text = "    Cadastro";
-            this.Cadastro_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Cadastro_btn.Textcolor = System.Drawing.Color.Gainsboro;
-            this.Cadastro_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cadastro_btn.Click += new System.EventHandler(this.Cadastro_btn_Click);
-            // 
-            // Atendimento_btn
-            // 
-            this.Atendimento_btn.Active = false;
-            this.Atendimento_btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Atendimento_btn.BackColor = System.Drawing.Color.Transparent;
-            this.Atendimento_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Atendimento_btn.BorderRadius = 0;
-            this.Atendimento_btn.ButtonText = "   Atendimento";
-            this.Atendimento_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Atendimento_btn.DisabledColor = System.Drawing.Color.Transparent;
-            this.Atendimento_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Atendimento_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Atendimento_btn.Iconimage")));
-            this.Atendimento_btn.Iconimage_right = null;
-            this.Atendimento_btn.Iconimage_right_Selected = null;
-            this.Atendimento_btn.Iconimage_Selected = null;
-            this.Atendimento_btn.IconMarginLeft = 0;
-            this.Atendimento_btn.IconMarginRight = 0;
-            this.Atendimento_btn.IconRightVisible = true;
-            this.Atendimento_btn.IconRightZoom = 0D;
-            this.Atendimento_btn.IconVisible = true;
-            this.Atendimento_btn.IconZoom = 90D;
-            this.Atendimento_btn.IsTab = true;
-            this.Atendimento_btn.Location = new System.Drawing.Point(13, 357);
-            this.Atendimento_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.Atendimento_btn.Name = "Atendimento_btn";
-            this.Atendimento_btn.Normalcolor = System.Drawing.Color.Transparent;
-            this.Atendimento_btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.Atendimento_btn.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.Atendimento_btn.selected = false;
-            this.Atendimento_btn.Size = new System.Drawing.Size(184, 40);
-            this.Atendimento_btn.TabIndex = 7;
-            this.Atendimento_btn.Text = "   Atendimento";
-            this.Atendimento_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Atendimento_btn.Textcolor = System.Drawing.Color.Gainsboro;
-            this.Atendimento_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Atendimento_btn.Click += new System.EventHandler(this.Atendimento_btn_Click);
-            // 
-            // Picture_Logo
-            // 
-            this.Picture_Logo.BackColor = System.Drawing.Color.Transparent;
-            this.Picture_Logo.Image = ((System.Drawing.Image)(resources.GetObject("Picture_Logo.Image")));
-            this.Picture_Logo.Location = new System.Drawing.Point(-1, 1);
-            this.Picture_Logo.Name = "Picture_Logo";
-            this.Picture_Logo.Size = new System.Drawing.Size(221, 179);
-            this.Picture_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Picture_Logo.TabIndex = 6;
-            this.Picture_Logo.TabStop = false;
-            // 
-            // Solicitacao_btn
-            // 
-            this.Solicitacao_btn.Active = false;
-            this.Solicitacao_btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Solicitacao_btn.BackColor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Solicitacao_btn.BorderRadius = 0;
-            this.Solicitacao_btn.ButtonText = "    Solicitação";
-            this.Solicitacao_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Solicitacao_btn.DisabledColor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn.Iconimage")));
-            this.Solicitacao_btn.Iconimage_right = null;
-            this.Solicitacao_btn.Iconimage_right_Selected = null;
-            this.Solicitacao_btn.Iconimage_Selected = null;
-            this.Solicitacao_btn.IconMarginLeft = 0;
-            this.Solicitacao_btn.IconMarginRight = 0;
-            this.Solicitacao_btn.IconRightVisible = true;
-            this.Solicitacao_btn.IconRightZoom = 0D;
-            this.Solicitacao_btn.IconVisible = true;
-            this.Solicitacao_btn.IconZoom = 75D;
-            this.Solicitacao_btn.IsTab = true;
-            this.Solicitacao_btn.Location = new System.Drawing.Point(13, 309);
-            this.Solicitacao_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.Solicitacao_btn.Name = "Solicitacao_btn";
-            this.Solicitacao_btn.Normalcolor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.Solicitacao_btn.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.selected = false;
-            this.Solicitacao_btn.Size = new System.Drawing.Size(184, 40);
-            this.Solicitacao_btn.TabIndex = 4;
-            this.Solicitacao_btn.Text = "    Solicitação";
-            this.Solicitacao_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Solicitacao_btn.Textcolor = System.Drawing.Color.Gainsboro;
-            this.Solicitacao_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Solicitacao_btn.Click += new System.EventHandler(this.Solicitacao_btn_Click);
+            Painel_Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Menu_Paint);
             // 
             // Exit_Button
             // 
@@ -433,23 +194,356 @@
             this.Drag_Logo.TargetControl = this.Picture_Logo;
             this.Drag_Logo.Vertical = true;
             // 
-            // button1
+            // btnAbastecimento
             // 
-            this.button1.Location = new System.Drawing.Point(-15, -15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAbastecimento.Active = false;
+            this.btnAbastecimento.Activecolor = System.Drawing.Color.Transparent;
+            this.btnAbastecimento.BackColor = System.Drawing.Color.Transparent;
+            this.btnAbastecimento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAbastecimento.BorderRadius = 0;
+            this.btnAbastecimento.ButtonText = "    Atendimento";
+            this.btnAbastecimento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbastecimento.DisabledColor = System.Drawing.Color.Transparent;
+            this.btnAbastecimento.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAbastecimento.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAbastecimento.Iconimage")));
+            this.btnAbastecimento.Iconimage_right = null;
+            this.btnAbastecimento.Iconimage_right_Selected = null;
+            this.btnAbastecimento.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("btnAbastecimento.Iconimage_Selected")));
+            this.btnAbastecimento.IconMarginLeft = 0;
+            this.btnAbastecimento.IconMarginRight = 0;
+            this.btnAbastecimento.IconRightVisible = true;
+            this.btnAbastecimento.IconRightZoom = 0D;
+            this.btnAbastecimento.IconVisible = true;
+            this.btnAbastecimento.IconZoom = 80D;
+            this.btnAbastecimento.IsTab = true;
+            this.btnAbastecimento.Location = new System.Drawing.Point(13, 501);
+            this.btnAbastecimento.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAbastecimento.Name = "btnAbastecimento";
+            this.btnAbastecimento.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnAbastecimento.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnAbastecimento.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.btnAbastecimento.selected = false;
+            this.btnAbastecimento.Size = new System.Drawing.Size(193, 40);
+            this.btnAbastecimento.TabIndex = 19;
+            this.btnAbastecimento.Text = "    Atendimento";
+            this.btnAbastecimento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbastecimento.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.btnAbastecimento.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // button2
+            // panel1
             // 
-            this.button2.Location = new System.Drawing.Point(33, 586);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(0, 186);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(217, 44);
+            this.panel1.TabIndex = 16;
+            // 
+            // Home_btn
+            // 
+            this.Home_btn.Active = true;
+            this.Home_btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Home_btn.BackColor = System.Drawing.Color.Transparent;
+            this.Home_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Home_btn.BorderRadius = 0;
+            this.Home_btn.ButtonText = "    Home";
+            this.Home_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home_btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Home_btn.ForeColor = System.Drawing.Color.Transparent;
+            this.Home_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Home_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage")));
+            this.Home_btn.Iconimage_right = null;
+            this.Home_btn.Iconimage_right_Selected = null;
+            this.Home_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage_Selected")));
+            this.Home_btn.IconMarginLeft = 0;
+            this.Home_btn.IconMarginRight = 0;
+            this.Home_btn.IconRightVisible = true;
+            this.Home_btn.IconRightZoom = 0D;
+            this.Home_btn.IconVisible = true;
+            this.Home_btn.IconZoom = 70D;
+            this.Home_btn.IsTab = true;
+            this.Home_btn.Location = new System.Drawing.Point(13, 261);
+            this.Home_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Home_btn.Name = "Home_btn";
+            this.Home_btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Home_btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Home_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Home_btn.selected = true;
+            this.Home_btn.Size = new System.Drawing.Size(193, 40);
+            this.Home_btn.TabIndex = 15;
+            this.Home_btn.Text = "    Home";
+            this.Home_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Home_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Home_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click);
+            // 
+            // Relatorios_btn
+            // 
+            this.Relatorios_btn.Active = false;
+            this.Relatorios_btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Relatorios_btn.BackColor = System.Drawing.Color.Transparent;
+            this.Relatorios_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Relatorios_btn.BorderRadius = 0;
+            this.Relatorios_btn.ButtonText = "    Relatórios";
+            this.Relatorios_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Relatorios_btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Relatorios_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Relatorios_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Relatorios_btn.Iconimage")));
+            this.Relatorios_btn.Iconimage_right = null;
+            this.Relatorios_btn.Iconimage_right_Selected = null;
+            this.Relatorios_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Relatorios_btn.Iconimage_Selected")));
+            this.Relatorios_btn.IconMarginLeft = 0;
+            this.Relatorios_btn.IconMarginRight = 0;
+            this.Relatorios_btn.IconRightVisible = true;
+            this.Relatorios_btn.IconRightZoom = 0D;
+            this.Relatorios_btn.IconVisible = true;
+            this.Relatorios_btn.IconZoom = 80D;
+            this.Relatorios_btn.IsTab = true;
+            this.Relatorios_btn.Location = new System.Drawing.Point(13, 453);
+            this.Relatorios_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Relatorios_btn.Name = "Relatorios_btn";
+            this.Relatorios_btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Relatorios_btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Relatorios_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Relatorios_btn.selected = false;
+            this.Relatorios_btn.Size = new System.Drawing.Size(193, 40);
+            this.Relatorios_btn.TabIndex = 12;
+            this.Relatorios_btn.Text = "    Relatórios";
+            this.Relatorios_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Relatorios_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Relatorios_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Relatorios_btn.Click += new System.EventHandler(this.Relatorios_btn_Click);
+            // 
+            // SAC_btn
+            // 
+            this.SAC_btn.Active = false;
+            this.SAC_btn.Activecolor = System.Drawing.Color.Transparent;
+            this.SAC_btn.BackColor = System.Drawing.Color.Transparent;
+            this.SAC_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SAC_btn.BorderRadius = 0;
+            this.SAC_btn.ButtonText = "    S.A.C";
+            this.SAC_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SAC_btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.SAC_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.SAC_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("SAC_btn.Iconimage")));
+            this.SAC_btn.Iconimage_right = null;
+            this.SAC_btn.Iconimage_right_Selected = null;
+            this.SAC_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("SAC_btn.Iconimage_Selected")));
+            this.SAC_btn.IconMarginLeft = 0;
+            this.SAC_btn.IconMarginRight = 0;
+            this.SAC_btn.IconRightVisible = true;
+            this.SAC_btn.IconRightZoom = 0D;
+            this.SAC_btn.IconVisible = true;
+            this.SAC_btn.IconZoom = 80D;
+            this.SAC_btn.IsTab = true;
+            this.SAC_btn.Location = new System.Drawing.Point(13, 549);
+            this.SAC_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.SAC_btn.Name = "SAC_btn";
+            this.SAC_btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.SAC_btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.SAC_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.SAC_btn.selected = false;
+            this.SAC_btn.Size = new System.Drawing.Size(193, 40);
+            this.SAC_btn.TabIndex = 11;
+            this.SAC_btn.Text = "    S.A.C";
+            this.SAC_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SAC_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.SAC_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SAC_btn.Click += new System.EventHandler(this.SAC_btn_Click);
+            // 
+            // Cadastro_btn
+            // 
+            this.Cadastro_btn.Active = false;
+            this.Cadastro_btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Cadastro_btn.BackColor = System.Drawing.Color.Transparent;
+            this.Cadastro_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cadastro_btn.BorderRadius = 0;
+            this.Cadastro_btn.ButtonText = "    Cadastro";
+            this.Cadastro_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cadastro_btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Cadastro_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Cadastro_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Cadastro_btn.Iconimage")));
+            this.Cadastro_btn.Iconimage_right = null;
+            this.Cadastro_btn.Iconimage_right_Selected = null;
+            this.Cadastro_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Cadastro_btn.Iconimage_Selected")));
+            this.Cadastro_btn.IconMarginLeft = 0;
+            this.Cadastro_btn.IconMarginRight = 0;
+            this.Cadastro_btn.IconRightVisible = true;
+            this.Cadastro_btn.IconRightZoom = 0D;
+            this.Cadastro_btn.IconVisible = true;
+            this.Cadastro_btn.IconZoom = 70D;
+            this.Cadastro_btn.IsTab = true;
+            this.Cadastro_btn.Location = new System.Drawing.Point(13, 405);
+            this.Cadastro_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Cadastro_btn.Name = "Cadastro_btn";
+            this.Cadastro_btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Cadastro_btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Cadastro_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Cadastro_btn.selected = false;
+            this.Cadastro_btn.Size = new System.Drawing.Size(193, 40);
+            this.Cadastro_btn.TabIndex = 10;
+            this.Cadastro_btn.Text = "    Cadastro";
+            this.Cadastro_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Cadastro_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Cadastro_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cadastro_btn.Click += new System.EventHandler(this.Cadastro_btn_Click);
+            // 
+            // Atendimento_btn
+            // 
+            this.Atendimento_btn.Active = false;
+            this.Atendimento_btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Atendimento_btn.BackColor = System.Drawing.Color.Transparent;
+            this.Atendimento_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Atendimento_btn.BorderRadius = 0;
+            this.Atendimento_btn.ButtonText = "   Atendimento";
+            this.Atendimento_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Atendimento_btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Atendimento_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Atendimento_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Atendimento_btn.Iconimage")));
+            this.Atendimento_btn.Iconimage_right = null;
+            this.Atendimento_btn.Iconimage_right_Selected = null;
+            this.Atendimento_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Atendimento_btn.Iconimage_Selected")));
+            this.Atendimento_btn.IconMarginLeft = 0;
+            this.Atendimento_btn.IconMarginRight = 0;
+            this.Atendimento_btn.IconRightVisible = true;
+            this.Atendimento_btn.IconRightZoom = 0D;
+            this.Atendimento_btn.IconVisible = true;
+            this.Atendimento_btn.IconZoom = 90D;
+            this.Atendimento_btn.IsTab = true;
+            this.Atendimento_btn.Location = new System.Drawing.Point(13, 357);
+            this.Atendimento_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Atendimento_btn.Name = "Atendimento_btn";
+            this.Atendimento_btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Atendimento_btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Atendimento_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Atendimento_btn.selected = false;
+            this.Atendimento_btn.Size = new System.Drawing.Size(193, 40);
+            this.Atendimento_btn.TabIndex = 7;
+            this.Atendimento_btn.Text = "   Atendimento";
+            this.Atendimento_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Atendimento_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Atendimento_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Atendimento_btn.Click += new System.EventHandler(this.Atendimento_btn_Click);
+            // 
+            // Picture_Logo
+            // 
+            this.Picture_Logo.BackColor = System.Drawing.Color.Transparent;
+            this.Picture_Logo.Image = ((System.Drawing.Image)(resources.GetObject("Picture_Logo.Image")));
+            this.Picture_Logo.Location = new System.Drawing.Point(3, 1);
+            this.Picture_Logo.Name = "Picture_Logo";
+            this.Picture_Logo.Size = new System.Drawing.Size(194, 179);
+            this.Picture_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Picture_Logo.TabIndex = 6;
+            this.Picture_Logo.TabStop = false;
+            // 
+            // Solicitacao_btn
+            // 
+            this.Solicitacao_btn.Active = false;
+            this.Solicitacao_btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.BackColor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Solicitacao_btn.BorderRadius = 0;
+            this.Solicitacao_btn.ButtonText = "    Solicitação";
+            this.Solicitacao_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Solicitacao_btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn.Iconimage")));
+            this.Solicitacao_btn.Iconimage_right = null;
+            this.Solicitacao_btn.Iconimage_right_Selected = null;
+            this.Solicitacao_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn.Iconimage_Selected")));
+            this.Solicitacao_btn.IconMarginLeft = 0;
+            this.Solicitacao_btn.IconMarginRight = 0;
+            this.Solicitacao_btn.IconRightVisible = true;
+            this.Solicitacao_btn.IconRightZoom = 0D;
+            this.Solicitacao_btn.IconVisible = true;
+            this.Solicitacao_btn.IconZoom = 75D;
+            this.Solicitacao_btn.IsTab = true;
+            this.Solicitacao_btn.Location = new System.Drawing.Point(13, 309);
+            this.Solicitacao_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Solicitacao_btn.Name = "Solicitacao_btn";
+            this.Solicitacao_btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Solicitacao_btn.selected = false;
+            this.Solicitacao_btn.Size = new System.Drawing.Size(193, 40);
+            this.Solicitacao_btn.TabIndex = 4;
+            this.Solicitacao_btn.Text = "    Solicitação";
+            this.Solicitacao_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Solicitacao_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Solicitacao_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Solicitacao_btn.Click += new System.EventHandler(this.Solicitacao_btn_Click);
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Active = false;
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "    S.A.C";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage_Selected")));
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 80D;
+            this.bunifuFlatButton1.IsTab = true;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(15, 308);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(193, 40);
+            this.bunifuFlatButton1.TabIndex = 20;
+            this.bunifuFlatButton1.Text = "    S.A.C";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Active = false;
+            this.btnLogout.Activecolor = System.Drawing.Color.Transparent;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogout.BorderRadius = 0;
+            this.btnLogout.ButtonText = "";
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.DisabledColor = System.Drawing.Color.Transparent;
+            this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
+            this.btnLogout.Iconimage_right = null;
+            this.btnLogout.Iconimage_right_Selected = null;
+            this.btnLogout.Iconimage_Selected = null;
+            this.btnLogout.IconMarginLeft = 0;
+            this.btnLogout.IconMarginRight = 0;
+            this.btnLogout.IconRightVisible = true;
+            this.btnLogout.IconRightZoom = 0D;
+            this.btnLogout.IconVisible = true;
+            this.btnLogout.IconZoom = 80D;
+            this.btnLogout.IsTab = true;
+            this.btnLogout.Location = new System.Drawing.Point(172, 609);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnLogout.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.btnLogout.selected = false;
+            this.btnLogout.Size = new System.Drawing.Size(36, 35);
+            this.btnLogout.TabIndex = 20;
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.btnLogout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Click += new System.EventHandler(this.BunifuFlatButton2_Click);
             // 
             // TelaPrincipal
             // 
@@ -465,6 +559,7 @@
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";
+            this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             Painel_Menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).EndInit();
             this.ResumeLayout(false);
@@ -493,7 +588,8 @@
         private System.Windows.Forms.Panel Panel_Menus;
         private Bunifu.Framework.UI.BunifuDragControl Drag_Logo;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAbastecimento;
+        private Bunifu.Framework.UI.BunifuFlatButton btnLogout;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }

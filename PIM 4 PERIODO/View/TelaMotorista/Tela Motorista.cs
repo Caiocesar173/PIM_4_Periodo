@@ -22,5 +22,10 @@ namespace PIM_4_PERIODO.View
             this.Hide();
             
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

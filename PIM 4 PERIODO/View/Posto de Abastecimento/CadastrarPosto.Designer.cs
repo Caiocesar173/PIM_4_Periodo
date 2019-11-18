@@ -135,6 +135,7 @@
             this.bntInseriPosto.TabIndex = 11;
             this.bntInseriPosto.Text = "Inserir";
             this.bntInseriPosto.UseVisualStyleBackColor = true;
+            this.bntInseriPosto.Click += new System.EventHandler(this.bntInseriPosto_Click);
             // 
             // bntCancelarPosto
             // 

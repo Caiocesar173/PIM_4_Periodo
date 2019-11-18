@@ -125,12 +125,6 @@
     <Compile Include="View\Cadastro\CadastroMotorista.Designer.cs">
       <DependentUpon>CadastroMotorista.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\ConsultaQuantidadeVeiculo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\ConsultaQuantidadeVeiculo.Designer.cs">
-      <DependentUpon>ConsultaQuantidadeVeiculo.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,10 +178,10 @@
     <Compile Include="View\Posto de Abastecimento\CadastrarPosto.Designer.cs">
       <DependentUpon>CadastrarPosto.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Senha.cs">
+    <Compile Include="View\Cadastro\Senha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Senha.Designer.cs">
+    <Compile Include="View\Cadastro\Senha.Designer.cs">
       <DependentUpon>Senha.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Tela de Parceiro\telaParceiro.cs">
@@ -196,16 +190,16 @@
     <Compile Include="View\Tela de Parceiro\telaParceiro.Designer.cs">
       <DependentUpon>telaParceiro.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Tela Login\Tela Login.cs">
+    <Compile Include="View\Tela Login\Tela_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Tela Login\Tela Login.Designer.cs">
-      <DependentUpon>Tela Login.cs</DependentUpon>
+    <Compile Include="View\Tela Login\Tela_Login.Designer.cs">
+      <DependentUpon>Tela_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Tela Motorista.cs">
+    <Compile Include="View\TelaMotorista\Tela Motorista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Tela Motorista.Designer.cs">
+    <Compile Include="View\TelaMotorista\Tela Motorista.Designer.cs">
       <DependentUpon>Tela Motorista.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Tela Oficina\CadastrarOficina.cs">
@@ -283,9 +277,6 @@
     <EmbeddedResource Include="View\Cadastro\CadastroMotorista.resx">
       <DependentUpon>CadastroMotorista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\ConsultaQuantidadeVeiculo.resx">
-      <DependentUpon>ConsultaQuantidadeVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,16 +305,16 @@
     <EmbeddedResource Include="View\Posto de Abastecimento\CadastrarPosto.resx">
       <DependentUpon>CadastrarPosto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Senha.resx">
+    <EmbeddedResource Include="View\Cadastro\Senha.resx">
       <DependentUpon>Senha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela de Parceiro\telaParceiro.resx">
       <DependentUpon>telaParceiro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Tela Login\Tela Login.resx">
-      <DependentUpon>Tela Login.cs</DependentUpon>
+    <EmbeddedResource Include="View\Tela Login\Tela_Login.resx">
+      <DependentUpon>Tela_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Tela Motorista.resx">
+    <EmbeddedResource Include="View\TelaMotorista\Tela Motorista.resx">
       <DependentUpon>Tela Motorista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Oficina\CadastrarOficina.resx">
@@ -369,6 +360,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Dao\Script Criação do Banco .txt" />
+    <None Include="View\__Componentes__\Interface\__Icones Menu__\abastecimento.png" />
     <None Include="View\__Componentes__\Interface\Solicitações\caminhão.png" />
     <None Include="View\__Componentes__\Interface\Login\logo fuzzi.png" />
     <None Include="View\__Componentes__\Interface\Login\icone botão entrar.png" />

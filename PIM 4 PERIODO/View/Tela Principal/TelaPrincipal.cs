@@ -10,7 +10,9 @@ using System.Windows.Forms;
 using System.IO;
 using PIM_4_PERIODO.View.Tela_Principal.Home;
 using PIM_4_PERIODO.View.Tela_Principal.Solicitacao;
-using PIM_4_PERIODO.View.Cadastro;
+using PIM_4_Periodo.View;
+//using PIM_4_PERIODO.View.Tela_Principal.Cadastro.Usuarios;
+using PIM_4_PERIODO.View.Tela_Principal;
 
 
 namespace PIM_4_PERIODO.View
@@ -132,20 +134,49 @@ namespace PIM_4_PERIODO.View
 
         private void Panel_Menus_DoubleClick(object sender, EventArgs e)
         {
-            if (this.WindowState != FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Normal;
-                this.Size = new Size(759, 564);
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
+            /*
+
+               if (this.WindowState != FormWindowState.Normal)
+             {
+                 this.WindowState = FormWindowState.Normal;
+                 this.Size = new Size(759, 564);
+             }
+             else
+             {
+                 this.WindowState = FormWindowState.Maximized;
+             }*/
         }
 
         private void Panel_Menus_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Posto_de_Abastecimento.Abastecimento abastecimento = new Posto_de_Abastecimento.Abastecimento();
+            abastecimento.Show();
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Painel_Menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

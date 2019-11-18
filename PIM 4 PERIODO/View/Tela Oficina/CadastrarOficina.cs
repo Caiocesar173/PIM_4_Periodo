@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PIM_4_PERIODO.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace PIM_4_PERIODO.View.Tela_Oficina
         public CadastrarOficina()
         {
             InitializeComponent();
+        }
+
+        private void bntIncluir_Click(object sender, EventArgs e)
+        {
+            Oficina oficina = new Oficina();
+            oficina.Nome = txtNomeOficina.Text;
+            oficina.RazaoSocial = txtRazaoSocial.Text;
+            oficina.Telefone = Convert.ToInt16(txtTelefone.Text);
+            oficina.CNPJ = txtCpnj.Text;
+            oficina.Endereço = txtEndereco.Text;
+            oficina.ID_Oficina = Convert.ToInt16(txt_IdOficina);
+            MessageBox.Show("Oficina cadastrada com sucesso");
         }
     }
 }

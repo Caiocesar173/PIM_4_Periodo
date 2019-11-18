@@ -11,7 +11,7 @@ namespace PIM_4_PERIODO.Dao
 {
     class Conexao
     {
-        private MySqlConnection conexao = new MySqlConnection("server = remotemysql.com; port = 3306; User Id = wBe1hJH8iI; database = wBe1hJH8iI; password = se6xCssu22");
+        private MySqlConnection conexao = new MySqlConnection("server = remotemysql.com; port = 3306; User Id = UTJAG6N7YD; database = UTJAG6N7YD; password = iaJ8jMEJEY");
 
 
         public void Conectar()

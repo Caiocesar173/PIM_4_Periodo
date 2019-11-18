@@ -499,7 +499,6 @@ namespace PIM_4_PERIODO.Dao
                         command.Parameters.Add("@RAZAO_SOCIAL", MySqlDbType.VarChar).Value = Posto.RazaoSocial;
                         command.Parameters.Add("@TELEFONE", MySqlDbType.Int32).Value = Posto.Telefone;
                         command.Parameters.Add("@CELULAR", MySqlDbType.Int32).Value = Posto.Celular;
-                        command.Parameters.Add("@SITE", MySqlDbType.VarChar).Value = Posto.Site;
                         command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Posto.Endereço;
 
                         int retorno = command.ExecuteNonQuery();

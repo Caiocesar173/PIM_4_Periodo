@@ -9,7 +9,7 @@ namespace PIM_4_PERIODO.Model
     {
         
         PictureBox Picture_BG = new PictureBox();
-        Custom_DragControl Drag_Control = new Custom_DragControl();
+        //Custom_DragControl Drag_Control = new Custom_DragControl();
 
         public CustomBackground()
         {
@@ -28,7 +28,7 @@ namespace PIM_4_PERIODO.Model
             Picture_BG.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Picture_BG.Size = Picture_BG.Image.Size;
             Picture_BG.Dock = DockStyle.Fill;
-            Drag_Control.Select_Control = Picture_BG;
+            //Drag_Control.Select_Control = Picture_BG;
 
             this.Margin = new Padding(10);
             //this.Padding = 
