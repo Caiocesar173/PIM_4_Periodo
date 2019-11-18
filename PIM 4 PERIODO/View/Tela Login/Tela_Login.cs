@@ -27,12 +27,11 @@ namespace PIM_4_Periodo.View
         }
 
         private void Entra_Button_Click(object sender, EventArgs e)
-        {
-            Login.Usuario = txt_Usuario.Text;
-            Login.Senha = txt_Senha.Text;
-
-            if (Login.Usuario != "" && Login.Senha != "")
+        {   
+            if (txt_Usuario.Text != "" && txt_Senha.Text != "")
             {
+                Login.Usuario = txt_Usuario.Text;
+                Login.Senha = txt_Senha.Text;
                 if (Consulta.Entra_Sistema(Login))
                 {
                     this.Hide();
@@ -40,13 +39,13 @@ namespace PIM_4_Periodo.View
                 }
                 else
                 {
-                    Label_Error.Text = "Usuario ou Senha inválidos";
+                    Label_Error.Text = "Usuário ou Senha inválidos";
                     Repoisicionamento_ErrorLabel();
                 }
             }
             else
             {
-                Label_Error.Text = "Usuario e Senha não podem ser vazios";
+                Label_Error.Text = "Usuário e Senha não podem ser vazios";
                 Repoisicionamento_ErrorLabel();
             }
         }

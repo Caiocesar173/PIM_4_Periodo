@@ -82,7 +82,7 @@ namespace PIM_4_PERIODO.Dao
                 else
                 {
 
-                    MessageBox.Show("Usuario já Existe", "Problemas ao inserir");
+                    MessageBox.Show("Abastecimento já Existe", "Problemas ao inserir");
                 }
             }
             catch (MySqlException Exception)
@@ -665,7 +665,7 @@ namespace PIM_4_PERIODO.Dao
                         command.Parameters.Add("@MODELO", MySqlDbType.VarChar).Value = Veiculo.Modelo;
                         command.Parameters.Add("@TIPO", MySqlDbType.VarChar).Value = Veiculo.Tipo;
                         command.Parameters.Add("@MARCA", MySqlDbType.VarChar).Value = Veiculo.Marca;
-                        command.Parameters.Add("@ANO", MySqlDbType.Date).Value = Veiculo.Ano;
+                        command.Parameters.Add("@ANO", MySqlDbType.Int32).Value = Veiculo.Ano;
                         command.Parameters.Add("@RENAVAM", MySqlDbType.Int32).Value = Veiculo.Renavam;
                         command.Parameters.Add("@CHSSI_NUM", MySqlDbType.VarChar).Value = Veiculo.Chassi;
                         command.Parameters.Add("@KM_POR_LITRO", MySqlDbType.Float).Value = Veiculo.KM_Litro;
