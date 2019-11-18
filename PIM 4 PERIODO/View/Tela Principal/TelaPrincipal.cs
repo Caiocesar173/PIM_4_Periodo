@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using PIM_4_PERIODO.View.Tela_Principal.Home;
 using PIM_4_PERIODO.View.Tela_Principal.Solicitacao;
-using PIM_4_PERIODO.View.Tela_Principal.Cadaastro.Usuarios;
+using PIM_4_PERIODO.View.Cadastro;
 
 
 namespace PIM_4_PERIODO.View
