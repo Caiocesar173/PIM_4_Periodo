@@ -16,7 +16,6 @@ namespace PIM_4_PERIODO.Dao
     {
         private Conexao Conexão = new Conexao();
         private Consultar Consulta = new Consultar();
-        private MySqlDataAdapter adapter = new MySqlDataAdapter();
 
         private bool Abastecimento_Alterado = false;
         private bool Combustivel_Alterado = false;
@@ -32,7 +31,6 @@ namespace PIM_4_PERIODO.Dao
         private bool Veiculo_Alterado = false;
         private bool Atendimento_Alterado = false;
         private bool Destino_Alterado = false;
-
 
 
         public bool Abastecimento(Abastecimento Abastecimento)
@@ -219,10 +217,10 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertManutençãoo = "UPDATE MANUTENCAO SET NUM_OS = @NUM_OS, ID_OFICINA = @ID_OFICINA, DATAS_ENTRADA = @DATAS_ENTRADA, DATAS_SAIDA = @DATAS_SAIDA, MOTIVO = @MOTIVO, VALOR = @VALOR, ID_VEICULO = @ID_VEICULO WHERE ID_MANUTENCAO = @ID_MANUTENCAO;";
+                        string AlterManutençãoo = "UPDATE MANUTENCAO SET NUM_OS = @NUM_OS, ID_OFICINA = @ID_OFICINA, DATAS_ENTRADA = @DATAS_ENTRADA, DATAS_SAIDA = @DATAS_SAIDA, MOTIVO = @MOTIVO, VALOR = @VALOR, ID_VEICULO = @ID_VEICULO WHERE ID_MANUTENCAO = @ID_MANUTENCAO;";
 
 
-                        command.CommandText = InsertManutençãoo;
+                        command.CommandText = AlterManutençãoo;
                         command.Connection = Conexão.Pega_Conexão();
                         command.Parameters.Add("@NUM_OS", MySqlDbType.Int32).Value = Manutenção.NumeroOS;
                         command.Parameters.Add("@ID_OFICINA", MySqlDbType.Int32).Value = Manutenção.ID_Oficina;
@@ -277,10 +275,10 @@ namespace PIM_4_PERIODO.Dao
                     if (Conexão.Checkconection())
                     {
                         
-                        string InsertMulta = "UPDATE MULTA SET NUM_INFRACAO = @NUM_INFRACAO, TIPO_INFRACAO = @TIPO_INFRACAO, ID_MOTORISTA = @ID_MOTORISTA, ID_VEICULO = @ID_VEICULO, VALOR = @VALOR, DATAS = @DATAS, ENDERECO = @ENDERECO WHERE ID_MULTA = @ID_MULTA";
+                        string AlterMulta = "UPDATE MULTA SET NUM_INFRACAO = @NUM_INFRACAO, TIPO_INFRACAO = @TIPO_INFRACAO, ID_MOTORISTA = @ID_MOTORISTA, ID_VEICULO = @ID_VEICULO, VALOR = @VALOR, DATAS = @DATAS, ENDERECO = @ENDERECO WHERE ID_MULTA = @ID_MULTA";
 
 
-                        command.CommandText = InsertMulta;
+                        command.CommandText = AlterMulta;
                         command.Connection = Conexão.Pega_Conexão();
                         command.Parameters.Add("@NUM_INFRACAO", MySqlDbType.Int32).Value = Multa.Infração;
                         command.Parameters.Add("@TIPO_INFRACAO", MySqlDbType.VarChar).Value = Multa.Tipo;
@@ -334,10 +332,10 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertNotificação = "UPDATE NOTIFICACAO SET ID_DEPARTAMENTO = @ID_DEPARTAMENTO, TITULO = @TITULO, IMAGEM = @IMAGEM, DESCRICAO = @DESCRICAO  WHERE ID_NOTIFICACAO = @ID_NOTIFICACAO;";
+                        string AlterNotificação = "UPDATE NOTIFICACAO SET ID_NOTIFICACAO = @ID_NOTIFICACAO, TITULO = @TITULO, IMAGEM = @IMAGEM, DESCRICAO = @DESCRICAO  WHERE ID_NOTIFICACAO = @ID_NOTIFICACAO;";
 
 
-                        command.CommandText = InsertNotificação;
+                        command.CommandText = AlterNotificação;
                         command.Connection = Conexão.Pega_Conexão();
                         command.Parameters.Add("@ID_DEPARTAMENTO", MySqlDbType.Int32).Value = Notificação.ID_Departamento;
                         command.Parameters.Add("@TITULO", MySqlDbType.VarChar).Value = Notificação.Titulo;
@@ -388,10 +386,10 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertOficina = "UPDATE OFICINA SET NOME = @NOME, CNPJ = @CNPJ, RAZAO_SOCIAL = @RAZAO_SOCIAL, TELEFONE = @TELEFONE, CELULAR = @CELULAR, SITE = @SITE, ENDERECO = @ENDERECO WHERE ID_OFICINA = @ID_OFICINA;";
+                        string AlterOficina = "UPDATE OFICINA SET NOME = @NOME, CNPJ = @CNPJ, RAZAO_SOCIAL = @RAZAO_SOCIAL, TELEFONE = @TELEFONE, CELULAR = @CELULAR, SITE = @SITE, ENDERECO = @ENDERECO WHERE ID_OFICINA = @ID_OFICINA;";
 
 
-                        command.CommandText = InsertOficina;
+                        command.CommandText = AlterOficina;
                         command.Connection = Conexão.Pega_Conexão();
                         command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Oficina.Nome;
                         command.Parameters.Add("@CNPJ", MySqlDbType.VarChar).Value = Oficina.CNPJ;
@@ -426,34 +424,399 @@ namespace PIM_4_PERIODO.Dao
 
             return Oficina_Alterado;
         }
-        public void Oleo(Oleo Oleo)
+        public bool Oleo(Oleo Oleo)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand();
+                table = Consulta.Oleo(Oleo);
 
+                //Verifica se o Oleo Ja esta cadastrado.
+                if (table.Rows.Count == 0)
+                {
+                    if (!Conexão.Checkconection())
+                    {
+                        Conexão.Conectar();
+                    }
+
+                    if (Conexão.Checkconection())
+                    {
+                        string AlterOleo = "UPDATE OLEO SET NOME = @NOME, MARCA = @MARCA, LITROS = @LITROS  WHERE ID_OLEO = @ID_OLEO;";
+
+                        command.CommandText = AlterOleo;
+                        command.Connection = Conexão.Pega_Conexão();
+                        command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Oleo.Nome;
+                        command.Parameters.Add("@MARCA", MySqlDbType.VarChar).Value = Oleo.Marca;
+                        command.Parameters.Add("@LITROS", MySqlDbType.Float).Value = Oleo.Litros;
+                        command.Parameters.Add("@ID_OLEO", MySqlDbType.Int32).Value = table.Rows[0][0];
+
+                        int retorno = command.ExecuteNonQuery();
+                        if (retorno > 0)
+                        {
+                            Oleo_Alterado = true;
+                        }
+                        Conexão.Desconectar();
+                    }
+                    else
+                    {
+                        return Oleo_Alterado;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Oleo não pode ser Alterado", "Problemas ao Alterar");
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
+            }
+
+            return Oleo_Alterado;
         }
-        public void Posto(Posto Posto)
+        public bool Posto(Posto Posto)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand();
+                table = Consulta.Posto(Posto);
 
+                //Verifica se o Posto Ja esta cadastrado.
+                if (table.Rows.Count == 0)
+                {
+                    if (!Conexão.Checkconection())
+                    {
+                        Conexão.Conectar();
+                    }
+
+                    if (Conexão.Checkconection())
+                    {
+                        string AlterPosto = "UPDATE POSTO SET NOME = @NOME, CNPJ = @CNPJ, RAZAO_SOCIAL = @RAZAO_SOCIAL, TELEFONE = @TELEFONE, CELULAR = @CELULAR, SITE = @SITE, ENDERECO = @ENDERECO WHERE ID_POSTO = @ID_POSTO";
+
+
+                        command.CommandText = AlterPosto;
+                        command.Connection = Conexão.Pega_Conexão();
+                        command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Posto.Nome;
+                        command.Parameters.Add("@CNPJ", MySqlDbType.VarChar).Value = Posto.CNPJ;
+                        command.Parameters.Add("@RAZAO_SOCIAL", MySqlDbType.VarChar).Value = Posto.RazaoSocial;
+                        command.Parameters.Add("@TELEFONE", MySqlDbType.Int32).Value = Posto.Telefone;
+                        command.Parameters.Add("@CELULAR", MySqlDbType.Int32).Value = Posto.Celular;
+                        command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Posto.Endereço;
+                        command.Parameters.Add("@ID_POSTO", MySqlDbType.Int32).Value = table.Rows[0][0];
+
+                        int retorno = command.ExecuteNonQuery();
+                        if (retorno > 0)
+                        {
+                            Posto_Alterado = true;
+                        }
+                        Conexão.Desconectar();
+                    }
+                    else
+                    {
+                        return Posto_Alterado;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Posto não pode ser Alterado", "Problemas ao Alterar");
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
+            }
+
+            return Posto_Alterado;
         }
-        public void Salario(Salario Salario)
+        public bool Salario(Salario Salario)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand();
+                table = Consulta.Salario(Salario);
 
+                //Verifica se o Salario Ja esta cadastrado.
+                if (table.Rows.Count == 0)
+                {
+                    if (!Conexão.Checkconection())
+                    {
+                        Conexão.Conectar();
+                    }
+
+                    if (Conexão.Checkconection())
+                    {
+                        string AlterSalario = "UPDATE SALARIO SET VALOR = @VALOR WHERE ID_SALARIO = @ID_SALARIO;";
+                        
+                        command.CommandText = AlterSalario;
+                        command.Connection = Conexão.Pega_Conexão();
+                        command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Salario.Valor;
+                        command.Parameters.Add("@ID_SALARIO", MySqlDbType.Int32).Value = table.Rows[0][0];
+
+                        int retorno = command.ExecuteNonQuery();
+                        if (retorno > 0)
+                        {
+                            Salario_Alterado = true;
+                        }
+                        Conexão.Desconectar();
+                    }
+                    else
+                    {
+                        return Salario_Alterado;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Salario não pode ser Alterado", "Problemas ao Alterar");
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
+            }
+
+            return Salario_Alterado;
         }
-        public void Usuario(Usuario Usuario)
+        public bool Usuario(Usuario Usuario)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand();
+                table = Consulta.Usuario(Usuario);
 
+                //Verifica se o Usuario Ja esta cadastrado.
+                if (table.Rows.Count == 0)
+                {
+                    if (!Conexão.Checkconection())
+                    {
+                        Conexão.Conectar();
+                    }
+
+                    if (Conexão.Checkconection())
+                    {
+                        string AlterUsuario = "UPDATE USUARIO SET USERNAME = @USERNAME, SENHA = @SENHA, DEPARTAMENTO = @DEPARTAMENTO, NOME = @NOME, EMAIL = @EMAIL, CPF = @CPF, TELEFONE = @TELEFONE, CELULAR = @CELULAR, ENDERECO = @ENDERECO, CNH = @CNH, VALIDADE_CNH = @VALIDADE_CNH, CATEGORIA_CNH = @CATEGORIA_CNH, DATAS_ADIMISSAO = @DATAS_ADIMISSAO WHERE ID_USUARIO = @ID_USUARIO;";
+
+
+                        command.CommandText = AlterUsuario;
+                        command.Connection = Conexão.Pega_Conexão();
+                        command.Parameters.Add("@USERNAME", MySqlDbType.VarChar).Value = Usuario.Username;
+                        command.Parameters.Add("@SENHA", MySqlDbType.VarChar).Value = Usuario.Senha;
+                        command.Parameters.Add("@DEPARTAMENTO", MySqlDbType.Int32).Value = Usuario.Departamento;
+                        command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Usuario.Nome;
+                        command.Parameters.Add("@EMAIL", MySqlDbType.VarChar).Value = Usuario.Email;
+                        command.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = Usuario.CPF;
+                        command.Parameters.Add("@TELEFONE", MySqlDbType.Int32).Value = Usuario.Telefone;
+                        command.Parameters.Add("@CELULAR", MySqlDbType.Int32).Value = Usuario.Celular;
+                        command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Usuario.Endereço;
+                        command.Parameters.Add("@CNH", MySqlDbType.Int32).Value = Usuario.CNH;
+                        command.Parameters.Add("@VALIDADE_CNH", MySqlDbType.Date).Value = Usuario.Validade_CNH;
+                        command.Parameters.Add("@CATEGORIA_CNH", MySqlDbType.VarChar).Value = Usuario.Categoria_CNH;
+                        command.Parameters.Add("@DATAS_ADIMISSAO", MySqlDbType.Date).Value = Usuario.Categoria_CNH;
+                        command.Parameters.Add("@ID_USUARIO", MySqlDbType.Int32).Value = table.Rows[0][0];
+
+                        int retorno = command.ExecuteNonQuery();
+                        if (retorno > 0)
+                        {
+                            Usuario_Alterado = true;
+                        }
+                        Conexão.Desconectar();
+                    }
+                    else
+                    {
+                        return Usuario_Alterado;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Usuario não pode ser Alterado", "Problemas ao Alterar");
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
+            }
+
+            return Usuario_Alterado;    
         }
-        public void Veiculo(Veiculo Veiculo)
+        public bool Veiculo(Veiculo Veiculo)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand();
+                table = Consulta.Veiculo(Veiculo);
 
+                //Verifica se o Veiculo Ja esta cadastrado.
+                if (table.Rows.Count == 0)
+                {
+                    if (!Conexão.Checkconection())
+                    {
+                        Conexão.Conectar();
+                    }
+
+                    if (Conexão.Checkconection())
+                    {
+                        string AlterVeiculo = "UPDATE VEICULO SET PLACA = @PLACA, MODELO = @MODELO, TIPO = @TIPO, MARCA = @MARCA, ANO = @ANO, RENAVAM = @RENAVAM, CHSSI_NUM = @CHSSI_NUM, KM_POR_LITRO = @KM_POR_LITRO, KM_TROCA_OLEO = @KM_TROCA_OLEO, KM_REVISAO = @KM_REVISAO, KM_PNEU = @KM_PNEU, CAPACIDADE_TANQUE = @CAPACIDADE_TANQUE, ID_COMBUSTIVEL = @ID_COMBUSTIVEL WHERE ID_VEICULO = @ID_VEICULO;";
+
+
+                        command.CommandText = AlterVeiculo;
+                        command.Connection = Conexão.Pega_Conexão();
+                        command.Parameters.Add("@PLACA", MySqlDbType.VarChar).Value = Veiculo.Placa;
+                        command.Parameters.Add("@MODELO", MySqlDbType.VarChar).Value = Veiculo.Modelo;
+                        command.Parameters.Add("@TIPO", MySqlDbType.VarChar).Value = Veiculo.Tipo;
+                        command.Parameters.Add("@MARCA", MySqlDbType.VarChar).Value = Veiculo.Marca;
+                        command.Parameters.Add("@ANO", MySqlDbType.Int32).Value = Veiculo.Ano;
+                        command.Parameters.Add("@RENAVAM", MySqlDbType.Int32).Value = Veiculo.Renavam;
+                        command.Parameters.Add("@CHSSI_NUM", MySqlDbType.VarChar).Value = Veiculo.Chassi;
+                        command.Parameters.Add("@KM_POR_LITRO", MySqlDbType.Float).Value = Veiculo.KM_Litro;
+                        command.Parameters.Add("@KM_TROCA_OLEO", MySqlDbType.Float).Value = Veiculo.KM_TrocaOleo;
+                        command.Parameters.Add("@KM_REVISAO", MySqlDbType.Float).Value = Veiculo.KM_Revisao;
+                        command.Parameters.Add("@KM_PNEU", MySqlDbType.Float).Value = Veiculo.KM_TrocaPneu;
+                        command.Parameters.Add("@CAPACIDADE_TANQUE", MySqlDbType.Float).Value = Veiculo.Capacidade_Tanque;
+                        command.Parameters.Add("@ID_COMBUSTIVEL", MySqlDbType.Int32).Value = Veiculo.ID_Combustivel;
+                        command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = table.Rows[0][0];
+
+                        int retorno = command.ExecuteNonQuery();
+                        if (retorno > 0)
+                        {
+                            Veiculo_Alterado = true;
+                        }
+                        Conexão.Desconectar();
+                    }
+                    else
+                    {
+                        return Veiculo_Alterado;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Veiculo não pode ser Alterado", "Problemas ao Alterar");
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
+            }
+
+            return Veiculo_Alterado;
         }
-        public void Atendimento(Atendimento Atendimento)
+        public bool Atendimento(Atendimento Atendimento)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand();
 
+                table = Consulta.Atendimento(Atendimento);
+                
+                //Verifica se o Atendimento Ja esta cadastrado.
+                if (table.Rows.Count == 0)
+                {
+                    if (!Conexão.Checkconection())
+                    {
+                        Conexão.Conectar();
+                    }
+
+                    if (Conexão.Checkconection())
+                    {
+                        string AlterAtendimento = "UPDATE ATENDIMENTO SET ID_VEICULO = @ID_VEICULO, ID_MOTORISTA = @ID_MOTORISTA, ID_DESTINO = @ID_DESTINO WHERE ID_ATENDIMENTO = @ID_ATENDIMENTO;";
+
+
+                        command.CommandText = AlterAtendimento;
+                        command.Connection = Conexão.Pega_Conexão();
+                        command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Atendimento.ID_Veiculo;
+                        command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.VarChar).Value = Atendimento.ID_Motorista;
+                        command.Parameters.Add("@ID_DESTINO", MySqlDbType.VarChar).Value = Atendimento.ID_Destino;
+                        command.Parameters.Add("@ID_ATENDIMENTO", MySqlDbType.Int32).Value = table.Rows[0][0];
+
+                        int retorno = command.ExecuteNonQuery();
+                        if (retorno > 0)
+                        {
+                            Atendimento_Alterado = true;
+                        }
+                        Conexão.Desconectar();
+                    }
+                    else
+                    {
+                        return Atendimento_Alterado;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Atendimento não pode ser Alterado", "Problemas ao Alterar");
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
+            }
+
+            return Atendimento_Alterado;
         }
-        public void Destino(Destino Destino)
+        public bool Destino(Destino Destino)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                MySqlCommand command = new MySqlCommand();
+                table = Consulta.Destino(Destino);
 
+                //Verifica se o Destino Ja esta cadastrado.
+                if (table.Rows.Count == 0)
+                {
+                    if (!Conexão.Checkconection())
+                    {
+                        Conexão.Conectar();
+                    }
+
+                    if (Conexão.Checkconection())
+                    {
+                        string AlterDestino = "UPDATE DESTINO SET ID_VEICULO = @ID_VEICULO, ID_MOTORISTA = @ID_MOTORISTA, LOCAL_CHEGADA = @LOCAL_CHEGADA, LOCAL_SAIDA = @LOCAL_SAIDA, DATAS_CHEGADA = @DATAS_CHEGADA, DATAS_SAIDA = @DATAS_SAIDA WHERE ID_DESTINO = @ID_DESTINO;";
+
+
+                        command.CommandText = AlterDestino;
+                        command.Connection = Conexão.Pega_Conexão();
+                        command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Destino.ID_Veiculo;
+                        command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.VarChar).Value = Destino.ID_Motorista;
+                        command.Parameters.Add("@LOCAL_CHEGADA", MySqlDbType.VarChar).Value = Destino.Local_Chegada;
+                        command.Parameters.Add("@LOCAL_SAIDA", MySqlDbType.VarChar).Value = Destino.Local_Saida;
+                        command.Parameters.Add("@DATAS_CHEGADA", MySqlDbType.VarChar).Value = Destino.Data_Chegada;
+                        command.Parameters.Add("@DATAS_SAIDA", MySqlDbType.VarChar).Value = Destino.Data_Saida;
+                        command.Parameters.Add("@ID_DESTINO", MySqlDbType.Int32).Value = table.Rows[0][0];
+
+                        int retorno = command.ExecuteNonQuery();
+                        if (retorno > 0)
+                        {
+                            Destino_Alterado = true;
+                        }
+                        Conexão.Desconectar();
+                    }
+                    else
+                    {
+                        return Destino_Alterado;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Salario não pode ser Alterado", "Problemas ao Alterar");
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
+            }
+
+            return Destino_Alterado;
         }
-
     }
 }
