@@ -2,13 +2,15 @@
 using System.Drawing;
 using System.Windows.Forms;
 
+
+
 namespace WindowsFormsApplication1
 {
     public class Custom_Circurlar_Button : Button
     {
         public Custom_Circurlar_Button()
         {
-            //this.Size = new Size(26, 26);
+            this.Size = new Size(26, 26);
             this.FlatStyle = FlatStyle.Flat;
             
             //this.BackgroundImage.Size = new Size(ClientSize.Width -2 , ClientSize.Height -2 );
@@ -23,5 +25,4 @@ namespace WindowsFormsApplication1
             base.OnPaint(e);
         }
     }
-
 }

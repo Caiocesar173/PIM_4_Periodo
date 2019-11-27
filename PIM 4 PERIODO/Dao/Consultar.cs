@@ -52,11 +52,14 @@ namespace PIM_4_PERIODO.Dao
                     adapter.Fill(table);
 
                     //Verifica se há uma lina no banco com esse Usuário.
+                    int retorno = command.ExecuteNonQuery();
                     if (table.Rows.Count > 0)
                     {
-                        Login_Existe = true;
+                        if(Convert.ToString(table.Rows[0][1]) == Login.Usuario && Convert.ToString(table.Rows[0][2]) == Login.Senha)
+                        {
+                            Login_Existe = true;
+                        }
                     }
-
                     Conexão.Desconectar();
                 }
             }
@@ -64,7 +67,6 @@ namespace PIM_4_PERIODO.Dao
             {
                 MessageBox.Show(Convert.ToString(Exception), "Estado da Consulta");
             }
-
             return Login_Existe;
         }
         public DataTable Abastecimento(Abastecimento Abastecimento)
@@ -174,7 +176,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableCombustivel;
         }
-        public DataTable Departamento(Departamento Depatamento)
+        public DataTable Departamento(Departamento Depatamento, int TipoPesquisa)
         {
             try
             {
@@ -185,15 +187,45 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaDepartamento = "SELECT * FROM DEPARTAMENTO WHERE NIVELACESSO = @NIVELACESSO OR NOME = @NOME;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    string ConsultaDepartamento = "SELECT * FROM DEPARTAMENTO WHERE ";
+  
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaDepartamento = ConsultaDepartamento + "ID_DEPARTAMENTO = @ID_DEPARTAMENTO";
+                            break;
+                        case 1:
+                            ConsultaDepartamento = ConsultaDepartamento + "NIVELACESSO = @NIVELACESSO";
+                            break;
+                        case 2:
+                            ConsultaDepartamento = ConsultaDepartamento + "NOME = @NOME";
+                            break;
+                        default:
+                            ConsultaDepartamento = ConsultaDepartamento + "1";
+                            break;
+                    }
+
+
+                    ConsultaDepartamento = ConsultaDepartamento + ";";
                     command.CommandText = ConsultaDepartamento;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@NIVELACESSO", MySqlDbType.Int32).Value = Depatamento.NivelAcesso;
-                    command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Depatamento.Nome;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_DEPARTAMENTO", MySqlDbType.Int32).Value = Depatamento.ID_Departamento;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@NIVELACESSO", MySqlDbType.Int32).Value = Depatamento.NivelAcesso;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Depatamento.Nome;
+                            break;
+                    }
 
                     adapter.SelectCommand = command;
                     adapter.Fill(TableDepartamento);
@@ -315,7 +347,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableMulta;
         }
-        public DataTable Notificação(Notificação Notificação)
+        public DataTable Notificação(Notificação Notificação, int TipoPesquisa)
         {
             try
             {
@@ -326,17 +358,40 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaNotificação = "SELECT * FROM NOTIFICACAO WHERE ID_DEPARTAMENTO = @ID_DEPARTAMENTO OR TITULO = @TITULO OR IMAGEM = @IMAGEM OR DESCRICAO = @DESCRICAO;";
+                    string ConsultaNotificação = "SELECT * FROM NOTIFICACAO WHERE ";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaNotificação = ConsultaNotificação + "ID_DEPARTAMENTO = @ID_DEPARTAMENTO";
+                            break;
+                        case 1:
+                            ConsultaNotificação = ConsultaNotificação + "TITULO = @TITULO";
+                            break;
+                        default:
+                            ConsultaNotificação = ConsultaNotificação + "1";
+                            break;   
+                    }
+
+
+                    ConsultaNotificação = ConsultaNotificação + ";";
                     command.CommandText = ConsultaNotificação;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@ID_DEPARTAMENTO", MySqlDbType.Int32).Value = Notificação.ID_Departamento;
-                    command.Parameters.Add("@TITULO", MySqlDbType.VarChar).Value = Notificação.Titulo;
-                    command.Parameters.Add("@IMAGEM", MySqlDbType.VarChar).Value = Notificação.Imagem;
-                    command.Parameters.Add("@DESCRICAO", MySqlDbType.VarChar).Value = Notificação.Descrição;
+
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_DEPARTAMENTO", MySqlDbType.Int32).Value = Notificação.ID_Departamento;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@TITULO", MySqlDbType.VarChar).Value = Notificação.Titulo;
+                            break;
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableNotificação);
                     Conexão.Desconectar();
@@ -493,7 +548,7 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaUsuario = "SELECT * FROM USUARIO WHERE USERNAME = @USERNAME OR DEPARTAMENTO = @DEPARTAMENTO OR NOME =  @NOME, EMAIL = @EMAIL OR CPF = @CPF OR TELEFONE = @TELEFONE OR CELULAR = @CELULAR OR ENDERECO = @ENDERECO OR CNH = @CNH OR VALIDADE_CNH = @VALIDADE_CNH OR CATEGORIA_CNH = @CATEGORIA_CNH OR CATEGORIA_CNH = @CATEGORIA_CNH OR DATAS_ADIMISSAO = @DATAS_ADIMISSAO;";
+                    string ConsultaUsuario = "SELECT * FROM USUARIO WHERE USERNAME = @USERNAME;";
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();

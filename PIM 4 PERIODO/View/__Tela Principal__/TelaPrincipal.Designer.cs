@@ -31,6 +31,17 @@
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel Painel_Menu;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
+            this.Logout_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Solicitacao_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Abastecimento_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Panel_Menu = new System.Windows.Forms.Panel();
+            this.Home_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Relatorios_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.SAC_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Cadastro_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Atendimento_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Picture_Logo = new System.Windows.Forms.PictureBox();
+            this.Solicitacao_btn_ = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Exit_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Elipse_TelaPrincipal = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse_Solicitacao = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -43,17 +54,6 @@
             this.Panel_Menus = new System.Windows.Forms.Panel();
             this.Drag_Tela_Principal = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Drag_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.btnAbastecimento = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Home_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Relatorios_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.SAC_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Cadastro_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Atendimento_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Picture_Logo = new System.Windows.Forms.PictureBox();
-            this.Solicitacao_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             Painel_Menu = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             Painel_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).BeginInit();
@@ -65,17 +65,16 @@
             Painel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Painel_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Painel_Menu.BorderColor = System.Drawing.Color.Transparent;
-            Painel_Menu.Controls.Add(this.btnLogout);
-            Painel_Menu.Controls.Add(this.bunifuFlatButton1);
-            Painel_Menu.Controls.Add(this.btnAbastecimento);
-            Painel_Menu.Controls.Add(this.panel1);
+            Painel_Menu.Controls.Add(this.Logout_Btn);
+            Painel_Menu.Controls.Add(this.Solicitacao_btn);
+            Painel_Menu.Controls.Add(this.Abastecimento_Btn);
+            Painel_Menu.Controls.Add(this.Panel_Menu);
             Painel_Menu.Controls.Add(this.Home_btn);
             Painel_Menu.Controls.Add(this.Relatorios_btn);
             Painel_Menu.Controls.Add(this.SAC_btn);
             Painel_Menu.Controls.Add(this.Cadastro_btn);
             Painel_Menu.Controls.Add(this.Atendimento_btn);
             Painel_Menu.Controls.Add(this.Picture_Logo);
-            Painel_Menu.Controls.Add(this.Solicitacao_btn);
             Painel_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             Painel_Menu.ForeColor = System.Drawing.Color.Transparent;
             Painel_Menu.Location = new System.Drawing.Point(0, 0);
@@ -85,159 +84,125 @@
             Painel_Menu.ShadowTopLeftVisible = false;
             Painel_Menu.Size = new System.Drawing.Size(223, 657);
             Painel_Menu.TabIndex = 10;
-            Painel_Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Menu_Paint);
             // 
-            // Exit_Button
+            // Logout_Btn
             // 
-            this.Exit_Button.Active = false;
-            this.Exit_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(228)))), ((int)(((byte)(253)))));
-            this.Exit_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Exit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Exit_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Exit_Button.BorderRadius = 0;
-            this.Exit_Button.ButtonText = "x";
-            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit_Button.DisabledColor = System.Drawing.Color.Gray;
-            this.Exit_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit_Button.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Exit_Button.Iconcolor = System.Drawing.Color.WhiteSmoke;
-            this.Exit_Button.Iconimage = null;
-            this.Exit_Button.Iconimage_right = null;
-            this.Exit_Button.Iconimage_right_Selected = null;
-            this.Exit_Button.Iconimage_Selected = null;
-            this.Exit_Button.IconMarginLeft = 0;
-            this.Exit_Button.IconMarginRight = 0;
-            this.Exit_Button.IconRightVisible = true;
-            this.Exit_Button.IconRightZoom = 0D;
-            this.Exit_Button.IconVisible = true;
-            this.Exit_Button.IconZoom = 90D;
-            this.Exit_Button.IsTab = false;
-            this.Exit_Button.Location = new System.Drawing.Point(729, 3);
-            this.Exit_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.Exit_Button.Name = "Exit_Button";
-            this.Exit_Button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Exit_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.Exit_Button.OnHoverTextColor = System.Drawing.Color.Gainsboro;
-            this.Exit_Button.selected = false;
-            this.Exit_Button.Size = new System.Drawing.Size(39, 23);
-            this.Exit_Button.TabIndex = 8;
-            this.Exit_Button.Text = "x";
-            this.Exit_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Exit_Button.Textcolor = System.Drawing.Color.Gainsboro;
-            this.Exit_Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit_Button.Click += new System.EventHandler(this.Exit_Button_Click);
+            this.Logout_Btn.Active = false;
+            this.Logout_Btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Logout_Btn.BackColor = System.Drawing.Color.Transparent;
+            this.Logout_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logout_Btn.BorderRadius = 0;
+            this.Logout_Btn.ButtonText = "";
+            this.Logout_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Logout_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Logout_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Logout_Btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Logout_Btn.Iconimage")));
+            this.Logout_Btn.Iconimage_right = null;
+            this.Logout_Btn.Iconimage_right_Selected = null;
+            this.Logout_Btn.Iconimage_Selected = null;
+            this.Logout_Btn.IconMarginLeft = 0;
+            this.Logout_Btn.IconMarginRight = 0;
+            this.Logout_Btn.IconRightVisible = true;
+            this.Logout_Btn.IconRightZoom = 0D;
+            this.Logout_Btn.IconVisible = true;
+            this.Logout_Btn.IconZoom = 80D;
+            this.Logout_Btn.IsTab = true;
+            this.Logout_Btn.Location = new System.Drawing.Point(172, 609);
+            this.Logout_Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Logout_Btn.Name = "Logout_Btn";
+            this.Logout_Btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Logout_Btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Logout_Btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Logout_Btn.selected = false;
+            this.Logout_Btn.Size = new System.Drawing.Size(36, 35);
+            this.Logout_Btn.TabIndex = 20;
+            this.Logout_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Logout_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Logout_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout_Btn.Click += new System.EventHandler(this.Logout_Btn_Click);
             // 
-            // Elipse_TelaPrincipal
+            // Solicitacao_btn
             // 
-            this.Elipse_TelaPrincipal.ElipseRadius = 5;
-            this.Elipse_TelaPrincipal.TargetControl = this;
+            this.Solicitacao_btn.Active = false;
+            this.Solicitacao_btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.BackColor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Solicitacao_btn.BorderRadius = 0;
+            this.Solicitacao_btn.ButtonText = "    Solicitação";
+            this.Solicitacao_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Solicitacao_btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn.Iconimage")));
+            this.Solicitacao_btn.Iconimage_right = null;
+            this.Solicitacao_btn.Iconimage_right_Selected = null;
+            this.Solicitacao_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn.Iconimage_Selected")));
+            this.Solicitacao_btn.IconMarginLeft = 0;
+            this.Solicitacao_btn.IconMarginRight = 0;
+            this.Solicitacao_btn.IconRightVisible = true;
+            this.Solicitacao_btn.IconRightZoom = 0D;
+            this.Solicitacao_btn.IconVisible = true;
+            this.Solicitacao_btn.IconZoom = 75D;
+            this.Solicitacao_btn.IsTab = true;
+            this.Solicitacao_btn.Location = new System.Drawing.Point(13, 309);
+            this.Solicitacao_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Solicitacao_btn.Name = "Solicitacao_btn";
+            this.Solicitacao_btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Solicitacao_btn.selected = false;
+            this.Solicitacao_btn.Size = new System.Drawing.Size(193, 40);
+            this.Solicitacao_btn.TabIndex = 4;
+            this.Solicitacao_btn.Text = "    Solicitação";
+            this.Solicitacao_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Solicitacao_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Solicitacao_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Solicitacao_btn.Click += new System.EventHandler(this.Solicitacao_btn_Click);
             // 
-            // Elipse_Solicitacao
+            // Abastecimento_Btn
             // 
-            this.Elipse_Solicitacao.ElipseRadius = 5;
-            this.Elipse_Solicitacao.TargetControl = this.Solicitacao_btn;
+            this.Abastecimento_Btn.Active = false;
+            this.Abastecimento_Btn.Activecolor = System.Drawing.Color.Transparent;
+            this.Abastecimento_Btn.BackColor = System.Drawing.Color.Transparent;
+            this.Abastecimento_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Abastecimento_Btn.BorderRadius = 0;
+            this.Abastecimento_Btn.ButtonText = "    Atendimento";
+            this.Abastecimento_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Abastecimento_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.Abastecimento_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Abastecimento_Btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Abastecimento_Btn.Iconimage")));
+            this.Abastecimento_Btn.Iconimage_right = null;
+            this.Abastecimento_Btn.Iconimage_right_Selected = null;
+            this.Abastecimento_Btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Abastecimento_Btn.Iconimage_Selected")));
+            this.Abastecimento_Btn.IconMarginLeft = 0;
+            this.Abastecimento_Btn.IconMarginRight = 0;
+            this.Abastecimento_Btn.IconRightVisible = true;
+            this.Abastecimento_Btn.IconRightZoom = 0D;
+            this.Abastecimento_Btn.IconVisible = true;
+            this.Abastecimento_Btn.IconZoom = 80D;
+            this.Abastecimento_Btn.IsTab = true;
+            this.Abastecimento_Btn.Location = new System.Drawing.Point(13, 501);
+            this.Abastecimento_Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.Abastecimento_Btn.Name = "Abastecimento_Btn";
+            this.Abastecimento_Btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.Abastecimento_Btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.Abastecimento_Btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.Abastecimento_Btn.selected = false;
+            this.Abastecimento_Btn.Size = new System.Drawing.Size(193, 40);
+            this.Abastecimento_Btn.TabIndex = 19;
+            this.Abastecimento_Btn.Text = "    Atendimento";
+            this.Abastecimento_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Abastecimento_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.Abastecimento_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Abastecimento_Btn.Click += new System.EventHandler(this.Abastecimento_btn_Click);
             // 
-            // Elipse_Home
+            // Panel_Menu
             // 
-            this.Elipse_Home.ElipseRadius = 5;
-            this.Elipse_Home.TargetControl = this.Home_btn;
-            // 
-            // Elipes_Atendimento
-            // 
-            this.Elipes_Atendimento.ElipseRadius = 5;
-            this.Elipes_Atendimento.TargetControl = this.Atendimento_btn;
-            // 
-            // Elipse_Cadastro
-            // 
-            this.Elipse_Cadastro.ElipseRadius = 5;
-            this.Elipse_Cadastro.TargetControl = this.Cadastro_btn;
-            // 
-            // Elipse_Relatorio
-            // 
-            this.Elipse_Relatorio.ElipseRadius = 5;
-            this.Elipse_Relatorio.TargetControl = this.Relatorios_btn;
-            // 
-            // Elipse_SAC
-            // 
-            this.Elipse_SAC.ElipseRadius = 5;
-            this.Elipse_SAC.TargetControl = this.SAC_btn;
-            // 
-            // Drag_Panel
-            // 
-            this.Drag_Panel.Fixed = true;
-            this.Drag_Panel.Horizontal = true;
-            this.Drag_Panel.TargetControl = this.Panel_Menus;
-            this.Drag_Panel.Vertical = true;
-            // 
-            // Panel_Menus
-            // 
-            this.Panel_Menus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
-            this.Panel_Menus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_Menus.Location = new System.Drawing.Point(223, 0);
-            this.Panel_Menus.Name = "Panel_Menus";
-            this.Panel_Menus.Size = new System.Drawing.Size(548, 657);
-            this.Panel_Menus.TabIndex = 11;
-            this.Panel_Menus.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Menus_Paint);
-            this.Panel_Menus.DoubleClick += new System.EventHandler(this.Panel_Menus_DoubleClick);
-            // 
-            // Drag_Tela_Principal
-            // 
-            this.Drag_Tela_Principal.Fixed = true;
-            this.Drag_Tela_Principal.Horizontal = true;
-            this.Drag_Tela_Principal.TargetControl = this;
-            this.Drag_Tela_Principal.Vertical = true;
-            // 
-            // Drag_Logo
-            // 
-            this.Drag_Logo.Fixed = true;
-            this.Drag_Logo.Horizontal = true;
-            this.Drag_Logo.TargetControl = this.Picture_Logo;
-            this.Drag_Logo.Vertical = true;
-            // 
-            // btnAbastecimento
-            // 
-            this.btnAbastecimento.Active = false;
-            this.btnAbastecimento.Activecolor = System.Drawing.Color.Transparent;
-            this.btnAbastecimento.BackColor = System.Drawing.Color.Transparent;
-            this.btnAbastecimento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAbastecimento.BorderRadius = 0;
-            this.btnAbastecimento.ButtonText = "    Atendimento";
-            this.btnAbastecimento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbastecimento.DisabledColor = System.Drawing.Color.Transparent;
-            this.btnAbastecimento.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAbastecimento.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAbastecimento.Iconimage")));
-            this.btnAbastecimento.Iconimage_right = null;
-            this.btnAbastecimento.Iconimage_right_Selected = null;
-            this.btnAbastecimento.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("btnAbastecimento.Iconimage_Selected")));
-            this.btnAbastecimento.IconMarginLeft = 0;
-            this.btnAbastecimento.IconMarginRight = 0;
-            this.btnAbastecimento.IconRightVisible = true;
-            this.btnAbastecimento.IconRightZoom = 0D;
-            this.btnAbastecimento.IconVisible = true;
-            this.btnAbastecimento.IconZoom = 80D;
-            this.btnAbastecimento.IsTab = true;
-            this.btnAbastecimento.Location = new System.Drawing.Point(13, 501);
-            this.btnAbastecimento.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAbastecimento.Name = "btnAbastecimento";
-            this.btnAbastecimento.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnAbastecimento.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnAbastecimento.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
-            this.btnAbastecimento.selected = false;
-            this.btnAbastecimento.Size = new System.Drawing.Size(193, 40);
-            this.btnAbastecimento.TabIndex = 19;
-            this.btnAbastecimento.Text = "    Atendimento";
-            this.btnAbastecimento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbastecimento.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
-            this.btnAbastecimento.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(0, 186);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 44);
-            this.panel1.TabIndex = 16;
+            this.Panel_Menu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_Menu.BackgroundImage")));
+            this.Panel_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Panel_Menu.Location = new System.Drawing.Point(0, 186);
+            this.Panel_Menu.Name = "Panel_Menu";
+            this.Panel_Menu.Size = new System.Drawing.Size(217, 44);
+            this.Panel_Menu.TabIndex = 16;
             // 
             // Home_btn
             // 
@@ -251,7 +216,7 @@
             this.Home_btn.DisabledColor = System.Drawing.Color.Transparent;
             this.Home_btn.ForeColor = System.Drawing.Color.Transparent;
             this.Home_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Home_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage")));
+            this.Home_btn.Iconimage = global::PIM_4_PERIODO.Properties.Resources.home;
             this.Home_btn.Iconimage_right = null;
             this.Home_btn.Iconimage_right_Selected = null;
             this.Home_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage_Selected")));
@@ -436,114 +401,145 @@
             this.Picture_Logo.TabIndex = 6;
             this.Picture_Logo.TabStop = false;
             // 
-            // Solicitacao_btn
+            // Solicitacao_btn_
             // 
-            this.Solicitacao_btn.Active = false;
-            this.Solicitacao_btn.Activecolor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.BackColor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Solicitacao_btn.BorderRadius = 0;
-            this.Solicitacao_btn.ButtonText = "    Solicitação";
-            this.Solicitacao_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Solicitacao_btn.DisabledColor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn.Iconimage")));
-            this.Solicitacao_btn.Iconimage_right = null;
-            this.Solicitacao_btn.Iconimage_right_Selected = null;
-            this.Solicitacao_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn.Iconimage_Selected")));
-            this.Solicitacao_btn.IconMarginLeft = 0;
-            this.Solicitacao_btn.IconMarginRight = 0;
-            this.Solicitacao_btn.IconRightVisible = true;
-            this.Solicitacao_btn.IconRightZoom = 0D;
-            this.Solicitacao_btn.IconVisible = true;
-            this.Solicitacao_btn.IconZoom = 75D;
-            this.Solicitacao_btn.IsTab = true;
-            this.Solicitacao_btn.Location = new System.Drawing.Point(13, 309);
-            this.Solicitacao_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.Solicitacao_btn.Name = "Solicitacao_btn";
-            this.Solicitacao_btn.Normalcolor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.OnHovercolor = System.Drawing.Color.Transparent;
-            this.Solicitacao_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
-            this.Solicitacao_btn.selected = false;
-            this.Solicitacao_btn.Size = new System.Drawing.Size(193, 40);
-            this.Solicitacao_btn.TabIndex = 4;
-            this.Solicitacao_btn.Text = "    Solicitação";
-            this.Solicitacao_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Solicitacao_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
-            this.Solicitacao_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Solicitacao_btn.Click += new System.EventHandler(this.Solicitacao_btn_Click);
+            this.Solicitacao_btn_.Active = false;
+            this.Solicitacao_btn_.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.Solicitacao_btn_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.Solicitacao_btn_.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Solicitacao_btn_.BorderRadius = 0;
+            this.Solicitacao_btn_.ButtonText = "     Bunifu Flat Button";
+            this.Solicitacao_btn_.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Solicitacao_btn_.DisabledColor = System.Drawing.Color.Gray;
+            this.Solicitacao_btn_.Iconcolor = System.Drawing.Color.Transparent;
+            this.Solicitacao_btn_.Iconimage = ((System.Drawing.Image)(resources.GetObject("Solicitacao_btn_.Iconimage")));
+            this.Solicitacao_btn_.Iconimage_right = null;
+            this.Solicitacao_btn_.Iconimage_right_Selected = null;
+            this.Solicitacao_btn_.Iconimage_Selected = null;
+            this.Solicitacao_btn_.IconMarginLeft = 0;
+            this.Solicitacao_btn_.IconMarginRight = 0;
+            this.Solicitacao_btn_.IconRightVisible = true;
+            this.Solicitacao_btn_.IconRightZoom = 0D;
+            this.Solicitacao_btn_.IconVisible = true;
+            this.Solicitacao_btn_.IconZoom = 90D;
+            this.Solicitacao_btn_.IsTab = false;
+            this.Solicitacao_btn_.Location = new System.Drawing.Point(0, 0);
+            this.Solicitacao_btn_.Name = "Solicitacao_btn_";
+            this.Solicitacao_btn_.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.Solicitacao_btn_.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.Solicitacao_btn_.OnHoverTextColor = System.Drawing.Color.White;
+            this.Solicitacao_btn_.selected = false;
+            this.Solicitacao_btn_.Size = new System.Drawing.Size(241, 48);
+            this.Solicitacao_btn_.TabIndex = 0;
+            this.Solicitacao_btn_.Text = "     Bunifu Flat Button";
+            this.Solicitacao_btn_.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Solicitacao_btn_.Textcolor = System.Drawing.Color.White;
+            this.Solicitacao_btn_.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuFlatButton1
+            // Exit_Button
             // 
-            this.bunifuFlatButton1.Active = false;
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "    S.A.C";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage_Selected")));
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 80D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(15, 308);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(193, 40);
-            this.bunifuFlatButton1.TabIndex = 20;
-            this.bunifuFlatButton1.Text = "    S.A.C";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_Button.Active = false;
+            this.Exit_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(228)))), ((int)(((byte)(253)))));
+            this.Exit_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Exit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.Exit_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Exit_Button.BorderRadius = 0;
+            this.Exit_Button.ButtonText = "x";
+            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Exit_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_Button.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Exit_Button.Iconcolor = System.Drawing.Color.WhiteSmoke;
+            this.Exit_Button.Iconimage = null;
+            this.Exit_Button.Iconimage_right = null;
+            this.Exit_Button.Iconimage_right_Selected = null;
+            this.Exit_Button.Iconimage_Selected = null;
+            this.Exit_Button.IconMarginLeft = 0;
+            this.Exit_Button.IconMarginRight = 0;
+            this.Exit_Button.IconRightVisible = true;
+            this.Exit_Button.IconRightZoom = 0D;
+            this.Exit_Button.IconVisible = true;
+            this.Exit_Button.IconZoom = 90D;
+            this.Exit_Button.IsTab = false;
+            this.Exit_Button.Location = new System.Drawing.Point(729, 3);
+            this.Exit_Button.Margin = new System.Windows.Forms.Padding(5);
+            this.Exit_Button.Name = "Exit_Button";
+            this.Exit_Button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.Exit_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.Exit_Button.OnHoverTextColor = System.Drawing.Color.Gainsboro;
+            this.Exit_Button.selected = false;
+            this.Exit_Button.Size = new System.Drawing.Size(39, 23);
+            this.Exit_Button.TabIndex = 8;
+            this.Exit_Button.Text = "x";
+            this.Exit_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Exit_Button.Textcolor = System.Drawing.Color.Gainsboro;
+            this.Exit_Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_Button.Click += new System.EventHandler(this.Exit_Button_Click);
             // 
-            // btnLogout
+            // Elipse_TelaPrincipal
             // 
-            this.btnLogout.Active = false;
-            this.btnLogout.Activecolor = System.Drawing.Color.Transparent;
-            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogout.BorderRadius = 0;
-            this.btnLogout.ButtonText = "";
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.DisabledColor = System.Drawing.Color.Transparent;
-            this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
-            this.btnLogout.Iconimage_right = null;
-            this.btnLogout.Iconimage_right_Selected = null;
-            this.btnLogout.Iconimage_Selected = null;
-            this.btnLogout.IconMarginLeft = 0;
-            this.btnLogout.IconMarginRight = 0;
-            this.btnLogout.IconRightVisible = true;
-            this.btnLogout.IconRightZoom = 0D;
-            this.btnLogout.IconVisible = true;
-            this.btnLogout.IconZoom = 80D;
-            this.btnLogout.IsTab = true;
-            this.btnLogout.Location = new System.Drawing.Point(172, 609);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnLogout.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
-            this.btnLogout.selected = false;
-            this.btnLogout.Size = new System.Drawing.Size(36, 35);
-            this.btnLogout.TabIndex = 20;
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
-            this.btnLogout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Click += new System.EventHandler(this.BunifuFlatButton2_Click);
+            this.Elipse_TelaPrincipal.ElipseRadius = 5;
+            this.Elipse_TelaPrincipal.TargetControl = this;
+            // 
+            // Elipse_Solicitacao
+            // 
+            this.Elipse_Solicitacao.ElipseRadius = 5;
+            this.Elipse_Solicitacao.TargetControl = this.Solicitacao_btn;
+            // 
+            // Elipse_Home
+            // 
+            this.Elipse_Home.ElipseRadius = 5;
+            this.Elipse_Home.TargetControl = this.Home_btn;
+            // 
+            // Elipes_Atendimento
+            // 
+            this.Elipes_Atendimento.ElipseRadius = 5;
+            this.Elipes_Atendimento.TargetControl = this.Atendimento_btn;
+            // 
+            // Elipse_Cadastro
+            // 
+            this.Elipse_Cadastro.ElipseRadius = 5;
+            this.Elipse_Cadastro.TargetControl = this.Cadastro_btn;
+            // 
+            // Elipse_Relatorio
+            // 
+            this.Elipse_Relatorio.ElipseRadius = 5;
+            this.Elipse_Relatorio.TargetControl = this.Relatorios_btn;
+            // 
+            // Elipse_SAC
+            // 
+            this.Elipse_SAC.ElipseRadius = 5;
+            this.Elipse_SAC.TargetControl = this.SAC_btn;
+            // 
+            // Drag_Panel
+            // 
+            this.Drag_Panel.Fixed = true;
+            this.Drag_Panel.Horizontal = true;
+            this.Drag_Panel.TargetControl = this.Panel_Menus;
+            this.Drag_Panel.Vertical = true;
+            // 
+            // Panel_Menus
+            // 
+            this.Panel_Menus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
+            this.Panel_Menus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_Menus.Location = new System.Drawing.Point(223, 0);
+            this.Panel_Menus.Name = "Panel_Menus";
+            this.Panel_Menus.Size = new System.Drawing.Size(548, 657);
+            this.Panel_Menus.TabIndex = 11;
+            // 
+            // Drag_Tela_Principal
+            // 
+            this.Drag_Tela_Principal.Fixed = true;
+            this.Drag_Tela_Principal.Horizontal = true;
+            this.Drag_Tela_Principal.TargetControl = this;
+            this.Drag_Tela_Principal.Vertical = true;
+            // 
+            // Drag_Logo
+            // 
+            this.Drag_Logo.Fixed = true;
+            this.Drag_Logo.Horizontal = true;
+            this.Drag_Logo.TargetControl = this.Picture_Logo;
+            this.Drag_Logo.Vertical = true;
             // 
             // TelaPrincipal
             // 
@@ -559,7 +555,6 @@
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";
-            this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             Painel_Menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).EndInit();
             this.ResumeLayout(false);
@@ -587,9 +582,9 @@
         private Bunifu.Framework.UI.BunifuDragControl Drag_Tela_Principal;
         private System.Windows.Forms.Panel Panel_Menus;
         private Bunifu.Framework.UI.BunifuDragControl Drag_Logo;
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnAbastecimento;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLogout;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private System.Windows.Forms.Panel Panel_Menu;
+        private Bunifu.Framework.UI.BunifuFlatButton Abastecimento_Btn;
+        private Bunifu.Framework.UI.BunifuFlatButton Logout_Btn;
+        private Bunifu.Framework.UI.BunifuFlatButton Solicitacao_btn_;
     }
 }

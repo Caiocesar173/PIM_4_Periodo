@@ -7,7 +7,14 @@ namespace PIM_4_PERIODO.Model
     class Custom_Conversa : Panel
     {
         public String Nome_Da_Conversa { get => Nome_Conversa.Text; set => Nome_Conversa.Text = value; }
-        public String Ultima_Da_Mensagem { get => Ultima_Mensagem.Text; set => Ultima_Mensagem.Text = value; }
+        public String Ultima_Da_Mensagem { get => Ultima_Mensagem.Text;
+            set { 
+                if(Ultima_Mensagem.Size.Width > 38)
+                {
+
+                }
+                Ultima_Mensagem.Text = value; }
+        }
         public Image Icone { get => Picture_Icone.Image; set => Picture_Icone.Image = value; }
 
 
@@ -35,6 +42,7 @@ namespace PIM_4_PERIODO.Model
             Picture_Icone.BackColor = Color.Transparent;
             Picture_Icone.Dock = DockStyle.Fill;
 
+            //Nome da Conversa
             Nome_Conversa.Name = "NomeDoChat";
             Nome_Conversa.Size = new Size(500, 40);
             Nome_Conversa.BackColor = Color.Transparent;
@@ -44,7 +52,15 @@ namespace PIM_4_PERIODO.Model
             Nome_Conversa.Location = new Point(Panel_Icon.Location.X + Picture_Icone.Width + Spacing_Nome,
                 Panel_Icon.Location.Y + 5);
 
-
+            //Ultima Mensagem
+            Ultima_Mensagem.Name = "UltimaMensagemRecebida";
+            Ultima_Mensagem.Size = new Size(365, 38);
+            Ultima_Mensagem.BackColor = Color.Transparent;
+            Ultima_Mensagem.ForeColor = Color.FromArgb(192, 217, 224);
+            Ultima_Mensagem.Font = new Font("Century Gothic", 25, FontStyle.Bold);
+            int Spacing_Mensagem = Convert.ToInt32(Panel_Icon.Width - (Panel_Icon.Width / 2));
+            Ultima_Mensagem.Location = new Point(Panel_Icon.Location.X + Picture_Icone.Width + Spacing_Mensagem,
+                Panel_Icon.Location.Y + 5);
 
 
             //Adicionando componentes

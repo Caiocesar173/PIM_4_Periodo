@@ -32,8 +32,8 @@
             Bunifu.Framework.UI.BunifuFlatButton Entrar_Btn;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Login));
             this.Exit_Button = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.txt_Usuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txt_Senha = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TxTBox_Usuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TxTBox_Senha = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Label_Usuario = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Label_Senha = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DragCtrl_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -124,56 +124,56 @@
             this.Exit_Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_Button.Click += new System.EventHandler(this.Exit_Button_Click);
             // 
-            // txt_Usuario
+            // TxTBox_Usuario
             // 
-            this.txt_Usuario.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Usuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_Usuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_Usuario.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Usuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Usuario.ForeColor = System.Drawing.Color.Silver;
-            this.txt_Usuario.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.txt_Usuario.HintText = "Username";
-            this.txt_Usuario.isPassword = false;
-            this.txt_Usuario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.txt_Usuario.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.txt_Usuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.txt_Usuario.LineThickness = 4;
-            this.txt_Usuario.Location = new System.Drawing.Point(11, 353);
-            this.txt_Usuario.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Usuario.MaxLength = 32767;
-            this.txt_Usuario.Name = "txt_Usuario";
-            this.txt_Usuario.Size = new System.Drawing.Size(316, 46);
-            this.txt_Usuario.TabIndex = 1;
-            this.txt_Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_Usuario.OnValueChanged += new System.EventHandler(this.Txt_Usuario_OnValueChanged);
+            this.TxTBox_Usuario.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Usuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Usuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Usuario.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Usuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Usuario.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Usuario.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Usuario.HintText = "Username";
+            this.TxTBox_Usuario.isPassword = false;
+            this.TxTBox_Usuario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Usuario.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Usuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Usuario.LineThickness = 4;
+            this.TxTBox_Usuario.Location = new System.Drawing.Point(11, 353);
+            this.TxTBox_Usuario.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Usuario.MaxLength = 32767;
+            this.TxTBox_Usuario.Name = "TxTBox_Usuario";
+            this.TxTBox_Usuario.Size = new System.Drawing.Size(316, 46);
+            this.TxTBox_Usuario.TabIndex = 1;
+            this.TxTBox_Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxTBox_Usuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxTBox_Usuario_KeyDown);
             // 
-            // txt_Senha
+            // TxTBox_Senha
             // 
-            this.txt_Senha.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Senha.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_Senha.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_Senha.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.txt_Senha.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_Senha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Senha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Senha.ForeColor = System.Drawing.Color.Silver;
-            this.txt_Senha.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.txt_Senha.HintText = "Password";
-            this.txt_Senha.isPassword = true;
-            this.txt_Senha.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.txt_Senha.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.txt_Senha.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.txt_Senha.LineThickness = 5;
-            this.txt_Senha.Location = new System.Drawing.Point(13, 448);
-            this.txt_Senha.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Senha.MaxLength = 32767;
-            this.txt_Senha.Name = "txt_Senha";
-            this.txt_Senha.Size = new System.Drawing.Size(319, 46);
-            this.txt_Senha.TabIndex = 2;
-            this.txt_Senha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_Senha.OnValueChanged += new System.EventHandler(this.Txt_Senha_OnValueChanged);
+            this.TxTBox_Senha.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Senha.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Senha.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Senha.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.TxTBox_Senha.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Senha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Senha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Senha.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Senha.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Senha.HintText = "Password";
+            this.TxTBox_Senha.isPassword = true;
+            this.TxTBox_Senha.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Senha.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Senha.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Senha.LineThickness = 5;
+            this.TxTBox_Senha.Location = new System.Drawing.Point(13, 448);
+            this.TxTBox_Senha.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Senha.MaxLength = 32767;
+            this.TxTBox_Senha.Name = "TxTBox_Senha";
+            this.TxTBox_Senha.Size = new System.Drawing.Size(319, 46);
+            this.TxTBox_Senha.TabIndex = 2;
+            this.TxTBox_Senha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxTBox_Senha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxTBox_Senha_KeyDown);
             // 
             // Label_Usuario
             // 
@@ -258,8 +258,8 @@
             this.Controls.Add(Entrar_Btn);
             this.Controls.Add(this.Label_Senha);
             this.Controls.Add(this.Label_Usuario);
-            this.Controls.Add(this.txt_Senha);
-            this.Controls.Add(this.txt_Usuario);
+            this.Controls.Add(this.TxTBox_Senha);
+            this.Controls.Add(this.TxTBox_Usuario);
             this.Controls.Add(this.Picture_Logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -278,8 +278,8 @@
 
         private System.Windows.Forms.PictureBox Picture_Logo;
         private Bunifu.Framework.UI.BunifuFlatButton Exit_Button;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Usuario;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Senha;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Usuario;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Senha;
         private Bunifu.Framework.UI.BunifuCustomLabel Label_Usuario;
         private Bunifu.Framework.UI.BunifuCustomLabel Label_Senha;
         private Bunifu.Framework.UI.BunifuDragControl DragCtrl_Logo;

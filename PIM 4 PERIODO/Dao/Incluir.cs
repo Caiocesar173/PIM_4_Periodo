@@ -145,14 +145,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Combustivel_Incluido;
         }
-        public bool Departamento(Departamento Depatamento)
+        public bool Departamento(Departamento Depatamento, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Departamento(Depatamento);
+                table = Consulta.Departamento(Depatamento, TipoPesquisa);
 
                 //Verifica se o Departamento Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -309,14 +309,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Multa_Incluido;           
         }
-        public bool Notificação(Notificação Notificação)
+        public bool Notificação(Notificação Notificação, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Notificação(Notificação);
+                table = Consulta.Notificação(Notificação, TipoPesquisa);
 
                 //Verifica se o Notificação Ja esta cadastrado.
                 if (table.Rows.Count == 0)

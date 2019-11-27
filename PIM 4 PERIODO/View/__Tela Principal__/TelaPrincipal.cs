@@ -20,12 +20,13 @@ namespace PIM_4_PERIODO.View
     public partial class TelaPrincipal : Form
     {
         //public Image img = Properties.Resources.Background_Principal;
+        
         Tela_Home Home = new Tela_Home();
         Tela_Solicitacao Solicitacao = new Tela_Solicitacao();
         View.Cadastro.AdicionarUsuarioSistema cadastro = new Cadastro.AdicionarUsuarioSistema();
         public TelaPrincipal()
         {
-            
+
             InitializeComponent();
 
             if (Home_btn.Active)
@@ -37,12 +38,11 @@ namespace PIM_4_PERIODO.View
                 Home.Show();
             }
         }
-       
+
         private void Exit_Button_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void Home_btn_Click(object sender, EventArgs e)
         {
             if (Solicitacao_btn.Active)
@@ -59,10 +59,8 @@ namespace PIM_4_PERIODO.View
                 Home.Show();
             }
         }
-
         private void Solicitacao_btn_Click(object sender, EventArgs e)
         {
-
             if (Home_btn.Active)
             {
                 Home.Close();
@@ -88,7 +86,6 @@ namespace PIM_4_PERIODO.View
                 Home.Close();
             }
         }
-
         private void Cadastro_btn_Click(object sender, EventArgs e)
         {
             if (Solicitacao_btn.Active)
@@ -107,7 +104,6 @@ namespace PIM_4_PERIODO.View
 
             }
         }
-
         private void Relatorios_btn_Click(object sender, EventArgs e)
         {
             if (Solicitacao_btn.Active)
@@ -119,7 +115,6 @@ namespace PIM_4_PERIODO.View
                 Home.Close();
             }
         }
-
         private void SAC_btn_Click(object sender, EventArgs e)
         {
             if (Solicitacao_btn.Active)
@@ -131,52 +126,15 @@ namespace PIM_4_PERIODO.View
                 Home.Close();
             }
         }
-
-        private void Panel_Menus_DoubleClick(object sender, EventArgs e)
-        {
-            /*
-
-               if (this.WindowState != FormWindowState.Normal)
-             {
-                 this.WindowState = FormWindowState.Normal;
-                 this.Size = new Size(759, 564);
-             }
-             else
-             {
-                 this.WindowState = FormWindowState.Maximized;
-             }*/
-        }
-
-        private void Panel_Menus_Paint(object sender, PaintEventArgs e)
+        private void Abastecimento_btn_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Logout_Btn_Click(object sender, EventArgs e)
         {
-            Posto_de_Abastecimento.Abastecimento abastecimento = new Posto_de_Abastecimento.Abastecimento();
-            abastecimento.Show();
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TelaPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Painel_Menu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void BunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-            
+            Tela_Login Login = new Tela_Login();
+            this.Hide();
+            Login.Show();
         }
     }
 }

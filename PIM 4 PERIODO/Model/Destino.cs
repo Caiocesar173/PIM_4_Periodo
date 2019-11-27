@@ -25,11 +25,5 @@ namespace PIM_4_PERIODO.Model
         public int ID_Veiculo { get => id_Veiculo; set => id_Veiculo = value; }
         public int ID_Motorista { get => id_Motorista; set => id_Motorista = value; }
 
-
-
-        /*
-         LOCAL_CHEGADA varchar(200) not null,,
-		LOCAL_SAIDA varchar(200) not null,,
-         */
     }
 }

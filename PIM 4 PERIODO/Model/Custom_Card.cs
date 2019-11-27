@@ -18,7 +18,7 @@ namespace PIM_4_PERIODO.Model
         Panel Painel_Central = new Panel();
 
         public String Titulo_Card { get => Titulo.Text; set => Titulo.Text = value; }
-        public String SubTitulo_Card { get => SubTitulo.Text; set => SubTitulo.Text = value;}
+        public String SubTitulo_Card { get => SubTitulo.Text; set => SubTitulo.Text = "Notificações - " + value;}
         public String Texto_Card { get => Texto.Text; set => Texto.Text = value;}
         public Image Icone { get => Picture_Icone.Image; set => Picture_Icone.Image = value; }
 
@@ -30,10 +30,8 @@ namespace PIM_4_PERIODO.Model
             this.BackColor = Color.Transparent;
 
             //Labels de Texto do Card
-
             //Titulo
             Titulo.Name = "Titulo_Card";
-            //Titulo.BackColor = Color.Transparent;
             Titulo.ForeColor = Color.FromArgb(76, 176, 195);
             Titulo.Font = new Font("Century Gothic", 20.25f, FontStyle.Bold);
             Titulo.Size = new Size(Convert.ToInt32(this.Width * 0.7366f), Convert.ToInt32(this.Height * 0.1344f));
@@ -44,7 +42,6 @@ namespace PIM_4_PERIODO.Model
 
             //Subtitulo
             SubTitulo.Name = "Subtitulo_Card";
-            SubTitulo.Text = "Notificações - " + SubTitulo.Text;
             SubTitulo.BackColor = Color.Transparent;
             SubTitulo.ForeColor = Color.FromArgb(170, 201, 209);
             SubTitulo.Font = new Font("Century Gothic", 11.25f, FontStyle.Regular);
@@ -66,7 +63,6 @@ namespace PIM_4_PERIODO.Model
 
             //Painel e PictureBox com icone
             //Controles do Panel
-            
             PanelDoIcone.Name = "PainelIcone_Card";
             PanelDoIcone.BackColor = Color.Transparent;
             PanelDoIcone.BackgroundImage = Bkg_PanelIcone;
