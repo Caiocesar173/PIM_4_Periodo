@@ -8,20 +8,31 @@ namespace PIM_4_PERIODO.Model
     {
         public String Nome_Da_Conversa { get => Nome_Conversa.Text; set => Nome_Conversa.Text = value; }
         public String Ultima_Da_Mensagem { get => Ultima_Mensagem.Text;
-            set { 
-                if(Ultima_Mensagem.Size.Width > 38)
+            set
+            {
+                if (Ultima_Mensagem.Size.Width > 38)
                 {
-
+                    Ultima_Mensagem.Text = Truncate(value, 38);
                 }
-                Ultima_Mensagem.Text = value; }
+                else
+                {
+                    Ultima_Mensagem.Text = value;
+                }
+            }
         }
         public Image Icone { get => Picture_Icone.Image; set => Picture_Icone.Image = value; }
+        public static string Truncate(string value, int maxLength)
+        {
+            if (string.IsNullOrEmpty(value)) { return value; }
 
+            return value.Substring(0, Math.Min(value.Length, maxLength));
+        }
 
         Label Nome_Conversa = new Label();
         Label Ultima_Mensagem = new Label();
         Panel Panel_Icon = new Panel();
         PictureBox Picture_Icone = new PictureBox();
+        
 
         public Custom_Conversa()
         {
@@ -57,16 +68,17 @@ namespace PIM_4_PERIODO.Model
             Ultima_Mensagem.Size = new Size(365, 38);
             Ultima_Mensagem.BackColor = Color.Transparent;
             Ultima_Mensagem.ForeColor = Color.FromArgb(192, 217, 224);
-            Ultima_Mensagem.Font = new Font("Century Gothic", 25, FontStyle.Bold);
+            Ultima_Mensagem.Font = new Font("Century Gothic", 20, FontStyle.Regular);
             int Spacing_Mensagem = Convert.ToInt32(Panel_Icon.Width - (Panel_Icon.Width / 2));
-            Ultima_Mensagem.Location = new Point(Panel_Icon.Location.X + Picture_Icone.Width + Spacing_Mensagem,
-                Panel_Icon.Location.Y + 5);
+            Ultima_Mensagem.Location = new Point(Nome_Conversa.Location.X + 20, Nome_Conversa.Location.Y + 
+                Nome_Conversa.Size.Height + 5);
 
 
             //Adicionando componentes
             Panel_Icon.Controls.Add(Picture_Icone);
             this.Controls.Add(Panel_Icon);
             this.Controls.Add(Nome_Conversa);
+            this.Controls.Add(Ultima_Mensagem);
 
         }
     }

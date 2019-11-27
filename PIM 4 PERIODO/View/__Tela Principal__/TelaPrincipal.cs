@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using PIM_4_PERIODO.View.Tela_Principal.Home;
 using PIM_4_PERIODO.View.Tela_Principal.Solicitacao;
+using PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao;
 using PIM_4_Periodo.View;
 //using PIM_4_PERIODO.View.Tela_Principal.Cadastro.Usuarios;
 using PIM_4_PERIODO.View.Tela_Principal;
@@ -22,7 +23,9 @@ namespace PIM_4_PERIODO.View
         //public Image img = Properties.Resources.Background_Principal;
         
         Tela_Home Home = new Tela_Home();
-        Tela_Solicitacao Solicitacao = new Tela_Solicitacao();
+        //Tela_Solicitacao Solicitacao = new Tela_Solicitacao();
+        Tela_SolicitaçãoInicial Solicitacao = new Tela_SolicitaçãoInicial();
+       
         View.Cadastro.AdicionarUsuarioSistema cadastro = new Cadastro.AdicionarUsuarioSistema();
         public TelaPrincipal()
         {
@@ -67,7 +70,7 @@ namespace PIM_4_PERIODO.View
             }
             if (!Solicitacao_btn.Active)
             {
-                Solicitacao = new Tela_Solicitacao();
+                Solicitacao = new Tela_SolicitaçãoInicial();
                 Solicitacao.TopLevel = false;
                 Solicitacao.AutoScroll = true;
                 this.Panel_Menus.Controls.Add(Solicitacao);
@@ -99,8 +102,8 @@ namespace PIM_4_PERIODO.View
             }
             if (Cadastro_btn.Active)
             {
-                cadastro = new Cadastro.AdicionarUsuarioSistema();
-                cadastro.Show();
+                //cadastro = new Cadastro.AdicionarUsuarioSistema();
+                //cadastro.Show();
 
             }
         }

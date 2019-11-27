@@ -34,16 +34,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.TxTBox_NomeUsuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Usuario_DataGridView = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.TxTBox_NomeUsuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             Vai_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.Usuario_DataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // DataElipse
-            // 
-            this.DataElipse.ElipseRadius = 20;
-            this.DataElipse.TargetControl = this.Usuario_DataGridView;
             // 
             // Vai_Btn
             // 
@@ -84,29 +79,10 @@
             Vai_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             Vai_Btn.Click += new System.EventHandler(this.Vai_Btn_Click);
             // 
-            // TxTBox_NomeUsuario
+            // DataElipse
             // 
-            this.TxTBox_NomeUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_NomeUsuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_NomeUsuario.BackColor = System.Drawing.Color.White;
-            this.TxTBox_NomeUsuario.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_NomeUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_NomeUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TxTBox_NomeUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TxTBox_NomeUsuario.HintForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_NomeUsuario.HintText = "Digite o UserName a ser pesquisado";
-            this.TxTBox_NomeUsuario.isPassword = false;
-            this.TxTBox_NomeUsuario.LineFocusedColor = System.Drawing.Color.Blue;
-            this.TxTBox_NomeUsuario.LineIdleColor = System.Drawing.Color.Gray;
-            this.TxTBox_NomeUsuario.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.TxTBox_NomeUsuario.LineThickness = 3;
-            this.TxTBox_NomeUsuario.Location = new System.Drawing.Point(82, 35);
-            this.TxTBox_NomeUsuario.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_NomeUsuario.MaxLength = 32767;
-            this.TxTBox_NomeUsuario.Name = "TxTBox_NomeUsuario";
-            this.TxTBox_NomeUsuario.Size = new System.Drawing.Size(379, 33);
-            this.TxTBox_NomeUsuario.TabIndex = 5;
-            this.TxTBox_NomeUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DataElipse.ElipseRadius = 20;
+            this.DataElipse.TargetControl = this.Usuario_DataGridView;
             // 
             // Usuario_DataGridView
             // 
@@ -167,6 +143,30 @@
             this.Usuario_DataGridView.Size = new System.Drawing.Size(521, 326);
             this.Usuario_DataGridView.TabIndex = 7;
             this.Usuario_DataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+            // 
+            // TxTBox_NomeUsuario
+            // 
+            this.TxTBox_NomeUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_NomeUsuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_NomeUsuario.BackColor = System.Drawing.Color.White;
+            this.TxTBox_NomeUsuario.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_NomeUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_NomeUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TxTBox_NomeUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxTBox_NomeUsuario.HintForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_NomeUsuario.HintText = "Digite o UserName a ser pesquisado";
+            this.TxTBox_NomeUsuario.isPassword = false;
+            this.TxTBox_NomeUsuario.LineFocusedColor = System.Drawing.Color.Blue;
+            this.TxTBox_NomeUsuario.LineIdleColor = System.Drawing.Color.Gray;
+            this.TxTBox_NomeUsuario.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.TxTBox_NomeUsuario.LineThickness = 3;
+            this.TxTBox_NomeUsuario.Location = new System.Drawing.Point(82, 35);
+            this.TxTBox_NomeUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_NomeUsuario.MaxLength = 32767;
+            this.TxTBox_NomeUsuario.Name = "TxTBox_NomeUsuario";
+            this.TxTBox_NomeUsuario.Size = new System.Drawing.Size(379, 33);
+            this.TxTBox_NomeUsuario.TabIndex = 5;
+            this.TxTBox_NomeUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Tela_Solicitacao
             // 

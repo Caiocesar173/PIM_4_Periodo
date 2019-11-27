@@ -83,7 +83,7 @@
             Painel_Menu.ShadowDept = 2;
             Painel_Menu.ShadowTopLeftVisible = false;
             Painel_Menu.Size = new System.Drawing.Size(223, 657);
-            Painel_Menu.TabIndex = 10;
+            Painel_Menu.TabIndex = 0;
             // 
             // Logout_Btn
             // 
@@ -115,7 +115,7 @@
             this.Logout_Btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.Logout_Btn.selected = false;
             this.Logout_Btn.Size = new System.Drawing.Size(36, 35);
-            this.Logout_Btn.TabIndex = 20;
+            this.Logout_Btn.TabIndex = 8;
             this.Logout_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Logout_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
             this.Logout_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,7 +151,7 @@
             this.Solicitacao_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.Solicitacao_btn.selected = false;
             this.Solicitacao_btn.Size = new System.Drawing.Size(193, 40);
-            this.Solicitacao_btn.TabIndex = 4;
+            this.Solicitacao_btn.TabIndex = 2;
             this.Solicitacao_btn.Text = "    Solicitação";
             this.Solicitacao_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Solicitacao_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
@@ -188,7 +188,7 @@
             this.Abastecimento_Btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.Abastecimento_Btn.selected = false;
             this.Abastecimento_Btn.Size = new System.Drawing.Size(193, 40);
-            this.Abastecimento_Btn.TabIndex = 19;
+            this.Abastecimento_Btn.TabIndex = 6;
             this.Abastecimento_Btn.Text = "    Atendimento";
             this.Abastecimento_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Abastecimento_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
@@ -202,7 +202,7 @@
             this.Panel_Menu.Location = new System.Drawing.Point(0, 186);
             this.Panel_Menu.Name = "Panel_Menu";
             this.Panel_Menu.Size = new System.Drawing.Size(217, 44);
-            this.Panel_Menu.TabIndex = 16;
+            this.Panel_Menu.TabIndex = 0;
             // 
             // Home_btn
             // 
@@ -216,7 +216,7 @@
             this.Home_btn.DisabledColor = System.Drawing.Color.Transparent;
             this.Home_btn.ForeColor = System.Drawing.Color.Transparent;
             this.Home_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Home_btn.Iconimage = global::PIM_4_PERIODO.Properties.Resources.home;
+            this.Home_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage")));
             this.Home_btn.Iconimage_right = null;
             this.Home_btn.Iconimage_right_Selected = null;
             this.Home_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage_Selected")));
@@ -235,7 +235,7 @@
             this.Home_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.Home_btn.selected = true;
             this.Home_btn.Size = new System.Drawing.Size(193, 40);
-            this.Home_btn.TabIndex = 15;
+            this.Home_btn.TabIndex = 1;
             this.Home_btn.Text = "    Home";
             this.Home_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Home_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
@@ -272,7 +272,7 @@
             this.Relatorios_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.Relatorios_btn.selected = false;
             this.Relatorios_btn.Size = new System.Drawing.Size(193, 40);
-            this.Relatorios_btn.TabIndex = 12;
+            this.Relatorios_btn.TabIndex = 5;
             this.Relatorios_btn.Text = "    Relatórios";
             this.Relatorios_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Relatorios_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
@@ -309,7 +309,7 @@
             this.SAC_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.SAC_btn.selected = false;
             this.SAC_btn.Size = new System.Drawing.Size(193, 40);
-            this.SAC_btn.TabIndex = 11;
+            this.SAC_btn.TabIndex = 7;
             this.SAC_btn.Text = "    S.A.C";
             this.SAC_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SAC_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
@@ -346,7 +346,7 @@
             this.Cadastro_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.Cadastro_btn.selected = false;
             this.Cadastro_btn.Size = new System.Drawing.Size(193, 40);
-            this.Cadastro_btn.TabIndex = 10;
+            this.Cadastro_btn.TabIndex = 4;
             this.Cadastro_btn.Text = "    Cadastro";
             this.Cadastro_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Cadastro_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
@@ -383,7 +383,7 @@
             this.Atendimento_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
             this.Atendimento_btn.selected = false;
             this.Atendimento_btn.Size = new System.Drawing.Size(193, 40);
-            this.Atendimento_btn.TabIndex = 7;
+            this.Atendimento_btn.TabIndex = 3;
             this.Atendimento_btn.Text = "   Atendimento";
             this.Atendimento_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Atendimento_btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));

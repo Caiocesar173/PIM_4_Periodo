@@ -52,6 +52,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
       <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
@@ -106,13 +109,13 @@
     <Compile Include="Dao\Consultar.cs" />
     <Compile Include="Dao\Excluir.cs" />
     <Compile Include="Dao\Incluir.cs" />
-    <Compile Include="Model\Custom Circular Button.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Model\CustomBackground.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Model\Custom_Card.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\Custom_Circular_Button.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Model\Custom_Conversa.cs">
@@ -225,6 +228,12 @@
     <Compile Include="View\Tela Oficina\CadastrarOficina.Designer.cs">
       <DependentUpon>CadastrarOficina.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Testes_Controle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Testes_Controle.Designer.cs">
+      <DependentUpon>Testes_Controle.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\__Tela Principal__\Atendimento\Tela_Chat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +269,12 @@
     </Compile>
     <Compile Include="View\__Tela Principal__\Solicitacao\Tela_Solicitacao.Designer.cs">
       <DependentUpon>Tela_Solicitacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Solicitacao\Tela_SolicitaçãoInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Solicitacao\Tela_SolicitaçãoInicial.Designer.cs">
+      <DependentUpon>Tela_SolicitaçãoInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="View\__Tela Principal__\TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -334,6 +349,9 @@
     <EmbeddedResource Include="View\Tela Oficina\CadastrarOficina.resx">
       <DependentUpon>CadastrarOficina.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Testes_Controle.resx">
+      <DependentUpon>Testes_Controle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Atendimento\Tela_Chat.resx">
       <DependentUpon>Tela_Chat.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Solicitacao\Tela_Solicitacao.resx">
       <DependentUpon>Tela_Solicitacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Solicitacao\Tela_SolicitaçãoInicial.resx">
+      <DependentUpon>Tela_SolicitaçãoInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
@@ -374,6 +395,33 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Dao\Script Criação do Banco .txt" />
+    <None Include="Resources\ATENDIMENTO HOVER.png" />
+    <None Include="Resources\ABASTECIMENTO HOVER.png" />
+    <None Include="Resources\COMBUSTÍVEL HOVER.png" />
+    <None Include="Resources\DEPARTAMENTO HOVER.png" />
+    <None Include="Resources\DESTINO HOVER.png" />
+    <None Include="Resources\MANUTENÇÃO HOVER.png" />
+    <None Include="Resources\MULTA HOVER.png" />
+    <None Include="Resources\NOTIFICAÇÃO HOVER.png" />
+    <None Include="Resources\OFICINA HOVER.png" />
+    <None Include="Resources\ÓLEO HOVER.png" />
+    <None Include="Resources\POSTO HOVER.png" />
+    <None Include="Resources\SALÁRIO HOVER.png" />
+    <None Include="Resources\USUÁRIO HOVER.png" />
+    <None Include="Resources\VEÍCULO HOVER.png" />
+    <None Include="Resources\SOLICITAÇÕES.png" />
+    <None Include="Resources\SOLICITAÇÕES SELECT.png" />
+    <None Include="Resources\SAC.png" />
+    <None Include="Resources\SAC SELECT.png" />
+    <None Include="Resources\RELATÓRIOS.png" />
+    <None Include="Resources\RELATÓRIOS SELECT.png" />
+    <None Include="Resources\HOME.png" />
+    <None Include="Resources\HOME SELECT.png" />
+    <None Include="Resources\CADASTRO.png" />
+    <None Include="Resources\CADASTRO SELECT.png" />
+    <None Include="Resources\ATENDIMENTOM.png" />
+    <None Include="Resources\ATENDIMENTOM SELECT.png" />
+    <None Include="Resources\ATENDIMENTO SELECT.png" />
     <None Include="View\__Componentes__\Interface\__Icones Menu__\abastecimento.png" />
     <None Include="View\__Componentes__\Interface\Solicitações\caminhão.png" />
     <None Include="View\__Componentes__\Interface\Login\logo fuzzi.png" />

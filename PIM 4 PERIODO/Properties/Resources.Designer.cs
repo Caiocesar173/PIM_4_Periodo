@@ -63,9 +63,9 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap abastecimento {
+        internal static System.Drawing.Bitmap ABASTECIMENTO_HOVER {
             get {
-                object obj = ResourceManager.GetObject("abastecimento", resourceCulture);
+                object obj = ResourceManager.GetObject("ABASTECIMENTO_HOVER", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,29 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap atendimento {
+        internal static System.Drawing.Bitmap ATENDIMENTO_HOVER {
             get {
-                object obj = ResourceManager.GetObject("atendimento", resourceCulture);
+                object obj = ResourceManager.GetObject("ATENDIMENTO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ATENDIMENTOM {
+            get {
+                object obj = ResourceManager.GetObject("ATENDIMENTOM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ATENDIMENTOM_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("ATENDIMENTOM_SELECT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +106,16 @@ namespace PIM_4_PERIODO.Properties {
         internal static System.Drawing.Bitmap cadastro {
             get {
                 object obj = ResourceManager.GetObject("cadastro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CADASTRO_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("CADASTRO_SELECT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +143,36 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap COMBUSTÍVEL_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("COMBUSTÍVEL_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DEPARTAMENTO_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("DEPARTAMENTO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DESTINO_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("DESTINO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap faixa_login {
             get {
                 object obj = ResourceManager.GetObject("faixa_login", resourceCulture);
@@ -133,9 +193,19 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home {
+        internal static System.Drawing.Bitmap HOME {
             get {
-                object obj = ResourceManager.GetObject("home", resourceCulture);
+                object obj = ResourceManager.GetObject("HOME", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HOME_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("HOME_SELECT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +263,9 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap relatorios {
+        internal static System.Drawing.Bitmap MANUTENÇÃO_HOVER {
             get {
-                object obj = ResourceManager.GetObject("relatorios", resourceCulture);
+                object obj = ResourceManager.GetObject("MANUTENÇÃO_HOVER", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +273,9 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sac {
+        internal static System.Drawing.Bitmap MULTA_HOVER {
             get {
-                object obj = ResourceManager.GetObject("sac", resourceCulture);
+                object obj = ResourceManager.GetObject("MULTA_HOVER", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +283,119 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap solicitação {
+        internal static System.Drawing.Bitmap NOTIFICAÇÃO_HOVER {
             get {
-                object obj = ResourceManager.GetObject("solicitação", resourceCulture);
+                object obj = ResourceManager.GetObject("NOTIFICAÇÃO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OFICINA_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("OFICINA_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ÓLEO_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("ÓLEO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap POSTO_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("POSTO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RELATÓRIOS {
+            get {
+                object obj = ResourceManager.GetObject("RELATÓRIOS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RELATÓRIOS_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("RELATÓRIOS_SELECT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SAC {
+            get {
+                object obj = ResourceManager.GetObject("SAC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SAC_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("SAC_SELECT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SALÁRIO_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("SALÁRIO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SOLICITAÇÕES {
+            get {
+                object obj = ResourceManager.GetObject("SOLICITAÇÕES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap USUÁRIO_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("USUÁRIO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VEÍCULO_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("VEÍCULO_HOVER", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

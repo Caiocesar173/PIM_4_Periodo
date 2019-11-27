@@ -32,13 +32,14 @@
             this.custom_Conversa2 = new PIM_4_PERIODO.Model.Custom_Conversa();
             this.custom_Conversa3 = new PIM_4_PERIODO.Model.Custom_Conversa();
             this.custom_Conversa4 = new PIM_4_PERIODO.Model.Custom_Conversa();
+            this.custom_Conversa5 = new PIM_4_PERIODO.Model.Custom_Conversa();
             this.SuspendLayout();
             // 
             // custom_Conversa1
             // 
             this.custom_Conversa1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.custom_Conversa1.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
-            this.custom_Conversa1.Location = new System.Drawing.Point(0, 102);
+            this.custom_Conversa1.Location = new System.Drawing.Point(0, 114);
             this.custom_Conversa1.Name = "custom_Conversa1";
             this.custom_Conversa1.Nome_Da_Conversa = "Nome da Conversass";
             this.custom_Conversa1.Size = new System.Drawing.Size(547, 100);
@@ -49,7 +50,7 @@
             // 
             this.custom_Conversa2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.custom_Conversa2.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
-            this.custom_Conversa2.Location = new System.Drawing.Point(0, 204);
+            this.custom_Conversa2.Location = new System.Drawing.Point(0, 216);
             this.custom_Conversa2.Name = "custom_Conversa2";
             this.custom_Conversa2.Nome_Da_Conversa = "Nome da Conversass";
             this.custom_Conversa2.Size = new System.Drawing.Size(547, 100);
@@ -60,7 +61,7 @@
             // 
             this.custom_Conversa3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.custom_Conversa3.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
-            this.custom_Conversa3.Location = new System.Drawing.Point(0, 306);
+            this.custom_Conversa3.Location = new System.Drawing.Point(0, 318);
             this.custom_Conversa3.Name = "custom_Conversa3";
             this.custom_Conversa3.Nome_Da_Conversa = "Nome da Conversass";
             this.custom_Conversa3.Size = new System.Drawing.Size(547, 100);
@@ -71,12 +72,23 @@
             // 
             this.custom_Conversa4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.custom_Conversa4.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
-            this.custom_Conversa4.Location = new System.Drawing.Point(0, 409);
+            this.custom_Conversa4.Location = new System.Drawing.Point(0, 421);
             this.custom_Conversa4.Name = "custom_Conversa4";
             this.custom_Conversa4.Nome_Da_Conversa = "Nome da Conversass";
             this.custom_Conversa4.Size = new System.Drawing.Size(547, 100);
             this.custom_Conversa4.TabIndex = 5;
             this.custom_Conversa4.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
+            // 
+            // custom_Conversa5
+            // 
+            this.custom_Conversa5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
+            this.custom_Conversa5.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
+            this.custom_Conversa5.Location = new System.Drawing.Point(0, 12);
+            this.custom_Conversa5.Name = "custom_Conversa5";
+            this.custom_Conversa5.Nome_Da_Conversa = "Nome da Conversass";
+            this.custom_Conversa5.Size = new System.Drawing.Size(547, 100);
+            this.custom_Conversa5.TabIndex = 3;
+            this.custom_Conversa5.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
             // 
             // Tela_Chat
             // 
@@ -85,6 +97,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(546, 525);
+            this.Controls.Add(this.custom_Conversa5);
             this.Controls.Add(this.custom_Conversa4);
             this.Controls.Add(this.custom_Conversa3);
             this.Controls.Add(this.custom_Conversa2);
@@ -101,5 +114,6 @@
         private Model.Custom_Conversa custom_Conversa2;
         private Model.Custom_Conversa custom_Conversa3;
         private Model.Custom_Conversa custom_Conversa4;
+        private Model.Custom_Conversa custom_Conversa5;
     }
 }
