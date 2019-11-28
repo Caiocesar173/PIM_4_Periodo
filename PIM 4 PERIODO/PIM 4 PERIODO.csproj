@@ -58,6 +58,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
       <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
       <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
     </Reference>
@@ -240,6 +243,12 @@
     <Compile Include="View\__Tela Principal__\Atendimento\Tela_Chat.Designer.cs">
       <DependentUpon>Tela_Chat.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.Designer.cs">
+      <DependentUpon>Tela_Cadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\__Tela Principal__\Home\Tela_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -355,6 +364,9 @@
     <EmbeddedResource Include="View\__Tela Principal__\Atendimento\Tela_Chat.resx">
       <DependentUpon>Tela_Chat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.resx">
+      <DependentUpon>Tela_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Home\Tela_Home.resx">
       <DependentUpon>Tela_Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,6 +407,20 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Dao\Script Criação do Banco .txt" />
+    <None Include="Resources\VEÍCULO.png" />
+    <None Include="Resources\USUÁRIO.png" />
+    <None Include="Resources\SALÁRIO.png" />
+    <None Include="Resources\POSTO.png" />
+    <None Include="Resources\ÓLEO.png" />
+    <None Include="Resources\OFICINA.png" />
+    <None Include="Resources\NOTIFICAÇÃO.png" />
+    <None Include="Resources\MULTA.png" />
+    <None Include="Resources\MANUTENÇÃO.png" />
+    <None Include="Resources\DESTINO.png" />
+    <None Include="Resources\DEPARTAMENTO.png" />
+    <None Include="Resources\COMBUSTÍVEL.png" />
+    <None Include="Resources\ATENDIMENTO.png" />
+    <None Include="Resources\ABASTECIMENTO.png" />
     <None Include="Resources\ATENDIMENTO HOVER.png" />
     <None Include="Resources\ABASTECIMENTO HOVER.png" />
     <None Include="Resources\COMBUSTÍVEL HOVER.png" />

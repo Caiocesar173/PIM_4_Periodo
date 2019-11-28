@@ -133,13 +133,13 @@
             this.Abastecimento_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Abastecimento_Btn.ErrorImage")));
             this.Abastecimento_Btn.FadeWhenInactive = false;
             this.Abastecimento_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Abastecimento_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Abastecimento_Btn.Image")));
+            this.Abastecimento_Btn.Image = global::PIM_4_PERIODO.Properties.Resources.ABASTECIMENTO;
             this.Abastecimento_Btn.ImageActive = null;
             this.Abastecimento_Btn.ImageLocation = null;
             this.Abastecimento_Btn.ImageMargin = 0;
             this.Abastecimento_Btn.ImageSize = new System.Drawing.Size(164, 160);
             this.Abastecimento_Btn.ImageZoomSize = new System.Drawing.Size(164, 160);
-            this.Abastecimento_Btn.InitialImage = ((System.Drawing.Image)(resources.GetObject("Abastecimento_Btn.InitialImage")));
+            this.Abastecimento_Btn.InitialImage = null;
             this.Abastecimento_Btn.Location = new System.Drawing.Point(47, 104);
             this.Abastecimento_Btn.Name = "Abastecimento_Btn";
             this.Abastecimento_Btn.Rotation = 0;
@@ -165,7 +165,7 @@
             this.Atendimento_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Atendimento_Btn.ErrorImage")));
             this.Atendimento_Btn.FadeWhenInactive = false;
             this.Atendimento_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Atendimento_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Atendimento_Btn.Image")));
+            this.Atendimento_Btn.Image = null;
             this.Atendimento_Btn.ImageActive = null;
             this.Atendimento_Btn.ImageLocation = null;
             this.Atendimento_Btn.ImageMargin = 0;
@@ -197,7 +197,7 @@
             this.Combustivel_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Combustivel_Btn.ErrorImage")));
             this.Combustivel_Btn.FadeWhenInactive = false;
             this.Combustivel_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Combustivel_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Combustivel_Btn.Image")));
+            this.Combustivel_Btn.Image = null;
             this.Combustivel_Btn.ImageActive = null;
             this.Combustivel_Btn.ImageLocation = null;
             this.Combustivel_Btn.ImageMargin = 0;
@@ -229,7 +229,7 @@
             this.Departamento_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Departamento_Btn.ErrorImage")));
             this.Departamento_Btn.FadeWhenInactive = false;
             this.Departamento_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Departamento_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Departamento_Btn.Image")));
+            this.Departamento_Btn.Image = null;
             this.Departamento_Btn.ImageActive = null;
             this.Departamento_Btn.ImageLocation = null;
             this.Departamento_Btn.ImageMargin = 0;
@@ -261,7 +261,7 @@
             this.Destino_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Destino_Btn.ErrorImage")));
             this.Destino_Btn.FadeWhenInactive = false;
             this.Destino_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Destino_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Destino_Btn.Image")));
+            this.Destino_Btn.Image = null;
             this.Destino_Btn.ImageActive = null;
             this.Destino_Btn.ImageLocation = null;
             this.Destino_Btn.ImageMargin = 0;
@@ -293,7 +293,7 @@
             this.Manutenção_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Manutenção_Btn.ErrorImage")));
             this.Manutenção_Btn.FadeWhenInactive = false;
             this.Manutenção_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Manutenção_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Manutenção_Btn.Image")));
+            this.Manutenção_Btn.Image = null;
             this.Manutenção_Btn.ImageActive = null;
             this.Manutenção_Btn.ImageLocation = null;
             this.Manutenção_Btn.ImageMargin = 0;
@@ -325,7 +325,7 @@
             this.Multa_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Multa_Btn.ErrorImage")));
             this.Multa_Btn.FadeWhenInactive = false;
             this.Multa_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Multa_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Multa_Btn.Image")));
+            this.Multa_Btn.Image = null;
             this.Multa_Btn.ImageActive = null;
             this.Multa_Btn.ImageLocation = null;
             this.Multa_Btn.ImageMargin = 0;
@@ -357,7 +357,7 @@
             this.Notificação_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Notificação_Btn.ErrorImage")));
             this.Notificação_Btn.FadeWhenInactive = false;
             this.Notificação_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Notificação_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Notificação_Btn.Image")));
+            this.Notificação_Btn.Image = null;
             this.Notificação_Btn.ImageActive = null;
             this.Notificação_Btn.ImageLocation = null;
             this.Notificação_Btn.ImageMargin = 0;
@@ -389,7 +389,7 @@
             this.Oleo_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Oleo_Btn.ErrorImage")));
             this.Oleo_Btn.FadeWhenInactive = false;
             this.Oleo_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Oleo_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Oleo_Btn.Image")));
+            this.Oleo_Btn.Image = null;
             this.Oleo_Btn.ImageActive = null;
             this.Oleo_Btn.ImageLocation = null;
             this.Oleo_Btn.ImageMargin = 0;
@@ -421,7 +421,7 @@
             this.Oficina_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Oficina_Btn.ErrorImage")));
             this.Oficina_Btn.FadeWhenInactive = false;
             this.Oficina_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Oficina_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Oficina_Btn.Image")));
+            this.Oficina_Btn.Image = null;
             this.Oficina_Btn.ImageActive = null;
             this.Oficina_Btn.ImageLocation = null;
             this.Oficina_Btn.ImageMargin = 0;
@@ -453,7 +453,7 @@
             this.Salario_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Salario_Btn.ErrorImage")));
             this.Salario_Btn.FadeWhenInactive = false;
             this.Salario_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Salario_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Salario_Btn.Image")));
+            this.Salario_Btn.Image = null;
             this.Salario_Btn.ImageActive = null;
             this.Salario_Btn.ImageLocation = null;
             this.Salario_Btn.ImageMargin = 0;
@@ -485,7 +485,7 @@
             this.Posto_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Posto_Btn.ErrorImage")));
             this.Posto_Btn.FadeWhenInactive = false;
             this.Posto_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Posto_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Posto_Btn.Image")));
+            this.Posto_Btn.Image = null;
             this.Posto_Btn.ImageActive = null;
             this.Posto_Btn.ImageLocation = null;
             this.Posto_Btn.ImageMargin = 0;
@@ -517,7 +517,7 @@
             this.Veiculo_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Veiculo_Btn.ErrorImage")));
             this.Veiculo_Btn.FadeWhenInactive = false;
             this.Veiculo_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Veiculo_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Veiculo_Btn.Image")));
+            this.Veiculo_Btn.Image = null;
             this.Veiculo_Btn.ImageActive = null;
             this.Veiculo_Btn.ImageLocation = null;
             this.Veiculo_Btn.ImageMargin = 0;
@@ -537,6 +537,7 @@
             this.Veiculo_Btn.WaitOnLoad = false;
             this.Veiculo_Btn.Zoom = 0;
             this.Veiculo_Btn.ZoomSpeed = 10;
+            this.Veiculo_Btn.Click += new System.EventHandler(this.Veiculo_Btn_Click);
             // 
             // Usuario_Btn
             // 
@@ -548,7 +549,7 @@
             this.Usuario_Btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Usuario_Btn.ErrorImage")));
             this.Usuario_Btn.FadeWhenInactive = false;
             this.Usuario_Btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Usuario_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Usuario_Btn.Image")));
+            this.Usuario_Btn.Image = null;
             this.Usuario_Btn.ImageActive = null;
             this.Usuario_Btn.ImageLocation = null;
             this.Usuario_Btn.ImageMargin = 0;

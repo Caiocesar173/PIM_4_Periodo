@@ -178,46 +178,91 @@
   <data name="SAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ABASTECIMENTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ABASTECIMENTO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ABASTECIMENTO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ABASTECIMENTO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATENDIMENTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATENDIMENTO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ATENDIMENTO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ATENDIMENTO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="COMBUSTÍVEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\COMBUSTÍVEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="COMBUSTÍVEL_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\COMBUSTÍVEL HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEPARTAMENTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DEPARTAMENTO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DEPARTAMENTO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DEPARTAMENTO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DESTINO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DESTINO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DESTINO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DESTINO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MANUTENÇÃO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MANUTENÇÃO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MANUTENÇÃO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MANUTENÇÃO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MULTA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MULTA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MULTA_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MULTA HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NOTIFICAÇÃO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NOTIFICAÇÃO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NOTIFICAÇÃO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NOTIFICAÇÃO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OFICINA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OFICINA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="OFICINA_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OFICINA HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POSTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POSTO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="POSTO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\POSTO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SALÁRIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SALÁRIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SALÁRIO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SALÁRIO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USUÁRIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USUÁRIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="USUÁRIO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\USUÁRIO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="VEÍCULO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VEÍCULO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="VEÍCULO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VEÍCULO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ÓLEO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÓLEO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ÓLEO_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ÓLEO HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATENDIMENTO_SEM_CIRCULO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\View\__Componentes__\Interface\__Icones Menu__\atendimento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

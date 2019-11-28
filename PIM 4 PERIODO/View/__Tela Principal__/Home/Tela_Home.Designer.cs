@@ -1,4 +1,4 @@
-﻿namespace PIM_4_PERIODO.View.Tela_Principal.Home
+﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Home
 {
     partial class Tela_Home
     {
