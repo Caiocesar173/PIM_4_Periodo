@@ -20,12 +20,13 @@ namespace PIM_4_PERIODO.View.Posto_de_Abastecimento
 
         private void bntInseriPosto_Click(object sender, EventArgs e)
         {
+            PIM_4_PERIODO.Dao.Incluir objCadastro = new Dao.Incluir();
             Posto posto = new Posto();
             posto.RazaoSocial = txtRposto.Text;
             posto.Nome = txtNposto.Text;
             posto.Telefone = Convert.ToInt32(txtTposto.Text);
             posto.Celular =  Convert.ToInt32(txtCPposto.Text);
-                
+            objCadastro.Posto(posto);   
             
             /*
             Veiculo carro = new Veiculo();

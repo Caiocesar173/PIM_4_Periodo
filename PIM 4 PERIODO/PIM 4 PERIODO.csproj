@@ -47,7 +47,7 @@
       <HintPath>Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\PimFinal\PIM\PIM 4 PERIODO\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
@@ -56,7 +56,7 @@
       <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
-      <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\PimFinal\PIM\PIM 4 PERIODO\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\gusgustavoalves\Fuzzi-transportes\FuzziTransportes\Framework\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
@@ -112,6 +112,7 @@
     <Compile Include="Dao\Consultar.cs" />
     <Compile Include="Dao\Excluir.cs" />
     <Compile Include="Dao\Incluir.cs" />
+    <Compile Include="Model\cadveiculos.cs" />
     <Compile Include="Model\CustomBackground.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -206,12 +207,6 @@
     </Compile>
     <Compile Include="View\Cadastro\Senha.Designer.cs">
       <DependentUpon>Senha.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Tela de Parceiro\telaParceiro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Tela de Parceiro\telaParceiro.Designer.cs">
-      <DependentUpon>telaParceiro.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Tela Login\Tela_Login.cs">
       <SubType>Form</SubType>
@@ -346,9 +341,6 @@
     <EmbeddedResource Include="View\Cadastro\Senha.resx">
       <DependentUpon>Senha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Tela de Parceiro\telaParceiro.resx">
-      <DependentUpon>telaParceiro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Login\Tela_Login.resx">
       <DependentUpon>Tela_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,7 +396,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="View\Tela de Parceiro\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Dao\Script Criação do Banco .txt" />
     <None Include="Resources\VEÍCULO.png" />

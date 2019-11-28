@@ -20,15 +20,21 @@ namespace PIM_4_PERIODO.View.CadastroVeiculo
 
         private void bntLCadastrar_Click(object sender, EventArgs e)
         {
+
+            PIM_4_PERIODO.Dao.Incluir objCadastro = new Dao.Incluir();
+
+         
             //Aqui aonde vamos cadastrar o veiculo 
-              Veiculo carro = new Veiculo();
-              carro.Marca = txtMarca.Text;
-              carro.Modelo = txtModelo.Text;
-              carro.Placa = txtMarca.Text;
-              carro.Renavam = Convert.ToInt32(txt_Renavam.Text);
-              carro.KM_TrocaPneu = Convert.ToInt32(txt_KmPneu.Text);
-              carro.Chassi = txt_Chassi.Text;
- 
+              Veiculo Veiculo = new Veiculo();
+              Veiculo.Marca = txtMarca.Text;
+              Veiculo.Modelo = txtModelo.Text;
+              Veiculo.Placa = txtMarca.Text;
+              Veiculo.Renavam = Convert.ToInt32(txt_Renavam.Text);
+              Veiculo.KM_TrocaPneu = Convert.ToInt32(txt_KmPneu.Text);
+              Veiculo.Chassi = txt_Chassi.Text;
+
+              objCadastro.Veiculo(Veiculo);
+
             MessageBox.Show("Cadastrado com sucesso");
 
 

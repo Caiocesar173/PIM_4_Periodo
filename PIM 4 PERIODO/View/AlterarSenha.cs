@@ -16,5 +16,10 @@ namespace PIM_4_PERIODO.View
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Por favor verifique em seu SPAM");
+        }
     }
 }

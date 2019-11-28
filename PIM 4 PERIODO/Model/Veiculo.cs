@@ -43,5 +43,8 @@ namespace PIM_4_PERIODO.Model
         public float KM_TrocaPneu { get => KM_trocaPneu; set => KM_trocaPneu = value; }
         public float Capacidade_Tanque { get => capacidade_Tanque; set => capacidade_Tanque = value; }
 
+        
+
     }
+   
 }
