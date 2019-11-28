@@ -26,5 +26,10 @@ namespace PIM_4_PERIODO.View.Cadastro
         {
 
         }
+
+        private void bntCadastrar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

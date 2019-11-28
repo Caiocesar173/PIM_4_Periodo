@@ -109,6 +109,7 @@
     <Compile Include="Dao\Consultar.cs" />
     <Compile Include="Dao\Excluir.cs" />
     <Compile Include="Dao\Incluir.cs" />
+    <Compile Include="Model\cadveiculos.cs" />
     <Compile Include="Model\CustomBackground.cs">
       <SubType>Component</SubType>
     </Compile>
