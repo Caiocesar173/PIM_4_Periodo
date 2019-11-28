@@ -33,7 +33,7 @@ namespace PIM_4_PERIODO.View.CadastroVeiculo
               Veiculo.KM_TrocaPneu = Convert.ToInt32(txt_KmPneu.Text);
               Veiculo.Chassi = txt_Chassi.Text;
 
-              objCadastro.Veiculo(Veiculo);
+              objCadastro.Veiculo(Veiculo, 1);
 
             MessageBox.Show("Cadastrado com sucesso");
 

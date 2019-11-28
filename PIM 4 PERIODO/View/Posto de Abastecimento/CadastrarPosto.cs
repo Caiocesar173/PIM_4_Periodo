@@ -26,7 +26,7 @@ namespace PIM_4_PERIODO.View.Posto_de_Abastecimento
             posto.Nome = txtNposto.Text;
             posto.Telefone = Convert.ToInt32(txtTposto.Text);
             posto.Celular =  Convert.ToInt32(txtCPposto.Text);
-            objCadastro.Posto(posto);   
+            objCadastro.Posto(posto, 1);   
             
             /*
             Veiculo carro = new Veiculo();

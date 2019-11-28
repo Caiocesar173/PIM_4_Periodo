@@ -29,7 +29,7 @@ namespace PIM_4_PERIODO.View.Tela_Oficina
             oficina.Endereço = txtEndereco.Text;
             oficina.ID_Oficina = Convert.ToInt16(txt_IdOficina);
             MessageBox.Show("Oficina cadastrada com sucesso");
-            objCadastro.Oficina(oficina);
+            objCadastro.Oficina(oficina, 1);
             
         }
     }
