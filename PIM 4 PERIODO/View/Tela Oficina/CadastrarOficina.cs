@@ -20,6 +20,7 @@ namespace PIM_4_PERIODO.View.Tela_Oficina
 
         private void bntIncluir_Click(object sender, EventArgs e)
         {
+            PIM_4_PERIODO.Dao.Incluir objCadastro = new Dao.Incluir();
             Oficina oficina = new Oficina();
             oficina.Nome = txtNomeOficina.Text;
             oficina.RazaoSocial = txtRazaoSocial.Text;
@@ -28,6 +29,8 @@ namespace PIM_4_PERIODO.View.Tela_Oficina
             oficina.Endereço = txtEndereco.Text;
             oficina.ID_Oficina = Convert.ToInt16(txt_IdOficina);
             MessageBox.Show("Oficina cadastrada com sucesso");
+            objCadastro.Oficina(oficina);
+            
         }
     }
 }
