@@ -12,7 +12,7 @@ using PIM_4_PERIODO.Model;
 
 
 
-namespace PIM_4_PERIODO.View.Tela_Principal.Home
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Home
 {
     public partial class Tela_Home : Form
     {

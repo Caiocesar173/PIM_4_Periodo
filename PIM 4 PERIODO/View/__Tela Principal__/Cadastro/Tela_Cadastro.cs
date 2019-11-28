@@ -7,17 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bunifu.UI.WinForms;
 
 
 
-namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
-    public partial class Tela_SolicitaçãoInicial : Form
+    public partial class Tela_Cadastro : Form
     {
-        public Tela_SolicitaçãoInicial()
+        public Tela_Cadastro()
         {
             InitializeComponent();
+
             //Definindo Icones
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
@@ -33,11 +33,11 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
-        }
 
+        }
         private void Abastecimento_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO_HOVER;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -57,7 +57,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Atendimento_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO_HOVER;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -76,7 +76,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Combustivel_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL_HOVER;
@@ -95,7 +95,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Departamento_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -114,7 +114,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Destino_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -133,7 +133,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Manutenção_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -152,7 +152,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Multa_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -171,7 +171,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Notificação_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -190,7 +190,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Oficina_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -209,7 +209,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Oleo_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -228,7 +228,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Posto_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -247,7 +247,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Salario_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -266,7 +266,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 
         private void Usuario_Btn_Click(object sender, EventArgs e)
         {
-            
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
