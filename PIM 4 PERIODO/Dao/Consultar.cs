@@ -55,7 +55,7 @@ namespace PIM_4_PERIODO.Dao
                     int retorno = command.ExecuteNonQuery();
                     if (table.Rows.Count > 0)
                     {
-                        if(Convert.ToString(table.Rows[0][1]) == Login.Usuario && Convert.ToString(table.Rows[0][2]) == Login.Senha)
+                        if (Convert.ToString(table.Rows[0][1]) == Login.Usuario && Convert.ToString(table.Rows[0][2]) == Login.Senha)
                         {
                             Login_Existe = true;
                         }
@@ -69,7 +69,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return Login_Existe;
         }
-        public DataTable Abastecimento(Abastecimento Abastecimento)
+        public DataTable Abastecimento(Abastecimento Abastecimento, int TipoPesquisa)
         {
             try
             {
@@ -80,36 +80,68 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
+                    string ConsultaAbastecimento = "SELECT * FROM ABASTECIMENTO WHERE ";
 
-                    string ConsultaAbastecimento = "SELECT * FROM ABASTECIMENTO WHERE KM_NO_ABASTECIMENTO = @KM_NO_ABASTECIMENTO OR LITROS = @LITROS OR VALOR = @VALOR OR ID_POSTO = @ID_POSTO OR ID_VEICULO = @ID_VEICULO OR DATAS = @DATAS;";
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaAbastecimento = ConsultaAbastecimento + "ID_POSTO = @ID_POSTO";
+                            break;
+                        case 1:
+                            ConsultaAbastecimento = ConsultaAbastecimento + "ID_VEICULO = @ID_VEICULO";
+                            break;
+                        case 2:
+                            ConsultaAbastecimento = ConsultaAbastecimento + "DATAS = @DATAS";
+                            break;
+                        case 3:
+                            ConsultaAbastecimento = ConsultaAbastecimento + "ID_ABASTECIMENTO = @ID_ABASTECIMENTO";
+                            break;
+
+                        default:
+                            ConsultaAbastecimento = ConsultaAbastecimento + "1";
+                            break;
+                    }
+
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaAbastecimento = ConsultaAbastecimento + ";";
                     command.CommandText = ConsultaAbastecimento;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@KM_NO_ABASTECIMENTO", MySqlDbType.VarChar).Value = Abastecimento.Km_No_Abastecimento;
-                    command.Parameters.Add("@LITROS", MySqlDbType.VarChar).Value = Abastecimento.Litros;
-                    command.Parameters.Add("@VALOR", MySqlDbType.VarChar).Value = Abastecimento.Valor;
-                    command.Parameters.Add("@ID_POSTO", MySqlDbType.VarChar).Value = Abastecimento.ID_Posto;
-                    command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Abastecimento.ID_Veiculo;
-                    command.Parameters.Add("@DATAS", MySqlDbType.VarChar).Value = Abastecimento.Data;
+
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_POSTO", MySqlDbType.VarChar).Value = Abastecimento.ID_Posto;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Abastecimento.ID_Veiculo;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@DATAS", MySqlDbType.VarChar).Value = Abastecimento.Data;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@ID_ABASTECIMENTO", MySqlDbType.Int32).Value = Abastecimento.ID_bastecimento;
+                            break;
+                    }
 
                     adapter.SelectCommand = command;
                     adapter.Fill(TableAbastecimento);
 
-
                     Conexão.Desconectar();
                 }
             }
-            catch(MySqlException Exception)
+            catch (MySqlException Exception)
             {
                 MessageBox.Show(Convert.ToString(Exception), "Estado da Consulta");
             }
 
             return TableAbastecimento;
         }
-        public DataTable Atendimento(Atendimento Atendimento)
+        public DataTable Atendimento(Atendimento Atendimento, int TipoPesquisa)
         {
             try
             {
@@ -120,16 +152,53 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaAtendimento = "SELECT * FROM ATENDIMENTO WHERE ID_VEICULO = @ID_VEICULO OR ID_MOTORISTA = @ID_MOTORISTA OR ID_DESTINO = @ID_DESTINO;";
+                    string ConsultaAtendimento = "SELECT * FROM ATENDIMENTO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaAtendimento = ConsultaAtendimento + "ID_ATENDIMENTO = @ID_ATENDIMENTO";
+                            break;
+                        case 1:
+                            ConsultaAtendimento = ConsultaAtendimento + "ID_VEICULO = @ID_VEICULO";
+                            break;
+                        case 2:
+                            ConsultaAtendimento = ConsultaAtendimento + "ID_MOTORISTA = @ID_MOTORISTA";
+                            break;
+                        case 3:
+                            ConsultaAtendimento = ConsultaAtendimento + "ID_DESTINO = @ID_DESTINO";
+                            break;
+
+                        default:
+                            ConsultaAtendimento = ConsultaAtendimento + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+
+                    ConsultaAtendimento = ConsultaAtendimento + ";";
                     command.CommandText = ConsultaAtendimento;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Atendimento.ID_Veiculo;
-                    command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.VarChar).Value = Atendimento.ID_Motorista;
-                    command.Parameters.Add("@ID_DESTINO", MySqlDbType.VarChar).Value = Atendimento.ID_Destino;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_ATENDIMENTO", MySqlDbType.Int32).Value = Atendimento.ID_Atendimento;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Atendimento.ID_Veiculo;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.VarChar).Value = Atendimento.ID_Motorista;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@ID_DESTINO", MySqlDbType.VarChar).Value = Atendimento.ID_Destino;
+                            break;
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableAtendimento);
 
@@ -143,7 +212,7 @@ namespace PIM_4_PERIODO.Dao
 
             return TableAtendimento;
         }
-        public DataTable Combustivel(Combustivel Combustivel)
+        public DataTable Combustivel(Combustivel Combustivel, int TipoPesquisa)
         {
             try
             {
@@ -154,16 +223,51 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaCombustivel = "SELECT * FROM COMBUSTIVEL WHERE NOME = @NOME OR VALOR = @VALOR  OR DATAS = @DATAS);";
+                    string ConsultaCombustivel = "SELECT * FROM COMBUSTIVEL WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaCombustivel = ConsultaCombustivel + "ID_COMBUSTIVEL = @ID_COMBUSTIVEL";
+                            break;
+                        case 1:
+                            ConsultaCombustivel = ConsultaCombustivel + "NOME = @NOME";
+                            break;
+                        case 2:
+                            ConsultaCombustivel = ConsultaCombustivel + "VALOR = @VALOR";
+                            break;
+                        case 3:
+                            ConsultaCombustivel = ConsultaCombustivel + "DATAS = @DATAS";
+                            break;
+
+                        default:
+                            ConsultaCombustivel = ConsultaCombustivel + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaCombustivel = ConsultaCombustivel + ";";
                     command.CommandText = ConsultaCombustivel;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Combustivel.Nome;
-                    command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Combustivel.Valor;
-                    command.Parameters.Add("@DATAS", MySqlDbType.Date).Value = Combustivel.Data;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_COMBUSTIVEL", MySqlDbType.Int32).Value = Combustivel.ID_Combustivel;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Combustivel.Nome;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Combustivel.Valor;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@DATAS", MySqlDbType.Date).Value = Combustivel.Data;
+                            break;
+                    }
 
                     adapter.SelectCommand = command;
                     adapter.Fill(TableCombustivel);
@@ -192,7 +296,7 @@ namespace PIM_4_PERIODO.Dao
                     MySqlCommand command = new MySqlCommand();
 
                     string ConsultaDepartamento = "SELECT * FROM DEPARTAMENTO WHERE ";
-  
+
                     switch (TipoPesquisa)
                     {
                         case 0:
@@ -238,7 +342,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableDepartamento;
         }
-        public DataTable Destino(Destino Destino)
+        public DataTable Destino(Destino Destino, int TipoPesquisa)
         {
             try
             {
@@ -249,19 +353,59 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaDestino = "SELECT * FROM DESTINO WHERE ID_VEICULO = @ID_VEICULO OR ID_MOTORISTA = @ID_MOTORISTA OR LOCAL_CHEGADA = @LOCAL_CHEGADA OR LOCAL_SAIDA = @LOCAL_SAIDA OR DATAS_CHEGADA = @DATAS_CHEGADA OR DATAS_SAIDA = @DATAS_SAIDA;";
+                    string ConsultaDestino = "SELECT * FROM DESTINO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaDestino = ConsultaDestino + "ID_DESTINO = @ID_DESTINO";
+                            break;
+                        case 1:
+                            ConsultaDestino = ConsultaDestino + "ID_VEICULO = @ID_VEICULO";
+                            break;
+                        case 2:
+                            ConsultaDestino = ConsultaDestino + "ID_MOTORISTA = @ID_MOTORISTA";
+                            break;
+                        case 3:
+                            ConsultaDestino = ConsultaDestino + "LOCAL_CHEGADA = @LOCAL_CHEGADA";
+                            break;
+                        case 4:
+                            ConsultaDestino = ConsultaDestino + "DATAS_SAIDA = @DATAS_SAIDA";
+                            break;
+                        default:
+                            ConsultaDestino = ConsultaDestino + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+
+
+                    ConsultaDestino = ConsultaDestino + ";";
                     command.CommandText = ConsultaDestino;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Destino.ID_Veiculo;
-                    command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.VarChar).Value = Destino.ID_Motorista;
-                    command.Parameters.Add("@LOCAL_CHEGADA", MySqlDbType.VarChar).Value = Destino.Local_Chegada;
-                    command.Parameters.Add("@LOCAL_SAIDA", MySqlDbType.VarChar).Value = Destino.Local_Saida;
-                    command.Parameters.Add("@DATAS_CHEGADA", MySqlDbType.VarChar).Value = Destino.Data_Chegada;
-                    command.Parameters.Add("@DATAS_SAIDA", MySqlDbType.VarChar).Value = Destino.Data_Saida;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_DESTINO", MySqlDbType.Int32).Value = Destino.ID_Destino;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@ID_VEICULO", MySqlDbType.VarChar).Value = Destino.ID_Veiculo;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.VarChar).Value = Destino.ID_Motorista;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@LOCAL_CHEGADA", MySqlDbType.VarChar).Value = Destino.Local_Chegada;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@DATAS_SAIDA", MySqlDbType.VarChar).Value = Destino.Data_Saida;
+                            break;
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableDestino);
                     Conexão.Desconectar();
@@ -273,7 +417,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableDestino;
         }
-        public DataTable Manutenção(Manutenção Manutenção)
+        public DataTable Manutenção(Manutenção Manutenção, int TipoPesquisa)
         {
             try
             {
@@ -284,20 +428,57 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaManutenção = "SELECT * FROM MANUTENCAO WHERE NUM_OS = @NUM_OS OR ID_OFICINA = @ID_OFICINA OR DATAS_ENTRADA = @DATAS_ENTRADA OR DATAS_SAIDA = @DATAS_SAIDA OR MOTIVO = @MOTIVO OR VALOR = @VALOR OR ID_VEICULO = @ID_VEICULO;";
+                    string ConsultaManutenção = "SELECT * FROM MANUTENCAO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaManutenção = ConsultaManutenção + "ID_MANUTENCAO = @ID_MANUTENCAO";
+                            break;
+                        case 1:
+                            ConsultaManutenção = ConsultaManutenção + "NUM_OS = @NUM_OS";
+                            break;
+                        case 2:
+                            ConsultaManutenção = ConsultaManutenção + "DATAS_ENTRADA = @DATAS_ENTRADA";
+                            break;
+                        case 3:
+                            ConsultaManutenção = ConsultaManutenção + "MOTIVO = @MOTIVO";
+                            break;
+                        case 4:
+                            ConsultaManutenção = ConsultaManutenção + "ID_VEICULO = @ID_VEICULO";
+                            break;
+                        default:
+                            ConsultaManutenção = ConsultaManutenção + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaManutenção = ConsultaManutenção + ";";
                     command.CommandText = ConsultaManutenção;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@NUM_OS", MySqlDbType.Int32).Value = Manutenção.NumeroOS;
-                    command.Parameters.Add("@ID_OFICINA", MySqlDbType.Int32).Value = Manutenção.ID_Oficina;
-                    command.Parameters.Add("@DATAS_ENTRADA", MySqlDbType.Date).Value = Manutenção.Data_Entrada;
-                    command.Parameters.Add("@DATAS_SAIDA", MySqlDbType.Date).Value = Manutenção.Data_Saida;
-                    command.Parameters.Add("@MOTIVO", MySqlDbType.VarChar).Value = Manutenção.Motivo;
-                    command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Manutenção.Valor;
-                    command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = Manutenção.ID_Veiculo;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_MANUTENCAO", MySqlDbType.Int32).Value = Manutenção.ID_Manutencao;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@NUM_OS", MySqlDbType.Int32).Value = Manutenção.NumeroOS;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@DATAS_ENTRADA", MySqlDbType.Date).Value = Manutenção.Data_Entrada;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@MOTIVO", MySqlDbType.VarChar).Value = Manutenção.Motivo;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = Manutenção.ID_Veiculo;
+                            break;
+                    }
+
 
                     adapter.SelectCommand = command;
                     adapter.Fill(TableManutenção);
@@ -310,7 +491,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableManutenção;
         }
-        public DataTable Multa(Multa Multa)
+        public DataTable Multa(Multa Multa, int TipoPesquisa)
         {
             try
             {
@@ -321,20 +502,62 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaMulta = "SELECT * FROM MULTA WHERE NUM_INFRACAO = @NUM_INFRACAO OR TIPO_INFRACAO = @TIPO_INFRACAO OR ID_MOTORISTA = @ID_MOTORISTA OR ID_VEICULO = @ID_VEICULO OR VALOR = @VALOR OR DATAS = @DATAS OR ENDERECO = @ENDERECO;";
+                    string ConsultaMulta = "SELECT * FROM MULTA WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaMulta = ConsultaMulta + "ID_MULTA = @ID_MULTA";
+                            break;
+                        case 1:
+                            ConsultaMulta = ConsultaMulta + "NUM_INFRACAO = @NUM_INFRACAO";
+                            break;
+                        case 2:
+                            ConsultaMulta = ConsultaMulta + "TIPO_INFRACAO = @TIPO_INFRACAO";
+                            break;
+                        case 3:
+                            ConsultaMulta = ConsultaMulta + "ID_MOTORISTA = @ID_MOTORISTA";
+                            break;
+                        case 4:
+                            ConsultaMulta = ConsultaMulta + "ID_VEICULO = @ID_VEICULO";
+                            break;
+                        case 5:
+                            ConsultaMulta = ConsultaMulta + "DATAS = @DATAS";
+                            break;
+                        default:
+                            ConsultaMulta = ConsultaMulta + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaMulta = ConsultaMulta + ";";
                     command.CommandText = ConsultaMulta;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@NUM_INFRACAO", MySqlDbType.Int32).Value = Multa.Infração;
-                    command.Parameters.Add("@TIPO_INFRACAO", MySqlDbType.VarChar).Value = Multa.Tipo;
-                    command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.Int32).Value = Multa.Motorista;
-                    command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = Multa.Veiculo;
-                    command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Multa.Valor;
-                    command.Parameters.Add("@DATAS", MySqlDbType.Date).Value = Multa.Data;
-                    command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Multa.Endereço;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_MULTA", MySqlDbType.Int32).Value = Multa.ID_Multa;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@NUM_INFRACAO", MySqlDbType.Int32).Value = Multa.Infração;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@TIPO_INFRACAO", MySqlDbType.VarChar).Value = Multa.Tipo;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.Int32).Value = Multa.Motorista;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = Multa.Veiculo;
+                            break;
+                        case 5:
+                            command.Parameters.Add("@DATAS", MySqlDbType.Date).Value = Multa.Data;
+                            break;
+                    }
 
                     adapter.SelectCommand = command;
                     adapter.Fill(TableMulta);
@@ -359,9 +582,6 @@ namespace PIM_4_PERIODO.Dao
                 if (Conexão.Checkconection())
                 {
                     string ConsultaNotificação = "SELECT * FROM NOTIFICACAO WHERE ";
-                    DataTable table = new DataTable();
-                    MySqlDataAdapter adapter = new MySqlDataAdapter();
-                    MySqlCommand command = new MySqlCommand();
 
                     switch (TipoPesquisa)
                     {
@@ -373,8 +593,12 @@ namespace PIM_4_PERIODO.Dao
                             break;
                         default:
                             ConsultaNotificação = ConsultaNotificação + "1";
-                            break;   
+                            break;
                     }
+
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+                    MySqlCommand command = new MySqlCommand();
 
 
                     ConsultaNotificação = ConsultaNotificação + ";";
@@ -403,7 +627,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableNotificação;
         }
-        public DataTable Oficina(Oficina Oficina)
+        public DataTable Oficina(Oficina Oficina, int TipoPesquisa)
         {
             try
             {
@@ -414,20 +638,61 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaOficina = "SELECT * FROM OFICINA WHERE NOME = @NOME OR CNPJ = @CNPJ OR RAZAO_SOCIAL = @RAZAO_SOCIAL OR TELEFONE = @TELEFONE OR CELULAR = @CELULAR OR SITE = @SITE OR ENDERECO = @ENDERECO;";
+                    string ConsultaOficina = "SELECT * FROM OFICINA WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaOficina = ConsultaOficina + "ID_OFICINA = @ID_OFICINA";
+                            break;
+                        case 1:
+                            ConsultaOficina = ConsultaOficina + "NOME = @NOME";
+                            break;
+                        case 2:
+                            ConsultaOficina = ConsultaOficina + "CNPJ = @CNPJ";
+                            break;
+                        case 3:
+                            ConsultaOficina = ConsultaOficina + "RAZAO_SOCIAL = @RAZAO_SOCIAL";
+                            break;
+                        case 4:
+                            ConsultaOficina = ConsultaOficina + "ENDERECO = @ENDERECO";
+                            break;
+                        default:
+                            ConsultaOficina = ConsultaOficina + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+
+                    ConsultaOficina = ConsultaOficina + ";";
                     command.CommandText = ConsultaOficina;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Oficina.Nome;
-                    command.Parameters.Add("@CNPJ", MySqlDbType.VarChar).Value = Oficina.CNPJ;
-                    command.Parameters.Add("@RAZAO_SOCIAL", MySqlDbType.VarChar).Value = Oficina.RazaoSocial;
-                    command.Parameters.Add("@TELEFONE", MySqlDbType.Int32).Value = Oficina.Telefone;
-                    command.Parameters.Add("@CELULAR", MySqlDbType.Int32).Value = Oficina.Celular;
-                    command.Parameters.Add("@SITE", MySqlDbType.VarChar).Value = Oficina.Site;
-                    command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Oficina.Endereço;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_OFICINA", MySqlDbType.Int32).Value = Oficina.ID_Oficina;
+
+                            break;
+                        case 1:
+                            command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Oficina.Nome;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@CNPJ", MySqlDbType.VarChar).Value = Oficina.CNPJ;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@RAZAO_SOCIAL", MySqlDbType.VarChar).Value = Oficina.RazaoSocial;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Oficina.Endereço;
+
+                            break;
+                    }
+
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableOficina);
                     Conexão.Desconectar();
@@ -439,7 +704,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableOficina;
         }
-        public DataTable Oleo(Oleo Oleo)
+        public DataTable Oleo(Oleo Oleo, int TipoPesquisa)
         {
             try
             {
@@ -450,16 +715,52 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaOleo = "SELECT * FROM OLEO WHERE NOME = @NOME OR MARCA =  @MARCA OR LITROS = @LITROS;";
+                    string ConsultaOleo = "SELECT * FROM OLEO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaOleo = ConsultaOleo + "ID_OLEO = @ID_OLEO";
+                            break;
+                        case 1:
+                            ConsultaOleo = ConsultaOleo + "NOME = @NOME";
+                            break;
+                        case 2:
+                            ConsultaOleo = ConsultaOleo + "MARCA =  @MARCA";
+                            break;
+                        case 3:
+                            ConsultaOleo = ConsultaOleo + "LITROS = @LITROS";
+                            break;
+                        default:
+                            ConsultaOleo = ConsultaOleo + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaOleo = ConsultaOleo + ";";
                     command.CommandText = ConsultaOleo;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Oleo.Nome;
-                    command.Parameters.Add("@MARCA", MySqlDbType.VarChar).Value = Oleo.Marca;
-                    command.Parameters.Add("@LITROS", MySqlDbType.Float).Value = Oleo.Litros;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@NOME", MySqlDbType.Int32).Value = Oleo.ID_Oleo;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Oleo.Nome;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@MARCA", MySqlDbType.VarChar).Value = Oleo.Marca;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@LITROS", MySqlDbType.Float).Value = Oleo.Litros;
+                            break;
+
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableOleo);
                     Conexão.Desconectar();
@@ -471,7 +772,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableOleo;
         }
-        public DataTable Posto(Posto Posto)
+        public DataTable Posto(Posto Posto, int TipoPesquisa)
         {
             try
             {
@@ -482,19 +783,62 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaPosto = "SELECT * FROM POSTO WHERE NOME = @NOME OR CNPJ = @CNPJ OR RAZAO_SOCIAL = @RAZAO_SOCIAL OR TELEFONE = @TELEFONE OR CELULAR = @CELULAR OR SITE = @SITE OR ENDERECO = @ENDERECO;";
+
+                    string ConsultaPosto = "SELECT * FROM POSTO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaPosto = ConsultaPosto + "ID_POSTO = @ID_POSTO";
+                            break;
+                        case 1:
+                            ConsultaPosto = ConsultaPosto + "NOME = @NOME";
+                            break;
+                        case 2:
+                            ConsultaPosto = ConsultaPosto + "CNPJ = @CNPJ";
+                            break;
+                        case 3:
+                            ConsultaPosto = ConsultaPosto + "RAZAO_SOCIAL = @RAZAO_SOCIAL";
+                            break;
+                        case 4:
+                            ConsultaPosto = ConsultaPosto + "ENDERECO = @ENDERECO";
+                            break;
+                        default:
+                            ConsultaPosto = ConsultaPosto + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaPosto = ConsultaPosto + ";";
                     command.CommandText = ConsultaPosto;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Posto.Nome;
-                    command.Parameters.Add("@CNPJ", MySqlDbType.VarChar).Value = Posto.CNPJ;
-                    command.Parameters.Add("@RAZAO_SOCIAL", MySqlDbType.VarChar).Value = Posto.RazaoSocial;
-                    command.Parameters.Add("@TELEFONE", MySqlDbType.Int32).Value = Posto.Telefone;
-                    command.Parameters.Add("@CELULAR", MySqlDbType.Int32).Value = Posto.Celular;
-                    command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Posto.Endereço;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_POSTO", MySqlDbType.Int32).Value = Posto.ID_Posto;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Posto.Nome;
+
+                            break;
+                        case 2:
+                            command.Parameters.Add("@CNPJ", MySqlDbType.VarChar).Value = Posto.CNPJ;
+
+                            break;
+                        case 3:
+                            command.Parameters.Add("@RAZAO_SOCIAL", MySqlDbType.VarChar).Value = Posto.RazaoSocial;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Posto.Endereço;
+
+                            break;
+
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TablePosto);
                     Conexão.Desconectar();
@@ -506,7 +850,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TablePosto;
         }
-        public DataTable Salario(Salario Salario)
+        public DataTable Salario(Salario Salario, int TipoPesquisa)
         {
             try
             {
@@ -517,14 +861,39 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaSalario = "SELECT * FROM SALARIO WHERE VALOR = @VALOR;";
+                    string ConsultaSalario = "SELECT * FROM SALARIO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaSalario = ConsultaSalario + "SALARIO = @SALARIO";
+                            break;
+                        case 1:
+                            ConsultaSalario = ConsultaSalario + "VALOR = @VALOR";
+                            break;
+                        default:
+                            ConsultaSalario = ConsultaSalario + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaSalario = ConsultaSalario + ";";
                     command.CommandText = ConsultaSalario;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Salario.Valor;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@VALOR", MySqlDbType.Int32).Value = Salario.ID_Salario;
+                            break;
+                        case 1:
+                            command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Salario.Valor;
+                            break;
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableSalario);
                     Conexão.Desconectar();
@@ -537,7 +906,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableSalario;
         }
-        public DataTable Usuario(Usuario Usuario)
+        public DataTable Usuario(Usuario Usuario, int TipoPesquisa)
         {
             try
             {
@@ -548,26 +917,75 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaUsuario = "SELECT * FROM USUARIO WHERE USERNAME = @USERNAME;";
+                    string ConsultaUsuario = "SELECT * FROM USUARIO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaUsuario = ConsultaUsuario + "ID_USUARIO = @ID_USUARIO";
+                            break;
+                        case 1:
+                            ConsultaUsuario = ConsultaUsuario + "USERNAME = @USERNAME";
+                            break;
+                        case 2:
+                            ConsultaUsuario = ConsultaUsuario + "DEPARTAMENTO = @DEPARTAMENTO";
+                            break;
+                        case 3:
+                            ConsultaUsuario = ConsultaUsuario + "NOME = @NOME";
+                            break;
+                        case 4:
+                            ConsultaUsuario = ConsultaUsuario + "EMAIL = @EMAIL";
+                            break;
+                        case 5:
+                            ConsultaUsuario = ConsultaUsuario + "CPF = @CPF";
+                            break;
+                        case 6:
+                            ConsultaUsuario = ConsultaUsuario + "CNH = @CNH";
+                            break;
+                        case 7:
+                            ConsultaUsuario = ConsultaUsuario + "DATAS_ADIMISSAO = @DATAS_ADIMISSAO";
+                            break;
+                        default:
+                            ConsultaUsuario = ConsultaUsuario + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaUsuario = ConsultaUsuario + ";";
                     command.CommandText = ConsultaUsuario;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@USERNAME", MySqlDbType.VarChar).Value = Usuario.Username;
-                    command.Parameters.Add("@SENHA", MySqlDbType.VarChar).Value = Usuario.Senha;
-                    command.Parameters.Add("@DEPARTAMENTO", MySqlDbType.Int32).Value = Usuario.Departamento;
-                    command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Usuario.Nome;
-                    command.Parameters.Add("@EMAIL", MySqlDbType.VarChar).Value = Usuario.Email;
-                    command.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = Usuario.CPF;
-                    command.Parameters.Add("@TELEFONE", MySqlDbType.Int32).Value = Usuario.Telefone;
-                    command.Parameters.Add("@CELULAR", MySqlDbType.Int32).Value = Usuario.Celular;
-                    command.Parameters.Add("@ENDERECO", MySqlDbType.VarChar).Value = Usuario.Endereço;
-                    command.Parameters.Add("@CNH", MySqlDbType.Int32).Value = Usuario.CNH;
-                    command.Parameters.Add("@VALIDADE_CNH", MySqlDbType.Date).Value = Usuario.Validade_CNH;
-                    command.Parameters.Add("@CATEGORIA_CNH", MySqlDbType.VarChar).Value = Usuario.Categoria_CNH;
-                    command.Parameters.Add("@DATAS_ADIMISSAO", MySqlDbType.Date).Value = Usuario.Categoria_CNH;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_USUARIO", MySqlDbType.Int32).Value = Usuario.ID_Usuario;
+                            break; ;
+                        case 1:
+                            command.Parameters.Add("@USERNAME", MySqlDbType.VarChar).Value = Usuario.Username;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@DEPARTAMENTO", MySqlDbType.Int32).Value = Usuario.Departamento;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@NOME", MySqlDbType.VarChar).Value = Usuario.Nome;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@EMAIL", MySqlDbType.VarChar).Value = Usuario.Email;
+                            break;
+                        case 5:
+                            command.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = Usuario.CPF;
+                            break;
+                        case 6:
+                            command.Parameters.Add("@CNH", MySqlDbType.Int32).Value = Usuario.CNH;
+                            break;
+                        case 7:
+                            command.Parameters.Add("@DATAS_ADIMISSAO", MySqlDbType.Date).Value = Usuario.Categoria_CNH;
+                            break;
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableUsuario);
                     Conexão.Desconectar();
@@ -579,7 +997,7 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableUsuario;
         }
-        public DataTable Veiculo(Veiculo Veiculo)
+        public DataTable Veiculo(Veiculo Veiculo, int TipoPesquisa)
         {
             try
             {
@@ -590,26 +1008,81 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaVeiculo = "SELECT * FROM VEICULO WHERE PLACA = @PLACA OR MODELO = @MODELO OR TIPO = @TIPO OR MARCA = @MARCA OR ANO = @ANO OR RENAVAM = @RENAVAM OR CHSSI_NUM = @CHSSI_NUM OR KM_POR_LITRO = @KM_POR_LITRO OR KM_TROCA_OLEO = @KM_TROCA_OLEO OR KM_REVISAO = @KM_REVISAO OR KM_PNEU = @KM_PNEU OR CAPACIDADE_TANQUE = @CAPACIDADE_TANQUE OR ID_COMBUSTIVEL = @ID_COMBUSTIVEL;";
+                    string ConsultaVeiculo = "SELECT * FROM VEICULO WHERE ";
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            ConsultaVeiculo = ConsultaVeiculo + "ID_VEICULO = @ID_VEICULO";
+                            break;
+                        case 1:
+                            ConsultaVeiculo = ConsultaVeiculo + "PLACA = @PLACA";
+                            break;
+                        case 2:
+                            ConsultaVeiculo = ConsultaVeiculo + "MODELO = @MODELO";
+                            break;
+                        case 3:
+                            ConsultaVeiculo = ConsultaVeiculo + "TIPO = @TIPO";
+                            break;
+                        case 4:
+                            ConsultaVeiculo = ConsultaVeiculo + "MARCA = @MARCA";
+                            break;
+                        case 5:
+                            ConsultaVeiculo = ConsultaVeiculo + "ANO = @ANO";
+                            break;
+                        case 6:
+                            ConsultaVeiculo = ConsultaVeiculo + "RENAVAM = @RENAVAM";
+                            break;
+                        case 7:
+                            ConsultaVeiculo = ConsultaVeiculo + "CHSSI_NUM = @CHSSI_NUM ";
+                            break;
+                        case 8:
+                            ConsultaVeiculo = ConsultaVeiculo + "ID_COMBUSTIVEL = @ID_COMBUSTIVEL ";
+                            break;
+                        default:
+                            ConsultaVeiculo = ConsultaVeiculo + "1";
+                            break;
+                    }
+
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
+                    ConsultaVeiculo = ConsultaVeiculo + ";";
                     command.CommandText = ConsultaVeiculo;
                     command.Connection = Conexão.Pega_Conexão();
-                    command.Parameters.Add("@PLACA", MySqlDbType.VarChar).Value = Veiculo.Placa;
-                    command.Parameters.Add("@MODELO", MySqlDbType.VarChar).Value = Veiculo.Modelo;
-                    command.Parameters.Add("@TIPO", MySqlDbType.VarChar).Value = Veiculo.Tipo;
-                    command.Parameters.Add("@MARCA", MySqlDbType.VarChar).Value = Veiculo.Marca;
-                    command.Parameters.Add("@ANO", MySqlDbType.Date).Value = Veiculo.Ano;
-                    command.Parameters.Add("@RENAVAM", MySqlDbType.Int32).Value = Veiculo.Renavam;
-                    command.Parameters.Add("@CHSSI_NUM", MySqlDbType.VarChar).Value = Veiculo.Chassi;
-                    command.Parameters.Add("@KM_POR_LITRO", MySqlDbType.Float).Value = Veiculo.KM_Litro;
-                    command.Parameters.Add("@KM_TROCA_OLEO", MySqlDbType.Float).Value = Veiculo.KM_TrocaOleo;
-                    command.Parameters.Add("@KM_REVISAO", MySqlDbType.Float).Value = Veiculo.KM_Revisao;
-                    command.Parameters.Add("@KM_PNEU", MySqlDbType.Float).Value = Veiculo.KM_TrocaPneu;
-                    command.Parameters.Add("@CAPACIDADE_TANQUE", MySqlDbType.Float).Value = Veiculo.Capacidade_Tanque;
-                    command.Parameters.Add("@ID_COMBUSTIVEL", MySqlDbType.Int32).Value = Veiculo.ID_Combustivel;
+
+                    switch (TipoPesquisa)
+                    {
+                        case 0:
+                            command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = Veiculo.ID_Veiculo;
+                            break; ;
+                        case 1:
+                            command.Parameters.Add("@PLACA", MySqlDbType.VarChar).Value = Veiculo.Placa;
+                            break;
+                        case 2:
+                            command.Parameters.Add("@MODELO", MySqlDbType.VarChar).Value = Veiculo.Modelo;
+                            break;
+                        case 3:
+                            command.Parameters.Add("@TIPO", MySqlDbType.VarChar).Value = Veiculo.Tipo;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@MARCA", MySqlDbType.VarChar).Value = Veiculo.Marca;
+                            break;
+                        case 5:
+                            command.Parameters.Add("@ANO", MySqlDbType.Date).Value = Veiculo.Ano;
+                            break;
+                        case 6:
+                            command.Parameters.Add("@RENAVAM", MySqlDbType.Int32).Value = Veiculo.Renavam;
+                            break;
+                        case 7:
+                            command.Parameters.Add("@CHSSI_NUM", MySqlDbType.VarChar).Value = Veiculo.Chassi;
+                            break;
+                        case 8:
+                            command.Parameters.Add("@ID_COMBUSTIVEL", MySqlDbType.Int32).Value = Veiculo.ID_Combustivel;
+                            break;
+                    }
+
                     adapter.SelectCommand = command;
                     adapter.Fill(TableVeiculo);
                     Conexão.Desconectar();
@@ -622,6 +1095,5 @@ namespace PIM_4_PERIODO.Dao
             }
             return TableVeiculo;
         }
-
     }
 }

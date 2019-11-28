@@ -33,7 +33,7 @@ namespace PIM_4_PERIODO.Dao
         private bool Destino_Excluido = false;
 
 
-        public bool Abastecimento(Abastecimento Abastecimento)
+        public bool Abastecimento(Abastecimento Abastecimento, int TipoPesquisa)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace PIM_4_PERIODO.Dao
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
 
-                table = Consulta.Abastecimento(Abastecimento);
+                table = Consulta.Abastecimento(Abastecimento, TipoPesquisa);
 
                 //Verifica se o Abastecimento Ja esta cadastrado.
                 if (table.Rows.Count != 0)
@@ -86,14 +86,14 @@ namespace PIM_4_PERIODO.Dao
             return Abastecimento_Excluido;
 
         }
-        public bool Combustivel(Combustivel Combustivel)
+        public bool Combustivel(Combustivel Combustivel, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Combustivel(Combustivel);
+                table = Consulta.Combustivel(Combustivel, TipoPesquisa);
 
                 //Verifica se o Combustivel Ja esta cadastrado.
                 if (table.Rows.Count != 0)
@@ -188,14 +188,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Departamento_Excluido;
         }
-        public bool Manutenção(Manutenção Manutenção)
+        public bool Manutenção(Manutenção Manutenção, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Manutenção(Manutenção);
+                table = Consulta.Manutenção(Manutenção, TipoPesquisa);
 
 
                 //Verifica se o Manutenção Ja esta cadastrado.
@@ -239,14 +239,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Manutenção_Excluido;
         }
-        public bool Multa(Multa Multa)
+        public bool Multa(Multa Multa, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Multa(Multa);
+                table = Consulta.Multa(Multa, TipoPesquisa);
 
                 //Verifica se o Multa Ja esta cadastrado.
                 if (table.Rows.Count != 0)
@@ -339,14 +339,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Notificação_Excluido;
         }
-        public bool Oficina(Oficina Oficina)
+        public bool Oficina(Oficina Oficina, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Oficina(Oficina);
+                table = Consulta.Oficina(Oficina, TipoPesquisa);
 
                 //Verifica se o Oficina Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -389,14 +389,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Oficina_Excluido;
         }
-        public bool Oleo(Oleo Oleo)
+        public bool Oleo(Oleo Oleo, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Oleo(Oleo);
+                table = Consulta.Oleo(Oleo, TipoPesquisa);
 
                 //Verifica se o Oleo Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -438,14 +438,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Oleo_Excluido;
         }
-        public bool Posto(Posto Posto)
+        public bool Posto(Posto Posto, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Posto(Posto);
+                table = Consulta.Posto(Posto, TipoPesquisa);
 
                 //Verifica se o Posto Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -488,14 +488,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Posto_Excluido;
         }
-        public bool Salario(Salario Salario)
+        public bool Salario(Salario Salario, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Salario(Salario);
+                table = Consulta.Salario(Salario, TipoPesquisa);
 
                 //Verifica se o Salario Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -537,14 +537,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Salario_Excluido;
         }
-        public bool Usuario(Usuario Usuario)
+        public bool Usuario(Usuario Usuario, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Usuario(Usuario);
+                table = Consulta.Usuario(Usuario, TipoPesquisa);
 
                 //Verifica se o Usuario Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -587,14 +587,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Usuario_Excluido;
         }
-        public bool Veiculo(Veiculo Veiculo)
+        public bool Veiculo(Veiculo Veiculo, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Veiculo(Veiculo);
+                table = Consulta.Veiculo(Veiculo, TipoPesquisa);
 
                 //Verifica se o Veiculo Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -637,7 +637,7 @@ namespace PIM_4_PERIODO.Dao
 
             return Veiculo_Excluido;
         }
-        public bool Atendimento(Atendimento Atendimento)
+        public bool Atendimento(Atendimento Atendimento, int TipoPesquisa)
         {
             try
             {
@@ -645,7 +645,7 @@ namespace PIM_4_PERIODO.Dao
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
 
-                table = Consulta.Atendimento(Atendimento);
+                table = Consulta.Atendimento(Atendimento, TipoPesquisa);
 
                 //Verifica se o Atendimento Ja esta cadastrado.
                 if (table.Rows.Count == 0)
@@ -688,14 +688,14 @@ namespace PIM_4_PERIODO.Dao
 
             return Atendimento_Excluido;
         }
-        public bool Destino(Destino Destino)
+        public bool Destino(Destino Destino, int TipoPesquisa)
         {
             try
             {
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 MySqlCommand command = new MySqlCommand();
-                table = Consulta.Destino(Destino);
+                table = Consulta.Destino(Destino, TipoPesquisa);
 
                 //Verifica se o Destino Ja esta cadastrado.
                 if (table.Rows.Count == 0)

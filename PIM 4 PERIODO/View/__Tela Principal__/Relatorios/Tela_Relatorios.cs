@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FuzziTransportes.View.Tela_Principal.Relatorios
+namespace FuzziTransportes.View.__Tela_Principal__.Relatorios
 {
     public partial class Tela_Relatorios: Form
     {

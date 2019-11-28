@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using PIM_4_PERIODO.Dao;
 using PIM_4_PERIODO.Model;
 
-namespace PIM_4_PERIODO.View.Tela_Principal.Solicitacao
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 {
     public partial class Tela_Solicitacao : Form
     {
@@ -26,7 +26,7 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Solicitacao
                 Consultar Consultar = new Consultar();
                 Usuario Usuario = new Usuario();
                 Usuario.Username = TxTBox_NomeUsuario.Text;
-                this.Usuario_DataGridView.DataSource = Consultar.Usuario(Usuario); ;
+                this.Usuario_DataGridView.DataSource = Consultar.Usuario(Usuario, 0); ;
             }
         }
 

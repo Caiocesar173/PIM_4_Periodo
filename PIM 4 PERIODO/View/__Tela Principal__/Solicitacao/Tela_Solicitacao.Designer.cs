@@ -1,4 +1,4 @@
-﻿namespace PIM_4_PERIODO.View.Tela_Principal.Solicitacao
+﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
 {
     partial class Tela_Solicitacao
     {

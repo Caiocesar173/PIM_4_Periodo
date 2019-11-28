@@ -1,4 +1,4 @@
-﻿namespace PIM_4_PERIODO.View.Tela_Principal.Relatorios
+﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Relatorios
 {
     partial class Tela_Relatorio
     {

@@ -1,4 +1,4 @@
-﻿namespace FuzziTransportes.View.Tela_Principal.Relatorios
+﻿namespace FuzziTransportes.View.__Tela_Principal__.Relatorios
 {
     partial class Tela_Relatorios
     {

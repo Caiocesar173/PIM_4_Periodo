@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View.Tela_Principal.Relatorios
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Relatorios
 {
     public partial class Tela_Relatorio : Form
     {

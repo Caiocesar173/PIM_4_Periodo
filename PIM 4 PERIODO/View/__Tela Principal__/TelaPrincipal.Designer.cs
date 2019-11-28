@@ -31,17 +31,6 @@
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel Painel_Menu;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
-            this.Logout_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Solicitacao_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Abastecimento_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Panel_Menu = new System.Windows.Forms.Panel();
-            this.Home_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Relatorios_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.SAC_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Cadastro_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Atendimento_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Picture_Logo = new System.Windows.Forms.PictureBox();
-            this.Solicitacao_btn_ = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Exit_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Elipse_TelaPrincipal = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse_Solicitacao = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -54,6 +43,17 @@
             this.Panel_Menus = new System.Windows.Forms.Panel();
             this.Drag_Tela_Principal = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Drag_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.Logout_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Solicitacao_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Abastecimento_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Panel_Menu = new System.Windows.Forms.Panel();
+            this.Home_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Relatorios_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.SAC_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Cadastro_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Atendimento_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Picture_Logo = new System.Windows.Forms.PictureBox();
+            this.Solicitacao_btn_ = new Bunifu.Framework.UI.BunifuFlatButton();
             Painel_Menu = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             Painel_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).BeginInit();
@@ -84,6 +84,111 @@
             Painel_Menu.ShadowTopLeftVisible = false;
             Painel_Menu.Size = new System.Drawing.Size(223, 657);
             Painel_Menu.TabIndex = 0;
+            // 
+            // Exit_Button
+            // 
+            this.Exit_Button.Active = false;
+            this.Exit_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(228)))), ((int)(((byte)(253)))));
+            this.Exit_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Exit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.Exit_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Exit_Button.BorderRadius = 0;
+            this.Exit_Button.ButtonText = "x";
+            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Exit_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_Button.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Exit_Button.Iconcolor = System.Drawing.Color.WhiteSmoke;
+            this.Exit_Button.Iconimage = null;
+            this.Exit_Button.Iconimage_right = null;
+            this.Exit_Button.Iconimage_right_Selected = null;
+            this.Exit_Button.Iconimage_Selected = null;
+            this.Exit_Button.IconMarginLeft = 0;
+            this.Exit_Button.IconMarginRight = 0;
+            this.Exit_Button.IconRightVisible = true;
+            this.Exit_Button.IconRightZoom = 0D;
+            this.Exit_Button.IconVisible = true;
+            this.Exit_Button.IconZoom = 90D;
+            this.Exit_Button.IsTab = false;
+            this.Exit_Button.Location = new System.Drawing.Point(729, 3);
+            this.Exit_Button.Margin = new System.Windows.Forms.Padding(5);
+            this.Exit_Button.Name = "Exit_Button";
+            this.Exit_Button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.Exit_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.Exit_Button.OnHoverTextColor = System.Drawing.Color.Gainsboro;
+            this.Exit_Button.selected = false;
+            this.Exit_Button.Size = new System.Drawing.Size(39, 23);
+            this.Exit_Button.TabIndex = 8;
+            this.Exit_Button.Text = "x";
+            this.Exit_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Exit_Button.Textcolor = System.Drawing.Color.Gainsboro;
+            this.Exit_Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_Button.Click += new System.EventHandler(this.Exit_Button_Click);
+            // 
+            // Elipse_TelaPrincipal
+            // 
+            this.Elipse_TelaPrincipal.ElipseRadius = 5;
+            this.Elipse_TelaPrincipal.TargetControl = this;
+            // 
+            // Elipse_Solicitacao
+            // 
+            this.Elipse_Solicitacao.ElipseRadius = 5;
+            this.Elipse_Solicitacao.TargetControl = this.Solicitacao_btn;
+            // 
+            // Elipse_Home
+            // 
+            this.Elipse_Home.ElipseRadius = 5;
+            this.Elipse_Home.TargetControl = this.Home_btn;
+            // 
+            // Elipes_Atendimento
+            // 
+            this.Elipes_Atendimento.ElipseRadius = 5;
+            this.Elipes_Atendimento.TargetControl = this.Atendimento_btn;
+            // 
+            // Elipse_Cadastro
+            // 
+            this.Elipse_Cadastro.ElipseRadius = 5;
+            this.Elipse_Cadastro.TargetControl = this.Cadastro_btn;
+            // 
+            // Elipse_Relatorio
+            // 
+            this.Elipse_Relatorio.ElipseRadius = 5;
+            this.Elipse_Relatorio.TargetControl = this.Relatorios_btn;
+            // 
+            // Elipse_SAC
+            // 
+            this.Elipse_SAC.ElipseRadius = 5;
+            this.Elipse_SAC.TargetControl = this.SAC_btn;
+            // 
+            // Drag_Panel
+            // 
+            this.Drag_Panel.Fixed = true;
+            this.Drag_Panel.Horizontal = true;
+            this.Drag_Panel.TargetControl = this.Panel_Menus;
+            this.Drag_Panel.Vertical = true;
+            // 
+            // Panel_Menus
+            // 
+            this.Panel_Menus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
+            this.Panel_Menus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_Menus.Location = new System.Drawing.Point(0, 0);
+            this.Panel_Menus.Name = "Panel_Menus";
+            this.Panel_Menus.Size = new System.Drawing.Size(771, 657);
+            this.Panel_Menus.TabIndex = 11;
+            // 
+            // Drag_Tela_Principal
+            // 
+            this.Drag_Tela_Principal.Fixed = true;
+            this.Drag_Tela_Principal.Horizontal = true;
+            this.Drag_Tela_Principal.TargetControl = this;
+            this.Drag_Tela_Principal.Vertical = true;
+            // 
+            // Drag_Logo
+            // 
+            this.Drag_Logo.Fixed = true;
+            this.Drag_Logo.Horizontal = true;
+            this.Drag_Logo.TargetControl = this.Picture_Logo;
+            this.Drag_Logo.Vertical = true;
             // 
             // Logout_Btn
             // 
@@ -201,7 +306,7 @@
             this.Panel_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Panel_Menu.Location = new System.Drawing.Point(0, 186);
             this.Panel_Menu.Name = "Panel_Menu";
-            this.Panel_Menu.Size = new System.Drawing.Size(217, 44);
+            this.Panel_Menu.Size = new System.Drawing.Size(223, 44);
             this.Panel_Menu.TabIndex = 0;
             // 
             // Home_btn
@@ -216,7 +321,7 @@
             this.Home_btn.DisabledColor = System.Drawing.Color.Transparent;
             this.Home_btn.ForeColor = System.Drawing.Color.Transparent;
             this.Home_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Home_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage")));
+            this.Home_btn.Iconimage = global::PIM_4_PERIODO.Properties.Resources.HOME;
             this.Home_btn.Iconimage_right = null;
             this.Home_btn.Iconimage_right_Selected = null;
             this.Home_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage_Selected")));
@@ -394,7 +499,7 @@
             // 
             this.Picture_Logo.BackColor = System.Drawing.Color.Transparent;
             this.Picture_Logo.Image = ((System.Drawing.Image)(resources.GetObject("Picture_Logo.Image")));
-            this.Picture_Logo.Location = new System.Drawing.Point(3, 1);
+            this.Picture_Logo.Location = new System.Drawing.Point(11, 3);
             this.Picture_Logo.Name = "Picture_Logo";
             this.Picture_Logo.Size = new System.Drawing.Size(194, 179);
             this.Picture_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -436,111 +541,6 @@
             this.Solicitacao_btn_.Textcolor = System.Drawing.Color.White;
             this.Solicitacao_btn_.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // Exit_Button
-            // 
-            this.Exit_Button.Active = false;
-            this.Exit_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(228)))), ((int)(((byte)(253)))));
-            this.Exit_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Exit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Exit_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Exit_Button.BorderRadius = 0;
-            this.Exit_Button.ButtonText = "x";
-            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit_Button.DisabledColor = System.Drawing.Color.Gray;
-            this.Exit_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit_Button.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Exit_Button.Iconcolor = System.Drawing.Color.WhiteSmoke;
-            this.Exit_Button.Iconimage = null;
-            this.Exit_Button.Iconimage_right = null;
-            this.Exit_Button.Iconimage_right_Selected = null;
-            this.Exit_Button.Iconimage_Selected = null;
-            this.Exit_Button.IconMarginLeft = 0;
-            this.Exit_Button.IconMarginRight = 0;
-            this.Exit_Button.IconRightVisible = true;
-            this.Exit_Button.IconRightZoom = 0D;
-            this.Exit_Button.IconVisible = true;
-            this.Exit_Button.IconZoom = 90D;
-            this.Exit_Button.IsTab = false;
-            this.Exit_Button.Location = new System.Drawing.Point(729, 3);
-            this.Exit_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.Exit_Button.Name = "Exit_Button";
-            this.Exit_Button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.Exit_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.Exit_Button.OnHoverTextColor = System.Drawing.Color.Gainsboro;
-            this.Exit_Button.selected = false;
-            this.Exit_Button.Size = new System.Drawing.Size(39, 23);
-            this.Exit_Button.TabIndex = 8;
-            this.Exit_Button.Text = "x";
-            this.Exit_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Exit_Button.Textcolor = System.Drawing.Color.Gainsboro;
-            this.Exit_Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit_Button.Click += new System.EventHandler(this.Exit_Button_Click);
-            // 
-            // Elipse_TelaPrincipal
-            // 
-            this.Elipse_TelaPrincipal.ElipseRadius = 5;
-            this.Elipse_TelaPrincipal.TargetControl = this;
-            // 
-            // Elipse_Solicitacao
-            // 
-            this.Elipse_Solicitacao.ElipseRadius = 5;
-            this.Elipse_Solicitacao.TargetControl = this.Solicitacao_btn;
-            // 
-            // Elipse_Home
-            // 
-            this.Elipse_Home.ElipseRadius = 5;
-            this.Elipse_Home.TargetControl = this.Home_btn;
-            // 
-            // Elipes_Atendimento
-            // 
-            this.Elipes_Atendimento.ElipseRadius = 5;
-            this.Elipes_Atendimento.TargetControl = this.Atendimento_btn;
-            // 
-            // Elipse_Cadastro
-            // 
-            this.Elipse_Cadastro.ElipseRadius = 5;
-            this.Elipse_Cadastro.TargetControl = this.Cadastro_btn;
-            // 
-            // Elipse_Relatorio
-            // 
-            this.Elipse_Relatorio.ElipseRadius = 5;
-            this.Elipse_Relatorio.TargetControl = this.Relatorios_btn;
-            // 
-            // Elipse_SAC
-            // 
-            this.Elipse_SAC.ElipseRadius = 5;
-            this.Elipse_SAC.TargetControl = this.SAC_btn;
-            // 
-            // Drag_Panel
-            // 
-            this.Drag_Panel.Fixed = true;
-            this.Drag_Panel.Horizontal = true;
-            this.Drag_Panel.TargetControl = this.Panel_Menus;
-            this.Drag_Panel.Vertical = true;
-            // 
-            // Panel_Menus
-            // 
-            this.Panel_Menus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
-            this.Panel_Menus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_Menus.Location = new System.Drawing.Point(223, 0);
-            this.Panel_Menus.Name = "Panel_Menus";
-            this.Panel_Menus.Size = new System.Drawing.Size(548, 657);
-            this.Panel_Menus.TabIndex = 11;
-            // 
-            // Drag_Tela_Principal
-            // 
-            this.Drag_Tela_Principal.Fixed = true;
-            this.Drag_Tela_Principal.Horizontal = true;
-            this.Drag_Tela_Principal.TargetControl = this;
-            this.Drag_Tela_Principal.Vertical = true;
-            // 
-            // Drag_Logo
-            // 
-            this.Drag_Logo.Fixed = true;
-            this.Drag_Logo.Horizontal = true;
-            this.Drag_Logo.TargetControl = this.Picture_Logo;
-            this.Drag_Logo.Vertical = true;
-            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -548,8 +548,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(196)))), ((int)(((byte)(210)))));
             this.ClientSize = new System.Drawing.Size(771, 657);
             this.Controls.Add(this.Exit_Button);
-            this.Controls.Add(this.Panel_Menus);
             this.Controls.Add(Painel_Menu);
+            this.Controls.Add(this.Panel_Menus);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPrincipal";
