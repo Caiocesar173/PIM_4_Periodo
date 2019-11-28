@@ -31,8 +31,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Home
             Image IconeMapa = Properties.Resources.icone_mapa;
             Image IconeCalendario = Properties.Resources.icone_calendario;
 
-            
-
 
             Table_Notificação = Consulta.Notificação(Notificação, 3);
             if(Table_Notificação.Rows.Count > 0)
@@ -80,8 +78,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Home
                     {
                         Card_Notificação.Icone = IconeCalendario;
                     }
-                    
-                    Console.WriteLine("Card Nº " + NumNotificaçoes + " Localizaão: " + Card_Notificação.Location);
                     this.Controls.Add(Card_Notificação);
                 }
                 this.Controls.Add(BackGround);

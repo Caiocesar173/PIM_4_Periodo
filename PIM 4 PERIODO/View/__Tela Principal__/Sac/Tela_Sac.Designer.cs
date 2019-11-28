@@ -35,11 +35,6 @@
             Atendimento_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
-            // Elipse_Atentimendo_Btn
-            // 
-            this.Elipse_Atentimendo_Btn.ElipseRadius = 80;
-            this.Elipse_Atentimendo_Btn.TargetControl = Atendimento_Btn;
-            // 
             // Atendimento_Btn
             // 
             Atendimento_Btn.Active = false;
@@ -77,6 +72,12 @@
             Atendimento_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             Atendimento_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Atendimento_Btn.TextFont = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Atendimento_Btn.Click += new System.EventHandler(this.Atendimento_Btn_Click);
+            // 
+            // Elipse_Atentimendo_Btn
+            // 
+            this.Elipse_Atentimendo_Btn.ElipseRadius = 80;
+            this.Elipse_Atentimendo_Btn.TargetControl = Atendimento_Btn;
             // 
             // bunifuCustomLabel1
             // 

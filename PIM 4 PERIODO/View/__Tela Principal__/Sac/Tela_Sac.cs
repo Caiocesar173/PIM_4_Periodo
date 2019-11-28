@@ -17,11 +17,13 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Sac
         {
             InitializeComponent();
         }
-
+        private bool StatusButton = false;
+        public bool BotaoParaAtendimento { get => StatusButton; set => StatusButton = value;}
         private void Atendimento_Btn_Click(object sender, EventArgs e)
         {
+            StatusButton = true;
+            Console.WriteLine("Status do Botao: " + BotaoParaAtendimento);
             TelaPrincipal Principal = new TelaPrincipal();
-            Principal.AbreAtendimento = true;
         }
     }
 }

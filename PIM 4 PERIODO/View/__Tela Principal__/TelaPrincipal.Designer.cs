@@ -206,7 +206,7 @@
             // 
             // Home_btn
             // 
-            this.Home_btn.Active = true;
+            this.Home_btn.Active = false;
             this.Home_btn.Activecolor = System.Drawing.Color.Transparent;
             this.Home_btn.BackColor = System.Drawing.Color.Transparent;
             this.Home_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -216,7 +216,7 @@
             this.Home_btn.DisabledColor = System.Drawing.Color.Transparent;
             this.Home_btn.ForeColor = System.Drawing.Color.Transparent;
             this.Home_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Home_btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage")));
+            this.Home_btn.Iconimage = global::PIM_4_PERIODO.Properties.Resources.HOME;
             this.Home_btn.Iconimage_right = null;
             this.Home_btn.Iconimage_right_Selected = null;
             this.Home_btn.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("Home_btn.Iconimage_Selected")));
@@ -233,7 +233,7 @@
             this.Home_btn.Normalcolor = System.Drawing.Color.Transparent;
             this.Home_btn.OnHovercolor = System.Drawing.Color.Transparent;
             this.Home_btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
-            this.Home_btn.selected = true;
+            this.Home_btn.selected = false;
             this.Home_btn.Size = new System.Drawing.Size(193, 40);
             this.Home_btn.TabIndex = 1;
             this.Home_btn.Text = "    Home";
