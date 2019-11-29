@@ -27,30 +27,23 @@ namespace PIM_4_PERIODO.View
         Tela_Cadastro Cadastro;
         Tela_Sac Sac;
         Tela_Chat Chat;
+        Model.Login Login = new Model.Login();
+
 
         public TelaPrincipal()
         {
             InitializeComponent();
-            Sac = new Tela_Sac();
-            Console.WriteLine("Satuts do Botão do Sac: " + Sac.BotaoParaAtendimento);
+            Console.WriteLine("Usuario Logado: " + Login.Usuario);
             
             //Incia Sempre o sistema com o Botao Home Ativo
             if (!Home_btn.Active)
             {
-                if (Sac.BotaoParaAtendimento)
-                {
-                    Console.WriteLine("Um butao foi abertado ali");
-                }
-                else 
-                {
-                    Home_btn.Active = true;
-                    Home = new Tela_Home();
-                    Home.TopLevel = false;
-                    Home.AutoScroll = true;
-                    this.Panel_Menus.Controls.Add(Home);
-                    Home.Show();
-                }
-                
+                Home_btn.Active = true;
+                Home = new Tela_Home();
+                Home.TopLevel = false;
+                Home.AutoScroll = true;
+                this.Panel_Menus.Controls.Add(Home);
+                Home.Show();
             }
         }
       

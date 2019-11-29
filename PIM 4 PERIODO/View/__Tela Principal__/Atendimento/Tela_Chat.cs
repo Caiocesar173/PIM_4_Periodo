@@ -16,5 +16,15 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Chat
         {
             InitializeComponent();
         }
+
+        private void Procurar_Btn_Enter(object sender, EventArgs e)
+        {
+            Procurar_Btn.Image = Properties.Resources.POCURAR_SELECT;
+        }
+
+        private void Procurar_Btn_Leave(object sender, EventArgs e)
+        {
+            Procurar_Btn.Image = Properties.Resources.POCURAR;
+        }
     }
 }

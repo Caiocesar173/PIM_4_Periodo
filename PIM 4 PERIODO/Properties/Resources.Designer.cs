@@ -233,6 +233,26 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ENVIA_MENSAGEM {
+            get {
+                object obj = ResourceManager.GetObject("ENVIA_MENSAGEM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ENVIA_MENSAGEM_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("ENVIA_MENSAGEM_SELECT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap faixa_login {
             get {
                 object obj = ResourceManager.GetObject("faixa_login", resourceCulture);
@@ -423,6 +443,26 @@ namespace PIM_4_PERIODO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap POCURAR {
+            get {
+                object obj = ResourceManager.GetObject("POCURAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap POCURAR_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("POCURAR_SELECT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap POSTO {
             get {
                 object obj = ResourceManager.GetObject("POSTO", resourceCulture);
@@ -546,6 +586,26 @@ namespace PIM_4_PERIODO.Properties {
         internal static System.Drawing.Bitmap VEÍCULO_HOVER {
             get {
                 object obj = ResourceManager.GetObject("VEÍCULO_HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VOLTAR {
+            get {
+                object obj = ResourceManager.GetObject("VOLTAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VOLTAR_SELECT {
+            get {
+                object obj = ResourceManager.GetObject("VOLTAR_SELECT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

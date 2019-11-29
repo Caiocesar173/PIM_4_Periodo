@@ -232,11 +232,29 @@
     <Compile Include="View\Testes_Controle.Designer.cs">
       <DependentUpon>Testes_Controle.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Enviada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Enviada.Designer.cs">
+      <DependentUpon>Mensagem_Enviada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Recebida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Recebida.Designer.cs">
+      <DependentUpon>Mensagem_Recebida.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\__Tela Principal__\Atendimento\Tela_Chat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\__Tela Principal__\Atendimento\Tela_Chat.Designer.cs">
       <DependentUpon>Tela_Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Atendimento\Tela_Conversa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Atendimento\Tela_Conversa.Designer.cs">
+      <DependentUpon>Tela_Conversa.cs</DependentUpon>
     </Compile>
     <Compile Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.cs">
       <SubType>Form</SubType>
@@ -356,6 +374,9 @@
     <EmbeddedResource Include="View\__Tela Principal__\Atendimento\Tela_Chat.resx">
       <DependentUpon>Tela_Chat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Atendimento\Tela_Conversa.resx">
+      <DependentUpon>Tela_Conversa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.resx">
       <DependentUpon>Tela_Cadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,6 +422,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dao\Script Criação do Banco .txt" />
+    <None Include="Resources\VOLTAR_SELECT.png" />
+    <None Include="Resources\VOLTAR.png" />
+    <None Include="Resources\POCURAR_SELECT.png" />
+    <None Include="Resources\POCURAR.png" />
+    <None Include="Resources\ENVIA_MENSAGEM_SELECT.png" />
+    <None Include="Resources\ENVIA_MENSAGEM.png" />
     <None Include="Resources\VEÍCULO.png" />
     <None Include="Resources\USUÁRIO.png" />
     <None Include="Resources\SALÁRIO.png" />

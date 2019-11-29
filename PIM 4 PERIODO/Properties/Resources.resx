@@ -265,4 +265,22 @@
   <data name="ATENDIMENTO_SEM_CIRCULO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\View\__Componentes__\Interface\__Icones Menu__\atendimento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ENVIA_MENSAGEM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ENVIA_MENSAGEM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ENVIA_MENSAGEM_SELECT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ENVIA_MENSAGEM_SELECT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POCURAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POCURAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POCURAR_SELECT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POCURAR_SELECT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VOLTAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VOLTAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VOLTAR_SELECT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VOLTAR_SELECT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
