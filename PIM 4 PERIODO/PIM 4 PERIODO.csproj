@@ -128,6 +128,9 @@
     <Compile Include="Model\Custom_DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Model\Custom_MensagemEnviada.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Model\Custom_Resize.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -232,18 +235,6 @@
     <Compile Include="View\Testes_Controle.Designer.cs">
       <DependentUpon>Testes_Controle.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Enviada.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Enviada.Designer.cs">
-      <DependentUpon>Mensagem_Enviada.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Recebida.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Atendimento\Mensagem_Recebida.Designer.cs">
-      <DependentUpon>Mensagem_Recebida.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\__Tela Principal__\Atendimento\Tela_Chat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +258,12 @@
     </Compile>
     <Compile Include="View\__Tela Principal__\Home\Tela_Home.Designer.cs">
       <DependentUpon>Tela_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\RedeifinirSenha\RedefiniSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\RedeifinirSenha\RedefiniSenha.Designer.cs">
+      <DependentUpon>RedefiniSenha.cs</DependentUpon>
     </Compile>
     <Compile Include="View\__Tela Principal__\Relatorios\Tela_Relatorio.cs">
       <SubType>Form</SubType>
@@ -382,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Home\Tela_Home.resx">
       <DependentUpon>Tela_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\RedeifinirSenha\RedefiniSenha.resx">
+      <DependentUpon>RedefiniSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Relatorios\Tela_Relatorio.resx">
       <DependentUpon>Tela_Relatorio.cs</DependentUpon>

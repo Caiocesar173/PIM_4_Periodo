@@ -323,7 +323,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Notificação(Notificação, TipoPesquisa);
 
                 //Verifica se o Notificação Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {
@@ -377,7 +377,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Oficina(Oficina, TipoPesquisa);
 
                 //Verifica se o Oficina Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {
@@ -434,7 +434,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Oleo(Oleo, TipoPesquisa);
 
                 //Verifica se o Oleo Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {
@@ -486,7 +486,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Posto(Posto, TipoPesquisa);
 
                 //Verifica se o Posto Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {
@@ -542,7 +542,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Salario(Salario, TipoPesquisa);
 
                 //Verifica se o Salario Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {
@@ -591,9 +591,20 @@ namespace PIM_4_PERIODO.Dao
                 MySqlCommand command = new MySqlCommand();
                 table = Consulta.Usuario(Usuario, TipoPesquisa);
 
+                Console.WriteLine("Vindo da Função: ");
+                Console.WriteLine("Chegou Aqui, Usuario Procurado: " + Usuario.ID_Usuario);
+                Console.WriteLine("Chegou Aqui, Usuario Procurado: " + Usuario.Username);
+                Console.WriteLine("Chegou Aqui, Senha do Usuario: " + Usuario.Senha);
+
+                Console.WriteLine("Vindo da Tabela: ");
+                
+
+
                 //Verifica se o Usuario Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count > 0)
                 {
+                    Console.WriteLine(Convert.ToString(table));
+                    
                     if (!Conexão.Checkconection())
                     {
                         Conexão.Conectar();
@@ -601,8 +612,10 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string AlterUsuario = "UPDATE USUARIO SET USERNAME = @USERNAME, SENHA = @SENHA, DEPARTAMENTO = @DEPARTAMENTO, NOME = @NOME, EMAIL = @EMAIL, CPF = @CPF, TELEFONE = @TELEFONE, CELULAR = @CELULAR, ENDERECO = @ENDERECO, CNH = @CNH, VALIDADE_CNH = @VALIDADE_CNH, CATEGORIA_CNH = @CATEGORIA_CNH, DATAS_ADIMISSAO = @DATAS_ADIMISSAO WHERE ID_USUARIO = @ID_USUARIO;";
+                        //UPDATE `USUARIO` SET `SENHA`= '55555' WHERE `USERNAME`= 'Fábio';
 
+
+                        string AlterUsuario = "UPDATE USUARIO SET USERNAME = @USERNAME, SENHA = @SENHA, DEPARTAMENTO = @DEPARTAMENTO, NOME = @NOME, EMAIL = @EMAIL, CPF = @CPF, TELEFONE = @TELEFONE, CELULAR = @CELULAR, ENDERECO = @ENDERECO, CNH = @CNH, VALIDADE_CNH = @VALIDADE_CNH, CATEGORIA_CNH = @CATEGORIA_CNH, DATA_ADIMISSAO = @DATA_ADIMISSAO WHERE ID_USUARIO = @ID_USUARIO;";
 
                         command.CommandText = AlterUsuario;
                         command.Connection = Conexão.Pega_Conexão();
@@ -618,11 +631,20 @@ namespace PIM_4_PERIODO.Dao
                         command.Parameters.Add("@CNH", MySqlDbType.Int32).Value = Usuario.CNH;
                         command.Parameters.Add("@VALIDADE_CNH", MySqlDbType.Date).Value = Usuario.Validade_CNH;
                         command.Parameters.Add("@CATEGORIA_CNH", MySqlDbType.VarChar).Value = Usuario.Categoria_CNH;
-                        command.Parameters.Add("@DATAS_ADIMISSAO", MySqlDbType.Date).Value = Usuario.Categoria_CNH;
-                        command.Parameters.Add("@ID_USUARIO", MySqlDbType.Int32).Value = table.Rows[0][0];
+                        command.Parameters.Add("@DATA_ADIMISSAO", MySqlDbType.Date).Value = Usuario.Data_Adimissao;
+                        command.Parameters.Add("@ID_USUARIO", MySqlDbType.Int32).Value = Usuario.ID_Usuario;
+                        
+                        String commandtext = command.CommandText;
+                        foreach (MySqlParameter p in command.Parameters)
+                            commandtext = commandtext.Replace(p.ParameterName, p.Value.ToString());
 
-                        int retorno = command.ExecuteNonQuery();
-                        if (retorno > 0)
+                        //command.CommandText = commandtext;
+                        Console.WriteLine("String de Update: " + commandtext);
+
+                        adapter.SelectCommand = command;
+
+                        
+                        if (command.ExecuteNonQuery() > 0)
                         {
                             Usuario_Alterado = true;
                         }
@@ -655,7 +677,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Veiculo(Veiculo, TipoPesquisa);
 
                 //Verifica se o Veiculo Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {
@@ -719,7 +741,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Atendimento(Atendimento, TipoPesquisa);
                 
                 //Verifica se o Atendimento Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {
@@ -772,7 +794,7 @@ namespace PIM_4_PERIODO.Dao
                 table = Consulta.Destino(Destino, TipoPesquisa);
 
                 //Verifica se o Destino Ja esta cadastrado.
-                if (table.Rows.Count == 0)
+                if (table.Rows.Count != 0)
                 {
                     if (!Conexão.Checkconection())
                     {

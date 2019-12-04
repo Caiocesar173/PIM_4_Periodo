@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-
+using PIM_4_PERIODO.Model;
 using PIM_4_Periodo.View;
 using PIM_4_PERIODO.View.__Tela_Principal__.Home;
 using PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao;
 using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro;
 using PIM_4_PERIODO.View.__Tela_Principal__.Sac;
 using PIM_4_PERIODO.View.__Tela_Principal__.Chat;
+using PIM_4_PERIODO.View.__Tela_Principal__.RedeifinirSenha;
 
 
 namespace PIM_4_PERIODO.View
@@ -27,14 +28,21 @@ namespace PIM_4_PERIODO.View
         Tela_Cadastro Cadastro;
         Tela_Sac Sac;
         Tela_Chat Chat;
-        Model.Login Login = new Model.Login();
+
+        private string Usuario_VindoDoLogin = "";
+        private string Senha_VindoDoLogin = "";
 
 
-        public TelaPrincipal()
+
+        public TelaPrincipal(String Usuario, String Senha)
         {
             InitializeComponent();
-            Console.WriteLine("Usuario Logado: " + Login.Usuario);
-            
+            Usuario_VindoDoLogin = Usuario;
+            Senha_VindoDoLogin = Senha;
+            Console.WriteLine("Usuario Logado: " + Usuario);
+            Console.WriteLine("Usuario Logado: " + Senha);
+
+
             //Incia Sempre o sistema com o Botao Home Ativo
             if (!Home_btn.Active)
             {
@@ -46,7 +54,45 @@ namespace PIM_4_PERIODO.View
                 Home.Show();
             }
         }
-      
+        
+        public void BotaoDoSac()
+        {
+            if (Home_btn.Active)
+            {
+                Home_btn.selected = false;
+                Home.Close();
+            }
+            if (Solicitacao_btn.Active)
+            {
+                Solicitacao.Close();
+            }
+            if (!Atendimento_btn.Active)
+            {
+                Atendimento_btn.Active = true;
+                Chat = new Tela_Chat();
+                Chat.TopLevel = false;
+                Chat.AutoScroll = true;
+                this.Panel_Menus.Controls.Add(Chat);
+                Chat.Show();
+            }
+            if (Cadastro_btn.Active)
+            {
+                Cadastro.Close();
+            }
+            if (Relatorios_btn.Active)
+            {
+                //Relatorios.Close();
+            }
+            if (Abastecimento_Btn.Active)
+            {
+                //Abastecimento.Close();
+            }
+            if (SAC_btn.Active)
+            {
+                Sac.Close();
+            }
+        }
+
         private void Exit_Button_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -57,7 +103,11 @@ namespace PIM_4_PERIODO.View
             this.Hide();
             Login.Show();
         }
-
+        private void TrocaSenha_Btn_Click(object sender, EventArgs e)
+        {
+            RedefiniSenha Redefinir_Senha = new RedefiniSenha(Usuario_VindoDoLogin, Senha_VindoDoLogin);
+            Redefinir_Senha.Show();
+        }
 
         //Botões do Painel de menus
         private void Home_btn_Click(object sender, EventArgs e)
@@ -146,6 +196,14 @@ namespace PIM_4_PERIODO.View
                 Solicitacao.Close();
             }
             if (!Atendimento_btn.Active)
+            {
+                Atendimento_btn.Active = true;
+                Chat = new Tela_Chat();
+                Chat.TopLevel = false;
+                Chat.AutoScroll = true;
+                this.Panel_Menus.Controls.Add(Chat);
+                Chat.Show();
+            }
             if (Cadastro_btn.Active)
             {
                 Cadastro.Close();
@@ -161,16 +219,7 @@ namespace PIM_4_PERIODO.View
             if (SAC_btn.Active)
             {
                 Sac.Close();
-            }
-            {
-                Atendimento_btn.Active = true;
-                Chat = new Tela_Chat();
-                Chat.TopLevel = false;
-                Chat.AutoScroll = true;
-                this.Panel_Menus.Controls.Add(Chat);
-                Chat.Show();
-            }
-            
+            }            
         }
         private void Cadastro_btn_Click(object sender, EventArgs e)
         {
@@ -313,5 +362,7 @@ namespace PIM_4_PERIODO.View
                 Sac.Close();
             }
         }
+
+        
     }
 }

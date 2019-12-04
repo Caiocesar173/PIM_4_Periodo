@@ -35,7 +35,7 @@ namespace PIM_4_Periodo.View
                 if (Consulta.Entra_Sistema(Login))
                 {
                     this.Hide();
-                    TelaPrincipal Principal = new TelaPrincipal();
+                    TelaPrincipal Principal = new TelaPrincipal(Login.Usuario, Login.Senha);
                     Principal.Show();
                 }
                 else

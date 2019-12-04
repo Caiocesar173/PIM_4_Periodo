@@ -33,7 +33,9 @@
             this.Voltar_Btn = new Bunifu.UI.WinForms.BunifuImageButton();
             this.Envia_Mensagem_Btn = new Bunifu.UI.WinForms.BunifuImageButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TxTBox_Mensagem
@@ -91,8 +93,6 @@
             this.Voltar_Btn.Zoom = 0;
             this.Voltar_Btn.ZoomSpeed = 10;
             this.Voltar_Btn.Click += new System.EventHandler(this.Voltar_Btn_Click);
-            this.Voltar_Btn.Enter += new System.EventHandler(this.Voltar_Btn_Enter);
-            this.Voltar_Btn.Leave += new System.EventHandler(this.Voltar_Btn_Leave);
             // 
             // Envia_Mensagem_Btn
             // 
@@ -124,23 +124,30 @@
             this.Envia_Mensagem_Btn.WaitOnLoad = false;
             this.Envia_Mensagem_Btn.Zoom = 0;
             this.Envia_Mensagem_Btn.ZoomSpeed = 10;
-            this.Envia_Mensagem_Btn.Enter += new System.EventHandler(this.Envia_Mensagem_Btn_Enter);
-            this.Envia_Mensagem_Btn.Leave += new System.EventHandler(this.Envia_Mensagem_Btn_Leave);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(132, 448);
+            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(390, 488);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(388, 83);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(130, 42);
             this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(196)))), ((int)(((byte)(194)))));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(14, 337);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(14, 404);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(388, 83);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(388, 68);
             this.flowLayoutPanel2.TabIndex = 4;
             // 
             // Tela_Conversa
@@ -157,6 +164,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tela_Conversa";
             this.Text = "Tela_Conversa";
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -168,5 +177,6 @@
         private Bunifu.UI.WinForms.BunifuImageButton Voltar_Btn;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label label1;
     }
 }

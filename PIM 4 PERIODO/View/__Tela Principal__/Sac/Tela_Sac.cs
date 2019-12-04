@@ -1,5 +1,4 @@
-﻿using PIM_4_PERIODO.View;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,18 +14,17 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Sac
     public partial class Tela_Sac : Form
     {
         public Tela_Sac()
-        {
+        {            
             InitializeComponent();
         }
 
         private void Atendimento_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Tela_Chat Chat = new Tela_Chat();
-            Chat.TopLevel = false;
-            Chat.AutoScroll = true;
-            this.Controls.Add(Chat);
             Chat.Show();
+            this.Controls.Add(Chat);
+          
         }
     }
 }
+

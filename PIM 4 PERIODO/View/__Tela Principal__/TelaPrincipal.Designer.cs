@@ -54,6 +54,7 @@
             this.Drag_Tela_Principal = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Drag_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Solicitacao_btn_ = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TrocaSenha_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             Painel_Menu = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             Painel_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).BeginInit();
@@ -65,6 +66,7 @@
             Painel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Painel_Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Painel_Menu.BorderColor = System.Drawing.Color.Transparent;
+            Painel_Menu.Controls.Add(this.TrocaSenha_Btn);
             Painel_Menu.Controls.Add(this.Logout_Btn);
             Painel_Menu.Controls.Add(this.Solicitacao_btn);
             Painel_Menu.Controls.Add(this.Abastecimento_Btn);
@@ -541,6 +543,42 @@
             this.Solicitacao_btn_.Textcolor = System.Drawing.Color.White;
             this.Solicitacao_btn_.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // TrocaSenha_Btn
+            // 
+            this.TrocaSenha_Btn.Active = false;
+            this.TrocaSenha_Btn.Activecolor = System.Drawing.Color.Transparent;
+            this.TrocaSenha_Btn.BackColor = System.Drawing.Color.Transparent;
+            this.TrocaSenha_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TrocaSenha_Btn.BorderRadius = 0;
+            this.TrocaSenha_Btn.ButtonText = "";
+            this.TrocaSenha_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrocaSenha_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            this.TrocaSenha_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.TrocaSenha_Btn.Iconimage = global::PIM_4_PERIODO.Properties.Resources.ATENDIMENTO_HOVER;
+            this.TrocaSenha_Btn.Iconimage_right = null;
+            this.TrocaSenha_Btn.Iconimage_right_Selected = null;
+            this.TrocaSenha_Btn.Iconimage_Selected = null;
+            this.TrocaSenha_Btn.IconMarginLeft = 0;
+            this.TrocaSenha_Btn.IconMarginRight = 0;
+            this.TrocaSenha_Btn.IconRightVisible = true;
+            this.TrocaSenha_Btn.IconRightZoom = 0D;
+            this.TrocaSenha_Btn.IconVisible = true;
+            this.TrocaSenha_Btn.IconZoom = 80D;
+            this.TrocaSenha_Btn.IsTab = true;
+            this.TrocaSenha_Btn.Location = new System.Drawing.Point(128, 609);
+            this.TrocaSenha_Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.TrocaSenha_Btn.Name = "TrocaSenha_Btn";
+            this.TrocaSenha_Btn.Normalcolor = System.Drawing.Color.Transparent;
+            this.TrocaSenha_Btn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.TrocaSenha_Btn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(195)))));
+            this.TrocaSenha_Btn.selected = false;
+            this.TrocaSenha_Btn.Size = new System.Drawing.Size(36, 35);
+            this.TrocaSenha_Btn.TabIndex = 9;
+            this.TrocaSenha_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TrocaSenha_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(201)))), ((int)(((byte)(209)))));
+            this.TrocaSenha_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrocaSenha_Btn.Click += new System.EventHandler(this.TrocaSenha_Btn_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -586,5 +624,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton Abastecimento_Btn;
         private Bunifu.Framework.UI.BunifuFlatButton Logout_Btn;
         private Bunifu.Framework.UI.BunifuFlatButton Solicitacao_btn_;
+        private Bunifu.Framework.UI.BunifuFlatButton TrocaSenha_Btn;
     }
 }

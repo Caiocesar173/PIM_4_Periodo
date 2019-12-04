@@ -58,5 +58,9 @@ namespace PIM_4_PERIODO.View
             g.Dispose();
         }
 
+        private void label2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
