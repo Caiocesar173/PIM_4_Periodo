@@ -37,53 +37,14 @@
             this.Label_Usuario = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Label_Senha = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DragCtrl_Logo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.Picture_Logo = new System.Windows.Forms.PictureBox();
             this.Elipse_TelaLogin = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Panel_LoginImg = new System.Windows.Forms.Panel();
             this.Elipse_Entrar_btn = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Label_Error = new System.Windows.Forms.Label();
+            this.Panel_LoginImg = new System.Windows.Forms.Panel();
+            this.Picture_Logo = new System.Windows.Forms.PictureBox();
             Entrar_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Entrar_Btn
-            // 
-            Entrar_Btn.Active = false;
-            Entrar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Entrar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Entrar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            Entrar_Btn.BorderRadius = 0;
-            Entrar_Btn.ButtonText = "  Entrar";
-            Entrar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            Entrar_Btn.DisabledColor = System.Drawing.Color.Transparent;
-            Entrar_Btn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Entrar_Btn.Iconcolor = System.Drawing.Color.Transparent;
-            Entrar_Btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Entrar_Btn.Iconimage")));
-            Entrar_Btn.Iconimage_right = null;
-            Entrar_Btn.Iconimage_right_Selected = null;
-            Entrar_Btn.Iconimage_Selected = null;
-            Entrar_Btn.IconMarginLeft = 0;
-            Entrar_Btn.IconMarginRight = 0;
-            Entrar_Btn.IconRightVisible = true;
-            Entrar_Btn.IconRightZoom = 0D;
-            Entrar_Btn.IconVisible = true;
-            Entrar_Btn.IconZoom = 40D;
-            Entrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            Entrar_Btn.IsTab = false;
-            Entrar_Btn.Location = new System.Drawing.Point(122, 509);
-            Entrar_Btn.Margin = new System.Windows.Forms.Padding(5);
-            Entrar_Btn.Name = "Entrar_Btn";
-            Entrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Entrar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            Entrar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
-            Entrar_Btn.selected = false;
-            Entrar_Btn.Size = new System.Drawing.Size(114, 50);
-            Entrar_Btn.TabIndex = 3;
-            Entrar_Btn.Text = "  Entrar";
-            Entrar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            Entrar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            Entrar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Entrar_Btn.Click += new System.EventHandler(this.Entra_Button_Click);
             // 
             // Exit_Button
             // 
@@ -131,7 +92,7 @@
             this.TxTBox_Usuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.TxTBox_Usuario.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.TxTBox_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Usuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxTBox_Usuario.ForeColor = System.Drawing.Color.Silver;
             this.TxTBox_Usuario.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Usuario.HintText = "Username";
@@ -157,7 +118,7 @@
             this.TxTBox_Senha.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.TxTBox_Senha.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.TxTBox_Senha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Senha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxTBox_Senha.ForeColor = System.Drawing.Color.Silver;
             this.TxTBox_Senha.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Senha.HintText = "Password";
@@ -178,22 +139,22 @@
             // Label_Usuario
             // 
             this.Label_Usuario.AutoSize = true;
-            this.Label_Usuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Usuario.ForeColor = System.Drawing.Color.Silver;
             this.Label_Usuario.Location = new System.Drawing.Point(9, 324);
             this.Label_Usuario.Name = "Label_Usuario";
-            this.Label_Usuario.Size = new System.Drawing.Size(146, 21);
+            this.Label_Usuario.Size = new System.Drawing.Size(136, 20);
             this.Label_Usuario.TabIndex = 14;
             this.Label_Usuario.Text = "Nome de Usuario:";
             // 
             // Label_Senha
             // 
             this.Label_Senha.AutoSize = true;
-            this.Label_Senha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Senha.ForeColor = System.Drawing.Color.Silver;
             this.Label_Senha.Location = new System.Drawing.Point(9, 430);
             this.Label_Senha.Name = "Label_Senha";
-            this.Label_Senha.Size = new System.Drawing.Size(63, 21);
+            this.Label_Senha.Size = new System.Drawing.Size(60, 20);
             this.Label_Senha.TabIndex = 15;
             this.Label_Senha.Text = "Senha:";
             // 
@@ -204,29 +165,10 @@
             this.DragCtrl_Logo.TargetControl = this.Picture_Logo;
             this.DragCtrl_Logo.Vertical = true;
             // 
-            // Picture_Logo
-            // 
-            this.Picture_Logo.Image = ((System.Drawing.Image)(resources.GetObject("Picture_Logo.Image")));
-            this.Picture_Logo.Location = new System.Drawing.Point(33, 31);
-            this.Picture_Logo.Name = "Picture_Logo";
-            this.Picture_Logo.Size = new System.Drawing.Size(299, 200);
-            this.Picture_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Picture_Logo.TabIndex = 0;
-            this.Picture_Logo.TabStop = false;
-            // 
             // Elipse_TelaLogin
             // 
             this.Elipse_TelaLogin.ElipseRadius = 5;
             this.Elipse_TelaLogin.TargetControl = this;
-            // 
-            // Panel_LoginImg
-            // 
-            this.Panel_LoginImg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_LoginImg.BackgroundImage")));
-            this.Panel_LoginImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Panel_LoginImg.Location = new System.Drawing.Point(-1, 239);
-            this.Panel_LoginImg.Name = "Panel_LoginImg";
-            this.Panel_LoginImg.Size = new System.Drawing.Size(362, 53);
-            this.Panel_LoginImg.TabIndex = 16;
             // 
             // Elipse_Entrar_btn
             // 
@@ -237,14 +179,72 @@
             // 
             this.Label_Error.AutoSize = true;
             this.Label_Error.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Error.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Error.ForeColor = System.Drawing.Color.Firebrick;
             this.Label_Error.Location = new System.Drawing.Point(55, 295);
             this.Label_Error.Name = "Label_Error";
-            this.Label_Error.Size = new System.Drawing.Size(244, 23);
+            this.Label_Error.Size = new System.Drawing.Size(257, 24);
             this.Label_Error.TabIndex = 17;
             this.Label_Error.Text = "Login ou Senha Incorretos";
             this.Label_Error.Visible = false;
+            // 
+            // Panel_LoginImg
+            // 
+            this.Panel_LoginImg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_LoginImg.BackgroundImage")));
+            this.Panel_LoginImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Panel_LoginImg.Location = new System.Drawing.Point(-1, 239);
+            this.Panel_LoginImg.Name = "Panel_LoginImg";
+            this.Panel_LoginImg.Size = new System.Drawing.Size(362, 53);
+            this.Panel_LoginImg.TabIndex = 16;
+            // 
+            // Entrar_Btn
+            // 
+            Entrar_Btn.Active = false;
+            Entrar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Entrar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Entrar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Entrar_Btn.BorderRadius = 0;
+            Entrar_Btn.ButtonText = "  Entrar";
+            Entrar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            Entrar_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            Entrar_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Entrar_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            Entrar_Btn.Iconimage = ((System.Drawing.Image)(resources.GetObject("Entrar_Btn.Iconimage")));
+            Entrar_Btn.Iconimage_right = null;
+            Entrar_Btn.Iconimage_right_Selected = null;
+            Entrar_Btn.Iconimage_Selected = null;
+            Entrar_Btn.IconMarginLeft = 0;
+            Entrar_Btn.IconMarginRight = 0;
+            Entrar_Btn.IconRightVisible = true;
+            Entrar_Btn.IconRightZoom = 0D;
+            Entrar_Btn.IconVisible = true;
+            Entrar_Btn.IconZoom = 40D;
+            Entrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            Entrar_Btn.IsTab = false;
+            Entrar_Btn.Location = new System.Drawing.Point(122, 509);
+            Entrar_Btn.Margin = new System.Windows.Forms.Padding(5);
+            Entrar_Btn.Name = "Entrar_Btn";
+            Entrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Entrar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            Entrar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
+            Entrar_Btn.selected = false;
+            Entrar_Btn.Size = new System.Drawing.Size(114, 50);
+            Entrar_Btn.TabIndex = 3;
+            Entrar_Btn.Text = "  Entrar";
+            Entrar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            Entrar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            Entrar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Entrar_Btn.Click += new System.EventHandler(this.Entra_Button_Click);
+            // 
+            // Picture_Logo
+            // 
+            this.Picture_Logo.Image = ((System.Drawing.Image)(resources.GetObject("Picture_Logo.Image")));
+            this.Picture_Logo.Location = new System.Drawing.Point(33, 31);
+            this.Picture_Logo.Name = "Picture_Logo";
+            this.Picture_Logo.Size = new System.Drawing.Size(299, 200);
+            this.Picture_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Picture_Logo.TabIndex = 0;
+            this.Picture_Logo.TabStop = false;
             // 
             // Tela_Login
             // 

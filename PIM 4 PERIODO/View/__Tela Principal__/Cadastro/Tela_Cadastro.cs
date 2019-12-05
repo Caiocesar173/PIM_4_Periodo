@@ -112,6 +112,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
         private void Departamento_Btn_Click(object sender, EventArgs e)
         {
 
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;

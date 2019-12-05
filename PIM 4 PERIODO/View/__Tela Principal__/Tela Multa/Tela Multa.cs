@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View.Posto_de_Abastecimento
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Tela_Multa
 {
-    public partial class Abastecimento : Form
+    public partial class Tela_Multa : Form
     {
-        public Abastecimento()
+        public Tela_Multa()
         {
             InitializeComponent();
         }

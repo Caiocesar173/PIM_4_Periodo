@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View.Cadastro
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Saida_de_Veiculo
 {
-    public partial class AdicionarUsuarioSistema : Form
+    public partial class telaSaidadeVeiculo : Form
     {
-        public AdicionarUsuarioSistema()
+        public telaSaidadeVeiculo()
         {
             InitializeComponent();
         }
 
-        private void bntCadastre_Click(object sender, EventArgs e)
+        private void TxTBox_Placa_OnValueChanged(object sender, EventArgs e)
         {
 
         }

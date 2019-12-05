@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FuzziTransportes.View.__Tela_Principal__.Relatorios
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Entrega_de_Veiculo
 {
-    public partial class Tela_Relatorios: Form
+    public partial class Tela_Entrega_Veiculo : Form
     {
-        public Tela_Relatorios()
+        public Tela_Entrega_Veiculo()
         {
             InitializeComponent();
-        }
-
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
