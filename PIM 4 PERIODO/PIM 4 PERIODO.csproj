@@ -134,12 +134,6 @@
     <Compile Include="Model\Custom_Resize.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\AlterarSenha.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\AlterarSenha.Designer.cs">
-      <DependentUpon>AlterarSenha.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\CadastroVeiculo\Cadastro_Veiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,12 +174,6 @@
     </Compile>
     <Compile Include="View\Manutenção\HistoricoManutenção.Designer.cs">
       <DependentUpon>HistoricoManutenção.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Mensagem_aviso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Mensagem_aviso.Designer.cs">
-      <DependentUpon>Mensagem_aviso.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Multas\Multas.cs">
       <SubType>Form</SubType>
@@ -322,9 +310,6 @@
     <EmbeddedResource Include="Model\Custom_Resize.resx">
       <DependentUpon>Custom_Resize.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\AlterarSenha.resx">
-      <DependentUpon>AlterarSenha.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\CadastroVeiculo\Cadastro_Veiculo.resx">
       <DependentUpon>Cadastro_Veiculo.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,9 +331,6 @@
     </Compile>
     <EmbeddedResource Include="View\Manutenção\HistoricoManutenção.resx">
       <DependentUpon>HistoricoManutenção.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Mensagem_aviso.resx">
-      <DependentUpon>Mensagem_aviso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Multas\Multas.resx">
       <DependentUpon>Multas.cs</DependentUpon>
@@ -430,6 +412,18 @@
     <Folder Include="View\Tela de Parceiro\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bunifu.Core.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuDataGridView.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuFormDock.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuGauge.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuImageButton.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuLabel.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuScrollBar.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuSlider.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuTextbox.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuTransition.dll" />
+    <Content Include="Bunifu.UI.WinForms.BunifuUserControl.dll" />
+    <Content Include="Bunifu.UI.WinForms.ToggleSwitch.dll" />
     <Content Include="Dao\Script Criação do Banco .txt" />
     <None Include="Resources\VOLTAR_SELECT.png" />
     <None Include="Resources\VOLTAR.png" />
