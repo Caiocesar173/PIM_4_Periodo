@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PIM_4_PERIODO.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,6 +76,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
         }
         private void Abastecimento_Btn_Click(object sender, EventArgs e)
         {
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO_HOVER;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -94,6 +96,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Atendimento_Btn_Click(object sender, EventArgs e)
         {
+            Model.Atendimento atendimento = new Model.Atendimento();
+            //aten
+            //this.Hide();
+          //tela de atendimento tela atendimento = new TelaAtendimento(abastecimento.valor, abastecimento.litros); 
 
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO_HOVER;
@@ -113,6 +119,11 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Combustivel_Btn_Click(object sender, EventArgs e)
         {
+            Combustivel combustivel = new Combustivel();
+            this.Hide();
+            //telaCombustivel combustivel = new telaCombustivel();
+            //combustivel.Show();
+
 
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
@@ -227,6 +238,8 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Oficina_Btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
+
 
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
@@ -303,6 +316,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Usuario_Btn_Click(object sender, EventArgs e)
         {
+            Usuario usuario = new Usuario();
+            this.Hide();
+         //   CadastroUsuario cadUsuario = new CadastroUsuario();
+           // cadUsuario.Show();
 
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
@@ -322,6 +339,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Veiculo_Btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            // TelaCadastroVeiculo telaVeiculo = new TelaCadastroVeiculo();
+            //telaVeiculo.Show();
+
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
