@@ -20,10 +20,20 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Sac
 
         private void Atendimento_Btn_Click(object sender, EventArgs e)
         {
+            Sac_Label.Hide();
+            Atendimento_Btn.Hide();
+
             Tela_Chat Chat = new Tela_Chat();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Chat.TopLevel = false;
+            Chat.AutoScroll = true;
             Chat.Show();
-            this.Controls.Add(Chat);
-          
+
+            PainelCentral.Controls.Add(Chat);
+            PainelCentral.Show();
+
+            this.Controls.Add(PainelCentral);
         }
     }
 }
