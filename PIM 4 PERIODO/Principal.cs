@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PIM_4_PERIODO.View;
 using PIM_4_Periodo.View;
-using PIM_4_PERIODO.View.Cadastro;
-//using PIM_4_PERIODO.View.Tela_Oficina;
 
 namespace PIM_4_PERIODO
 {
