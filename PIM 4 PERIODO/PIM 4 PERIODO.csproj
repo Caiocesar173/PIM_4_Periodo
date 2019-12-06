@@ -134,6 +134,24 @@
     <Compile Include="Model\Custom_Resize.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="View\CadastroVeiculo\Cadastro_Veiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CadastroVeiculo\Cadastro_Veiculo.Designer.cs">
+      <DependentUpon>Cadastro_Veiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\AdicionarUsuarioSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\AdicionarUsuarioSistema.Designer.cs">
+      <DependentUpon>AdicionarUsuarioSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\CadastroMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\CadastroMotorista.Designer.cs">
+      <DependentUpon>CadastroMotorista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Abastecimento.cs" />
     <Compile Include="Model\Atendimento.cs" />
     <Compile Include="Model\Combustivel.cs" />
@@ -151,11 +169,53 @@
     <Compile Include="Model\Veiculo.cs" />
     <Compile Include="Principal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\Tela Login Principal\Tela_Login.cs">
+    <Compile Include="View\Manutenção\HistoricoManutenção.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Tela Login Principal\Tela_Login.Designer.cs">
+    <Compile Include="View\Manutenção\HistoricoManutenção.Designer.cs">
+      <DependentUpon>HistoricoManutenção.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Multas\Multas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Multas\Multas.Designer.cs">
+      <DependentUpon>Multas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Posto de Abastecimento\Abastecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Posto de Abastecimento\Abastecimento.Designer.cs">
+      <DependentUpon>Abastecimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Posto de Abastecimento\CadastrarPosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Posto de Abastecimento\CadastrarPosto.Designer.cs">
+      <DependentUpon>CadastrarPosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\Senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\Senha.Designer.cs">
+      <DependentUpon>Senha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tela Login\Tela_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Login\Tela_Login.Designer.cs">
       <DependentUpon>Tela_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelaMotorista\Tela Motorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TelaMotorista\Tela Motorista.Designer.cs">
+      <DependentUpon>Tela Motorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tela Oficina\CadastrarOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Oficina\CadastrarOficina.Designer.cs">
+      <DependentUpon>CadastrarOficina.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Testes_Controle.cs">
       <SubType>Form</SubType>
@@ -175,47 +235,17 @@
     <Compile Include="View\__Tela Principal__\Atendimento\Tela_Conversa.Designer.cs">
       <DependentUpon>Tela_Conversa.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Cadastro Departamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Cadastro Departamento.Designer.cs">
-      <DependentUpon>Cadastro Departamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_cadFfuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_cadFfuncionario.Designer.cs">
-      <DependentUpon>Tela_cadFfuncionario.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.Designer.cs">
       <DependentUpon>Tela_Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_cadMotorista.cs">
+    <Compile Include="View\__Tela Principal__\Cadastro\Veiculo\Tela_Cadastro_Veiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_cadMotorista.Designer.cs">
-      <DependentUpon>Tela_cadMotorista.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_Destino.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_Destino.Designer.cs">
-      <DependentUpon>Tela_Destino.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_Notificação.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Cadastro\Tela_Notificação.Designer.cs">
-      <DependentUpon>Tela_Notificação.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Entrega de Veiculo\Tela_Entrega_Veiculo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Entrega de Veiculo\Tela_Entrega_Veiculo.Designer.cs">
-      <DependentUpon>Tela_Entrega_Veiculo.cs</DependentUpon>
+    <Compile Include="View\__Tela Principal__\Cadastro\Veiculo\Tela_Cadastro_Veiculo.Designer.cs">
+      <DependentUpon>Tela_Cadastro_Veiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="View\__Tela Principal__\Home\Tela_Home.cs">
       <SubType>Form</SubType>
@@ -223,29 +253,29 @@
     <Compile Include="View\__Tela Principal__\Home\Tela_Home.Designer.cs">
       <DependentUpon>Tela_Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\__Tela Principal__\Oficina\Oficina.cs">
+    <Compile Include="View\__Tela Principal__\RedeifinirSenha\RedefiniSenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\__Tela Principal__\Oficina\Oficina.Designer.cs">
-      <DependentUpon>Oficina.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Redefinir Senha\RedefiniSenha.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Redefinir Senha\RedefiniSenha.Designer.cs">
+    <Compile Include="View\__Tela Principal__\RedeifinirSenha\RedefiniSenha.Designer.cs">
       <DependentUpon>RedefiniSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Relatorios\Tela_Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Relatorios\Tela_Relatorio.Designer.cs">
+      <DependentUpon>Tela_Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Relatorios\Tela_Relatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Relatorios\Tela_Relatorios.Designer.cs">
+      <DependentUpon>Tela_Relatorios.cs</DependentUpon>
     </Compile>
     <Compile Include="View\__Tela Principal__\Sac\Tela_Sac.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\__Tela Principal__\Sac\Tela_Sac.Designer.cs">
       <DependentUpon>Tela_Sac.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Saida de Veiculo\telaSaidadeVeiculo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Saida de Veiculo\telaSaidadeVeiculo.Designer.cs">
-      <DependentUpon>telaSaidadeVeiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="View\__Tela Principal__\Solicitacao\Tela_Solicitacao.cs">
       <SubType>Form</SubType>
@@ -259,17 +289,17 @@
     <Compile Include="View\__Tela Principal__\Solicitacao\Tela_SolicitaçãoInicial.Designer.cs">
       <DependentUpon>Tela_SolicitaçãoInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\__Tela Principal__\Tela Multa\Tela Multa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\__Tela Principal__\Tela Multa\Tela Multa.Designer.cs">
-      <DependentUpon>Tela Multa.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\__Tela Principal__\TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\__Tela Principal__\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tela Rastreio\Tela_Rastreio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Rastreio\Tela_Rastreio.Designer.cs">
+      <DependentUpon>Tela_Rastreio.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UsuarioChefe.cs">
       <SubType>Form</SubType>
@@ -279,6 +309,15 @@
     </Compile>
     <EmbeddedResource Include="Model\Custom_Resize.resx">
       <DependentUpon>Custom_Resize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CadastroVeiculo\Cadastro_Veiculo.resx">
+      <DependentUpon>Cadastro_Veiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\AdicionarUsuarioSistema.resx">
+      <DependentUpon>AdicionarUsuarioSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\CadastroMotorista.resx">
+      <DependentUpon>CadastroMotorista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -290,8 +329,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\Tela Login Principal\Tela_Login.resx">
+    <EmbeddedResource Include="View\Manutenção\HistoricoManutenção.resx">
+      <DependentUpon>HistoricoManutenção.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Multas\Multas.resx">
+      <DependentUpon>Multas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Posto de Abastecimento\Abastecimento.resx">
+      <DependentUpon>Abastecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Posto de Abastecimento\CadastrarPosto.resx">
+      <DependentUpon>CadastrarPosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastro\Senha.resx">
+      <DependentUpon>Senha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela Login\Tela_Login.resx">
       <DependentUpon>Tela_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TelaMotorista\Tela Motorista.resx">
+      <DependentUpon>Tela Motorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela Oficina\CadastrarOficina.resx">
+      <DependentUpon>CadastrarOficina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Testes_Controle.resx">
       <DependentUpon>Testes_Controle.cs</DependentUpon>
@@ -302,50 +362,32 @@
     <EmbeddedResource Include="View\__Tela Principal__\Atendimento\Tela_Conversa.resx">
       <DependentUpon>Tela_Conversa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Cadastro Departamento.resx">
-      <DependentUpon>Cadastro Departamento.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.resx">
       <DependentUpon>Tela_Cadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_cadFfuncionario.resx">
-      <DependentUpon>Tela_cadFfuncionario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_cadMotorista.resx">
-      <DependentUpon>Tela_cadMotorista.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_Destino.resx">
-      <DependentUpon>Tela_Destino.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_Notificação.resx">
-      <DependentUpon>Tela_Notificação.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Entrega de Veiculo\Tela_Entrega_Veiculo.resx">
-      <DependentUpon>Tela_Entrega_Veiculo.cs</DependentUpon>
+    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Veiculo\Tela_Cadastro_Veiculo.resx">
+      <DependentUpon>Tela_Cadastro_Veiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Home\Tela_Home.resx">
       <DependentUpon>Tela_Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Oficina\Oficina.resx">
-      <DependentUpon>Oficina.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Redefinir Senha\RedefiniSenha.resx">
+    <EmbeddedResource Include="View\__Tela Principal__\RedeifinirSenha\RedefiniSenha.resx">
       <DependentUpon>RedefiniSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Relatorios\Tela_Relatorio.resx">
+      <DependentUpon>Tela_Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Relatorios\Tela_Relatorios.resx">
+      <DependentUpon>Tela_Relatorios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Sac\Tela_Sac.resx">
       <DependentUpon>Tela_Sac.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Saida de Veiculo\telaSaidadeVeiculo.resx">
-      <DependentUpon>telaSaidadeVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Solicitacao\Tela_Solicitacao.resx">
       <DependentUpon>Tela_Solicitacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Solicitacao\Tela_SolicitaçãoInicial.resx">
       <DependentUpon>Tela_SolicitaçãoInicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\__Tela Principal__\Tela Multa\Tela Multa.resx">
-      <DependentUpon>Tela Multa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
@@ -366,7 +408,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="View\Tela de Parceiro\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Bunifu.Core.dll" />
     <Content Include="Bunifu.UI.WinForms.BunifuDataGridView.dll" />

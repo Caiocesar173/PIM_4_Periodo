@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Veiculo;
+
+
 
 
 
@@ -36,15 +39,44 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
 
         }
+        private void Hide_Btn()
+        {
+            Abastecimento_Btn.Hide();
+            Atendimento_Btn.Hide();
+            Combustivel_Btn.Hide();
+            Departamento_Btn.Hide();
+            Destino_Btn.Hide();
+            Manutenção_Btn.Hide();
+            Multa_Btn.Hide();
+            Notificação_Btn.Hide();
+            Oficina_Btn.Hide();
+            Oleo_Btn.Hide();
+            Posto_Btn.Hide();
+            Salario_Btn.Hide();
+            Usuario_Btn.Hide();
+            Veiculo_Btn.Hide();
+        }
+
+        public void Show_Btn()
+        {
+            Abastecimento_Btn.Show();
+            Atendimento_Btn.Show();
+            Combustivel_Btn.Show();
+            Departamento_Btn.Show();
+            Destino_Btn.Show();
+            Manutenção_Btn.Show();
+            Multa_Btn.Show();
+            Notificação_Btn.Show();
+            Oficina_Btn.Show();
+            Oleo_Btn.Show();
+            Posto_Btn.Show();
+            Salario_Btn.Show();
+            Usuario_Btn.Show();
+            Veiculo_Btn.Show();
+        }
         private void Abastecimento_Btn_Click(object sender, EventArgs e)
         {
 
-            Abastecimento abastecimento = new Abastecimento();
-            //this.Hide();
-            //TelaAbastecimento abastecimento = new TelaAbastecimento();
-            //abastecimento.Show();
-
-           
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO_HOVER;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -326,6 +358,20 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO_HOVER;
+
+            Tela_Cadastro_Veiculo Veiculo = new Tela_Cadastro_Veiculo();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Veiculo.TopLevel = false;
+            Veiculo.AutoScroll = true;
+            PainelCentral.Controls.Add(Veiculo);
+            Veiculo.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
         }
     }
 }
+
