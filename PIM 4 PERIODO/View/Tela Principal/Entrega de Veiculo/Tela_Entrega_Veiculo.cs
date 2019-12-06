@@ -16,5 +16,12 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Entrega_de_Veiculo
         {
             InitializeComponent();
         }
+
+        private void Bnt_Registrar_Devolucao_Click(object sender, EventArgs e)
+        {
+            
+
+            MessageBox.Show("Veiculo Entregue com sucesso");
+        }
     }
 }

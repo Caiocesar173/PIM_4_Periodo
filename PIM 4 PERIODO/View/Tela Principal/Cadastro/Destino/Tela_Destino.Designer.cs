@@ -31,8 +31,7 @@
             Bunifu.Framework.UI.BunifuFlatButton Bnt_Salvar_Departamento;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Destino));
             Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-            this.TxTBox_Email_Destino = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.TxTBox_Saida = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TxTBox_Local_Saida = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxTBox_Motorista = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TxTBox_Local_Chegada = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -41,31 +40,6 @@
             Bnt_Salvar_Departamento = new Bunifu.Framework.UI.BunifuFlatButton();
             bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
-            // 
-            // TxTBox_Email_Destino
-            // 
-            this.TxTBox_Email_Destino.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_Email_Destino.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_Email_Destino.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_Email_Destino.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_Email_Destino.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Email_Destino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_Email_Destino.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_Email_Destino.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Email_Destino.HintText = "Informe o placa ";
-            this.TxTBox_Email_Destino.isPassword = false;
-            this.TxTBox_Email_Destino.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Email_Destino.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Email_Destino.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Email_Destino.LineThickness = 4;
-            this.TxTBox_Email_Destino.Location = new System.Drawing.Point(34, 82);
-            this.TxTBox_Email_Destino.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_Email_Destino.MaxLength = 32767;
-            this.TxTBox_Email_Destino.Name = "TxTBox_Email_Destino";
-            this.TxTBox_Email_Destino.Size = new System.Drawing.Size(197, 32);
-            this.TxTBox_Email_Destino.TabIndex = 34;
-            this.TxTBox_Email_Destino.Text = "Email";
-            this.TxTBox_Email_Destino.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Bnt_Salvar_Departamento
             // 
@@ -106,30 +80,68 @@
             Bnt_Salvar_Departamento.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             Bnt_Salvar_Departamento.Click += new System.EventHandler(this.Bnt_Salvar_Departamento_Click);
             // 
-            // TxTBox_Saida
+            // bunifuFlatButton1
             // 
-            this.TxTBox_Saida.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_Saida.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_Saida.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_Saida.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_Saida.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Saida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_Saida.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_Saida.HintForeColor = System.Drawing.Color.White;
-            this.TxTBox_Saida.HintText = "Título";
-            this.TxTBox_Saida.isPassword = false;
-            this.TxTBox_Saida.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Saida.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Saida.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Saida.LineThickness = 4;
-            this.TxTBox_Saida.Location = new System.Drawing.Point(34, 122);
-            this.TxTBox_Saida.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_Saida.MaxLength = 32767;
-            this.TxTBox_Saida.Name = "TxTBox_Saida";
-            this.TxTBox_Saida.Size = new System.Drawing.Size(423, 32);
-            this.TxTBox_Saida.TabIndex = 42;
-            this.TxTBox_Saida.Text = "Local de Saída";
-            this.TxTBox_Saida.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            bunifuFlatButton1.Active = false;
+            bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            bunifuFlatButton1.BorderRadius = 0;
+            bunifuFlatButton1.ButtonText = "Cancelar";
+            bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            bunifuFlatButton1.DisabledColor = System.Drawing.Color.Transparent;
+            bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            bunifuFlatButton1.Iconimage_right = null;
+            bunifuFlatButton1.Iconimage_right_Selected = null;
+            bunifuFlatButton1.Iconimage_Selected = null;
+            bunifuFlatButton1.IconMarginLeft = 0;
+            bunifuFlatButton1.IconMarginRight = 0;
+            bunifuFlatButton1.IconRightVisible = true;
+            bunifuFlatButton1.IconRightZoom = 0D;
+            bunifuFlatButton1.IconVisible = true;
+            bunifuFlatButton1.IconZoom = 40D;
+            bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            bunifuFlatButton1.IsTab = false;
+            bunifuFlatButton1.Location = new System.Drawing.Point(274, 274);
+            bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5);
+            bunifuFlatButton1.Name = "bunifuFlatButton1";
+            bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Gray;
+            bunifuFlatButton1.selected = false;
+            bunifuFlatButton1.Size = new System.Drawing.Size(145, 50);
+            bunifuFlatButton1.TabIndex = 48;
+            bunifuFlatButton1.Text = "Cancelar";
+            bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // TxTBox_Local_Saida
+            // 
+            this.TxTBox_Local_Saida.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Local_Saida.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Local_Saida.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Local_Saida.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Local_Saida.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Local_Saida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Local_Saida.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Local_Saida.HintForeColor = System.Drawing.Color.White;
+            this.TxTBox_Local_Saida.HintText = "Título";
+            this.TxTBox_Local_Saida.isPassword = false;
+            this.TxTBox_Local_Saida.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Local_Saida.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Local_Saida.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Local_Saida.LineThickness = 4;
+            this.TxTBox_Local_Saida.Location = new System.Drawing.Point(34, 122);
+            this.TxTBox_Local_Saida.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Local_Saida.MaxLength = 32767;
+            this.TxTBox_Local_Saida.Name = "TxTBox_Local_Saida";
+            this.TxTBox_Local_Saida.Size = new System.Drawing.Size(423, 32);
+            this.TxTBox_Local_Saida.TabIndex = 42;
+            this.TxTBox_Local_Saida.Text = "Local de Saída";
+            this.TxTBox_Local_Saida.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel2
             // 
@@ -158,14 +170,15 @@
             this.TxTBox_Motorista.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Motorista.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Motorista.LineThickness = 4;
-            this.TxTBox_Motorista.Location = new System.Drawing.Point(260, 82);
+            this.TxTBox_Motorista.Location = new System.Drawing.Point(34, 95);
             this.TxTBox_Motorista.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Motorista.MaxLength = 32767;
             this.TxTBox_Motorista.Name = "TxTBox_Motorista";
-            this.TxTBox_Motorista.Size = new System.Drawing.Size(197, 32);
+            this.TxTBox_Motorista.Size = new System.Drawing.Size(112, 32);
             this.TxTBox_Motorista.TabIndex = 44;
-            this.TxTBox_Motorista.Text = "Motorista";
+            this.TxTBox_Motorista.Text = "IdMotorista";
             this.TxTBox_Motorista.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxTBox_Motorista.OnValueChanged += new System.EventHandler(this.TxTBox_Motorista_OnValueChanged);
             // 
             // TxTBox_Local_Chegada
             // 
@@ -242,44 +255,6 @@
             this.TxTBox_Data_chegada.Text = "Data de Chegada";
             this.TxTBox_Data_chegada.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuFlatButton1
-            // 
-            bunifuFlatButton1.Active = false;
-            bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            bunifuFlatButton1.BorderRadius = 0;
-            bunifuFlatButton1.ButtonText = "Cancelar";
-            bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            bunifuFlatButton1.DisabledColor = System.Drawing.Color.Transparent;
-            bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            bunifuFlatButton1.Iconimage_right = null;
-            bunifuFlatButton1.Iconimage_right_Selected = null;
-            bunifuFlatButton1.Iconimage_Selected = null;
-            bunifuFlatButton1.IconMarginLeft = 0;
-            bunifuFlatButton1.IconMarginRight = 0;
-            bunifuFlatButton1.IconRightVisible = true;
-            bunifuFlatButton1.IconRightZoom = 0D;
-            bunifuFlatButton1.IconVisible = true;
-            bunifuFlatButton1.IconZoom = 40D;
-            bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            bunifuFlatButton1.IsTab = false;
-            bunifuFlatButton1.Location = new System.Drawing.Point(274, 274);
-            bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5);
-            bunifuFlatButton1.Name = "bunifuFlatButton1";
-            bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Gray;
-            bunifuFlatButton1.selected = false;
-            bunifuFlatButton1.Size = new System.Drawing.Size(145, 50);
-            bunifuFlatButton1.TabIndex = 48;
-            bunifuFlatButton1.Text = "Cancelar";
-            bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // Tela_Destino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,9 +268,8 @@
             this.Controls.Add(this.TxTBox_Local_Chegada);
             this.Controls.Add(this.TxTBox_Motorista);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.TxTBox_Saida);
+            this.Controls.Add(this.TxTBox_Local_Saida);
             this.Controls.Add(Bnt_Salvar_Departamento);
-            this.Controls.Add(this.TxTBox_Email_Destino);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tela_Destino";
             this.Text = "Tela_Destino";
@@ -305,9 +279,7 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Email_Destino;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Saida;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Local_Saida;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Motorista;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Local_Chegada;

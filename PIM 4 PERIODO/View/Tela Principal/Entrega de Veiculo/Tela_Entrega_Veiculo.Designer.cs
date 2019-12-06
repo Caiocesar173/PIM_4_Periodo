@@ -38,42 +38,6 @@
             Bnt_Registrar_Devolucao = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
-            // Label_Usuario
-            // 
-            this.Label_Usuario.AutoSize = true;
-            this.Label_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Usuario.ForeColor = System.Drawing.Color.Silver;
-            this.Label_Usuario.Location = new System.Drawing.Point(25, 164);
-            this.Label_Usuario.Name = "Label_Usuario";
-            this.Label_Usuario.Size = new System.Drawing.Size(126, 20);
-            this.Label_Usuario.TabIndex = 17;
-            this.Label_Usuario.Text = "Placa do veículo:";
-            // 
-            // TxTBox_Placa
-            // 
-            this.TxTBox_Placa.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_Placa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_Placa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_Placa.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_Placa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Placa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_Placa.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_Placa.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Placa.HintText = "Informe o placa ";
-            this.TxTBox_Placa.isPassword = false;
-            this.TxTBox_Placa.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Placa.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Placa.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Placa.LineThickness = 4;
-            this.TxTBox_Placa.Location = new System.Drawing.Point(154, 138);
-            this.TxTBox_Placa.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_Placa.MaxLength = 32767;
-            this.TxTBox_Placa.Name = "TxTBox_Placa";
-            this.TxTBox_Placa.Size = new System.Drawing.Size(261, 46);
-            this.TxTBox_Placa.TabIndex = 18;
-            this.TxTBox_Placa.Text = "Informe a placa";
-            this.TxTBox_Placa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // Bnt_Registrar_Devolucao
             // 
             Bnt_Registrar_Devolucao.Active = false;
@@ -111,6 +75,43 @@
             Bnt_Registrar_Devolucao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             Bnt_Registrar_Devolucao.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Bnt_Registrar_Devolucao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Bnt_Registrar_Devolucao.Click += new System.EventHandler(this.Bnt_Registrar_Devolucao_Click);
+            // 
+            // Label_Usuario
+            // 
+            this.Label_Usuario.AutoSize = true;
+            this.Label_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Usuario.ForeColor = System.Drawing.Color.Silver;
+            this.Label_Usuario.Location = new System.Drawing.Point(25, 164);
+            this.Label_Usuario.Name = "Label_Usuario";
+            this.Label_Usuario.Size = new System.Drawing.Size(126, 20);
+            this.Label_Usuario.TabIndex = 17;
+            this.Label_Usuario.Text = "Placa do veículo:";
+            // 
+            // TxTBox_Placa
+            // 
+            this.TxTBox_Placa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Placa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Placa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Placa.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Placa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Placa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Placa.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Placa.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Placa.HintText = "Informe o placa ";
+            this.TxTBox_Placa.isPassword = false;
+            this.TxTBox_Placa.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Placa.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Placa.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Placa.LineThickness = 4;
+            this.TxTBox_Placa.Location = new System.Drawing.Point(154, 138);
+            this.TxTBox_Placa.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Placa.MaxLength = 32767;
+            this.TxTBox_Placa.Name = "TxTBox_Placa";
+            this.TxTBox_Placa.Size = new System.Drawing.Size(261, 46);
+            this.TxTBox_Placa.TabIndex = 18;
+            this.TxTBox_Placa.Text = "Informe a placa";
+            this.TxTBox_Placa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel1
             // 

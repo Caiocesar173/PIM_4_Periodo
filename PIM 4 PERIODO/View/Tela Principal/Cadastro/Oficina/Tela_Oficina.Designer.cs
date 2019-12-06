@@ -43,42 +43,6 @@
             Bnt_Cancelar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
-            // TxTBox_NomeOficina
-            // 
-            this.TxTBox_NomeOficina.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_NomeOficina.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_NomeOficina.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_NomeOficina.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_NomeOficina.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_NomeOficina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_NomeOficina.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_NomeOficina.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_NomeOficina.HintText = "Informe o placa ";
-            this.TxTBox_NomeOficina.isPassword = false;
-            this.TxTBox_NomeOficina.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_NomeOficina.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_NomeOficina.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_NomeOficina.LineThickness = 4;
-            this.TxTBox_NomeOficina.Location = new System.Drawing.Point(46, 58);
-            this.TxTBox_NomeOficina.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_NomeOficina.MaxLength = 32767;
-            this.TxTBox_NomeOficina.Name = "TxTBox_NomeOficina";
-            this.TxTBox_NomeOficina.Size = new System.Drawing.Size(423, 46);
-            this.TxTBox_NomeOficina.TabIndex = 25;
-            this.TxTBox_NomeOficina.Text = "Nome";
-            this.TxTBox_NomeOficina.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(178, 34);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(149, 20);
-            this.bunifuCustomLabel2.TabIndex = 26;
-            this.bunifuCustomLabel2.Text = "Cadastro de Oficina";
-            // 
             // Bnt_Cadastrar_Oficina
             // 
             Bnt_Cadastrar_Oficina.Active = false;
@@ -116,31 +80,7 @@
             Bnt_Cadastrar_Oficina.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             Bnt_Cadastrar_Oficina.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Bnt_Cadastrar_Oficina.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // TxTBox_RazaoSocial
-            // 
-            this.TxTBox_RazaoSocial.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_RazaoSocial.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_RazaoSocial.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_RazaoSocial.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_RazaoSocial.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_RazaoSocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_RazaoSocial.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_RazaoSocial.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_RazaoSocial.HintText = "Informe o placa ";
-            this.TxTBox_RazaoSocial.isPassword = false;
-            this.TxTBox_RazaoSocial.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_RazaoSocial.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_RazaoSocial.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_RazaoSocial.LineThickness = 4;
-            this.TxTBox_RazaoSocial.Location = new System.Drawing.Point(42, 133);
-            this.TxTBox_RazaoSocial.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_RazaoSocial.MaxLength = 32767;
-            this.TxTBox_RazaoSocial.Name = "TxTBox_RazaoSocial";
-            this.TxTBox_RazaoSocial.Size = new System.Drawing.Size(423, 46);
-            this.TxTBox_RazaoSocial.TabIndex = 28;
-            this.TxTBox_RazaoSocial.Text = "Razão Social";
-            this.TxTBox_RazaoSocial.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            Bnt_Cadastrar_Oficina.Click += new System.EventHandler(this.Bnt_Cadastrar_Oficina_Click);
             // 
             // Bnt_Cancelar
             // 
@@ -180,6 +120,67 @@
             Bnt_Cancelar.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Bnt_Cancelar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // TxTBox_NomeOficina
+            // 
+            this.TxTBox_NomeOficina.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_NomeOficina.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_NomeOficina.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_NomeOficina.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_NomeOficina.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_NomeOficina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_NomeOficina.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_NomeOficina.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_NomeOficina.HintText = "Informe o placa ";
+            this.TxTBox_NomeOficina.isPassword = false;
+            this.TxTBox_NomeOficina.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_NomeOficina.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_NomeOficina.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_NomeOficina.LineThickness = 4;
+            this.TxTBox_NomeOficina.Location = new System.Drawing.Point(42, 90);
+            this.TxTBox_NomeOficina.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_NomeOficina.MaxLength = 32767;
+            this.TxTBox_NomeOficina.Name = "TxTBox_NomeOficina";
+            this.TxTBox_NomeOficina.Size = new System.Drawing.Size(423, 35);
+            this.TxTBox_NomeOficina.TabIndex = 25;
+            this.TxTBox_NomeOficina.Text = "Nome";
+            this.TxTBox_NomeOficina.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(178, 34);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(149, 20);
+            this.bunifuCustomLabel2.TabIndex = 26;
+            this.bunifuCustomLabel2.Text = "Cadastro de Oficina";
+            // 
+            // TxTBox_RazaoSocial
+            // 
+            this.TxTBox_RazaoSocial.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_RazaoSocial.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_RazaoSocial.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_RazaoSocial.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_RazaoSocial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_RazaoSocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_RazaoSocial.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_RazaoSocial.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_RazaoSocial.HintText = "Informe o placa ";
+            this.TxTBox_RazaoSocial.isPassword = false;
+            this.TxTBox_RazaoSocial.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_RazaoSocial.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_RazaoSocial.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_RazaoSocial.LineThickness = 4;
+            this.TxTBox_RazaoSocial.Location = new System.Drawing.Point(42, 144);
+            this.TxTBox_RazaoSocial.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_RazaoSocial.MaxLength = 32767;
+            this.TxTBox_RazaoSocial.Name = "TxTBox_RazaoSocial";
+            this.TxTBox_RazaoSocial.Size = new System.Drawing.Size(423, 35);
+            this.TxTBox_RazaoSocial.TabIndex = 28;
+            this.TxTBox_RazaoSocial.Text = "Razão Social";
+            this.TxTBox_RazaoSocial.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // TxTBox_Endereco
             // 
             this.TxTBox_Endereco.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -196,11 +197,11 @@
             this.TxTBox_Endereco.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Endereco.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Endereco.LineThickness = 4;
-            this.TxTBox_Endereco.Location = new System.Drawing.Point(42, 197);
+            this.TxTBox_Endereco.Location = new System.Drawing.Point(42, 207);
             this.TxTBox_Endereco.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Endereco.MaxLength = 32767;
             this.TxTBox_Endereco.Name = "TxTBox_Endereco";
-            this.TxTBox_Endereco.Size = new System.Drawing.Size(423, 46);
+            this.TxTBox_Endereco.Size = new System.Drawing.Size(423, 36);
             this.TxTBox_Endereco.TabIndex = 30;
             this.TxTBox_Endereco.Text = "Endereço";
             this.TxTBox_Endereco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -221,11 +222,11 @@
             this.TxTBox_Telefone.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Telefone.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Telefone.LineThickness = 4;
-            this.TxTBox_Telefone.Location = new System.Drawing.Point(42, 251);
+            this.TxTBox_Telefone.Location = new System.Drawing.Point(42, 265);
             this.TxTBox_Telefone.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Telefone.MaxLength = 32767;
             this.TxTBox_Telefone.Name = "TxTBox_Telefone";
-            this.TxTBox_Telefone.Size = new System.Drawing.Size(151, 46);
+            this.TxTBox_Telefone.Size = new System.Drawing.Size(151, 32);
             this.TxTBox_Telefone.TabIndex = 31;
             this.TxTBox_Telefone.Text = "Telefone";
             this.TxTBox_Telefone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -246,11 +247,11 @@
             this.TxTBox_CNPJ.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_CNPJ.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_CNPJ.LineThickness = 4;
-            this.TxTBox_CNPJ.Location = new System.Drawing.Point(303, 251);
+            this.TxTBox_CNPJ.Location = new System.Drawing.Point(303, 265);
             this.TxTBox_CNPJ.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_CNPJ.MaxLength = 32767;
             this.TxTBox_CNPJ.Name = "TxTBox_CNPJ";
-            this.TxTBox_CNPJ.Size = new System.Drawing.Size(162, 46);
+            this.TxTBox_CNPJ.Size = new System.Drawing.Size(162, 32);
             this.TxTBox_CNPJ.TabIndex = 32;
             this.TxTBox_CNPJ.Text = "CNPJ";
             this.TxTBox_CNPJ.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -275,7 +276,7 @@
             this.TxTBox_Celular.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Celular.MaxLength = 32767;
             this.TxTBox_Celular.Name = "TxTBox_Celular";
-            this.TxTBox_Celular.Size = new System.Drawing.Size(151, 46);
+            this.TxTBox_Celular.Size = new System.Drawing.Size(151, 37);
             this.TxTBox_Celular.TabIndex = 33;
             this.TxTBox_Celular.Text = "Celular";
             this.TxTBox_Celular.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -296,11 +297,11 @@
             this.TxTBox_SiteOficina.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_SiteOficina.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_SiteOficina.LineThickness = 4;
-            this.TxTBox_SiteOficina.Location = new System.Drawing.Point(303, 305);
+            this.TxTBox_SiteOficina.Location = new System.Drawing.Point(303, 307);
             this.TxTBox_SiteOficina.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_SiteOficina.MaxLength = 32767;
             this.TxTBox_SiteOficina.Name = "TxTBox_SiteOficina";
-            this.TxTBox_SiteOficina.Size = new System.Drawing.Size(162, 46);
+            this.TxTBox_SiteOficina.Size = new System.Drawing.Size(162, 35);
             this.TxTBox_SiteOficina.TabIndex = 34;
             this.TxTBox_SiteOficina.Text = "Site";
             this.TxTBox_SiteOficina.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

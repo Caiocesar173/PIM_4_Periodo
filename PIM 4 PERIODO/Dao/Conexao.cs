@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,7 +40,7 @@ namespace PIM_4_PERIODO.Dao
                     conexao.Close();
                 }
             }
-            catch (MySqlException Exception)
+            catch (SqlException Exception)
             {
                 MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
             }
@@ -54,7 +55,7 @@ namespace PIM_4_PERIODO.Dao
                     retorno = true;
                 }
             }
-            catch (MySqlException Exception)
+            catch (MySqlConnection Exception)
             {
                 MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
             }
