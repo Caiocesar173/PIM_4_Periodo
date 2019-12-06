@@ -235,6 +235,24 @@
     <Compile Include="View\__Tela Principal__\Atendimento\Tela_Conversa.Designer.cs">
       <DependentUpon>Tela_Conversa.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Abastecimento\Tela_Abastecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Abastecimento\Tela_Abastecimento.Designer.cs">
+      <DependentUpon>Tela_Abastecimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Combustivel\Tela_Combustivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Combustivel\Tela_Combustivel.Designer.cs">
+      <DependentUpon>Tela_Combustivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Oleo\Tela_Oleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\__Tela Principal__\Cadastro\Oleo\Tela_Oleo.Designer.cs">
+      <DependentUpon>Tela_Oleo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,6 +379,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Atendimento\Tela_Conversa.resx">
       <DependentUpon>Tela_Conversa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Abastecimento\Tela_Abastecimento.resx">
+      <DependentUpon>Tela_Abastecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Combustivel\Tela_Combustivel.resx">
+      <DependentUpon>Tela_Combustivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Oleo\Tela_Oleo.resx">
+      <DependentUpon>Tela_Oleo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\__Tela Principal__\Cadastro\Tela_Cadastro.resx">
       <DependentUpon>Tela_Cadastro.cs</DependentUpon>

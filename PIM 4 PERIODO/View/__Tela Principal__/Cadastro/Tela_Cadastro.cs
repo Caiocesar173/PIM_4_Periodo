@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Veiculo;
+using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Oleo;
+using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Combustivel;
+using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Abastecimento;
+
 
 
 
@@ -56,7 +60,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Usuario_Btn.Hide();
             Veiculo_Btn.Hide();
         }
-
         public void Show_Btn()
         {
             Abastecimento_Btn.Show();
@@ -74,9 +77,9 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Usuario_Btn.Show();
             Veiculo_Btn.Show();
         }
+
         private void Abastecimento_Btn_Click(object sender, EventArgs e)
         {
-
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO_HOVER;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -92,6 +95,18 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
 
+            Tela_Abastecimento Abastecimento = new Tela_Abastecimento();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Abastecimento.TopLevel = false;
+            Abastecimento.AutoScroll = true;
+            PainelCentral.Controls.Add(Abastecimento);
+            Abastecimento.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
         }
 
         private void Atendimento_Btn_Click(object sender, EventArgs e)
@@ -119,12 +134,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Combustivel_Btn_Click(object sender, EventArgs e)
         {
-            Combustivel combustivel = new Combustivel();
-            this.Hide();
-            //telaCombustivel combustivel = new telaCombustivel();
-            //combustivel.Show();
-
-
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL_HOVER;
@@ -139,6 +148,19 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
+
+            Tela_Combustivel Combustivel = new Tela_Combustivel();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Combustivel.TopLevel = false;
+            Combustivel.AutoScroll = true;
+            PainelCentral.Controls.Add(Combustivel);
+            Combustivel.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
         }
 
         private void Departamento_Btn_Click(object sender, EventArgs e)
@@ -238,9 +260,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Oficina_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-
+            
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -259,7 +279,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Oleo_Btn_Click(object sender, EventArgs e)
         {
-
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;
@@ -274,6 +293,19 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
+
+            Tela_Oleo Oleo = new Tela_Oleo();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Oleo.TopLevel = false;
+            Oleo.AutoScroll = true;
+            PainelCentral.Controls.Add(Oleo);
+            Oleo.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
         }
 
         private void Posto_Btn_Click(object sender, EventArgs e)
@@ -339,10 +371,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
         private void Veiculo_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            // TelaCadastroVeiculo telaVeiculo = new TelaCadastroVeiculo();
-            //telaVeiculo.Show();
-
             Abastecimento_Btn.Image = Properties.Resources.ABASTECIMENTO;
             Atendimento_Btn.Image = Properties.Resources.ATENDIMENTO;
             Combustivel_Btn.Image = Properties.Resources.COMBUSTÍVEL;

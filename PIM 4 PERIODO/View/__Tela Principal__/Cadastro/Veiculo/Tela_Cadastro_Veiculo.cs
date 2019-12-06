@@ -29,24 +29,17 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Veiculo
             int PanelImg_Center = (this.Size.Width - Error_Label.Size.Width) / 2;
             Error_Label.Location = new Point((this.Width / 2) - (Error_Label.Width / 2), CadastroVeiculo_Label.Location.Y + Error_Label.Height + CadastroVeiculo_Label.Height + 5);
         }
-        private void Exit_Button_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
         private void Cancelar_Btn_Click(object sender, EventArgs e)
         {
             Tela_Cadastro Cadastro = new Tela_Cadastro();
             Panel PainelCentral = new Panel();
             PainelCentral.Dock = DockStyle.Fill;
             Cadastro.TopLevel = false;
-            //Cadastro.AutoScroll = true;
             PainelCentral.Controls.Add(Cadastro);
             this.Controls.Add(PainelCentral);
             PainelCentral.BringToFront();
             Cadastro.Show();
             PainelCentral.Show();
-
-         //   this.Hide();
         }
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
