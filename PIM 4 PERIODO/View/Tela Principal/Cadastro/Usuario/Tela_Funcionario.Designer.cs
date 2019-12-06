@@ -1,6 +1,6 @@
 ﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
-    partial class Tela_cadFfuncionario
+    partial class Tela_Funcionario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             Bunifu.Framework.UI.BunifuFlatButton Bnt_Cadastrar_Funcionario;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_cadFfuncionario));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Funcionario));
             Bunifu.Framework.UI.BunifuFlatButton Bnt_Cancelar_Funcionario;
             this.TxTBox_NomeFuncionario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TxTBox_MatriculaFuncionario = new Bunifu.Framework.UI.BunifuMaterialTextbox();

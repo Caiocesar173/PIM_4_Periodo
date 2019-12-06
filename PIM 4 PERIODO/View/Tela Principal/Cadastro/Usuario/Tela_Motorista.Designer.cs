@@ -1,6 +1,6 @@
 ﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
-    partial class Tela_cadMotorista
+    partial class Tela_Motorista
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             Bunifu.Framework.UI.BunifuFlatButton Bnt_Cadastrar_Motorista;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_cadMotorista));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Motorista));
             Bunifu.Framework.UI.BunifuFlatButton Bnt_Cancelar;
             this.TxTBox_CNH = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();

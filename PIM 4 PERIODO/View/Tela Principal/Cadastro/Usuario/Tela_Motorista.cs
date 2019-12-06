@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
-    public partial class Tela_cadFfuncionario : Form
+    public partial class Tela_Motorista : Form
     {
-        public Tela_cadFfuncionario()
+        public Tela_Motorista()
         {
             InitializeComponent();
         }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
-    public partial class UsuarioChefe : Form
+    public partial class Tela_Funcionario : Form
     {
-        public UsuarioChefe()
+        public Tela_Funcionario()
         {
             InitializeComponent();
         }
