@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PIM_4_PERIODO.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Tela_Multa
 {
     public partial class Tela_Multa : Form
     {
+        Multa multa = new Multa();
         public Tela_Multa()
         {
             InitializeComponent();
+        }
+
+        private void Bnt_SalvarMulta_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
