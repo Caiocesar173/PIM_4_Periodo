@@ -32,50 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Notificação));
             Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
             Bunifu.Framework.UI.BunifuFlatButton TxTBox_Cancelar;
-            this.TxTBox_NomeFuncionario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TxTBox_Titulo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Sucesso_Label = new System.Windows.Forms.Label();
+            this.Error_Label = new System.Windows.Forms.Label();
+            this.CadastroOleo_Label = new System.Windows.Forms.Label();
             this.TxTBox_Departamento = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TxTBox_Descricao = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TxTBox_Imagem = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             Bnt_Cadastrar_Notificacao = new Bunifu.Framework.UI.BunifuFlatButton();
             bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             TxTBox_Cancelar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
-            // 
-            // TxTBox_NomeFuncionario
-            // 
-            this.TxTBox_NomeFuncionario.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_NomeFuncionario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_NomeFuncionario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_NomeFuncionario.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_NomeFuncionario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_NomeFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_NomeFuncionario.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_NomeFuncionario.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_NomeFuncionario.HintText = "Título";
-            this.TxTBox_NomeFuncionario.isPassword = false;
-            this.TxTBox_NomeFuncionario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_NomeFuncionario.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_NomeFuncionario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_NomeFuncionario.LineThickness = 4;
-            this.TxTBox_NomeFuncionario.Location = new System.Drawing.Point(25, 52);
-            this.TxTBox_NomeFuncionario.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_NomeFuncionario.MaxLength = 32767;
-            this.TxTBox_NomeFuncionario.Name = "TxTBox_NomeFuncionario";
-            this.TxTBox_NomeFuncionario.Size = new System.Drawing.Size(423, 36);
-            this.TxTBox_NomeFuncionario.TabIndex = 30;
-            this.TxTBox_NomeFuncionario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(169, 18);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(179, 20);
-            this.bunifuCustomLabel2.TabIndex = 35;
-            this.bunifuCustomLabel2.Text = "Cadastro de Notificação";
             // 
             // Bnt_Cadastrar_Notificacao
             // 
@@ -101,7 +68,7 @@
             Bnt_Cadastrar_Notificacao.IconZoom = 40D;
             Bnt_Cadastrar_Notificacao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             Bnt_Cadastrar_Notificacao.IsTab = false;
-            Bnt_Cadastrar_Notificacao.Location = new System.Drawing.Point(67, 293);
+            Bnt_Cadastrar_Notificacao.Location = new System.Drawing.Point(66, 408);
             Bnt_Cadastrar_Notificacao.Margin = new System.Windows.Forms.Padding(5);
             Bnt_Cadastrar_Notificacao.Name = "Bnt_Cadastrar_Notificacao";
             Bnt_Cadastrar_Notificacao.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -114,81 +81,7 @@
             Bnt_Cadastrar_Notificacao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             Bnt_Cadastrar_Notificacao.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Bnt_Cadastrar_Notificacao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // TxTBox_Departamento
-            // 
-            this.TxTBox_Departamento.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_Departamento.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_Departamento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_Departamento.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_Departamento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Departamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_Departamento.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_Departamento.HintForeColor = System.Drawing.Color.White;
-            this.TxTBox_Departamento.HintText = "Título";
-            this.TxTBox_Departamento.isPassword = false;
-            this.TxTBox_Departamento.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Departamento.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Departamento.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Departamento.LineThickness = 4;
-            this.TxTBox_Departamento.Location = new System.Drawing.Point(25, 106);
-            this.TxTBox_Departamento.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_Departamento.MaxLength = 32767;
-            this.TxTBox_Departamento.Name = "TxTBox_Departamento";
-            this.TxTBox_Departamento.Size = new System.Drawing.Size(303, 36);
-            this.TxTBox_Departamento.TabIndex = 37;
-            this.TxTBox_Departamento.Text = "Departamento";
-            this.TxTBox_Departamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox2
-            // 
-            this.bunifuMaterialTextbox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.bunifuMaterialTextbox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox2.HintText = "Título";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.bunifuMaterialTextbox2.LineThickness = 4;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(25, 150);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.MaxLength = 32767;
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(303, 46);
-            this.bunifuMaterialTextbox2.TabIndex = 38;
-            this.bunifuMaterialTextbox2.Text = "Descrição";
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // TxTBox_Imagem
-            // 
-            this.TxTBox_Imagem.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_Imagem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_Imagem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_Imagem.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_Imagem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Imagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_Imagem.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_Imagem.HintForeColor = System.Drawing.Color.White;
-            this.TxTBox_Imagem.HintText = "Título";
-            this.TxTBox_Imagem.isPassword = false;
-            this.TxTBox_Imagem.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Imagem.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Imagem.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Imagem.LineThickness = 4;
-            this.TxTBox_Imagem.Location = new System.Drawing.Point(25, 217);
-            this.TxTBox_Imagem.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_Imagem.MaxLength = 32767;
-            this.TxTBox_Imagem.Name = "TxTBox_Imagem";
-            this.TxTBox_Imagem.Size = new System.Drawing.Size(303, 37);
-            this.TxTBox_Imagem.TabIndex = 39;
-            this.TxTBox_Imagem.Text = "Imagem";
-            this.TxTBox_Imagem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            //Bnt_Cadastrar_Notificacao.Click += new System.EventHandler(this.Bnt_Cadastrar_Notificacao_Click);
             // 
             // bunifuFlatButton1
             // 
@@ -214,7 +107,7 @@
             bunifuFlatButton1.IconZoom = 40D;
             bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             bunifuFlatButton1.IsTab = false;
-            bunifuFlatButton1.Location = new System.Drawing.Point(337, 219);
+            bunifuFlatButton1.Location = new System.Drawing.Point(406, 288);
             bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5);
             bunifuFlatButton1.Name = "bunifuFlatButton1";
             bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -252,7 +145,7 @@
             TxTBox_Cancelar.IconZoom = 40D;
             TxTBox_Cancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             TxTBox_Cancelar.IsTab = false;
-            TxTBox_Cancelar.Location = new System.Drawing.Point(246, 293);
+            TxTBox_Cancelar.Location = new System.Drawing.Point(288, 408);
             TxTBox_Cancelar.Margin = new System.Windows.Forms.Padding(5);
             TxTBox_Cancelar.Name = "TxTBox_Cancelar";
             TxTBox_Cancelar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -266,21 +159,157 @@
             TxTBox_Cancelar.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             TxTBox_Cancelar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // TxTBox_Titulo
+            // 
+            this.TxTBox_Titulo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Titulo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Titulo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Titulo.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Titulo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Titulo.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Titulo.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Titulo.HintText = "Título";
+            this.TxTBox_Titulo.isPassword = false;
+            this.TxTBox_Titulo.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Titulo.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Titulo.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Titulo.LineThickness = 4;
+            this.TxTBox_Titulo.Location = new System.Drawing.Point(42, 129);
+            this.TxTBox_Titulo.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Titulo.MaxLength = 32767;
+            this.TxTBox_Titulo.Name = "TxTBox_Titulo";
+            this.TxTBox_Titulo.Size = new System.Drawing.Size(423, 36);
+            this.TxTBox_Titulo.TabIndex = 30;
+            this.TxTBox_Titulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // Sucesso_Label
+            // 
+            this.Sucesso_Label.AutoSize = true;
+            this.Sucesso_Label.BackColor = System.Drawing.Color.Transparent;
+            this.Sucesso_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sucesso_Label.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Sucesso_Label.Location = new System.Drawing.Point(61, 57);
+            this.Sucesso_Label.Name = "Sucesso_Label";
+            this.Sucesso_Label.Size = new System.Drawing.Size(438, 29);
+            this.Sucesso_Label.TabIndex = 44;
+            this.Sucesso_Label.Text = "Notificação cadastrada com sucesso";
+            this.Sucesso_Label.Visible = false;
+            // 
+            // Error_Label
+            // 
+            this.Error_Label.AutoSize = true;
+            this.Error_Label.BackColor = System.Drawing.Color.Transparent;
+            this.Error_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Error_Label.ForeColor = System.Drawing.Color.Firebrick;
+            this.Error_Label.Location = new System.Drawing.Point(106, 101);
+            this.Error_Label.Name = "Error_Label";
+            this.Error_Label.Size = new System.Drawing.Size(326, 24);
+            this.Error_Label.TabIndex = 42;
+            this.Error_Label.Text = "Os campos não podem ser vazios";
+            this.Error_Label.Visible = false;
+            // 
+            // CadastroOleo_Label
+            // 
+            this.CadastroOleo_Label.AutoSize = true;
+            this.CadastroOleo_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CadastroOleo_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.CadastroOleo_Label.Location = new System.Drawing.Point(44, 9);
+            this.CadastroOleo_Label.Name = "CadastroOleo_Label";
+            this.CadastroOleo_Label.Size = new System.Drawing.Size(505, 51);
+            this.CadastroOleo_Label.TabIndex = 43;
+            this.CadastroOleo_Label.Text = "Cadastro de Notificação";
+            // 
+            // TxTBox_Departamento
+            // 
+            this.TxTBox_Departamento.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Departamento.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Departamento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Departamento.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Departamento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Departamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Departamento.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Departamento.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Departamento.HintText = "Departamento";
+            this.TxTBox_Departamento.isPassword = false;
+            this.TxTBox_Departamento.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Departamento.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Departamento.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Departamento.LineThickness = 4;
+            this.TxTBox_Departamento.Location = new System.Drawing.Point(42, 173);
+            this.TxTBox_Departamento.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Departamento.MaxLength = 32767;
+            this.TxTBox_Departamento.Name = "TxTBox_Departamento";
+            this.TxTBox_Departamento.Size = new System.Drawing.Size(344, 36);
+            this.TxTBox_Departamento.TabIndex = 45;
+            this.TxTBox_Departamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // TxTBox_Descricao
+            // 
+            this.TxTBox_Descricao.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Descricao.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Descricao.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Descricao.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Descricao.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Descricao.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Descricao.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Descricao.HintText = "";
+            this.TxTBox_Descricao.isPassword = false;
+            this.TxTBox_Descricao.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Descricao.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Descricao.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Descricao.LineThickness = 4;
+            this.TxTBox_Descricao.Location = new System.Drawing.Point(42, 217);
+            this.TxTBox_Descricao.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Descricao.MaxLength = 32767;
+            this.TxTBox_Descricao.Name = "TxTBox_Descricao";
+            this.TxTBox_Descricao.Size = new System.Drawing.Size(344, 36);
+            this.TxTBox_Descricao.TabIndex = 46;
+            this.TxTBox_Descricao.Text = "Descrição";
+            this.TxTBox_Descricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // TxTBox_Imagem
+            // 
+            this.TxTBox_Imagem.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Imagem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Imagem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Imagem.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Imagem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Imagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Imagem.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Imagem.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Imagem.HintText = "Imagem";
+            this.TxTBox_Imagem.isPassword = false;
+            this.TxTBox_Imagem.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Imagem.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Imagem.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Imagem.LineThickness = 4;
+            this.TxTBox_Imagem.Location = new System.Drawing.Point(53, 287);
+            this.TxTBox_Imagem.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Imagem.MaxLength = 32767;
+            this.TxTBox_Imagem.Name = "TxTBox_Imagem";
+            this.TxTBox_Imagem.Size = new System.Drawing.Size(344, 36);
+            this.TxTBox_Imagem.TabIndex = 47;
+            this.TxTBox_Imagem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // Tela_Notificação
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.BackgroundImage = global::PIM_4_PERIODO.Properties.Resources.caminhão;
-            this.ClientSize = new System.Drawing.Size(506, 383);
+            this.ClientSize = new System.Drawing.Size(596, 483);
+            this.Controls.Add(this.TxTBox_Imagem);
+            this.Controls.Add(this.TxTBox_Descricao);
+            this.Controls.Add(this.TxTBox_Departamento);
+            this.Controls.Add(this.Sucesso_Label);
+            this.Controls.Add(this.Error_Label);
+            this.Controls.Add(this.CadastroOleo_Label);
             this.Controls.Add(TxTBox_Cancelar);
             this.Controls.Add(bunifuFlatButton1);
-            this.Controls.Add(this.TxTBox_Imagem);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
-            this.Controls.Add(this.TxTBox_Departamento);
             this.Controls.Add(Bnt_Cadastrar_Notificacao);
-            this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.TxTBox_NomeFuncionario);
+            this.Controls.Add(this.TxTBox_Titulo);
             this.ForeColor = System.Drawing.Color.Coral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tela_Notificação";
@@ -292,10 +321,12 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_NomeFuncionario;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Titulo;
+        private System.Windows.Forms.Label Sucesso_Label;
+        private System.Windows.Forms.Label Error_Label;
+        private System.Windows.Forms.Label CadastroOleo_Label;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Departamento;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Descricao;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Imagem;
     }
 }

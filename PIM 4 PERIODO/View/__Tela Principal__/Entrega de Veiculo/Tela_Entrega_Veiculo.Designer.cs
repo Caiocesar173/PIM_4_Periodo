@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Bunifu.Framework.UI.BunifuFlatButton Bnt_Registrar_Devolucao;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Entrega_Veiculo));
+            Bunifu.Framework.UI.BunifuFlatButton Cadastrar_Btn;
+            Bunifu.Framework.UI.BunifuFlatButton Cancelar_Btn;
             this.Label_Usuario = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxTBox_Placa = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxTBox_HorarioDev = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            Bnt_Registrar_Devolucao = new Bunifu.Framework.UI.BunifuFlatButton();
+            Cadastrar_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            Cancelar_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
             // Label_Usuario
@@ -73,44 +74,6 @@
             this.TxTBox_Placa.TabIndex = 18;
             this.TxTBox_Placa.Text = "Informe a placa";
             this.TxTBox_Placa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // Bnt_Registrar_Devolucao
-            // 
-            Bnt_Registrar_Devolucao.Active = false;
-            Bnt_Registrar_Devolucao.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar_Devolucao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar_Devolucao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            Bnt_Registrar_Devolucao.BorderRadius = 0;
-            Bnt_Registrar_Devolucao.ButtonText = "  Registrar";
-            Bnt_Registrar_Devolucao.Cursor = System.Windows.Forms.Cursors.Hand;
-            Bnt_Registrar_Devolucao.DisabledColor = System.Drawing.Color.Transparent;
-            Bnt_Registrar_Devolucao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Bnt_Registrar_Devolucao.Iconcolor = System.Drawing.Color.Transparent;
-            Bnt_Registrar_Devolucao.Iconimage = ((System.Drawing.Image)(resources.GetObject("Bnt_Registrar_Devolucao.Iconimage")));
-            Bnt_Registrar_Devolucao.Iconimage_right = null;
-            Bnt_Registrar_Devolucao.Iconimage_right_Selected = null;
-            Bnt_Registrar_Devolucao.Iconimage_Selected = null;
-            Bnt_Registrar_Devolucao.IconMarginLeft = 0;
-            Bnt_Registrar_Devolucao.IconMarginRight = 0;
-            Bnt_Registrar_Devolucao.IconRightVisible = true;
-            Bnt_Registrar_Devolucao.IconRightZoom = 0D;
-            Bnt_Registrar_Devolucao.IconVisible = true;
-            Bnt_Registrar_Devolucao.IconZoom = 40D;
-            Bnt_Registrar_Devolucao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            Bnt_Registrar_Devolucao.IsTab = false;
-            Bnt_Registrar_Devolucao.Location = new System.Drawing.Point(192, 305);
-            Bnt_Registrar_Devolucao.Margin = new System.Windows.Forms.Padding(5);
-            Bnt_Registrar_Devolucao.Name = "Bnt_Registrar_Devolucao";
-            Bnt_Registrar_Devolucao.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar_Devolucao.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            Bnt_Registrar_Devolucao.OnHoverTextColor = System.Drawing.Color.Gray;
-            Bnt_Registrar_Devolucao.selected = false;
-            Bnt_Registrar_Devolucao.Size = new System.Drawing.Size(145, 50);
-            Bnt_Registrar_Devolucao.TabIndex = 21;
-            Bnt_Registrar_Devolucao.Text = "  Registrar";
-            Bnt_Registrar_Devolucao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            Bnt_Registrar_Devolucao.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            Bnt_Registrar_Devolucao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuCustomLabel1
             // 
@@ -159,6 +122,83 @@
             this.TxTBox_HorarioDev.Text = "Informe a placa";
             this.TxTBox_HorarioDev.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // Cadastrar_Btn
+            // 
+            Cadastrar_Btn.Active = false;
+            Cadastrar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cadastrar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cadastrar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Cadastrar_Btn.BorderRadius = 0;
+            Cadastrar_Btn.ButtonText = "Cadastrar";
+            Cadastrar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            Cadastrar_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            Cadastrar_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cadastrar_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            Cadastrar_Btn.Iconimage = null;
+            Cadastrar_Btn.Iconimage_right = null;
+            Cadastrar_Btn.Iconimage_right_Selected = null;
+            Cadastrar_Btn.Iconimage_Selected = null;
+            Cadastrar_Btn.IconMarginLeft = 0;
+            Cadastrar_Btn.IconMarginRight = 0;
+            Cadastrar_Btn.IconRightVisible = true;
+            Cadastrar_Btn.IconRightZoom = 0D;
+            Cadastrar_Btn.IconVisible = true;
+            Cadastrar_Btn.IconZoom = 40D;
+            Cadastrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            Cadastrar_Btn.IsTab = false;
+            Cadastrar_Btn.Location = new System.Drawing.Point(93, 295);
+            Cadastrar_Btn.Margin = new System.Windows.Forms.Padding(5);
+            Cadastrar_Btn.Name = "Cadastrar_Btn";
+            Cadastrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cadastrar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            Cadastrar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
+            Cadastrar_Btn.selected = false;
+            Cadastrar_Btn.Size = new System.Drawing.Size(114, 50);
+            Cadastrar_Btn.TabIndex = 50;
+            Cadastrar_Btn.Text = "Cadastrar";
+            Cadastrar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            Cadastrar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            Cadastrar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cadastrar_Btn.Click += new System.EventHandler(this.Cadastrar_Btn_Click);
+            // 
+            // Cancelar_Btn
+            // 
+            Cancelar_Btn.Active = false;
+            Cancelar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cancelar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cancelar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Cancelar_Btn.BorderRadius = 0;
+            Cancelar_Btn.ButtonText = "Cancelar";
+            Cancelar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            Cancelar_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            Cancelar_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cancelar_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            Cancelar_Btn.Iconimage = null;
+            Cancelar_Btn.Iconimage_right = null;
+            Cancelar_Btn.Iconimage_right_Selected = null;
+            Cancelar_Btn.Iconimage_Selected = null;
+            Cancelar_Btn.IconMarginLeft = 0;
+            Cancelar_Btn.IconMarginRight = 0;
+            Cancelar_Btn.IconRightVisible = true;
+            Cancelar_Btn.IconRightZoom = 0D;
+            Cancelar_Btn.IconVisible = true;
+            Cancelar_Btn.IconZoom = 40D;
+            Cancelar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            Cancelar_Btn.IsTab = false;
+            Cancelar_Btn.Location = new System.Drawing.Point(267, 295);
+            Cancelar_Btn.Margin = new System.Windows.Forms.Padding(5);
+            Cancelar_Btn.Name = "Cancelar_Btn";
+            Cancelar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cancelar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            Cancelar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
+            Cancelar_Btn.selected = false;
+            Cancelar_Btn.Size = new System.Drawing.Size(148, 50);
+            Cancelar_Btn.TabIndex = 51;
+            Cancelar_Btn.Text = "Cancelar";
+            Cancelar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            Cancelar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            Cancelar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // Tela_Entrega_Veiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,10 +206,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.BackgroundImage = global::PIM_4_PERIODO.Properties.Resources.caminhão;
             this.ClientSize = new System.Drawing.Size(506, 383);
+            this.Controls.Add(Cadastrar_Btn);
+            this.Controls.Add(Cancelar_Btn);
             this.Controls.Add(this.TxTBox_HorarioDev);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(Bnt_Registrar_Devolucao);
             this.Controls.Add(this.TxTBox_Placa);
             this.Controls.Add(this.Label_Usuario);
             this.DoubleBuffered = true;
