@@ -19,7 +19,7 @@ namespace PIM_4_PERIODO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tela_Entrega_Veiculo());
+            Application.Run(new Tela_Login());
         }
     }
 }

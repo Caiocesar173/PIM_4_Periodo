@@ -399,7 +399,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Usuario_Btn.Image = Properties.Resources.USUÁRIO_HOVER;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
 
-            Tela_Funcionario Tela_funcionario = new Tela_Funcionario();
+            /*Tela_Funcionario Tela_funcionario = new Tela_Funcionario();
             Panel PainelCentral = new Panel();
             PainelCentral.Dock = DockStyle.Fill;
             Tela_funcionario.TopLevel = false;
@@ -410,6 +410,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
             Hide_Btn();
             PainelCentral.Show();
+            */
         }
 
         private void Veiculo_Btn_Click(object sender, EventArgs e)

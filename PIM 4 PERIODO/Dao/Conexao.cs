@@ -55,7 +55,7 @@ namespace PIM_4_PERIODO.Dao
                     retorno = true;
                 }
             }
-            catch (MySqlConnection Exception)
+            catch (MySqlException Exception)
             {
                 MessageBox.Show(Convert.ToString(Exception), "Estado da Conexão");
             }

@@ -182,12 +182,6 @@
     <Compile Include="View\Tela Principal\Cadastro\Departamento\Tela_Departamento.Designer.cs">
       <DependentUpon>Tela_Departamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Tela Principal\Cadastro\Usuario\Tela_Funcionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Tela Principal\Cadastro\Usuario\Tela_Funcionario.Designer.cs">
-      <DependentUpon>Tela_Funcionario.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Tela Principal\Cadastro\Tela_Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,12 +193,6 @@
     </Compile>
     <Compile Include="View\Tela Principal\Cadastro\Veiculo\Tela_Cadastro_Veiculo.Designer.cs">
       <DependentUpon>Tela_Cadastro_Veiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Tela Principal\Cadastro\Usuario\Tela_Motorista.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Tela Principal\Cadastro\Usuario\Tela_Motorista.Designer.cs">
-      <DependentUpon>Tela_Motorista.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Tela Principal\Cadastro\Destino\Tela_Destino.cs">
       <SubType>Form</SubType>
@@ -339,12 +327,6 @@
     <EmbeddedResource Include="View\Tela Principal\Cadastro\Veiculo\Tela_Cadastro_Veiculo.resx">
       <DependentUpon>Tela_Cadastro_Veiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Tela Principal\Cadastro\Usuario\Tela_Funcionario.resx">
-      <DependentUpon>Tela_Funcionario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Tela Principal\Cadastro\Usuario\Tela_Motorista.resx">
-      <DependentUpon>Tela_Motorista.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Principal\Cadastro\Destino\Tela_Destino.resx">
       <DependentUpon>Tela_Destino.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,7 +376,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="View\Tela Principal\Cadastro\Usuario\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="View\__Componentes__\Famework\Bunifu.Core.dll" />
     <Content Include="View\__Componentes__\Famework\Bunifu.UI.WinForms.BunifuDataGridView.dll" />

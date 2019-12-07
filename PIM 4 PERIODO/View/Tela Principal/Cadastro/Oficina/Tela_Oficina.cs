@@ -33,5 +33,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Oficina
             //oficina.siteoficina = TxTBox_SiteOficina.Text
 
         }
+        private void Cadastrar_Btn_Click(object sender, EventArgs e) { }
+        private void Cancelar_Btn_Click(object sender, EventArgs e) { }
     }
 }
