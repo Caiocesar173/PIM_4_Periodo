@@ -14,12 +14,8 @@ using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Combustivel;
 using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Abastecimento;
 using PIM_4_PERIODO.View.__Tela_Principal__.Tela_Multa;
 using PIM_4_PERIODO.View.__Tela_Principal__.Atendimento;
-
-
-
-
-
-
+using PIM_4_PERIODO.View.__Tela_Principal__.Chat;
+using PIM_4_PERIODO.View.__Tela_Principal__.Oficina;
 
 namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
@@ -131,9 +127,22 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
 
-           
+            
+            Tela_Chat Chat = new Tela_Chat();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Chat.TopLevel = false;
+            Chat.AutoScroll = true;
+            PainelCentral.Controls.Add(Chat);
+            Chat.Show();
+            this.Controls.Add(PainelCentral);
 
 
+            Hide_Btn();
+            PainelCentral.Show();
+
+
+            
         }
 
         private void Combustivel_Btn_Click(object sender, EventArgs e)
@@ -185,6 +194,20 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
+
+
+            Tela_Abastecimento Abastecimento = new Tela_Abastecimento();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Abastecimento.TopLevel = false;
+            Abastecimento.AutoScroll = true;
+            PainelCentral.Controls.Add(Abastecimento);
+            Abastecimento.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
         }
 
         private void Destino_Btn_Click(object sender, EventArgs e)
@@ -257,6 +280,21 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
+
+            /* Está pronto, por favor não mude
+            Tela_Multa multa = new Tela_Multa();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            multa.TopLevel = false;
+            multa.AutoScroll = true;
+            PainelCentral.Controls.Add(multa);
+            multa.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
+            */
         }
 
         private void Notificação_Btn_Click(object sender, EventArgs e)
@@ -308,7 +346,22 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
 
-            
+            /* Está pronto, por favor não mude
+            Tela_Oficina Oficina = new Tela_Oficina();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Oficina.TopLevel = false;
+            Oficina.AutoScroll = true;
+            PainelCentral.Controls.Add(Oficina);
+            Oficina.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
+
+
+            */
         }
 
         private void Oleo_Btn_Click(object sender, EventArgs e)
@@ -359,6 +412,9 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
+
+            
+
         }
 
         private void Salario_Btn_Click(object sender, EventArgs e)
