@@ -29,5 +29,20 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 
             }
         }
+
+        private void TxTBox_Nome_Departamento_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Bnt_Cancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxTBox_Nivel_Departamento_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

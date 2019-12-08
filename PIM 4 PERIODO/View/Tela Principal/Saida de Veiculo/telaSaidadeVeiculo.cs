@@ -21,5 +21,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Saida_de_Veiculo
         {
 
         }
+
+        private void Bnt_Registrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

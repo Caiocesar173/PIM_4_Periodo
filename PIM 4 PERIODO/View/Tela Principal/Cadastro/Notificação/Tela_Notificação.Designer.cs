@@ -81,7 +81,6 @@
             Bnt_Cadastrar_Notificacao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             Bnt_Cadastrar_Notificacao.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Bnt_Cadastrar_Notificacao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //Bnt_Cadastrar_Notificacao.Click += new System.EventHandler(this.Bnt_Cadastrar_Notificacao_Click);
             // 
             // bunifuFlatButton1
             // 
@@ -260,7 +259,7 @@
             this.TxTBox_Descricao.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Descricao.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Descricao.LineThickness = 4;
-            this.TxTBox_Descricao.Location = new System.Drawing.Point(42, 217);
+            this.TxTBox_Descricao.Location = new System.Drawing.Point(42, 228);
             this.TxTBox_Descricao.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Descricao.MaxLength = 32767;
             this.TxTBox_Descricao.Name = "TxTBox_Descricao";

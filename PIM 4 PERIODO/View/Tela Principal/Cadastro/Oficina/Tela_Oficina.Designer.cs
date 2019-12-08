@@ -286,7 +286,7 @@
             Cadastrar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             Cadastrar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Cadastrar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Cadastrar_Btn.Click += new System.EventHandler(this.Cadastrar_Btn_Click);
+            //Cadastrar_Btn.Click += new System.EventHandler(this.Cadastrar_Btn_Click);
             // 
             // Cancelar_Btn
             // 
@@ -325,7 +325,7 @@
             Cancelar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             Cancelar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Cancelar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Cancelar_Btn.Click += new System.EventHandler(this.Cancelar_Btn_Click);
+          //  Cancelar_Btn.Click += new System.EventHandler(this.Cancelar_Btn_Click);
             // 
             // Oficina
             // 

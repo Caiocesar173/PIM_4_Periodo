@@ -38,6 +38,45 @@
             Bnt_Registrar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
+            // Bnt_Registrar
+            // 
+            Bnt_Registrar.Active = false;
+            Bnt_Registrar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Bnt_Registrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Bnt_Registrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Bnt_Registrar.BorderRadius = 0;
+            Bnt_Registrar.ButtonText = "  Registrar";
+            Bnt_Registrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            Bnt_Registrar.DisabledColor = System.Drawing.Color.Transparent;
+            Bnt_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Bnt_Registrar.Iconcolor = System.Drawing.Color.Transparent;
+            Bnt_Registrar.Iconimage = ((System.Drawing.Image)(resources.GetObject("Bnt_Registrar.Iconimage")));
+            Bnt_Registrar.Iconimage_right = null;
+            Bnt_Registrar.Iconimage_right_Selected = null;
+            Bnt_Registrar.Iconimage_Selected = null;
+            Bnt_Registrar.IconMarginLeft = 0;
+            Bnt_Registrar.IconMarginRight = 0;
+            Bnt_Registrar.IconRightVisible = true;
+            Bnt_Registrar.IconRightZoom = 0D;
+            Bnt_Registrar.IconVisible = true;
+            Bnt_Registrar.IconZoom = 40D;
+            Bnt_Registrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            Bnt_Registrar.IsTab = false;
+            Bnt_Registrar.Location = new System.Drawing.Point(179, 319);
+            Bnt_Registrar.Margin = new System.Windows.Forms.Padding(5);
+            Bnt_Registrar.Name = "Bnt_Registrar";
+            Bnt_Registrar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Bnt_Registrar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            Bnt_Registrar.OnHoverTextColor = System.Drawing.Color.Gray;
+            Bnt_Registrar.selected = false;
+            Bnt_Registrar.Size = new System.Drawing.Size(145, 50);
+            Bnt_Registrar.TabIndex = 20;
+            Bnt_Registrar.Text = "  Registrar";
+            Bnt_Registrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            Bnt_Registrar.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            Bnt_Registrar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Bnt_Registrar.Click += new System.EventHandler(this.Bnt_Registrar_Click);
+            // 
             // Label_Usuario
             // 
             this.Label_Usuario.AutoSize = true;
@@ -121,44 +160,6 @@
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(193, 20);
             this.bunifuCustomLabel2.TabIndex = 19;
             this.bunifuCustomLabel2.Text = "Informe a saida do veículo";
-            // 
-            // Bnt_Registrar
-            // 
-            Bnt_Registrar.Active = false;
-            Bnt_Registrar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            Bnt_Registrar.BorderRadius = 0;
-            Bnt_Registrar.ButtonText = "  Registrar";
-            Bnt_Registrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            Bnt_Registrar.DisabledColor = System.Drawing.Color.Transparent;
-            Bnt_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Bnt_Registrar.Iconcolor = System.Drawing.Color.Transparent;
-            Bnt_Registrar.Iconimage = ((System.Drawing.Image)(resources.GetObject("Bnt_Registrar.Iconimage")));
-            Bnt_Registrar.Iconimage_right = null;
-            Bnt_Registrar.Iconimage_right_Selected = null;
-            Bnt_Registrar.Iconimage_Selected = null;
-            Bnt_Registrar.IconMarginLeft = 0;
-            Bnt_Registrar.IconMarginRight = 0;
-            Bnt_Registrar.IconRightVisible = true;
-            Bnt_Registrar.IconRightZoom = 0D;
-            Bnt_Registrar.IconVisible = true;
-            Bnt_Registrar.IconZoom = 40D;
-            Bnt_Registrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            Bnt_Registrar.IsTab = false;
-            Bnt_Registrar.Location = new System.Drawing.Point(179, 319);
-            Bnt_Registrar.Margin = new System.Windows.Forms.Padding(5);
-            Bnt_Registrar.Name = "Bnt_Registrar";
-            Bnt_Registrar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            Bnt_Registrar.OnHoverTextColor = System.Drawing.Color.Gray;
-            Bnt_Registrar.selected = false;
-            Bnt_Registrar.Size = new System.Drawing.Size(145, 50);
-            Bnt_Registrar.TabIndex = 20;
-            Bnt_Registrar.Text = "  Registrar";
-            Bnt_Registrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            Bnt_Registrar.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            Bnt_Registrar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // telaSaidadeVeiculo
             // 
