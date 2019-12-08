@@ -12,19 +12,18 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Saida_de_Veiculo
 {
     public partial class telaSaidadeVeiculo : Form
     {
+
         public telaSaidadeVeiculo()
         {
             InitializeComponent();
         }
 
-        private void TxTBox_Placa_OnValueChanged(object sender, EventArgs e)
+
+        private void Bnt_Salvar_Departamento_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Veículo Retirado com sucesso");
 
         }
-
-        private void Bnt_Registrar_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
