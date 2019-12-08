@@ -15,6 +15,7 @@ namespace PIM_4_PERIODO.Dao
         private bool Login_Existe = false;
         public Conexao Conexão = new Conexao();
 
+        DataTable TodasDoBanco = new DataTable();
         DataTable TableAbastecimento = new DataTable();
         DataTable TableAtendimento = new DataTable();
         DataTable TableCombustivel = new DataTable();
@@ -68,6 +69,42 @@ namespace PIM_4_PERIODO.Dao
                 MessageBox.Show(Convert.ToString(Exception), "Estado da Consulta");
             }
             return Login_Existe;
+        }
+
+        public DataTable TabelasDoBanco()
+        {
+            try
+            {
+                if (!Conexão.Checkconection())
+                {
+                    Conexão.Conectar();
+                }
+
+                if (Conexão.Checkconection())
+                {
+                    string ConsultaAbastecimento = "SELECT TABLES";
+
+
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+                    MySqlCommand command = new MySqlCommand();
+
+                    ConsultaAbastecimento = ConsultaAbastecimento + ";";
+                    command.CommandText = ConsultaAbastecimento;
+                    command.Connection = Conexão.Pega_Conexão();
+
+                    adapter.SelectCommand = command;
+                    adapter.Fill(TodasDoBanco);
+
+                    Conexão.Desconectar();
+                }
+            }
+            catch (MySqlException Exception)
+            {
+                MessageBox.Show(Convert.ToString(Exception), "Estado da Consulta");
+            }
+
+            return TodasDoBanco;
         }
         public DataTable Abastecimento(Abastecimento Abastecimento, int TipoPesquisa)
         {
