@@ -16,6 +16,8 @@ using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Abastecimento;
 using PIM_4_PERIODO.View.__Tela_Principal__.Atendimento;
 using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Usuario;
 using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina;
+using PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção;
+using PIM_4_PERIODO.View.Tela_Principal.Cadastro.Postos;
 
 
 
@@ -253,7 +255,18 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
 
             // Tenho que fazer manutenção 
+            Tela_Cadastro_Manutencao Manutencao = new Tela_Cadastro_Manutencao();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Manutencao.TopLevel = false;
+            Manutencao.AutoScroll = true;
+            PainelCentral.Controls.Add(Manutencao);
+            Manutencao.Show();
+            this.Controls.Add(PainelCentral);
 
+
+            Hide_Btn();
+            PainelCentral.Show();
 
         }
 
@@ -400,9 +413,20 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
-            
-            // Ainda falta
 
+            // Ainda falta
+            Tela_Posto Posto = new Tela_Posto();
+            Panel PainelCentral = new Panel();
+            PainelCentral.Dock = DockStyle.Fill;
+            Posto.TopLevel = false;
+            Posto.AutoScroll = true;
+            PainelCentral.Controls.Add(Posto);
+            Posto.Show();
+            this.Controls.Add(PainelCentral);
+
+
+            Hide_Btn();
+            PainelCentral.Show();
         }
 
         private void Salario_Btn_Click(object sender, EventArgs e)
