@@ -69,6 +69,7 @@
 		ID_COMBUSTIVEL int not null,
 		LOCALIZACAO GEOMETRY not null,
 
+
 		primary key(ID_VEICULO)
 	);
 

@@ -28,15 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Bunifu.Framework.UI.BunifuFlatButton Bnt_Registrar;
+            Bunifu.Framework.UI.BunifuFlatButton Bnt_Salvar_Departamento;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaSaidadeVeiculo));
             this.Label_Usuario = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxTBox_Placa = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TxTBox_Horario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            Bnt_Registrar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.CadastroOleo_Label = new System.Windows.Forms.Label();
+            this.Sucesso_Label = new System.Windows.Forms.Label();
+            this.Error_Label = new System.Windows.Forms.Label();
+            Bnt_Salvar_Departamento = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
+            // 
+            // Bnt_Salvar_Departamento
+            // 
+            Bnt_Salvar_Departamento.Active = false;
+            Bnt_Salvar_Departamento.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Bnt_Salvar_Departamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Bnt_Salvar_Departamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Bnt_Salvar_Departamento.BorderRadius = 0;
+            Bnt_Salvar_Departamento.ButtonText = "Cadastrar";
+            Bnt_Salvar_Departamento.Cursor = System.Windows.Forms.Cursors.Hand;
+            Bnt_Salvar_Departamento.DisabledColor = System.Drawing.Color.Transparent;
+            Bnt_Salvar_Departamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Bnt_Salvar_Departamento.Iconcolor = System.Drawing.Color.Transparent;
+            Bnt_Salvar_Departamento.Iconimage = ((System.Drawing.Image)(resources.GetObject("Bnt_Salvar_Departamento.Iconimage")));
+            Bnt_Salvar_Departamento.Iconimage_right = null;
+            Bnt_Salvar_Departamento.Iconimage_right_Selected = null;
+            Bnt_Salvar_Departamento.Iconimage_Selected = null;
+            Bnt_Salvar_Departamento.IconMarginLeft = 0;
+            Bnt_Salvar_Departamento.IconMarginRight = 0;
+            Bnt_Salvar_Departamento.IconRightVisible = true;
+            Bnt_Salvar_Departamento.IconRightZoom = 0D;
+            Bnt_Salvar_Departamento.IconVisible = true;
+            Bnt_Salvar_Departamento.IconZoom = 40D;
+            Bnt_Salvar_Departamento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            Bnt_Salvar_Departamento.IsTab = false;
+            Bnt_Salvar_Departamento.Location = new System.Drawing.Point(242, 322);
+            Bnt_Salvar_Departamento.Margin = new System.Windows.Forms.Padding(5);
+            Bnt_Salvar_Departamento.Name = "Bnt_Salvar_Departamento";
+            Bnt_Salvar_Departamento.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Bnt_Salvar_Departamento.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            Bnt_Salvar_Departamento.OnHoverTextColor = System.Drawing.Color.Gray;
+            Bnt_Salvar_Departamento.selected = false;
+            Bnt_Salvar_Departamento.Size = new System.Drawing.Size(140, 39);
+            Bnt_Salvar_Departamento.TabIndex = 61;
+            Bnt_Salvar_Departamento.Text = "Cadastrar";
+            Bnt_Salvar_Departamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            Bnt_Salvar_Departamento.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            Bnt_Salvar_Departamento.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Bnt_Salvar_Departamento.Click += new System.EventHandler(this.Bnt_Salvar_Departamento_Click);
             // 
             // Label_Usuario
             // 
@@ -73,7 +114,6 @@
             this.TxTBox_Placa.TabIndex = 15;
             this.TxTBox_Placa.Text = "Informe a placa";
             this.TxTBox_Placa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TxTBox_Placa.OnValueChanged += new System.EventHandler(this.TxTBox_Placa_OnValueChanged);
             // 
             // TxTBox_Horario
             // 
@@ -111,54 +151,42 @@
             this.bunifuCustomLabel1.TabIndex = 18;
             this.bunifuCustomLabel1.Text = "Horário";
             // 
-            // bunifuCustomLabel2
+            // CadastroOleo_Label
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(172, 82);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(193, 20);
-            this.bunifuCustomLabel2.TabIndex = 19;
-            this.bunifuCustomLabel2.Text = "Informe a saida do veículo";
+            this.CadastroOleo_Label.AutoSize = true;
+            this.CadastroOleo_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CadastroOleo_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.CadastroOleo_Label.Location = new System.Drawing.Point(59, 9);
+            this.CadastroOleo_Label.Name = "CadastroOleo_Label";
+            this.CadastroOleo_Label.Size = new System.Drawing.Size(433, 51);
+            this.CadastroOleo_Label.TabIndex = 64;
+            this.CadastroOleo_Label.Text = "Cadastro de Destino";
             // 
-            // Bnt_Registrar
+            // Sucesso_Label
             // 
-            Bnt_Registrar.Active = false;
-            Bnt_Registrar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            Bnt_Registrar.BorderRadius = 0;
-            Bnt_Registrar.ButtonText = "  Registrar";
-            Bnt_Registrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            Bnt_Registrar.DisabledColor = System.Drawing.Color.Transparent;
-            Bnt_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Bnt_Registrar.Iconcolor = System.Drawing.Color.Transparent;
-            Bnt_Registrar.Iconimage = ((System.Drawing.Image)(resources.GetObject("Bnt_Registrar.Iconimage")));
-            Bnt_Registrar.Iconimage_right = null;
-            Bnt_Registrar.Iconimage_right_Selected = null;
-            Bnt_Registrar.Iconimage_Selected = null;
-            Bnt_Registrar.IconMarginLeft = 0;
-            Bnt_Registrar.IconMarginRight = 0;
-            Bnt_Registrar.IconRightVisible = true;
-            Bnt_Registrar.IconRightZoom = 0D;
-            Bnt_Registrar.IconVisible = true;
-            Bnt_Registrar.IconZoom = 40D;
-            Bnt_Registrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            Bnt_Registrar.IsTab = false;
-            Bnt_Registrar.Location = new System.Drawing.Point(179, 319);
-            Bnt_Registrar.Margin = new System.Windows.Forms.Padding(5);
-            Bnt_Registrar.Name = "Bnt_Registrar";
-            Bnt_Registrar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Bnt_Registrar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            Bnt_Registrar.OnHoverTextColor = System.Drawing.Color.Gray;
-            Bnt_Registrar.selected = false;
-            Bnt_Registrar.Size = new System.Drawing.Size(145, 50);
-            Bnt_Registrar.TabIndex = 20;
-            Bnt_Registrar.Text = "  Registrar";
-            Bnt_Registrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            Bnt_Registrar.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            Bnt_Registrar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sucesso_Label.AutoSize = true;
+            this.Sucesso_Label.BackColor = System.Drawing.Color.Transparent;
+            this.Sucesso_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sucesso_Label.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Sucesso_Label.Location = new System.Drawing.Point(72, 61);
+            this.Sucesso_Label.Name = "Sucesso_Label";
+            this.Sucesso_Label.Size = new System.Drawing.Size(397, 29);
+            this.Sucesso_Label.TabIndex = 63;
+            this.Sucesso_Label.Text = "Destino cadastrado com sucesso";
+            this.Sucesso_Label.Visible = false;
+            // 
+            // Error_Label
+            // 
+            this.Error_Label.AutoSize = true;
+            this.Error_Label.BackColor = System.Drawing.Color.Transparent;
+            this.Error_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Error_Label.ForeColor = System.Drawing.Color.Firebrick;
+            this.Error_Label.Location = new System.Drawing.Point(99, 100);
+            this.Error_Label.Name = "Error_Label";
+            this.Error_Label.Size = new System.Drawing.Size(326, 24);
+            this.Error_Label.TabIndex = 62;
+            this.Error_Label.Text = "Os campos não podem ser vazios";
+            this.Error_Label.Visible = false;
             // 
             // telaSaidadeVeiculo
             // 
@@ -168,8 +196,10 @@
             this.BackgroundImage = global::PIM_4_PERIODO.Properties.Resources.caminhão;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(522, 422);
-            this.Controls.Add(Bnt_Registrar);
-            this.Controls.Add(this.bunifuCustomLabel2);
+            this.Controls.Add(this.CadastroOleo_Label);
+            this.Controls.Add(this.Sucesso_Label);
+            this.Controls.Add(this.Error_Label);
+            this.Controls.Add(Bnt_Salvar_Departamento);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.TxTBox_Horario);
             this.Controls.Add(this.Label_Usuario);
@@ -189,6 +219,8 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Placa;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Horario;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private System.Windows.Forms.Label CadastroOleo_Label;
+        private System.Windows.Forms.Label Sucesso_Label;
+        private System.Windows.Forms.Label Error_Label;
     }
 }

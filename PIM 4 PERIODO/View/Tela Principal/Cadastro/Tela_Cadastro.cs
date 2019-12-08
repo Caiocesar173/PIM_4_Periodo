@@ -130,7 +130,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
 
-           
+           //Falta atendimento
 
 
         }
@@ -251,6 +251,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
+
+            // Tenho que fazer manutenção 
+
+
         }
 
         private void Multa_Btn_Click(object sender, EventArgs e)
@@ -396,6 +400,9 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Salario_Btn.Image = Properties.Resources.SALÁRIO;
             Usuario_Btn.Image = Properties.Resources.USUÁRIO;
             Veiculo_Btn.Image = Properties.Resources.VEÍCULO;
+            
+            // Ainda falta
+
         }
 
         private void Salario_Btn_Click(object sender, EventArgs e)

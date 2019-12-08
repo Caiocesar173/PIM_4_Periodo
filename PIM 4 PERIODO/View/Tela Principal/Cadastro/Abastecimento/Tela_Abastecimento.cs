@@ -40,15 +40,16 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Abastecimento
         }
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
-            if (TxTBox_Data.Text != "" && TxTBox_NomeEmpresa.Text != "" && TxTBox_Valor.Text != "")
+            if (TxTBox_NomeMotorista.Text != "" && TxTBox_NomeEmpresa.Text != "" && TxTBox_Veiculo_Abastecimento.Text != "")
             {
-                if (TxTBox_Valor.Text.Contains(","))
+                if (TxTBox_Veiculo_Abastecimento.Text.Contains(","))
                 {
-                    TxTBox_Valor.Text = TxTBox_Valor.Text.Replace(",", ".");
+                    TxTBox_Veiculo_Abastecimento.Text = TxTBox_Veiculo_Abastecimento.Text.Replace(",", ".");
                 }
 
-
-
+                
+                Abastecimento.Valor = float.Parse(TxTBox_Valor_Abastecidos.Text);
+                Abastecimento.Litros = float.Parse(TxTBox_Litros.Text);
 
                 if (Incluir.Abastecimento(Abastecimento, 1))
                 {

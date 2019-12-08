@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PIM_4_PERIODO.Dao;
+using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,15 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
-namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
+namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Postos
 {
-    public partial class Oficina : Form
+    public partial class Tela_Posto : Form
     {
-        Model.Oficina oficina = new Model.Oficina();
-        Dao.Incluir Incluir = new Dao.Incluir();
-        public Oficina()
+        Model.Posto Posto = new Model.Posto();
+        Dao.Incluir Incluir = new Incluir();
+        public Tela_Posto()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
         {
             Error_Label.Visible = true;
             int PanelImg_Center = (this.Size.Width - Error_Label.Size.Width) / 2;
-            // Error_Label.Location = new Point((this.Width / 2) - (Error_Label.Width / 2), CadastroOfina_Label.Location.Y + Error_Label.Height + CadastroOleo_Label.Height + 5);
+            Error_Label.Location = new Point((this.Width / 2) - (Error_Label.Width / 2), CadastroOleo_Label.Location.Y + Error_Label.Height + CadastroOleo_Label.Height + 5);
         }
         private void Cancelar_Btn_Click(object sender, EventArgs e)
         {
@@ -40,18 +40,19 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
         }
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
-            if (TxTBox_NomeOficina.Text != "" && TxTBox_RazaoSocial.Text != "" && TxTBox_CNPJ.Text != "" && TxTBox_Telefone.Text != "" && TxTBox_SiteOficina.Text != "" && TxTBox_Endereco.Text != "" && TxTBox_Celular.Text != "")
+            if (TxTBox_Nome.Text != "" && TxTBox_Razao_Social.Text != "" && TxTBox_Endereco.Text != "" && TxTBox_Telefone.Text != "")
             {
 
 
-                oficina.Nome = TxTBox_NomeOficina.Text;
-                oficina.RazaoSocial = TxTBox_RazaoSocial.Text;
-                oficina.Site = TxTBox_SiteOficina.Text;
-                oficina.Telefone = Convert.ToInt16(TxTBox_Telefone.Text);
-                oficina.CNPJ = TxTBox_CNPJ.Text;
-                oficina.Celular = Convert.ToInt16(TxTBox_Celular.Text);
+                Posto.Nome = TxTBox_Nome.Text;
+                Posto.RazaoSocial = TxTBox_Razao_Social.Text;
+                Posto.Endereço = TxTBox_Endereco.Text;
+                Posto.CNPJ = TxTBox_cpnj.Text;
 
-                if (Incluir.Oficina(oficina, 1))
+
+
+
+                if (Incluir.Posto(Posto, 1))
                 {
                     Repoisicionamento_Label(Sucesso_Label);
                 }
@@ -66,9 +67,8 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
                 Error_Label.Text = "Os campos não podem ser vazios";
                 Repoisicionamento_Label(Error_Label);
             }
-
-            // private void Cadastrar_Btn_Click(object sender, EventArgs e) { }
-            //private void Cancelar_Btn_Click(object sender, EventArgs e) { }
-        }
-    }
-}
+  
+            }
+         }
+      }
+         
