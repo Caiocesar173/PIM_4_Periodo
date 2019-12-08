@@ -158,6 +158,12 @@
     <Compile Include="View\Tela Login\Tela_Login.Designer.cs">
       <DependentUpon>Tela_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Tela Principal\Cadastro\Manutenção\Tela_Cadastro_Manutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Principal\Cadastro\Manutenção\Tela_Cadastro_Manutencao.Designer.cs">
+      <DependentUpon>Tela_Cadastro_Manutencao.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Tela Principal\Cadastro\Postos\Tela_Posto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     </Compile>
     <EmbeddedResource Include="View\Tela Login\Tela_Login.resx">
       <DependentUpon>Tela_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela Principal\Cadastro\Manutenção\Tela_Cadastro_Manutencao.resx">
+      <DependentUpon>Tela_Cadastro_Manutencao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Principal\Cadastro\Postos\Tela_Posto.resx">
       <DependentUpon>Tela_Posto.cs</DependentUpon>
