@@ -1,4 +1,4 @@
-﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Tela_Multa
+﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
     partial class Tela_Multa
     {

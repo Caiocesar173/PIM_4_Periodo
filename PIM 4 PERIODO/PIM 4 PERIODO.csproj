@@ -158,6 +158,12 @@
     <Compile Include="View\Tela Login\Tela_Login.Designer.cs">
       <DependentUpon>Tela_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Tela Principal\Cadastro\Usuario\Tela_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Principal\Cadastro\Usuario\Tela_Usuario.Designer.cs">
+      <DependentUpon>Tela_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Testes_Controle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +306,9 @@
     <EmbeddedResource Include="View\Tela Login\Tela_Login.resx">
       <DependentUpon>Tela_Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela Principal\Cadastro\Usuario\Tela_Usuario.resx">
+      <DependentUpon>Tela_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Testes_Controle.resx">
       <DependentUpon>Testes_Controle.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,9 +385,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\Tela Principal\Cadastro\Usuario\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="View\__Componentes__\Famework\Bunifu.Core.dll" />
     <Content Include="View\__Componentes__\Famework\Bunifu.UI.WinForms.BunifuDataGridView.dll" />

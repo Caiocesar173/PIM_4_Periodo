@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 
 
-namespace PIM_4_PERIODO.View.__Tela_Principal__.Oficina
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
 {
     public partial class Oficina : Form
     {

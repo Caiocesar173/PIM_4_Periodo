@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
-    public partial class Cadastro_Departamento : Form
+    public partial class Tela_Departamento : Form
     {
         Departamento departamento = new Departamento();
-        public Cadastro_Departamento()
+        public Tela_Departamento()
         {
             InitializeComponent();
         }

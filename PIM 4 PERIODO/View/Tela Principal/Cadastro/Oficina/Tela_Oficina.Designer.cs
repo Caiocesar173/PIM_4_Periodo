@@ -1,4 +1,4 @@
-﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Oficina
+﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
 {
     partial class Oficina
     {

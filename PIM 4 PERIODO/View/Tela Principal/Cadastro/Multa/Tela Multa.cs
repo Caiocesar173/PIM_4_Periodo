@@ -9,11 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIM_4_PERIODO.View.__Tela_Principal__.Tela_Multa
+namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
     public partial class Tela_Multa : Form
     {
-        Multa multa = new Multa();
         public Tela_Multa()
         {
             InitializeComponent();

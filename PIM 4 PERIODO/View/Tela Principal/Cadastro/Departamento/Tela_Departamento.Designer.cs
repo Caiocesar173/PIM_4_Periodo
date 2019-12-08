@@ -1,6 +1,6 @@
 ﻿namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
-    partial class Cadastro_Departamento
+    partial class Tela_Departamento
     {
         /// <summary>
         /// Required designer variable.
