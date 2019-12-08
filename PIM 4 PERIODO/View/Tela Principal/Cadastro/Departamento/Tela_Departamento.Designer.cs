@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             Bunifu.Framework.UI.BunifuFlatButton Bnt_Cancelar;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Departamento));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Departamento));
             Bunifu.Framework.UI.BunifuFlatButton Bnt_Salvar_Departamento;
             this.TxTBox_Nivel_Departamento = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();

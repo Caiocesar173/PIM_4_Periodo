@@ -308,6 +308,9 @@ namespace PIM_4_PERIODO.Dao
                         case 2:
                             ConsultaDepartamento = ConsultaDepartamento + "NOME = @NOME";
                             break;
+                        case 3:
+                            ConsultaDepartamento = ConsultaDepartamento + "1";
+                            break;
                         default:
                             ConsultaDepartamento = ConsultaDepartamento + "1";
                             break;

@@ -19,15 +19,22 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Usuario
         Dao.Incluir Incluir = new Dao.Incluir();
         Dao.Consultar Conslutar = new Dao.Consultar();
 
+
         public Tela_Usuario()
+        {   
+            InitializeComponent();
+        }
+        private void LoadDepartamentos()
         {
+            Console.WriteLine("Entrou na funçao");
             Table = Conslutar.Departamento(Departamento, 3);
-            for(int i = Table.Rows.Count; i <= 0; i--)
+            Console.WriteLine(Table);
+            for (int i = Table.Rows.Count -1 ; i >= 0; i--)
             {
-                Console.WriteLine("ID: " + Table.Rows[i][0] + "Departamento: " + Table.Rows[i][2]);
+                Console.WriteLine("ID: " + Table.Rows[i][0] + " ,Departamento: " + Table.Rows[i][2]);
                 //Table.Rows[i][2];
             }
-            InitializeComponent();
+            
         }
 
         private void Repoisicionamento_Label(Label Error_Label)
@@ -50,6 +57,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Usuario
         }
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
+            LoadDepartamentos();
             if (TxTBox_Litragem.Text != "" && TxTBox_Marca.Text != "" && TxTBox_Nome.Text != "")
             {
                 if (TxTBox_Litragem.Text.Contains(","))
