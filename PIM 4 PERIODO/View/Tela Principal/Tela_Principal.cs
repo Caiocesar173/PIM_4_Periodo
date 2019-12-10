@@ -17,14 +17,14 @@ using PIM_4_PERIODO.View.__Tela_Principal__.Cadastro;
 using PIM_4_PERIODO.View.__Tela_Principal__.Sac;
 using PIM_4_PERIODO.View.__Tela_Principal__.Chat;
 using PIM_4_PERIODO.View.__Tela_Principal__.RedeifinirSenha;
-
+using PIM_4_PERIODO.View.Tela_Principal.Solicitacao;
 
 namespace PIM_4_PERIODO.View
 {
     public partial class TelaPrincipal : Form
     {
         Tela_Home Home;
-        Tela_SolicitaçãoInicial Solicitacao;
+        Tela_Solicitação Solicitacao;
         Tela_Cadastro Cadastro;
         Tela_Sac Sac;
         Tela_Chat Chat;
@@ -156,7 +156,7 @@ namespace PIM_4_PERIODO.View
             if (!Solicitacao_btn.Active)
             {
                 Solicitacao_btn.Active = true;
-                Solicitacao = new Tela_SolicitaçãoInicial();
+                Solicitacao = new Tela_Solicitação();
                 Solicitacao.TopLevel = false;
                 Solicitacao.AutoScroll = true;
                 this.Panel_Menus.Controls.Add(Solicitacao);

@@ -176,6 +176,12 @@
     <Compile Include="View\Tela Principal\Cadastro\Usuario\Tela_Usuario.Designer.cs">
       <DependentUpon>Tela_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Tela Principal\Solicitacao\Tela_Solicitação.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tela Principal\Solicitacao\Tela_Solicitação.Designer.cs">
+      <DependentUpon>Tela_Solicitação.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Testes_Controle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela Principal\Cadastro\Usuario\Tela_Usuario.resx">
       <DependentUpon>Tela_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tela Principal\Solicitacao\Tela_Solicitação.resx">
+      <DependentUpon>Tela_Solicitação.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Testes_Controle.resx">
       <DependentUpon>Testes_Controle.cs</DependentUpon>

@@ -82,14 +82,13 @@ namespace PIM_4_PERIODO.Dao
 
                 if (Conexão.Checkconection())
                 {
-                    string ConsultaAbastecimento = "SELECT TABLES";
+                    string ConsultaAbastecimento = "SHOW TABLES;";
 
 
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     MySqlCommand command = new MySqlCommand();
 
-                    ConsultaAbastecimento = ConsultaAbastecimento + ";";
                     command.CommandText = ConsultaAbastecimento;
                     command.Connection = Conexão.Pega_Conexão();
 
@@ -133,8 +132,7 @@ namespace PIM_4_PERIODO.Dao
                         case 3:
                             ConsultaAbastecimento = ConsultaAbastecimento + "ID_ABASTECIMENTO = @ID_ABASTECIMENTO";
                             break;
-
-                        default:
+                        case 4:
                             ConsultaAbastecimento = ConsultaAbastecimento + "1";
                             break;
                     }
@@ -205,8 +203,7 @@ namespace PIM_4_PERIODO.Dao
                         case 3:
                             ConsultaAtendimento = ConsultaAtendimento + "ID_DESTINO = @ID_DESTINO";
                             break;
-
-                        default:
+                        case 4:
                             ConsultaAtendimento = ConsultaAtendimento + "1";
                             break;
                     }
@@ -277,7 +274,7 @@ namespace PIM_4_PERIODO.Dao
                             ConsultaCombustivel = ConsultaCombustivel + "DATAS = @DATAS";
                             break;
 
-                        default:
+                        case 4:
                             ConsultaCombustivel = ConsultaCombustivel + "1";
                             break;
                     }
@@ -348,9 +345,6 @@ namespace PIM_4_PERIODO.Dao
                         case 3:
                             ConsultaDepartamento = ConsultaDepartamento + "1";
                             break;
-                        default:
-                            ConsultaDepartamento = ConsultaDepartamento + "1";
-                            break;
                     }
 
 
@@ -412,7 +406,7 @@ namespace PIM_4_PERIODO.Dao
                         case 4:
                             ConsultaDestino = ConsultaDestino + "DATAS_SAIDA = @DATAS_SAIDA";
                             break;
-                        default:
+                        case 5:
                             ConsultaDestino = ConsultaDestino + "1";
                             break;
                     }
@@ -487,7 +481,7 @@ namespace PIM_4_PERIODO.Dao
                         case 4:
                             ConsultaManutenção = ConsultaManutenção + "ID_VEICULO = @ID_VEICULO";
                             break;
-                        default:
+                        case 5:
                             ConsultaManutenção = ConsultaManutenção + "1";
                             break;
                     }
@@ -564,7 +558,7 @@ namespace PIM_4_PERIODO.Dao
                         case 5:
                             ConsultaMulta = ConsultaMulta + "DATAS = @DATAS";
                             break;
-                        default:
+                        case 6:
                             ConsultaMulta = ConsultaMulta + "1";
                             break;
                     }
@@ -631,7 +625,7 @@ namespace PIM_4_PERIODO.Dao
                         case 1:
                             ConsultaNotificação = ConsultaNotificação + "TITULO = @TITULO";
                             break;
-                        default:
+                        case 2:
                             ConsultaNotificação = ConsultaNotificação + "1";
                             break;
                     }
@@ -697,7 +691,7 @@ namespace PIM_4_PERIODO.Dao
                         case 4:
                             ConsultaOficina = ConsultaOficina + "ENDERECO = @ENDERECO";
                             break;
-                        default:
+                        case 5:
                             ConsultaOficina = ConsultaOficina + "1";
                             break;
                     }
@@ -771,7 +765,7 @@ namespace PIM_4_PERIODO.Dao
                         case 3:
                             ConsultaOleo = ConsultaOleo + "LITROS = @LITROS";
                             break;
-                        default:
+                        case 4:
                             ConsultaOleo = ConsultaOleo + "1";
                             break;
                     }
@@ -843,7 +837,7 @@ namespace PIM_4_PERIODO.Dao
                         case 4:
                             ConsultaPosto = ConsultaPosto + "ENDERECO = @ENDERECO";
                             break;
-                        default:
+                        case 5:
                             ConsultaPosto = ConsultaPosto + "1";
                             break;
                     }
@@ -911,7 +905,7 @@ namespace PIM_4_PERIODO.Dao
                         case 1:
                             ConsultaSalario = ConsultaSalario + "VALOR = @VALOR";
                             break;
-                        default:
+                        case 2:
                             ConsultaSalario = ConsultaSalario + "1";
                             break;
                     }
@@ -985,7 +979,7 @@ namespace PIM_4_PERIODO.Dao
                         case 7:
                             ConsultaUsuario = ConsultaUsuario + "DATAS_ADIMISSAO = @DATAS_ADIMISSAO";
                             break;
-                        default:
+                        case 8:
                             ConsultaUsuario = ConsultaUsuario + "1";
                             break;
                     }
@@ -1079,7 +1073,7 @@ namespace PIM_4_PERIODO.Dao
                         case 8:
                             ConsultaVeiculo = ConsultaVeiculo + "ID_COMBUSTIVEL = @ID_COMBUSTIVEL ";
                             break;
-                        default:
+                        case 9:
                             ConsultaVeiculo = ConsultaVeiculo + "1";
                             break;
                     }

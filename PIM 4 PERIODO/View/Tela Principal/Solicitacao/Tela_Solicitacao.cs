@@ -26,8 +26,12 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Solicitacao
                 Consultar Consultar = new Consultar();
                 Usuario Usuario = new Usuario();
                 Usuario.Username = TxTBox_NomeUsuario.Text;
-                this.Usuario_DataGridView.DataSource = Consultar.Usuario(Usuario, 0); ;
+                Usuario_DataGridView.DataSource = Consultar.Usuario(Usuario, 0);
+
+
+                Console.WriteLine(Usuario_DataGridView.SelectedRows.ToString());
             }
+
         }
 
         private void TxTBox_NomeUsuario_OnValueChanged(object sender, EventArgs e)

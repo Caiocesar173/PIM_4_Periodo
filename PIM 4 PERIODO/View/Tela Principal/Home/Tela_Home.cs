@@ -32,7 +32,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Home
             Image IconeCalendario = Properties.Resources.icone_calendario;
 
 
-            Table_Notificação = Consulta.Notificação(Notificação, 3);
+            Table_Notificação = Consulta.Notificação(Notificação, 2);
             if(Table_Notificação.Rows.Count > 0)
             {
                 //Deleta o ID Da tabela para facilitar a minha vida.
@@ -62,7 +62,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Home
                     */  
                     //Elementos vindo da Tabela do Departamento
                     Departamento.ID_Departamento = Convert.ToInt32(Table_Notificação.Rows[NumNotificaçoes][0]);
-                    Table_Departamento = Consulta.Departamento(Departamento, 0);
+                    Table_Departamento = Consulta.Departamento(Departamento, 3);
                     Card_Notificação.SubTitulo_Card = Convert.ToString(Table_Departamento.Rows[0][2]);
 
                     //Elementos vindo da Tabela do Notificação
