@@ -13,16 +13,29 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
 {
     public partial class Tela_Destino : Form
     {
-        Dao.Incluir Incluir = new Dao.Incluir();
-        Dao.Consultar Consultar = new Dao.Consultar();
-        Destino Destino = new Destino();
+        private Dao.Incluir Incluir = new Dao.Incluir();
+        private Dao.Consultar Consultar = new Dao.Consultar();
+        private Destino Destino = new Destino();
+
+        private DataTable VeiculosDicionary = new DataTable();
+        private DataTable MotoristasDicionary = new DataTable();
+
+
 
         public Tela_Destino()
         {
-           
+            VeiculosDicionary.Columns.Add("ID",typeof(int));
+            VeiculosDicionary.Columns.Add("Item",typeof(string));
+
+            MotoristasDicionary.Columns.Add("ID", typeof(int));
+            MotoristasDicionary.Columns.Add("Item", typeof(string));
+
+
+            
+
             InitializeComponent();
-            LoadVeiculos();
             LoadMotoristas();
+            LoadVeiculos();
 
         }
         private void LoadMotoristas()
@@ -48,6 +61,12 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
                 if(Convert.ToInt32(Table_Motoristas.Rows[i][3]) == 3)
                 {
                     ComboBox_Motorista.Items.Insert(j, Table_Motoristas.Rows[i][1]);
+
+                    DataRow NovaLinha = MotoristasDicionary.NewRow();
+                    NovaLinha["ID"] = MotoristasDicionary.Rows[i][0];
+                    NovaLinha["Item"] = MotoristasDicionary.Rows[i][1];
+                    MotoristasDicionary.Rows.InsertAt(NovaLinha, j);
+
                     j++;
                 }
             }
@@ -62,10 +81,49 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Table_Veiculos = Consultar.Veiculo(Veiculo, 9);
             for(int i = Table_Veiculos.Rows.Count - 1, j = 0 ; i >= 0; i--, j++)
             {
-                //VeiculosDic = (Table_Veiculos.Rows[j][0], Table_Veiculos.Rows[j][2], j);
+                DataRow NovaLinha = VeiculosDicionary.NewRow();
+                NovaLinha["ID"] = Table_Veiculos.Rows[i][0];
+                NovaLinha["Item"] = Table_Veiculos.Rows[i][2];
+                VeiculosDicionary.Rows.InsertAt(NovaLinha, j);
+
                 ComboBox_Veiculo.Items.Insert(j, Convert.ToString(Table_Veiculos.Rows[j][2]));
+
+                Console.WriteLine("Combox Veiculo: " + j + " | " + Table_Veiculos.Rows[j][2]);
+                Console.WriteLine("Dicionario Veiculo: " + Table_Veiculos.Rows[j][0] + " | " + Table_Veiculos.Rows[j][2]);
             }
             ComboBox_Veiculo.SelectedItem = 0;
+        }
+        
+        private bool Convert_VeiculoFrom_Combo()
+        {
+            bool Retorno = false;
+            for(int i = VeiculosDicionary.Rows.Count; i >= 0; i--)
+            {
+                Console.WriteLine("Veiculo");
+                Console.WriteLine("Item selecionado: " + ComboBox_Veiculo.SelectedItem + " | ID Selecionado: " + ComboBox_Veiculo.SelectedIndex);
+
+                if (ComboBox_Veiculo.SelectedItem == Convert.ToString(VeiculosDicionary.Rows[i][1]))
+                {
+                    Destino.ID_Veiculo = Convert.ToInt32(VeiculosDicionary.Rows[i][0]);
+                    Retorno = true;
+                }
+            }
+            return Retorno;
+        }
+        private bool Convert_MotoristaFrom_Combo()
+        {
+            bool Retorno = false;
+            for (int i = MotoristasDicionary.Rows.Count; i >= 0; i--)
+            {
+                Console.WriteLine("Motorista");
+                Console.WriteLine("Item selecionado: " + ComboBox_Motorista.SelectedItem + " | ID Selecionado: " + ComboBox_Motorista.SelectedIndex);
+                if (ComboBox_Motorista.SelectedItem == MotoristasDicionary.Rows[i][1])
+                {
+                    Destino.ID_Motorista = Convert.ToInt32(MotoristasDicionary.Rows[i][0]);
+                    Retorno = true;
+                }
+            }
+            return Retorno;
         }
 
         private void Repoisicionamento_Label(Label Error_Label)
@@ -78,26 +136,29 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
         {
             if (TxTBox_Saida.Text != "" && TxTBox_Local_Chegada.Text != "" && TxTBox_Data_Saida.Text != "" && TxTBox_Data_Chegada.Text != "")
             {
-                Console.WriteLine("Data Saida; " + TxTBox_Data_Saida.Text);
-                Console.WriteLine("Data Chegada: " + TxTBox_Data_Chegada.Text);
-               
-                Destino.ID_Motorista = ComboBox_Motorista.SelectedIndex;
-                Destino.ID_Veiculo = ComboBox_Veiculo.SelectedIndex;
-
-                //Falta o ID do veiculo
-                Destino.Local_Saida = TxTBox_Saida.Text;
-                Destino.Local_Chegada = TxTBox_Local_Chegada.Text;
-                Destino.Data_Chegada = Convert.ToDateTime(TxTBox_Data_Chegada.Text);
-                Destino.Data_Saida = Convert.ToDateTime(TxTBox_Data_Saida.Text);
-
-
-                if (Incluir.Destino(Destino, 1))
+                if (Convert_VeiculoFrom_Combo() && Convert_MotoristaFrom_Combo())
                 {
-                    Repoisicionamento_Label(Sucesso_Label);
+                    Destino.Local_Saida = TxTBox_Saida.Text;
+                    Destino.Local_Chegada = TxTBox_Local_Chegada.Text;
+                    Destino.Data_Chegada = Convert.ToDateTime(TxTBox_Data_Chegada.Text);
+                    Destino.Data_Saida = Convert.ToDateTime(TxTBox_Data_Saida.Text);
+
+
+                    if (Incluir.Destino(Destino, 1))
+                    {
+                        Repoisicionamento_Label(Sucesso_Label);
+                    }
+
+                    else
+                    {
+                        Error_Label.Text = "Ocorreu um erro durante o Cadastro";
+                        Repoisicionamento_Label(Error_Label);
+                    }
+
                 }
                 else
                 {
-                    Error_Label.Text = "Ocorreu um erro durante o Cadastro";
+                    Error_Label.Text = "Ocorreu um erro com Motorista/Veiculo";
                     Repoisicionamento_Label(Error_Label);
                 }
             }

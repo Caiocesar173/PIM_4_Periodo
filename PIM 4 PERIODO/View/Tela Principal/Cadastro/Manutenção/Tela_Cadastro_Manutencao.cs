@@ -18,6 +18,32 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção
         public Tela_Cadastro_Manutencao()
         {
             InitializeComponent();
+            GenerateNumOs();
+        }
+
+        private int RandomNum()
+        {
+            Random r = new Random();
+            int rInt = r.Next(0, 100); //for ints
+            int range = 100;
+            double rDouble = r.NextDouble() * range; //for doubles
+            return Convert.ToInt32(rDouble);
+        }
+        private void GenerateNumOs()
+        {
+            Dao.Consultar Consulta = new Dao.Consultar();
+            Manutenção.NumeroOS = Convert.ToInt32(RandomNum());
+            Label_NumeroOS.Text = "Numero da Ordem de Serviço: " + Convert.ToString(Manutenção.NumeroOS);
+
+            while (Consulta.Manutenção(Manutenção, 1).Rows.Count != 0)
+            {
+                Manutenção.NumeroOS = Convert.ToInt32(RandomNum());
+                if(Consulta.Manutenção(Manutenção, 1).Rows.Count == 0)
+                {
+                    Label_NumeroOS.Text = Convert.ToString(Manutenção.NumeroOS);
+                    break;
+                }
+            }
         }
         private void Repoisicionamento_Label(Label Error_Label)
         {
@@ -25,7 +51,6 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção
             int PanelImg_Center = (this.Size.Width - Error_Label.Size.Width) / 2;
             Error_Label.Location = new Point((this.Width / 2) - (Error_Label.Width / 2), CadastroCombustivel_Label.Location.Y + Error_Label.Height + CadastroCombustivel_Label.Height + 5);
         }
-
         private void Cancelar_Btn_Click(object sender, EventArgs e)
         {
             Tela_Cadastro Cadastro = new Tela_Cadastro();
@@ -38,7 +63,6 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção
             Cadastro.Show();
             PainelCentral.Show();
         }
-
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
             if (TxTBox_Motivo_Manutecao.Text != "" && TxTBox_Nome.Text != "" && TxTBox_Valor_Manutencao.Text != "")
@@ -48,6 +72,9 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção
                     TxTBox_Valor_Manutencao.Text = TxTBox_Valor_Manutencao.Text.Replace(",", ".");
                 }
 
+                Manutenção.ID_Oficina = Convert.ToInt32(TxTBox_ID_Oficina.Text);
+                Manutenção.ID_Veiculo = Convert.ToInt32(TxTBox_ID_Oficina.Text);
+                Manutenção.Valor = float.Parse(TxTBox_Valor_Manutencao.Text);
                 Manutenção.Motivo = TxTBox_Motivo_Manutecao.Text;
                 Manutenção.Data_Entrada = Convert.ToDateTime(TxTBox_Data_Entrada.Text);
                 Manutenção.Data_Saida = Convert.ToDateTime(TxTBox_Data_Saida.Text);
