@@ -79,7 +79,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Veiculo
                 Veiculo.KM_Revisao = float.Parse(TxTBox_Revisao.Text);
                 Veiculo.KM_TrocaOleo = float.Parse(TxTBox_KmTrocadeOloe.Text);
                 Veiculo.Tipo = TxTBox_Tipo.Text;
-
+                Veiculo.Modelo = TxTBox_Modelo.Text;
 
                 if (Incluir.Veiculo(Veiculo, 1))
                 {
