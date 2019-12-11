@@ -133,10 +133,15 @@ namespace PIM_4_PERIODO.Dao
                             ConsultaAbastecimento = ConsultaAbastecimento + "ID_ABASTECIMENTO = @ID_ABASTECIMENTO";
                             break;
                         case 4:
+                            ConsultaAbastecimento = ConsultaAbastecimento + "LITROS = @LITROS";
+                            break;
+                        case 5:
+                            ConsultaAbastecimento = ConsultaAbastecimento + "VALOR = @VALOR";
+                            break;
+                        case 6:
                             ConsultaAbastecimento = ConsultaAbastecimento + "1";
                             break;
                     }
-
 
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -160,6 +165,12 @@ namespace PIM_4_PERIODO.Dao
                             break;
                         case 3:
                             command.Parameters.Add("@ID_ABASTECIMENTO", MySqlDbType.Int32).Value = Abastecimento.ID_bastecimento;
+                            break;
+                        case 4:
+                            command.Parameters.Add("@LITROS", MySqlDbType.Int32).Value = Abastecimento.Litros;
+                            break;
+                        case 5:
+                            command.Parameters.Add("@VALOR", MySqlDbType.Int32).Value = Abastecimento.Valor;
                             break;
                     }
 
@@ -273,7 +284,6 @@ namespace PIM_4_PERIODO.Dao
                         case 3:
                             ConsultaCombustivel = ConsultaCombustivel + "DATAS = @DATAS";
                             break;
-
                         case 4:
                             ConsultaCombustivel = ConsultaCombustivel + "1";
                             break;
@@ -346,7 +356,6 @@ namespace PIM_4_PERIODO.Dao
                             ConsultaDepartamento = ConsultaDepartamento + "1";
                             break;
                     }
-
 
                     ConsultaDepartamento = ConsultaDepartamento + ";";
                     command.CommandText = ConsultaDepartamento;

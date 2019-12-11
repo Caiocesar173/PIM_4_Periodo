@@ -47,9 +47,9 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Abastecimento
                     TxTBox_Veiculo_Abastecimento.Text = TxTBox_Veiculo_Abastecimento.Text.Replace(",", ".");
                 }
 
-                
                 Abastecimento.Valor = float.Parse(TxTBox_Valor_Abastecidos.Text);
                 Abastecimento.Litros = float.Parse(TxTBox_Litros.Text);
+
 
                 if (Incluir.Abastecimento(Abastecimento, 1))
                 {

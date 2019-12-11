@@ -196,7 +196,7 @@
             this.Sucesso_Label.BackColor = System.Drawing.Color.Transparent;
             this.Sucesso_Label.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sucesso_Label.ForeColor = System.Drawing.Color.DarkGreen;
-            this.Sucesso_Label.Location = new System.Drawing.Point(54, 58);
+            this.Sucesso_Label.Location = new System.Drawing.Point(54, 83);
             this.Sucesso_Label.Name = "Sucesso_Label";
             this.Sucesso_Label.Size = new System.Drawing.Size(459, 28);
             this.Sucesso_Label.TabIndex = 40;
@@ -209,7 +209,7 @@
             this.Error_Label.BackColor = System.Drawing.Color.Transparent;
             this.Error_Label.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Error_Label.ForeColor = System.Drawing.Color.Firebrick;
-            this.Error_Label.Location = new System.Drawing.Point(103, 86);
+            this.Error_Label.Location = new System.Drawing.Point(103, 111);
             this.Error_Label.Name = "Error_Label";
             this.Error_Label.Size = new System.Drawing.Size(323, 23);
             this.Error_Label.TabIndex = 36;
@@ -221,7 +221,7 @@
             this.CadastroCombustivel_Label.AutoSize = true;
             this.CadastroCombustivel_Label.Font = new System.Drawing.Font("Century Gothic", 30.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CadastroCombustivel_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.CadastroCombustivel_Label.Location = new System.Drawing.Point(13, 9);
+            this.CadastroCombustivel_Label.Location = new System.Drawing.Point(13, 34);
             this.CadastroCombustivel_Label.Name = "CadastroCombustivel_Label";
             this.CadastroCombustivel_Label.Size = new System.Drawing.Size(525, 47);
             this.CadastroCombustivel_Label.TabIndex = 37;

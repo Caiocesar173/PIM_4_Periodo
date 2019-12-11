@@ -17,7 +17,6 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Solicitacao
         DataTable Table_TabelasDoBanco = new DataTable();
         DataTable Table_Consulta = new DataTable();
         Consultar Consultar = new Consultar();
-        int SwitchVariable = 0;
 
         public Tela_Solicitação()
         {
@@ -59,21 +58,12 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Solicitacao
             {
                 ComboBox_TipoBusca.SelectedItem = "";
                 ComboBox_TipoBusca.Items.Clear();
-                Table_Consulta.Columns.Remove(Table_Consulta.Columns[0]);
+                //Table_Consulta.Columns.Remove(Table_Consulta.Columns[0]);
                 foreach (DataColumn column in Table_Consulta.Columns)
                 { 
                     string Nome = "";
-                    string Subnome = "";
                     
                     Nome = FirstCharToUpper(Convert.ToString(column.ColumnName));
-                    if (Name.Contains("Cpf") || Name.Contains("Cpf "))
-                    {
-                        Nome = Nome.Replace("Cpf","CPF");
-                    }
-                    if (Name.Contains("Cnh") || Name.Contains("Cnh "))
-                    {
-                        Nome = Nome.Replace("Cnh", "CNH");
-                    }
                     if (Name.Contains("_"))
                     {
                         Nome = Nome.Replace("_", " ");
@@ -175,6 +165,168 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Solicitacao
         {
             if(TxTBox_Pesquisa.Text != "")
             {
+                int i = ComboBox_Tabelas.SelectedIndex + 1;
+                int j = ComboBox_TipoBusca.SelectedIndex + 3;
+                int TipoDaPesquisa = 0;
+
+                switch (i)
+                {
+                    case 1:
+                        Abastecimento Abastecimento = new Abastecimento();
+                        switch (j)
+                        {
+                            case 1:
+                                TipoDaPesquisa = 4;
+                                break;
+                            case 2:
+                                TipoDaPesquisa = 5;
+                                break;
+                            case 3:
+                                TipoDaPesquisa = 0;
+                                break;
+                            case 4:
+                                TipoDaPesquisa = 1;
+                                break;
+                            case 5:
+                                TipoDaPesquisa = 2;
+                                break;
+                            case 6:
+                                TipoDaPesquisa = 3;
+                                break;
+                        }
+                        Consultar.Abastecimento(Abastecimento, TipoDaPesquisa);
+                        break;
+                    case 2:
+                        Atendimento Atendimento = new Atendimento();
+                        switch (j)
+                        {
+                            case 1:
+                                TipoDaPesquisa = 1;
+                                break;
+                            case 2:
+                                TipoDaPesquisa = 2;
+                                break;
+                            case 3:
+                                TipoDaPesquisa = 3;
+                                break;
+                        }
+                        Consultar.Atendimento(Atendimento, TipoDaPesquisa);
+                        break;
+                    case 3:
+                        Combustivel Combustivel = new Combustivel();
+                        switch (j)
+                        {
+                            case 1:
+                                TipoDaPesquisa = 0;
+                                break;
+                            case 2:
+                                TipoDaPesquisa = 1;
+                                break;
+                            case 3:
+                                TipoDaPesquisa = 2;
+                                break;
+                            case 4:
+                                TipoDaPesquisa = 3;
+                                break;
+                        }
+                        Consultar.Combustivel(Combustivel, TipoDaPesquisa);
+                        break;
+                    case 4:
+                        Departamento Departamento = new Departamento();
+                        switch (j)
+                        {
+                            case 1:
+                                TipoDaPesquisa = 0;
+                                break;
+                            case 2:
+                                TipoDaPesquisa = 1;
+                                break;
+                            case 3:
+                                TipoDaPesquisa = 2;
+                                break;
+                        }
+                        Consultar.Departamento(Departamento, TipoDaPesquisa);
+                        break;
+                    case 5:
+                        Destino Destino = new Destino();
+                        switch (j)
+                        {
+                            case 0:
+                                TipoDaPesquisa = 0;
+                                break;
+                            case 1:
+                                TipoDaPesquisa = 1;
+                                break;
+                            case 2:
+                                TipoDaPesquisa = 2;
+                                break;
+                            case 3:
+                                TipoDaPesquisa = 3;
+                                break;
+                            case 4:
+                                TipoDaPesquisa = 4;
+                                break;
+                        }
+                        Consultar.Destino(Destino, TipoDaPesquisa);
+                        break;
+                    case 6:
+                        Manutenção Manutenção = new Manutenção();
+                        switch (j)
+                        {
+                            case 0:
+                                TipoDaPesquisa = 0;
+                                break;
+                            case 1:
+                                TipoDaPesquisa = 1;
+                                break;
+                            case 2:
+                                TipoDaPesquisa = 2;
+                                break;
+                            case 3:
+                                TipoDaPesquisa = 3;
+                                break;
+                            case 4:
+                                TipoDaPesquisa = 4;
+                                break;
+                        }
+                        Consultar.Manutenção(Manutenção, TipoDaPesquisa);
+                        break;
+                    case 7:
+                        Multa Multa = new Multa();
+                        Consultar.Multa(Multa, 6);
+                        break;
+                    case 8:
+                        Notificação Notificação = new Notificação();
+                        Consultar.Notificação(Notificação, 2);
+                        break;
+                    case 9:
+                        Oficina Oficina = new Oficina();
+                        Consultar.Oficina(Oficina, 2);
+                        break;
+                    case 10:
+                        Oleo Oleo = new Oleo();
+                        Consultar.Oleo(Oleo, 4);
+                        break;
+                    case 11:
+                        Posto Posto = new Posto();
+                        Consultar.Posto(Posto, 5);
+                        break;
+                    case 12:
+                        Salario Salario = new Salario();
+                        Consultar.Salario(Salario, 2);
+                        break;
+                    case 13:
+                        Usuario Usuario = new Usuario();
+                        Consultar.Usuario(Usuario, 8);
+                        break;
+                    case 14:
+                        Veiculo Veiculo = new Veiculo();
+                        Consultar.Veiculo(Veiculo, 9);
+                        break;
+                }
+
+                Console.WriteLine("Index da Tabela " + i + "Index da Pesquisa " + ComboBox_TipoBusca.SelectedIndex);
+                Console.WriteLine("Nome da Tabela " + ComboBox_Tabelas.SelectedItem + "Tipo da Pesquisa " + ComboBox_TipoBusca.SelectedItem);
                 if (!true)
                 {
                     Repoisicionamento_Label(Sucesso_Label);
