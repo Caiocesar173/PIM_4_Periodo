@@ -49,7 +49,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Combustivel
 
                 Combustivel.Nome = TxTBox_Nome.Text;
                 Combustivel.Valor = float.Parse(TxTBox_Valor.Text);
-                Combustivel.Data = Convert.ToDateTime(TxTBox_Data.Text);
+               // Combustivel.Data = Convert.ToDateTime(TxTBox_Data.Text);
                 
 
                 if (Incluir.Combustivel(Combustivel, 1))

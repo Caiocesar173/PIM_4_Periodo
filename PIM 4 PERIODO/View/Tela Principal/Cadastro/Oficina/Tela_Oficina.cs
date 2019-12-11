@@ -28,6 +28,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
         }
         private void Cancelar_Btn_Click(object sender, EventArgs e)
         {
+           
             Tela_Cadastro Cadastro = new Tela_Cadastro();
             Panel PainelCentral = new Panel();
             PainelCentral.Dock = DockStyle.Fill;
@@ -38,18 +39,18 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
             Cadastro.Show();
             PainelCentral.Show();
         }
+
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
-            if (TxTBox_NomeOficina.Text != "" && TxTBox_RazaoSocial.Text != "" && TxTBox_CNPJ.Text != "" && TxTBox_Telefone.Text != "" && TxTBox_SiteOficina.Text != "" && TxTBox_Endereco.Text != "" && TxTBox_Celular.Text != "")
+            if (TxTBox_NomeOficina.Text != "" && TxTBox_RazaoSocial.Text != "" && TxTBox_CNPJ.Text != "" && TxTBox_Telefone.Text != "" && TxTBox_SiteOficina.Text != "" && TxTBox_Endereco.Text != "" && TxTBox_Celular.Text != "" && TxTBox_Endereco.Text != "")
             {
-
-
                 oficina.Nome = TxTBox_NomeOficina.Text;
                 oficina.RazaoSocial = TxTBox_RazaoSocial.Text;
                 oficina.Site = TxTBox_SiteOficina.Text;
-                oficina.Telefone = Convert.ToInt16(TxTBox_Telefone.Text);
+                oficina.Telefone = Convert.ToInt32(TxTBox_Telefone.Text);
                 oficina.CNPJ = TxTBox_CNPJ.Text;
-                oficina.Celular = Convert.ToInt16(TxTBox_Celular.Text);
+                oficina.Celular = Convert.ToInt32(TxTBox_Celular.Text);
+                oficina.Endereço = TxTBox_Endereco.Text;
 
                 if (Incluir.Oficina(oficina, 1))
                 {
@@ -66,9 +67,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Tela_Oficina
                 Error_Label.Text = "Os campos não podem ser vazios";
                 Repoisicionamento_Label(Error_Label);
             }
-
-            // private void Cadastrar_Btn_Click(object sender, EventArgs e) { }
-            //private void Cancelar_Btn_Click(object sender, EventArgs e) { }
         }
     }
 }

@@ -44,6 +44,84 @@
             Cancelar_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
+            // Cadastrar_Btn
+            // 
+            Cadastrar_Btn.Active = false;
+            Cadastrar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cadastrar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cadastrar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Cadastrar_Btn.BorderRadius = 0;
+            Cadastrar_Btn.ButtonText = "Cadastrar";
+            Cadastrar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            Cadastrar_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            Cadastrar_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cadastrar_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            Cadastrar_Btn.Iconimage = null;
+            Cadastrar_Btn.Iconimage_right = null;
+            Cadastrar_Btn.Iconimage_right_Selected = null;
+            Cadastrar_Btn.Iconimage_Selected = null;
+            Cadastrar_Btn.IconMarginLeft = 0;
+            Cadastrar_Btn.IconMarginRight = 0;
+            Cadastrar_Btn.IconRightVisible = true;
+            Cadastrar_Btn.IconRightZoom = 0D;
+            Cadastrar_Btn.IconVisible = true;
+            Cadastrar_Btn.IconZoom = 40D;
+            Cadastrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            Cadastrar_Btn.IsTab = false;
+            Cadastrar_Btn.Location = new System.Drawing.Point(92, 488);
+            Cadastrar_Btn.Margin = new System.Windows.Forms.Padding(5);
+            Cadastrar_Btn.Name = "Cadastrar_Btn";
+            Cadastrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cadastrar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            Cadastrar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
+            Cadastrar_Btn.selected = false;
+            Cadastrar_Btn.Size = new System.Drawing.Size(114, 50);
+            Cadastrar_Btn.TabIndex = 39;
+            Cadastrar_Btn.Text = "Cadastrar";
+            Cadastrar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            Cadastrar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            Cadastrar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cadastrar_Btn.Click += new System.EventHandler(this.Cadastrar_Btn_Click);
+            // 
+            // Cancelar_Btn
+            // 
+            Cancelar_Btn.Active = false;
+            Cancelar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cancelar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cancelar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            Cancelar_Btn.BorderRadius = 0;
+            Cancelar_Btn.ButtonText = "Cancelar";
+            Cancelar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            Cancelar_Btn.DisabledColor = System.Drawing.Color.Transparent;
+            Cancelar_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cancelar_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            Cancelar_Btn.Iconimage = null;
+            Cancelar_Btn.Iconimage_right = null;
+            Cancelar_Btn.Iconimage_right_Selected = null;
+            Cancelar_Btn.Iconimage_Selected = null;
+            Cancelar_Btn.IconMarginLeft = 0;
+            Cancelar_Btn.IconMarginRight = 0;
+            Cancelar_Btn.IconRightVisible = true;
+            Cancelar_Btn.IconRightZoom = 0D;
+            Cancelar_Btn.IconVisible = true;
+            Cancelar_Btn.IconZoom = 40D;
+            Cancelar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            Cancelar_Btn.IsTab = false;
+            Cancelar_Btn.Location = new System.Drawing.Point(334, 488);
+            Cancelar_Btn.Margin = new System.Windows.Forms.Padding(5);
+            Cancelar_Btn.Name = "Cancelar_Btn";
+            Cancelar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            Cancelar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            Cancelar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
+            Cancelar_Btn.selected = false;
+            Cancelar_Btn.Size = new System.Drawing.Size(114, 50);
+            Cancelar_Btn.TabIndex = 40;
+            Cancelar_Btn.Text = "Cancelar";
+            Cancelar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            Cancelar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            Cancelar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cancelar_Btn.Click += new System.EventHandler(this.Cancelar_Btn_Click);
+            // 
             // TxTBox_NomeOficina
             // 
             this.TxTBox_NomeOficina.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -248,84 +326,6 @@
             this.Error_Label.TabIndex = 37;
             this.Error_Label.Text = "Os campos não podem ser vazios";
             this.Error_Label.Visible = false;
-            // 
-            // Cadastrar_Btn
-            // 
-            Cadastrar_Btn.Active = false;
-            Cadastrar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Cadastrar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Cadastrar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            Cadastrar_Btn.BorderRadius = 0;
-            Cadastrar_Btn.ButtonText = "Cadastrar";
-            Cadastrar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            Cadastrar_Btn.DisabledColor = System.Drawing.Color.Transparent;
-            Cadastrar_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Cadastrar_Btn.Iconcolor = System.Drawing.Color.Transparent;
-            Cadastrar_Btn.Iconimage = null;
-            Cadastrar_Btn.Iconimage_right = null;
-            Cadastrar_Btn.Iconimage_right_Selected = null;
-            Cadastrar_Btn.Iconimage_Selected = null;
-            Cadastrar_Btn.IconMarginLeft = 0;
-            Cadastrar_Btn.IconMarginRight = 0;
-            Cadastrar_Btn.IconRightVisible = true;
-            Cadastrar_Btn.IconRightZoom = 0D;
-            Cadastrar_Btn.IconVisible = true;
-            Cadastrar_Btn.IconZoom = 40D;
-            Cadastrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            Cadastrar_Btn.IsTab = false;
-            Cadastrar_Btn.Location = new System.Drawing.Point(92, 488);
-            Cadastrar_Btn.Margin = new System.Windows.Forms.Padding(5);
-            Cadastrar_Btn.Name = "Cadastrar_Btn";
-            Cadastrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Cadastrar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            Cadastrar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
-            Cadastrar_Btn.selected = false;
-            Cadastrar_Btn.Size = new System.Drawing.Size(114, 50);
-            Cadastrar_Btn.TabIndex = 39;
-            Cadastrar_Btn.Text = "Cadastrar";
-            Cadastrar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            Cadastrar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            Cadastrar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //Cadastrar_Btn.Click += new System.EventHandler(this.Cadastrar_Btn_Click);
-            // 
-            // Cancelar_Btn
-            // 
-            Cancelar_Btn.Active = false;
-            Cancelar_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Cancelar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Cancelar_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            Cancelar_Btn.BorderRadius = 0;
-            Cancelar_Btn.ButtonText = "Cancelar";
-            Cancelar_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            Cancelar_Btn.DisabledColor = System.Drawing.Color.Transparent;
-            Cancelar_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Cancelar_Btn.Iconcolor = System.Drawing.Color.Transparent;
-            Cancelar_Btn.Iconimage = null;
-            Cancelar_Btn.Iconimage_right = null;
-            Cancelar_Btn.Iconimage_right_Selected = null;
-            Cancelar_Btn.Iconimage_Selected = null;
-            Cancelar_Btn.IconMarginLeft = 0;
-            Cancelar_Btn.IconMarginRight = 0;
-            Cancelar_Btn.IconRightVisible = true;
-            Cancelar_Btn.IconRightZoom = 0D;
-            Cancelar_Btn.IconVisible = true;
-            Cancelar_Btn.IconZoom = 40D;
-            Cancelar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            Cancelar_Btn.IsTab = false;
-            Cancelar_Btn.Location = new System.Drawing.Point(334, 488);
-            Cancelar_Btn.Margin = new System.Windows.Forms.Padding(5);
-            Cancelar_Btn.Name = "Cancelar_Btn";
-            Cancelar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            Cancelar_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            Cancelar_Btn.OnHoverTextColor = System.Drawing.Color.Gray;
-            Cancelar_Btn.selected = false;
-            Cancelar_Btn.Size = new System.Drawing.Size(114, 50);
-            Cancelar_Btn.TabIndex = 40;
-            Cancelar_Btn.Text = "Cancelar";
-            Cancelar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            Cancelar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            Cancelar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-          //  Cancelar_Btn.Click += new System.EventHandler(this.Cancelar_Btn_Click);
             // 
             // Oficina
             // 

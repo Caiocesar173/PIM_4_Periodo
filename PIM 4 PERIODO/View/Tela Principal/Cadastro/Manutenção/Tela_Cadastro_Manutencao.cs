@@ -25,6 +25,7 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção
             int PanelImg_Center = (this.Size.Width - Error_Label.Size.Width) / 2;
             Error_Label.Location = new Point((this.Width / 2) - (Error_Label.Width / 2), CadastroCombustivel_Label.Location.Y + Error_Label.Height + CadastroCombustivel_Label.Height + 5);
         }
+
         private void Cancelar_Btn_Click(object sender, EventArgs e)
         {
             Tela_Cadastro Cadastro = new Tela_Cadastro();
@@ -37,6 +38,7 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção
             Cadastro.Show();
             PainelCentral.Show();
         }
+
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
             if (TxTBox_Motivo_Manutecao.Text != "" && TxTBox_Nome.Text != "" && TxTBox_Valor_Manutencao.Text != "")
@@ -65,6 +67,6 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Manutenção
                 Error_Label.Text = "Os campos não podem ser vazios";
                 Repoisicionamento_Label(Error_Label);
             }
-          }
-      }
+        }
     }
+  }
