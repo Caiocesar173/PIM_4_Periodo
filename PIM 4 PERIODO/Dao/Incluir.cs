@@ -216,15 +216,15 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertManutençãoo = "INSERT INTO MANUTENCAO(NUM_OS, ID_OFICINA, DATAS_ENTRADA, DATAS_SAIDA, MOTIVO, VALOR, ID_VEICULO) VALUES (@NUM_OS, @ID_OFICINA, @DATAS_ENTRADA, @DATAS_SAIDA, @MOTIVO, @VALOR, @ID_VEICULO);";
+                        string InsertManutençãoo = "INSERT INTO MANUTENCAO(NUM_OS, ID_OFICINA, DATA_ENTRADA, DATA_SAIDA, MOTIVO, VALOR, ID_VEICULO) VALUES (@NUM_OS, @ID_OFICINA, @DATA_ENTRADA, @DATA_SAIDA, @MOTIVO, @VALOR, @ID_VEICULO);";
 
 
                         command.CommandText = InsertManutençãoo;
                         command.Connection = Conexão.Pega_Conexão();
                         command.Parameters.Add("@NUM_OS", MySqlDbType.Int32).Value = Manutenção.NumeroOS;
                         command.Parameters.Add("@ID_OFICINA", MySqlDbType.Int32).Value = Manutenção.ID_Oficina;
-                        command.Parameters.Add("@DATAS_ENTRADA", MySqlDbType.Date).Value = Manutenção.Data_Entrada;
-                        command.Parameters.Add("@DATAS_SAIDA", MySqlDbType.Date).Value = Manutenção.Data_Saida;
+                        command.Parameters.Add("@DATA_ENTRADA", MySqlDbType.Date).Value = Manutenção.Data_Entrada;
+                        command.Parameters.Add("@DATA_SAIDA", MySqlDbType.Date).Value = Manutenção.Data_Saida;
                         command.Parameters.Add("@MOTIVO", MySqlDbType.VarChar).Value = Manutenção.Motivo;
                         command.Parameters.Add("@VALOR", MySqlDbType.Float).Value = Manutenção.Valor;
                         command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = Manutenção.ID_Veiculo;
@@ -769,7 +769,7 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertDestino = "INSERT INTO DESTINO(ID_VEICULO, ID_MOTORISTA, LOCAL_CHEGADA, LOCAL_SAIDA, DATAS_CHEGADA, DATAS_SAIDA) VALUES (@ID_VEICULO, @ID_MOTORISTA, @LOCAL_CHEGADA, @LOCAL_SAIDA, @DATAS_CHEGADA, @DATAS_SAIDA);";
+                        string InsertDestino = "INSERT INTO DESTINO(ID_VEICULO, ID_MOTORISTA, LOCAL_CHEGADA, LOCAL_SAIDA, DATAS_CHEGADA, DATA_SAIDA) VALUES (@ID_VEICULO, @ID_MOTORISTA, @LOCAL_CHEGADA, @LOCAL_SAIDA, @DATAS_CHEGADA, @DATA_SAIDA);";
 
 
                         command.CommandText = InsertDestino;
@@ -779,7 +779,7 @@ namespace PIM_4_PERIODO.Dao
                         command.Parameters.Add("@LOCAL_CHEGADA", MySqlDbType.VarChar).Value = Destino.Local_Chegada;
                         command.Parameters.Add("@LOCAL_SAIDA", MySqlDbType.VarChar).Value = Destino.Local_Saida;
                         command.Parameters.Add("@DATAS_CHEGADA", MySqlDbType.VarChar).Value = Destino.Data_Chegada;
-                        command.Parameters.Add("@DATAS_SAIDA", MySqlDbType.VarChar).Value = Destino.Data_Saida;
+                        command.Parameters.Add("@DATA_SAIDA", MySqlDbType.VarChar).Value = Destino.Data_Saida;
 
                         int retorno = command.ExecuteNonQuery();
                         if (retorno > 0)

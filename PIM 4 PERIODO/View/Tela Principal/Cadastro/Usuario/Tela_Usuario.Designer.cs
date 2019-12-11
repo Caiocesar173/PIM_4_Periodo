@@ -188,7 +188,7 @@
             this.TxTBox_ENDERECO.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_ENDERECO.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_ENDERECO.LineThickness = 4;
-            this.TxTBox_ENDERECO.Location = new System.Drawing.Point(20, 539);
+            this.TxTBox_ENDERECO.Location = new System.Drawing.Point(20, 540);
             this.TxTBox_ENDERECO.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_ENDERECO.MaxLength = 32767;
             this.TxTBox_ENDERECO.Name = "TxTBox_ENDERECO";
@@ -212,7 +212,7 @@
             this.TxTBox_CNH.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_CNH.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_CNH.LineThickness = 4;
-            this.TxTBox_CNH.Location = new System.Drawing.Point(280, 296);
+            this.TxTBox_CNH.Location = new System.Drawing.Point(280, 297);
             this.TxTBox_CNH.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_CNH.MaxLength = 32767;
             this.TxTBox_CNH.Name = "TxTBox_CNH";
@@ -303,7 +303,7 @@
             this.TxTBox_Senha.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Senha.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Senha.LineThickness = 4;
-            this.TxTBox_Senha.Location = new System.Drawing.Point(14, 242);
+            this.TxTBox_Senha.Location = new System.Drawing.Point(14, 243);
             this.TxTBox_Senha.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Senha.MaxLength = 32767;
             this.TxTBox_Senha.Name = "TxTBox_Senha";
@@ -327,7 +327,7 @@
             this.TxTBox_Email.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Email.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Email.LineThickness = 4;
-            this.TxTBox_Email.Location = new System.Drawing.Point(280, 242);
+            this.TxTBox_Email.Location = new System.Drawing.Point(280, 243);
             this.TxTBox_Email.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Email.MaxLength = 32767;
             this.TxTBox_Email.Name = "TxTBox_Email";
@@ -351,7 +351,7 @@
             this.TxTBox_UserName.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_UserName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_UserName.LineThickness = 4;
-            this.TxTBox_UserName.Location = new System.Drawing.Point(14, 188);
+            this.TxTBox_UserName.Location = new System.Drawing.Point(14, 189);
             this.TxTBox_UserName.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_UserName.MaxLength = 32767;
             this.TxTBox_UserName.Name = "TxTBox_UserName";
@@ -416,7 +416,7 @@
             this.TxTBox_Nome.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Nome.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Nome.LineThickness = 4;
-            this.TxTBox_Nome.Location = new System.Drawing.Point(280, 188);
+            this.TxTBox_Nome.Location = new System.Drawing.Point(280, 189);
             this.TxTBox_Nome.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Nome.MaxLength = 32767;
             this.TxTBox_Nome.Name = "TxTBox_Nome";
@@ -532,7 +532,7 @@
             this.TxTBox_CategoriaCNH.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_CategoriaCNH.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_CategoriaCNH.LineThickness = 4;
-            this.TxTBox_CategoriaCNH.Location = new System.Drawing.Point(383, 456);
+            this.TxTBox_CategoriaCNH.Location = new System.Drawing.Point(383, 457);
             this.TxTBox_CategoriaCNH.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_CategoriaCNH.MaxLength = 32767;
             this.TxTBox_CategoriaCNH.Name = "TxTBox_CategoriaCNH";
@@ -550,7 +550,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.BackgroundImage = global::PIM_4_PERIODO.Properties.Resources.caminhão;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(548, 655);
+            this.ClientSize = new System.Drawing.Size(548, 657);
             this.Controls.Add(this.TxTBox_CategoriaCNH);
             this.Controls.Add(this.Label_CategoriaCNH);
             this.Controls.Add(this.Label_DataAdimissao);
