@@ -1099,7 +1099,7 @@ namespace PIM_4_PERIODO.Dao
                     {
                         case 0:
                             command.Parameters.Add("@ID_VEICULO", MySqlDbType.Int32).Value = Veiculo.ID_Veiculo;
-                            break; ;
+                            break; 
                         case 1:
                             command.Parameters.Add("@PLACA", MySqlDbType.VarChar).Value = Veiculo.Placa;
                             break;
