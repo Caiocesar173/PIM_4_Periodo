@@ -489,7 +489,7 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertPosto = "INSERT INTO POSTO(NOME, CNPJ, RAZAO_SOCIAL, TELEFONE, CELULAR, SITE, ENDERECO) VALUES (@NOME, @CNPJ, @RAZAO_SOCIAL, @TELEFONE, @CELULAR, @SITE, @ENDERECO);";
+                        string InsertPosto = "INSERT INTO POSTO(NOME, CNPJ, RAZAO_SOCIAL, TELEFONE, CELULAR, ENDERECO) VALUES (@NOME, @CNPJ, @RAZAO_SOCIAL, @TELEFONE, @CELULAR, @ENDERECO);";
 
 
                         command.CommandText = InsertPosto;
@@ -594,7 +594,7 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertUsuario = "INSERT INTO USUARIO(USERNAME, SENHA, DEPARTAMENTO, NOME, EMAIL, CPF, TELEFONE, CELULAR, ENDERECO, CNH, VALIDADE_CNH, CATEGORIA_CNH, DATAS_ADIMISSAO) VALUES (@USERNAME, @SENHA, @DEPARTAMENTO, @NOME, @EMAIL, @CPF, @TELEFONE, @CELULAR, @ENDERECO, @CNH, @VALIDADE_CNH, @CATEGORIA_CNH, @DATAS_ADIMISSAO);";
+                        string InsertUsuario = "INSERT INTO USUARIO(USERNAME, SENHA, DEPARTAMENTO, NOME, EMAIL, CPF, TELEFONE, CELULAR, ENDERECO, CNH, VALIDADE_CNH, CATEGORIA_CNH, DATA_ADIMISSAO) VALUES (@USERNAME, @SENHA, @DEPARTAMENTO, @NOME, @EMAIL, @CPF, @TELEFONE, @CELULAR, @ENDERECO, @CNH, @VALIDADE_CNH, @CATEGORIA_CNH, @DATA_ADIMISSAO);";
 
 
                         command.CommandText = InsertUsuario;
@@ -611,7 +611,7 @@ namespace PIM_4_PERIODO.Dao
                         command.Parameters.Add("@CNH", MySqlDbType.Int32).Value = Usuario.CNH;
                         command.Parameters.Add("@VALIDADE_CNH", MySqlDbType.Date).Value = Usuario.Validade_CNH;
                         command.Parameters.Add("@CATEGORIA_CNH", MySqlDbType.VarChar).Value = Usuario.Categoria_CNH;
-                        command.Parameters.Add("@DATAS_ADIMISSAO", MySqlDbType.Date).Value = Usuario.Categoria_CNH;
+                        command.Parameters.Add("@DATA_ADIMISSAO", MySqlDbType.Date).Value = Usuario.Categoria_CNH;
 
                         int retorno = command.ExecuteNonQuery();
                         if (retorno > 0)
@@ -769,7 +769,7 @@ namespace PIM_4_PERIODO.Dao
 
                     if (Conexão.Checkconection())
                     {
-                        string InsertDestino = "INSERT INTO DESTINO(ID_VEICULO, ID_MOTORISTA, LOCAL_CHEGADA, LOCAL_SAIDA, DATAS_CHEGADA, DATA_SAIDA) VALUES (@ID_VEICULO, @ID_MOTORISTA, @LOCAL_CHEGADA, @LOCAL_SAIDA, @DATAS_CHEGADA, @DATA_SAIDA);";
+                        string InsertDestino = "INSERT INTO DESTINO(ID_VEICULO, ID_MOTORISTA, LOCAL_CHEGADA, LOCAL_SAIDA, DATA_CHEGADA, DATA_SAIDA) VALUES (@ID_VEICULO, @ID_MOTORISTA, @LOCAL_CHEGADA, @LOCAL_SAIDA, @DATA_CHEGADA, @DATA_SAIDA);";
 
 
                         command.CommandText = InsertDestino;
@@ -778,8 +778,8 @@ namespace PIM_4_PERIODO.Dao
                         command.Parameters.Add("@ID_MOTORISTA", MySqlDbType.VarChar).Value = Destino.ID_Motorista;
                         command.Parameters.Add("@LOCAL_CHEGADA", MySqlDbType.VarChar).Value = Destino.Local_Chegada;
                         command.Parameters.Add("@LOCAL_SAIDA", MySqlDbType.VarChar).Value = Destino.Local_Saida;
-                        command.Parameters.Add("@DATAS_CHEGADA", MySqlDbType.VarChar).Value = Destino.Data_Chegada;
-                        command.Parameters.Add("@DATA_SAIDA", MySqlDbType.VarChar).Value = Destino.Data_Saida;
+                        command.Parameters.Add("@DATA_CHEGADA", MySqlDbType.Date).Value = Destino.Data_Chegada;
+                        command.Parameters.Add("@DATA_SAIDA", MySqlDbType.Date).Value = Destino.Data_Saida;
 
                         int retorno = command.ExecuteNonQuery();
                         if (retorno > 0)

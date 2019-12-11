@@ -16,13 +16,14 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
         Dao.Incluir Incluir = new Dao.Incluir();
         Dao.Consultar Consultar = new Dao.Consultar();
         Destino Destino = new Destino();
+        Dictionary<String, > VeiculosDic;
 
         public Tela_Destino()
         {
            
             InitializeComponent();
-            LoadMotoristas();
             LoadVeiculos();
+            LoadMotoristas();
 
         }
         private void LoadMotoristas()
@@ -43,14 +44,15 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             }
 
             Table_Motoristas = Consultar.Usuario(Usuario, 8);
-            for (int i = Table_Motoristas.Rows.Count - 1, j = 0; i >= 0; i--, j++)
+            for (int i = Table_Motoristas.Rows.Count - 1, j = 0; i >= 0; i--)
             { 
-                if(Convert.ToInt32(Table_Motoristas.Rows[j][3]) == 3)
+                if(Convert.ToInt32(Table_Motoristas.Rows[i][3]) == 3)
                 {
-                    ComboBox_Motorista.Items.Insert(j, Table_Motoristas.Rows[j][1]);
+                    ComboBox_Motorista.Items.Insert(j, Table_Motoristas.Rows[i][1]);
+                    j++;
                 }
-                ComboBox_Motorista.SelectedItem = 0;
             }
+            ComboBox_Motorista.SelectedItem = 0;
 
         }
         private void LoadVeiculos()
@@ -61,11 +63,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Table_Veiculos = Consultar.Veiculo(Veiculo, 9);
             for(int i = Table_Veiculos.Rows.Count - 1, j = 0 ; i >= 0; i--, j++)
             {
-                
+                VeiculosDic = (Table_Veiculos.Rows[j][0], Table_Veiculos.Rows[j][2], j);
                 ComboBox_Veiculo.Items.Insert(j, Convert.ToString(Table_Veiculos.Rows[j][2]));
             }
             ComboBox_Veiculo.SelectedItem = 0;
-
         }
 
         private void Repoisicionamento_Label(Label Error_Label)
@@ -78,7 +79,8 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
         {
             if (TxTBox_Saida.Text != "" && TxTBox_Local_Chegada.Text != "" && TxTBox_Data_Saida.Text != "" && TxTBox_Data_Chegada.Text != "")
             {
-
+                Console.WriteLine("Data Saida; " + TxTBox_Data_Saida.Text);
+                Console.WriteLine("Data Chegada: " + TxTBox_Data_Chegada.Text);
                
                 Destino.ID_Motorista = ComboBox_Motorista.SelectedIndex;
                 Destino.ID_Veiculo = ComboBox_Veiculo.SelectedIndex;
@@ -106,7 +108,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
                 Repoisicionamento_Label(Error_Label);
             } 
         }
-
         private void Cancelar_Btn_Click(object sender, EventArgs e)
         {
             Tela_Cadastro Cadastro = new Tela_Cadastro();
