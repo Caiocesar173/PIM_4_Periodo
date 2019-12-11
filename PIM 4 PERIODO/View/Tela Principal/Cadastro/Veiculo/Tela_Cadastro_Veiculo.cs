@@ -72,8 +72,8 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Veiculo
                 Veiculo.Ano = Convert.ToInt32(TxTBox_Ano.Text);
                 Veiculo.ID_Combustivel = Convert.ToInt32(TxTBox_Combustivel.Text);
                 Veiculo.KM_Litro = float.Parse(TxTBox_KmLitro.Text);
-                Veiculo.KM_TrocaPneu = float.Parse(TxTBox_KmLitro.Text);
-                Veiculo.Capacidade_Tanque = Convert.ToInt32(TxTBox_CapDoTanque.Text);
+                Veiculo.KM_TrocaPneu = float.Parse(TxTBox_KmPneu.Text);
+                Veiculo.Capacidade_Tanque = float.Parse(TxTBox_CapDoTanque.Text);
                 Veiculo.Chassi = TxTBox_Chassi.Text;
                 Veiculo.Renavam = Convert.ToInt32(TxTBox_Renavan.Text);
                 Veiculo.KM_Revisao = float.Parse(TxTBox_Revisao.Text);

@@ -59,9 +59,9 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Usuario
             if(TxTBox_UserName.Text != "" && TxTBox_Nome.Text != "" &&
                 TxTBox_Senha.Text != "" && TxTBox_Email.Text != "" &&
                 TxTBox_CPF.Text != "" && TxTBox_CNH.Text != "" &&
-                TxTBox_Telefone.Text != "" && TextBox_Validade_CNH.Text != "" &&
-                TxTBox_Celular.Text != "" && TxTBox_CategoriaCNH.Text != "" &&
-                TxTBox_ENDERECO.Text != "" && TxTBox_Data.Text != "")
+                TextBox_Validade_CNH.Text != "" 
+                && TxTBox_CategoriaCNH.Text != "" &&
+                TxTBox_ENDERECO.Text != "" && TxTBox_Data.Text != "" && TxTBox_Telefone.Text != "" && TxTBox_Celular.Text !="")
             {
                 Usuario.Username = TxTBox_UserName.Text;
                 Usuario.Nome = TxTBox_Nome.Text;

@@ -270,7 +270,7 @@
             this.TxTBox_cpnj.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_cpnj.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_cpnj.LineThickness = 4;
-            this.TxTBox_cpnj.Location = new System.Drawing.Point(282, 346);
+            this.TxTBox_cpnj.Location = new System.Drawing.Point(282, 334);
             this.TxTBox_cpnj.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_cpnj.MaxLength = 32767;
             this.TxTBox_cpnj.Name = "TxTBox_cpnj";

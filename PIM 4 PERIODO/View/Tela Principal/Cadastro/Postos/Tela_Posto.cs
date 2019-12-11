@@ -45,16 +45,11 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Postos
             if (TxTBox_Nome.Text != "" && TxTBox_Razao_Social.Text != "" && TxTBox_Endereco.Text != "" && TxTBox_Telefone.Text != "")
             {
 
-
                 Posto.Nome = TxTBox_Nome.Text;
                 Posto.RazaoSocial = TxTBox_Razao_Social.Text;
                 Posto.Endereço = TxTBox_Endereco.Text;
                 Posto.CNPJ = TxTBox_cpnj.Text;
                 
-
-
-
-
                 if (Incluir.Posto(Posto, 1))
                 {
                     Repoisicionamento_Label(Sucesso_Label);
