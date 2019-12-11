@@ -16,7 +16,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
         Dao.Incluir Incluir = new Dao.Incluir();
         Dao.Consultar Consultar = new Dao.Consultar();
         Destino Destino = new Destino();
-        Dictionary<String, > VeiculosDic;
 
         public Tela_Destino()
         {
@@ -63,7 +62,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Table_Veiculos = Consultar.Veiculo(Veiculo, 9);
             for(int i = Table_Veiculos.Rows.Count - 1, j = 0 ; i >= 0; i--, j++)
             {
-                VeiculosDic = (Table_Veiculos.Rows[j][0], Table_Veiculos.Rows[j][2], j);
+                //VeiculosDic = (Table_Veiculos.Rows[j][0], Table_Veiculos.Rows[j][2], j);
                 ComboBox_Veiculo.Items.Insert(j, Convert.ToString(Table_Veiculos.Rows[j][2]));
             }
             ComboBox_Veiculo.SelectedItem = 0;
