@@ -26,5 +26,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Chat
         {
             Procurar_Btn.Image = Properties.Resources.POCURAR;
         }
+
+        private void custom_Conversa1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

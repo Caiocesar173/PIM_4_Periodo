@@ -47,7 +47,7 @@
             this.TxTBox_Procurar_NomeConversa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.TxTBox_Procurar_NomeConversa.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.TxTBox_Procurar_NomeConversa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Procurar_NomeConversa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Procurar_NomeConversa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxTBox_Procurar_NomeConversa.ForeColor = System.Drawing.Color.Silver;
             this.TxTBox_Procurar_NomeConversa.HintForeColor = System.Drawing.Color.Empty;
             this.TxTBox_Procurar_NomeConversa.HintText = "";
@@ -125,10 +125,10 @@
             this.custom_Conversa3.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
             this.custom_Conversa3.Location = new System.Drawing.Point(3, 307);
             this.custom_Conversa3.Name = "custom_Conversa3";
-            this.custom_Conversa3.Nome_Da_Conversa = "Nome da Conversass";
+            this.custom_Conversa3.Nome_Da_Conversa = "Motorista - José";
             this.custom_Conversa3.Size = new System.Drawing.Size(528, 100);
             this.custom_Conversa3.TabIndex = 8;
-            this.custom_Conversa3.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
+            this.custom_Conversa3.Ultima_Da_Mensagem = "";
             // 
             // custom_Conversa6
             // 
@@ -137,10 +137,10 @@
             this.custom_Conversa6.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
             this.custom_Conversa6.Location = new System.Drawing.Point(3, 622);
             this.custom_Conversa6.Name = "custom_Conversa6";
-            this.custom_Conversa6.Nome_Da_Conversa = "Nome da Conversass";
+            this.custom_Conversa6.Nome_Da_Conversa = "Motorista - Cleber";
             this.custom_Conversa6.Size = new System.Drawing.Size(528, 100);
             this.custom_Conversa6.TabIndex = 10;
-            this.custom_Conversa6.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
+            this.custom_Conversa6.Ultima_Da_Mensagem = "";
             // 
             // custom_Conversa2
             // 
@@ -149,10 +149,10 @@
             this.custom_Conversa2.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
             this.custom_Conversa2.Location = new System.Drawing.Point(3, 202);
             this.custom_Conversa2.Name = "custom_Conversa2";
-            this.custom_Conversa2.Nome_Da_Conversa = "Nome da Conversass";
+            this.custom_Conversa2.Nome_Da_Conversa = "Motorista - Kauan";
             this.custom_Conversa2.Size = new System.Drawing.Size(528, 100);
             this.custom_Conversa2.TabIndex = 8;
-            this.custom_Conversa2.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
+            this.custom_Conversa2.Ultima_Da_Mensagem = "";
             // 
             // custom_Conversa7
             // 
@@ -161,10 +161,10 @@
             this.custom_Conversa7.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
             this.custom_Conversa7.Location = new System.Drawing.Point(3, 517);
             this.custom_Conversa7.Name = "custom_Conversa7";
-            this.custom_Conversa7.Nome_Da_Conversa = "Nome da Conversass";
+            this.custom_Conversa7.Nome_Da_Conversa = "Motorista - Thiago";
             this.custom_Conversa7.Size = new System.Drawing.Size(528, 100);
             this.custom_Conversa7.TabIndex = 11;
-            this.custom_Conversa7.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
+            this.custom_Conversa7.Ultima_Da_Mensagem = "";
             // 
             // custom_Conversa1
             // 
@@ -173,10 +173,11 @@
             this.custom_Conversa1.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
             this.custom_Conversa1.Location = new System.Drawing.Point(3, 97);
             this.custom_Conversa1.Name = "custom_Conversa1";
-            this.custom_Conversa1.Nome_Da_Conversa = "Nome da Conversass";
+            this.custom_Conversa1.Nome_Da_Conversa = "Motorista - João";
             this.custom_Conversa1.Size = new System.Drawing.Size(528, 100);
             this.custom_Conversa1.TabIndex = 8;
-            this.custom_Conversa1.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
+            this.custom_Conversa1.Ultima_Da_Mensagem = "Ultima Conversa";
+            this.custom_Conversa1.Paint += new System.Windows.Forms.PaintEventHandler(this.custom_Conversa1_Paint);
             // 
             // custom_Conversa8
             // 
@@ -185,10 +186,10 @@
             this.custom_Conversa8.Icone = global::PIM_4_PERIODO.Properties.Resources.cadastro;
             this.custom_Conversa8.Location = new System.Drawing.Point(3, 412);
             this.custom_Conversa8.Name = "custom_Conversa8";
-            this.custom_Conversa8.Nome_Da_Conversa = "Nome da Conversass";
+            this.custom_Conversa8.Nome_Da_Conversa = "Motorista -  Martins ";
             this.custom_Conversa8.Size = new System.Drawing.Size(528, 100);
             this.custom_Conversa8.TabIndex = 12;
-            this.custom_Conversa8.Ultima_Da_Mensagem = "dafasdfasdfasdfasdfad";
+            this.custom_Conversa8.Ultima_Da_Mensagem = "";
             // 
             // Tela_Chat
             // 
