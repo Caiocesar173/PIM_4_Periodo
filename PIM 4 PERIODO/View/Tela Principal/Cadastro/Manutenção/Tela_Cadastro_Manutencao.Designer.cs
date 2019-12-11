@@ -43,91 +43,6 @@
             Cancelar_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
-            // TxTBox_Nome
-            // 
-            this.TxTBox_Nome.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_Nome.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_Nome.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_Nome.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_Nome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_Nome.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_Nome.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Nome.HintText = "ID do Veículo";
-            this.TxTBox_Nome.isPassword = false;
-            this.TxTBox_Nome.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Nome.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Nome.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Nome.LineThickness = 4;
-            this.TxTBox_Nome.Location = new System.Drawing.Point(13, 164);
-            this.TxTBox_Nome.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_Nome.MaxLength = 32767;
-            this.TxTBox_Nome.Name = "TxTBox_Nome";
-            this.TxTBox_Nome.Size = new System.Drawing.Size(256, 46);
-            this.TxTBox_Nome.TabIndex = 51;
-            this.TxTBox_Nome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // TxTBox_ID_Oficina
-            // 
-            this.TxTBox_ID_Oficina.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_ID_Oficina.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_ID_Oficina.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_ID_Oficina.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_ID_Oficina.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_ID_Oficina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_ID_Oficina.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_ID_Oficina.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_ID_Oficina.HintText = "ID Oficina";
-            this.TxTBox_ID_Oficina.isPassword = false;
-            this.TxTBox_ID_Oficina.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_ID_Oficina.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_ID_Oficina.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_ID_Oficina.LineThickness = 4;
-            this.TxTBox_ID_Oficina.Location = new System.Drawing.Point(279, 164);
-            this.TxTBox_ID_Oficina.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_ID_Oficina.MaxLength = 32767;
-            this.TxTBox_ID_Oficina.Name = "TxTBox_ID_Oficina";
-            this.TxTBox_ID_Oficina.Size = new System.Drawing.Size(256, 46);
-            this.TxTBox_ID_Oficina.TabIndex = 50;
-            this.TxTBox_ID_Oficina.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // TxTBox_Valor_Manutencao
-            // 
-            this.TxTBox_Valor_Manutencao.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxTBox_Valor_Manutencao.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TxTBox_Valor_Manutencao.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TxTBox_Valor_Manutencao.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxTBox_Valor_Manutencao.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxTBox_Valor_Manutencao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxTBox_Valor_Manutencao.ForeColor = System.Drawing.Color.Silver;
-            this.TxTBox_Valor_Manutencao.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Valor_Manutencao.HintText = "Valor";
-            this.TxTBox_Valor_Manutencao.isPassword = false;
-            this.TxTBox_Valor_Manutencao.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Valor_Manutencao.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Valor_Manutencao.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
-            this.TxTBox_Valor_Manutencao.LineThickness = 4;
-            this.TxTBox_Valor_Manutencao.Location = new System.Drawing.Point(279, 272);
-            this.TxTBox_Valor_Manutencao.Margin = new System.Windows.Forms.Padding(4);
-            this.TxTBox_Valor_Manutencao.MaxLength = 32767;
-            this.TxTBox_Valor_Manutencao.Name = "TxTBox_Valor_Manutencao";
-            this.TxTBox_Valor_Manutencao.Size = new System.Drawing.Size(256, 46);
-            this.TxTBox_Valor_Manutencao.TabIndex = 49;
-            this.TxTBox_Valor_Manutencao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // Sucesso_Label
-            // 
-            this.Sucesso_Label.AutoSize = true;
-            this.Sucesso_Label.BackColor = System.Drawing.Color.Transparent;
-            this.Sucesso_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sucesso_Label.ForeColor = System.Drawing.Color.DarkGreen;
-            this.Sucesso_Label.Location = new System.Drawing.Point(53, 75);
-            this.Sucesso_Label.Name = "Sucesso_Label";
-            this.Sucesso_Label.Size = new System.Drawing.Size(449, 29);
-            this.Sucesso_Label.TabIndex = 48;
-            this.Sucesso_Label.Text = "Manutenção cadastrado com sucesso";
-            this.Sucesso_Label.Visible = false;
-            // 
             // Cadastrar_Btn
             // 
             Cadastrar_Btn.Active = false;
@@ -152,7 +67,7 @@
             Cadastrar_Btn.IconZoom = 40D;
             Cadastrar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             Cadastrar_Btn.IsTab = false;
-            Cadastrar_Btn.Location = new System.Drawing.Point(92, 536);
+            Cadastrar_Btn.Location = new System.Drawing.Point(86, 404);
             Cadastrar_Btn.Margin = new System.Windows.Forms.Padding(5);
             Cadastrar_Btn.Name = "Cadastrar_Btn";
             Cadastrar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -165,19 +80,7 @@
             Cadastrar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             Cadastrar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Cadastrar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // Error_Label
-            // 
-            this.Error_Label.AutoSize = true;
-            this.Error_Label.BackColor = System.Drawing.Color.Transparent;
-            this.Error_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Error_Label.ForeColor = System.Drawing.Color.Firebrick;
-            this.Error_Label.Location = new System.Drawing.Point(102, 103);
-            this.Error_Label.Name = "Error_Label";
-            this.Error_Label.Size = new System.Drawing.Size(326, 24);
-            this.Error_Label.TabIndex = 44;
-            this.Error_Label.Text = "Os campos não podem ser vazios";
-            this.Error_Label.Visible = false;
+            Cadastrar_Btn.Click += new System.EventHandler(this.Cadastrar_Btn_Click);
             // 
             // Cancelar_Btn
             // 
@@ -203,7 +106,7 @@
             Cancelar_Btn.IconZoom = 40D;
             Cancelar_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             Cancelar_Btn.IsTab = false;
-            Cancelar_Btn.Location = new System.Drawing.Point(279, 536);
+            Cancelar_Btn.Location = new System.Drawing.Point(331, 404);
             Cancelar_Btn.Margin = new System.Windows.Forms.Padding(5);
             Cancelar_Btn.Name = "Cancelar_Btn";
             Cancelar_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -216,6 +119,105 @@
             Cancelar_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             Cancelar_Btn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Cancelar_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Cancelar_Btn.Click += new System.EventHandler(this.Cancelar_Btn_Click);
+            // 
+            // TxTBox_Nome
+            // 
+            this.TxTBox_Nome.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Nome.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Nome.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Nome.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Nome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Nome.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Nome.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Nome.HintText = "ID do Veículo";
+            this.TxTBox_Nome.isPassword = false;
+            this.TxTBox_Nome.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Nome.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Nome.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Nome.LineThickness = 4;
+            this.TxTBox_Nome.Location = new System.Drawing.Point(13, 188);
+            this.TxTBox_Nome.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Nome.MaxLength = 32767;
+            this.TxTBox_Nome.Name = "TxTBox_Nome";
+            this.TxTBox_Nome.Size = new System.Drawing.Size(256, 46);
+            this.TxTBox_Nome.TabIndex = 51;
+            this.TxTBox_Nome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // TxTBox_ID_Oficina
+            // 
+            this.TxTBox_ID_Oficina.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_ID_Oficina.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_ID_Oficina.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_ID_Oficina.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_ID_Oficina.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_ID_Oficina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_ID_Oficina.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_ID_Oficina.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_ID_Oficina.HintText = "ID Oficina";
+            this.TxTBox_ID_Oficina.isPassword = false;
+            this.TxTBox_ID_Oficina.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_ID_Oficina.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_ID_Oficina.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_ID_Oficina.LineThickness = 4;
+            this.TxTBox_ID_Oficina.Location = new System.Drawing.Point(279, 188);
+            this.TxTBox_ID_Oficina.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_ID_Oficina.MaxLength = 32767;
+            this.TxTBox_ID_Oficina.Name = "TxTBox_ID_Oficina";
+            this.TxTBox_ID_Oficina.Size = new System.Drawing.Size(256, 46);
+            this.TxTBox_ID_Oficina.TabIndex = 50;
+            this.TxTBox_ID_Oficina.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // TxTBox_Valor_Manutencao
+            // 
+            this.TxTBox_Valor_Manutencao.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxTBox_Valor_Manutencao.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TxTBox_Valor_Manutencao.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TxTBox_Valor_Manutencao.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxTBox_Valor_Manutencao.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxTBox_Valor_Manutencao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxTBox_Valor_Manutencao.ForeColor = System.Drawing.Color.Silver;
+            this.TxTBox_Valor_Manutencao.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Valor_Manutencao.HintText = "Valor";
+            this.TxTBox_Valor_Manutencao.isPassword = false;
+            this.TxTBox_Valor_Manutencao.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Valor_Manutencao.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.TxTBox_Valor_Manutencao.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
+            this.TxTBox_Valor_Manutencao.LineThickness = 4;
+            this.TxTBox_Valor_Manutencao.Location = new System.Drawing.Point(279, 317);
+            this.TxTBox_Valor_Manutencao.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTBox_Valor_Manutencao.MaxLength = 32767;
+            this.TxTBox_Valor_Manutencao.Name = "TxTBox_Valor_Manutencao";
+            this.TxTBox_Valor_Manutencao.Size = new System.Drawing.Size(256, 46);
+            this.TxTBox_Valor_Manutencao.TabIndex = 49;
+            this.TxTBox_Valor_Manutencao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // Sucesso_Label
+            // 
+            this.Sucesso_Label.AutoSize = true;
+            this.Sucesso_Label.BackColor = System.Drawing.Color.Transparent;
+            this.Sucesso_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sucesso_Label.ForeColor = System.Drawing.Color.DarkGreen;
+            this.Sucesso_Label.Location = new System.Drawing.Point(53, 75);
+            this.Sucesso_Label.Name = "Sucesso_Label";
+            this.Sucesso_Label.Size = new System.Drawing.Size(449, 29);
+            this.Sucesso_Label.TabIndex = 48;
+            this.Sucesso_Label.Text = "Manutenção cadastrado com sucesso";
+            this.Sucesso_Label.Visible = false;
+            // 
+            // Error_Label
+            // 
+            this.Error_Label.AutoSize = true;
+            this.Error_Label.BackColor = System.Drawing.Color.Transparent;
+            this.Error_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Error_Label.ForeColor = System.Drawing.Color.Firebrick;
+            this.Error_Label.Location = new System.Drawing.Point(102, 103);
+            this.Error_Label.Name = "Error_Label";
+            this.Error_Label.Size = new System.Drawing.Size(326, 24);
+            this.Error_Label.TabIndex = 44;
+            this.Error_Label.Text = "Os campos não podem ser vazios";
+            this.Error_Label.Visible = false;
             // 
             // CadastroCombustivel_Label
             // 
@@ -244,7 +246,7 @@
             this.TxTBox_Data_Saida.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Data_Saida.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Data_Saida.LineThickness = 4;
-            this.TxTBox_Data_Saida.Location = new System.Drawing.Point(279, 218);
+            this.TxTBox_Data_Saida.Location = new System.Drawing.Point(279, 251);
             this.TxTBox_Data_Saida.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Data_Saida.MaxLength = 32767;
             this.TxTBox_Data_Saida.Name = "TxTBox_Data_Saida";
@@ -268,7 +270,7 @@
             this.TxTBox_Data_Entrada.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Data_Entrada.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Data_Entrada.LineThickness = 4;
-            this.TxTBox_Data_Entrada.Location = new System.Drawing.Point(13, 218);
+            this.TxTBox_Data_Entrada.Location = new System.Drawing.Point(15, 251);
             this.TxTBox_Data_Entrada.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Data_Entrada.MaxLength = 32767;
             this.TxTBox_Data_Entrada.Name = "TxTBox_Data_Entrada";
@@ -292,7 +294,7 @@
             this.TxTBox_Motivo_Manutecao.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Motivo_Manutecao.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Motivo_Manutecao.LineThickness = 4;
-            this.TxTBox_Motivo_Manutecao.Location = new System.Drawing.Point(13, 272);
+            this.TxTBox_Motivo_Manutecao.Location = new System.Drawing.Point(15, 317);
             this.TxTBox_Motivo_Manutecao.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Motivo_Manutecao.MaxLength = 32767;
             this.TxTBox_Motivo_Manutecao.Name = "TxTBox_Motivo_Manutecao";
@@ -306,7 +308,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.BackgroundImage = global::PIM_4_PERIODO.Properties.Resources.caminhão;
-            this.ClientSize = new System.Drawing.Size(548, 657);
+            this.ClientSize = new System.Drawing.Size(548, 483);
             this.Controls.Add(this.TxTBox_Motivo_Manutecao);
             this.Controls.Add(this.TxTBox_Data_Entrada);
             this.Controls.Add(this.TxTBox_Data_Saida);
