@@ -39,6 +39,7 @@
             this.TxTBox_Departamento = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TxTBox_Descricao = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TxTBox_Imagem = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             Bnt_Cadastrar_Notificacao = new Bunifu.Framework.UI.BunifuFlatButton();
             bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             TxTBox_Cancelar = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -81,6 +82,7 @@
             Bnt_Cadastrar_Notificacao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             Bnt_Cadastrar_Notificacao.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             Bnt_Cadastrar_Notificacao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Bnt_Cadastrar_Notificacao.Click += new System.EventHandler(this.Bnt_Cadastrar_Notificacao_Click);
             // 
             // bunifuFlatButton1
             // 
@@ -106,7 +108,7 @@
             bunifuFlatButton1.IconZoom = 40D;
             bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             bunifuFlatButton1.IsTab = false;
-            bunifuFlatButton1.Location = new System.Drawing.Point(406, 288);
+            bunifuFlatButton1.Location = new System.Drawing.Point(421, 288);
             bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5);
             bunifuFlatButton1.Name = "bunifuFlatButton1";
             bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -157,6 +159,7 @@
             TxTBox_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             TxTBox_Cancelar.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             TxTBox_Cancelar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            TxTBox_Cancelar.Click += new System.EventHandler(this.TxTBox_Cancelar_Click);
             // 
             // TxTBox_Titulo
             // 
@@ -239,7 +242,7 @@
             this.TxTBox_Departamento.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Departamento.MaxLength = 32767;
             this.TxTBox_Departamento.Name = "TxTBox_Departamento";
-            this.TxTBox_Departamento.Size = new System.Drawing.Size(344, 36);
+            this.TxTBox_Departamento.Size = new System.Drawing.Size(423, 36);
             this.TxTBox_Departamento.TabIndex = 45;
             this.TxTBox_Departamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -253,7 +256,7 @@
             this.TxTBox_Descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxTBox_Descricao.ForeColor = System.Drawing.Color.Silver;
             this.TxTBox_Descricao.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.TxTBox_Descricao.HintText = "";
+            this.TxTBox_Descricao.HintText = "Descrição";
             this.TxTBox_Descricao.isPassword = false;
             this.TxTBox_Descricao.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Descricao.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
@@ -263,9 +266,8 @@
             this.TxTBox_Descricao.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Descricao.MaxLength = 32767;
             this.TxTBox_Descricao.Name = "TxTBox_Descricao";
-            this.TxTBox_Descricao.Size = new System.Drawing.Size(344, 36);
+            this.TxTBox_Descricao.Size = new System.Drawing.Size(423, 36);
             this.TxTBox_Descricao.TabIndex = 46;
-            this.TxTBox_Descricao.Text = "Descrição";
             this.TxTBox_Descricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // TxTBox_Imagem
@@ -284,13 +286,21 @@
             this.TxTBox_Imagem.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             this.TxTBox_Imagem.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(184)))), ((int)(((byte)(204)))));
             this.TxTBox_Imagem.LineThickness = 4;
-            this.TxTBox_Imagem.Location = new System.Drawing.Point(53, 287);
+            this.TxTBox_Imagem.Location = new System.Drawing.Point(42, 287);
             this.TxTBox_Imagem.Margin = new System.Windows.Forms.Padding(4);
             this.TxTBox_Imagem.MaxLength = 32767;
             this.TxTBox_Imagem.Name = "TxTBox_Imagem";
-            this.TxTBox_Imagem.Size = new System.Drawing.Size(344, 36);
+            this.TxTBox_Imagem.Size = new System.Drawing.Size(374, 36);
             this.TxTBox_Imagem.TabIndex = 47;
             this.TxTBox_Imagem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(-15, -15);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 48;
             // 
             // Tela_Notificação
             // 
@@ -299,6 +309,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.BackgroundImage = global::PIM_4_PERIODO.Properties.Resources.caminhão;
             this.ClientSize = new System.Drawing.Size(596, 483);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.TxTBox_Imagem);
             this.Controls.Add(this.TxTBox_Descricao);
             this.Controls.Add(this.TxTBox_Departamento);
@@ -327,5 +338,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Departamento;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Descricao;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxTBox_Imagem;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

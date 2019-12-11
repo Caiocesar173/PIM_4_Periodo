@@ -27,7 +27,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             int PanelImg_Center = (this.Size.Width - Error_Label.Size.Width) / 2;
             Error_Label.Location = new Point((this.Width / 2) - (Error_Label.Width / 2), CadastroOleo_Label.Location.Y + Error_Label.Height + CadastroOleo_Label.Height + 5);
         }
-        private void Cancelar_Btn_Click(object sender, EventArgs e)
+        private void TxTBox_Cancelar_Click(object sender, EventArgs e)
         {
             Tela_Cadastro Cadastro = new Tela_Cadastro();
             Panel PainelCentral = new Panel();
@@ -39,9 +39,10 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             Cadastro.Show();
             PainelCentral.Show();
         }
-        private void Cadastrar_Btn_Click(object sender, EventArgs e)
+
+        private void Bnt_Cadastrar_Notificacao_Click(object sender, EventArgs e)
         {
-            if (TxTBox_Departamento.Text != "" && TxTBox_Descricao.Text != "" && TxTBox_Imagem.Text != "" && TxTBox_Titulo.Text != "")
+            if (TxTBox_Departamento.Text != "" && TxTBox_Descricao.Text != "" && TxTBox_Titulo.Text != "" && TxTBox_Imagem.Text != "")
             {
 
 
@@ -67,5 +68,6 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro
             }
         }
 
+    
     }
 }

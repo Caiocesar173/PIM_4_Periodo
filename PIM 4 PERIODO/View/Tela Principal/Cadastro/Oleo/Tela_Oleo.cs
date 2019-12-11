@@ -39,7 +39,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Oleo
         }
         private void Cadastrar_Btn_Click(object sender, EventArgs e)
         {
-            if (TxTBox_Litragem.Text != "" && TxTBox_Marca.Text != "" && TxTBox_Nome.Text != "")
+            if (TxTBox_Litragem.Text != "" && TxTBox_Marca.Text != "" && TxTBox_Nome.Text !="")
             {
                 if (TxTBox_Litragem.Text.Contains(","))
                 {
@@ -48,7 +48,7 @@ namespace PIM_4_PERIODO.View.__Tela_Principal__.Cadastro.Oleo
 
                 Oleo.Nome = TxTBox_Nome.Text;
                 Oleo.Litros = float.Parse(TxTBox_Litragem.Text);
-                Oleo.Nome = TxTBox_Marca.Text;
+                Oleo.Marca = TxTBox_Marca.Text;
 
 
                 if (Incluir.Oleo(Oleo, 1))

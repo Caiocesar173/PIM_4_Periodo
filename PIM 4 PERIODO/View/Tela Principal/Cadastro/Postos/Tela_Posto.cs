@@ -26,7 +26,7 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Postos
             int PanelImg_Center = (this.Size.Width - Error_Label.Size.Width) / 2;
             Error_Label.Location = new Point((this.Width / 2) - (Error_Label.Width / 2), CadastroOleo_Label.Location.Y + Error_Label.Height + CadastroOleo_Label.Height + 5);
         }
-        private void Cancelar_Btn_Click(object sender, EventArgs e)
+        private void Bnt_Cancelar_Click(object sender, EventArgs e)
         {
             Tela_Cadastro Cadastro = new Tela_Cadastro();
             Panel PainelCentral = new Panel();
@@ -38,7 +38,9 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Postos
             Cadastro.Show();
             PainelCentral.Show();
         }
-        private void Cadastrar_Btn_Click(object sender, EventArgs e)
+
+
+        private void Cadastrar_Btn_Click_1(object sender, EventArgs e)
         {
             if (TxTBox_Nome.Text != "" && TxTBox_Razao_Social.Text != "" && TxTBox_Endereco.Text != "" && TxTBox_Telefone.Text != "")
             {
@@ -48,6 +50,7 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Postos
                 Posto.RazaoSocial = TxTBox_Razao_Social.Text;
                 Posto.Endereço = TxTBox_Endereco.Text;
                 Posto.CNPJ = TxTBox_cpnj.Text;
+                
 
 
 
@@ -67,8 +70,7 @@ namespace PIM_4_PERIODO.View.Tela_Principal.Cadastro.Postos
                 Error_Label.Text = "Os campos não podem ser vazios";
                 Repoisicionamento_Label(Error_Label);
             }
-  
-            }
-         }
-      }
+        }   
+     }
+  }
          
